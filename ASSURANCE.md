@@ -4,7 +4,7 @@ Status: **unrefereed theorem candidate**
 
 | Dimension | State | Current evidence | Boundary |
 |---|---|---|---|
-| Availability | local prepare-only candidate | package and renderings in the output directory | no public repository, immutable tag, DOI or Evidence Press page |
+| Availability | public candidate | GitHub `v0.5.0-candidate`, Zenodo `10.5281/zenodo.22036030`, and the canonical Evidence Press record | stable retrieval and byte identity, not correctness or acceptance |
 | Internal replay | passed | one-command ordinary and optimised replay; full manifest and frozen receipt parity | producer workflow, not independence |
 | Finite atlas computation | passed within stated trust base | 1,152 exact-rational cases; 45 full-family, 884 power-only, 223 union; zero anomaly or missing certificate | trusts the generator, source-to-encoding bridge, Python and SymPy |
 | Semantic negative controls | passed | injected anomaly, missing certificate, support mutation, Fourier mutation, receipt corruption and manifest corruption are rejected | mutation coverage is finite |

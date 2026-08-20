@@ -7,7 +7,12 @@ date-released: 2026-08-20
 authors:
   - family-names: Anonymous
 license: CC0-1.0
-repository-code: "PENDING_PREPARE_ONLY"
+repository-code: "https://github.com/ipitchford/cyclicity-support-fusion-atlas"
+url: "https://evidencepress.org/releases/cyclicity-support-fusion-atlas/"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22036030
+    description: Version DOI for this candidate
 abstract: >-
   An unrefereed theorem candidate proving a universal inverse-support,
   cyclic-rank and root-span identity, a Fourier law for polynomial

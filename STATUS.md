@@ -2,7 +2,7 @@
 
 Version: **0.5.0-candidate**
 
-Status: **unrefereed theorem candidate; prepare-only**
+Status: **public unrefereed theorem candidate**
 
 ## Release decision
 
@@ -24,5 +24,8 @@ identified specialist sign-off, journal peer review, or settled priority
 determination has occurred. The zero-cycle and Laurent-polynomial materials
 are exploratory and are excluded from the release gate.
 
-No public GitHub repository, immutable tag, Zenodo deposit, DOI or Evidence
-Press page has been created by this prepare-only revision.
+The immutable research identity is candidate tag `v0.5.0-candidate` at
+<https://github.com/ipitchford/cyclicity-support-fusion-atlas>, version DOI
+<https://doi.org/10.5281/zenodo.22036030>, and the canonical reader page at
+<https://evidencepress.org/releases/cyclicity-support-fusion-atlas/>. These
+publication records establish availability and byte identity only.

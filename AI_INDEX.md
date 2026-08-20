@@ -12,5 +12,10 @@
 - Complete package hashes: `MANIFEST.sha256`
 - Deterministic archive tools: `tools/build_release_metadata.py`,
   `tools/build_archive.py`
+- Public repository: <https://github.com/ipitchford/cyclicity-support-fusion-atlas>
+- Immutable candidate: `v0.5.0-candidate`
+- Version DOI: <https://doi.org/10.5281/zenodo.22036030>
+- Canonical reader page:
+  <https://evidencepress.org/releases/cyclicity-support-fusion-atlas/>
 
 Exploratory ODE, zero-cycle and Laurent programs are not release evidence.

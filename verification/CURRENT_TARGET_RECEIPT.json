@@ -4,8 +4,8 @@
   "date": "2026-08-20",
   "target": {
     "identity": "sha256 of sorted '<file sha256><two spaces><relative path><newline>' records",
-    "payload_content_root_sha256": "7d7b959f8e3bc63d3e3f2ae58b52ac12749c889f9e82aa849a896d53b9ba99ca",
-    "payload_file_count": 113,
+    "payload_content_root_sha256": "4301242beefd8b5815387e078796eeb4fd18042d3b58d4e43211cfa30b5b4dad",
+    "payload_file_count": 116,
     "excluded_from_content_root": [
       "MANIFEST.sha256",
       "verification/CURRENT_TARGET_RECEIPT.json"
@@ -34,7 +34,7 @@
   },
   "frozen_receipts": {
     "exact_rank_receipt_sha256": "f4eeafefced0b12deffde6595fb0c1208a853020cec2721f22a548694f5fa1b2",
-    "atlas_case_records_sha256": "d057118ff96e65665fe54d0f6cddf19cd53d963c6e5a81ec2c522855248ed438"
+    "atlas_case_records_sha256": "84305a35d174394636dd7fdda7ab455425411ad7bb605e5a1fa7b229e5aa7356"
   },
   "documents": {
     "manuscript_sha256": "ce4834576cb7ab82d80847a954364d20c73bb0c35678dfe52601cabb4176527d",

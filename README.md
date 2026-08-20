@@ -1,7 +1,7 @@
 # Inverse-Root Support and Fourier Fusion
 
-Version **0.5.0-candidate** is an additive, prepare-only successor to the
-v0.4.0 review package.
+Version **0.5.0-candidate** is an additive public successor to the v0.4.0
+review package and to the two earlier fixed-seed cyclicity releases.
 
 ## Decision
 
@@ -38,8 +38,16 @@ The command verifies the manifest, executes all retained tests under ordinary
 and optimised Python, reruns every atlas case, compares regenerated receipts
 with frozen hashes and requires semantic corruptions to fail.
 
-No public repository, DOI, Evidence Press page or deployment was created by
-this prepare-only revision.
+## Immutable identity
+
+- Repository: <https://github.com/ipitchford/cyclicity-support-fusion-atlas>
+- Candidate tag: `v0.5.0-candidate`
+- Version DOI: <https://doi.org/10.5281/zenodo.22036030>
+- Reader page: <https://evidencepress.org/releases/cyclicity-support-fusion-atlas/>
+
+These surfaces establish stable availability and byte identity. They do not
+establish independent reproduction, formal verification, specialist review,
+editorial peer review, novelty, priority or the all-degree atlas.
 
 ## Rebuild release metadata and archive
 

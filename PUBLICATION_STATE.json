@@ -1,40 +1,63 @@
 {
   "assuranceYield": {
     "findings": [],
-    "newCriticalByReview": [],
-    "stoppingReason": "prepare-only candidate completed; next meaningful assurance step is unaffiliated specialist review"
+    "newCriticalByReview": [
+      {
+        "decision": "changed",
+        "minutes": 42,
+        "p0": 0,
+        "p1": 4,
+        "rawTokens": 0,
+        "recordedAt": "2026-08-20T21:33:19.305Z",
+        "regression": "fail-closed atlas runner, semantic negative controls, current-target receipt, proof integration",
+        "reviewId": "round1",
+        "scientificBytes": "changed"
+      },
+      {
+        "decision": "changed",
+        "minutes": 19,
+        "p0": 0,
+        "p1": 0,
+        "rawTokens": 0,
+        "recordedAt": "2026-08-20T21:33:19.581Z",
+        "regression": "full clean replay and document QA",
+        "reviewId": "round2",
+        "scientificBytes": "unchanged"
+      }
+    ],
+    "stoppingReason": "review round2 found no new P0/P1 scientific issue"
   },
   "authorization": {
-    "basis": null,
-    "evidencePressDeploy": false,
-    "publicGitHub": false,
-    "zenodoDraft": false,
-    "zenodoPublish": false
+    "basis": "User instruction on 2026-08-20: Take this release through the full Evidence Press publishing workflow.",
+    "evidencePressDeploy": true,
+    "publicGitHub": true,
+    "zenodoDraft": true,
+    "zenodoPublish": true
   },
   "budget": {
-    "elapsedMinutes": 0,
-    "hardStopMinutes": 180,
-    "hardStopRawTokens": 600000,
-    "lastCheckedAt": "2026-08-20T18:22:04.535Z",
-    "profile": "prepare-only",
-    "rawTokensCurrent": 0,
-    "rawTokensStart": 0,
+    "elapsedMinutes": 91.79,
+    "hardStopMinutes": 240,
+    "hardStopRawTokens": 1000000,
+    "lastCheckedAt": "2026-08-20T23:03:24.566Z",
+    "profile": "full-candidate",
+    "rawTokensCurrent": null,
+    "rawTokensStart": null,
     "rawTokensUsed": 0,
-    "startedAt": "2026-08-20T18:22:04.535Z",
-    "state": "within-budget",
-    "targetMinutes": 120,
-    "targetRawTokens": 300000,
+    "startedAt": "2026-08-20T21:31:37.054Z",
+    "state": "consolidate",
+    "targetMinutes": 180,
+    "targetRawTokens": 500000,
     "tokenAccountingMethod": "runtime-fork-aware-counter-or-unavailable",
     "uncachedInputTokensUsed": null
   },
   "closeout": {
     "backupAudit": null,
     "durableNote": null,
-    "finalElapsedMinutes": 61,
+    "finalElapsedMinutes": null,
     "finalRawTokensUsed": null,
-    "handoff": "specialist-circulation candidate with explicit all-degree hold",
-    "handoffRequired": true,
-    "modelReviews": 2,
+    "handoff": null,
+    "handoffRequired": null,
+    "modelReviews": null,
     "modelTurns": null
   },
   "coordination": {
@@ -48,7 +71,7 @@
     "startingAgentAudit": {
       "agrees": true,
       "apiRunning": 0,
-      "at": "2026-08-20T18:22:11.674Z",
+      "at": "2026-08-20T21:33:18.882Z",
       "uiRunning": 0
     },
     "subagentsUsed": 0
@@ -77,22 +100,22 @@
   },
   "github": {
     "assets": [],
-    "ciStatus": null,
-    "mainCommit": null,
+    "ciStatus": "run 32422068071 failed only at the final frozen receipt comparison after both 1,152-case sweeps passed; v2 portability repair validated locally and awaiting a new hosted run",
+    "mainCommit": "91aa81f663d5561208dac681e011965d1e0216ec",
     "releaseUrl": null,
-    "repository": null,
+    "repository": "https://github.com/ipitchford/cyclicity-support-fusion-atlas",
     "tag": null,
     "tagPayloadCommit": null
   },
   "integrityGate": {
-    "citations": "pass-with-priority-boundary",
-    "claimBoundary": "pass: universal core and degree-20 finite atlas separated from all-degree conjecture",
-    "decision": "PASS_WITH_NOTES for specialist circulation; prepare-only",
-    "licensing": "pass",
-    "manifest": "pass: complete current-target manifest",
-    "negativeControls": "pass: eight semantic mutations rejected in ordinary and optimized modes",
-    "pdf": "pass: 32 tagged A4 pages, folios, 26 bookmarks, visual sample and qpdf check",
-    "replay": "pass: clean extracted archive, ordinary plus optimized, 1152 cases each, frozen receipt parity",
+    "citations": null,
+    "claimBoundary": null,
+    "decision": null,
+    "licensing": null,
+    "manifest": null,
+    "negativeControls": null,
+    "pdf": null,
+    "replay": null,
     "unresolved": []
   },
   "media": {
@@ -105,82 +128,91 @@
   },
   "phases": [
     {
-      "completedAt": "2026-08-20T18:22:11Z",
-      "evidence": ["source archives inventoried", "additive v0.5.0 worktree isolated"],
+      "completedAt": "2026-08-20T21:33:18.980Z",
+      "evidence": [
+        "source archive rehashed; credentials live; dirty Evidence Press checkout isolated; no public target repository exists"
+      ],
       "id": 0,
       "name": "recover-and-isolate",
-      "startedAt": "2026-08-20T18:22:04Z",
-      "status": "completed"
+      "startedAt": "2026-08-20T21:33:18.980Z",
+      "status": "passed"
     },
     {
-      "completedAt": "2026-08-20T19:23:18Z",
-      "evidence": ["round-one closure", "clean full replay", "confirmation re-review", "document QA"],
+      "completedAt": "2026-08-20T21:33:19.082Z",
+      "evidence": [
+        "one substantive review and one confirmation review complete; clean extracted normal and optimized replay passed 1,152 atlas cases; PDF and manifest gates passed"
+      ],
       "id": 1,
       "name": "integrity-gate",
-      "startedAt": "2026-08-20T18:22:11Z",
-      "status": "completed"
+      "startedAt": "2026-08-20T21:33:19.082Z",
+      "status": "passed"
     },
     {
       "completedAt": null,
-      "evidence": ["not authorised by prepare-only route"],
+      "evidence": [
+        "isolated research repository prepared for public GitHub creation",
+        "public repository created at https://github.com/ipitchford/cyclicity-support-fusion-atlas; main 91aa81f663d5561208dac681e011965d1e0216ec; CI run 32422068071 queued",
+        "initial hosted replay completed all 1,152 cases in ordinary and optimized modes with zero anomalies and zero missing certificates; final receipt hash differed solely because the v1 receipt embedded Python patch 3.14.6 versus runner 3.14.7",
+        "receipt schema v2 records Python 3.14 series and exact SymPy 1.14.0; portability regression passed and a full 1,152-case local regeneration matched frozen SHA-256 84305a35d174394636dd7fdda7ab455425411ad7bb605e5a1fa7b229e5aa7356 byte-for-byte"
+      ],
       "id": 2,
       "name": "public-research-repository",
-      "startedAt": null,
-      "status": "skipped"
+      "startedAt": "2026-08-20T21:33:19.670Z",
+      "status": "in-progress"
     },
     {
       "completedAt": null,
-      "evidence": ["not authorised by prepare-only route"],
+      "evidence": [],
       "id": 3,
       "name": "github-zenodo-identity",
       "startedAt": null,
-      "status": "skipped"
+      "status": "pending"
     },
     {
       "completedAt": null,
-      "evidence": ["not authorised by prepare-only route"],
+      "evidence": [],
       "id": 4,
       "name": "evidence-press-authoring",
       "startedAt": null,
-      "status": "skipped"
+      "status": "pending"
     },
     {
       "completedAt": null,
-      "evidence": ["not requested; archival paper assets prepared locally"],
+      "evidence": [],
       "id": 5,
       "name": "communication-assets",
       "startedAt": null,
-      "status": "skipped"
+      "status": "pending"
     },
     {
       "completedAt": null,
-      "evidence": ["local complete manifest and release gate used; no public CI authorised"],
+      "evidence": [],
       "id": 6,
       "name": "composite-seal-and-ci",
       "startedAt": null,
-      "status": "skipped"
+      "status": "pending"
     },
     {
       "completedAt": null,
-      "evidence": ["no deployment authorised"],
+      "evidence": [],
       "id": 7,
       "name": "guarded-deploy-and-readback",
       "startedAt": null,
-      "status": "skipped"
+      "status": "pending"
     },
     {
       "completedAt": null,
-      "evidence": ["local archive and binding receipt produced; no public ledger authorised"],
+      "evidence": [],
       "id": 8,
       "name": "publication-ledger-and-closeout",
       "startedAt": null,
-      "status": "skipped"
+      "status": "pending"
     }
   ],
   "project": {
     "slug": "cyclicity-support-fusion-atlas",
     "sourcePath": ".",
-    "sourceSha256": null,
+    "sourceSha256": "8787f9a0ca43e82899c59c2ae7ae044e8daba294f96e936bf42cf98b925c875f",
     "status": "unrefereed-candidate",
     "title": "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods"
   },
@@ -188,16 +220,18 @@
     "confirmationReviewsUsed": 1,
     "entries": [
       {
-        "round": 1,
-        "type": "substantive",
-        "path": "reviews/ROUND1_FULL_REVIEW.md",
-        "decision": "major-revision"
+        "id": "round1",
+        "kind": "substantive",
+        "question": "Does the complete supplied record support field-facing publication under the stated theorem and finite-atlas boundaries?",
+        "recordedAt": "2026-08-20T21:33:19.190Z",
+        "result": "Major revision; bounded scientific and release-contract repairs required"
       },
       {
-        "round": 2,
-        "type": "confirmation",
-        "path": "reviews/CONFIRMATION_REVIEW_R2.md",
-        "decision": "accept-for-specialist-circulation-with-notes"
+        "id": "round2",
+        "kind": "confirmation",
+        "question": "Did the repaired frozen target close the round-one defects without strengthening the all-degree atlas?",
+        "recordedAt": "2026-08-20T21:33:19.468Z",
+        "result": "Accept for specialist circulation with notes; all-degree atlas remains conjectural"
       }
     ],
     "exceptions": [],
@@ -205,17 +239,17 @@
     "maxSubstantiveReviews": 1,
     "substantiveReviewsUsed": 1
   },
-  "route": "prepare-only",
+  "route": "full-candidate",
   "schemaVersion": "2.0",
-  "updatedAt": "2026-08-20T19:23:18Z",
+  "updatedAt": "2026-08-20T23:03:24.568Z",
   "zenodo": {
     "assetsByteIdentical": null,
-    "conceptDoi": null,
-    "depositionId": null,
+    "conceptDoi": "10.5281/zenodo.22036029",
+    "depositionId": 22036030,
     "instance": "https://zenodo.org",
     "recordId": null,
-    "recordUrl": null,
-    "status": null,
-    "versionDoi": null
+    "recordUrl": "https://zenodo.org/records/22036030",
+    "status": "draft-doi-reserved",
+    "versionDoi": "10.5281/zenodo.22036030"
   }
 }

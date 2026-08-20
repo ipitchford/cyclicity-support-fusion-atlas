@@ -31285,9 +31285,9 @@
       }
     }
   ],
-  "schema": "cyclicity-atlas-case-records-v1",
+  "schema": "cyclicity-atlas-case-records-v2",
   "software": {
-    "python": "3.14.6",
+    "python_series": "3.14",
     "sympy": "1.14.0"
   },
   "summary": {

@@ -8,7 +8,26 @@
   "publication_date": "2026-08-20",
   "license": "cc-zero",
   "access_right": "open",
+  "keywords": [
+    "polynomial exponential periods",
+    "inverse-root support",
+    "cyclic rank",
+    "polynomial decomposition",
+    "Ritt theory",
+    "Fourier fusion",
+    "computer-assisted classification"
+  ],
   "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/cyclicity-support-fusion-atlas",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/cyclicity-support-fusion-atlas/",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
     {
       "identifier": "https://doi.org/10.5281/zenodo.21853682",
       "relation": "isSupplementTo",

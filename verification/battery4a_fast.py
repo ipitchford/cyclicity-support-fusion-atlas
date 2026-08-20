@@ -2,7 +2,6 @@ import argparse
 import hashlib
 import itertools
 import json
-import platform
 from pathlib import Path
 import random
 import sys
@@ -15,6 +14,24 @@ from lib import (inverse_series_F, pcompose, monoxp, poly_from_dict, dickson,
                  pdeg, ptrim, P61)
 
 rng = random.Random(424242)
+
+
+def software_identity(version_info=None, sympy_version=None):
+    """Return the stable software identity carried by semantic receipts.
+
+    Python patch releases do not change the supported receipt contract, so the
+    receipt records the interpreter series rather than a machine-specific patch
+    version. SymPy remains exact because its symbolic representation is part of
+    the canonicalization boundary and the dependency is pinned.
+    """
+    if version_info is None:
+        version_info = sys.version_info
+    if sympy_version is None:
+        sympy_version = sp.__version__
+    return {
+        "python_series": f"{version_info[0]}.{version_info[1]}",
+        "sympy": sympy_version,
+    }
 
 
 def expression_digest(expressions):
@@ -275,12 +292,9 @@ if __name__ == "__main__":
         r = run(args.dmin, args.dmax)
     bad = failure_count(r)
     receipt = {
-        "schema": "cyclicity-atlas-case-records-v1",
+        "schema": "cyclicity-atlas-case-records-v2",
         "range": [args.dmin, args.dmax],
-        "software": {
-            "python": platform.python_version(),
-            "sympy": sp.__version__,
-        },
+        "software": software_identity(),
         "summary": {
             "cases": len(r["records"]),
             "vacuous_full_family": r["vacuous_ok"],

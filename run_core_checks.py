@@ -49,6 +49,11 @@ def replay_suite(python_argv: list[str], suffix: str, tmp: Path, full: bool) -> 
         ("sparse family-blind search", prefix + ["battery4c.py"], VERIFICATION),
         ("rank-preserving extension loci", prefix + ["battery4d.py"], VERIFICATION),
         ("semantic negative controls", prefix + ["negative_controls.py"], VERIFICATION),
+        (
+            "receipt portability controls",
+            prefix + ["test_receipt_portability.py"],
+            VERIFICATION,
+        ),
     ]
     for label, argv, cwd in commands:
         run(f"{label} [{suffix}]", argv, cwd)

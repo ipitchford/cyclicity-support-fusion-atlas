@@ -2,6 +2,9 @@
 
 Scholarly creator: **Anonymous**
 
+Repository maintainer and Evidence Press publisher: **Ian Pitchford**. This is
+an operational and publication role, not scholarly authorship.
+
 This additive v0.5.0 candidate was assembled on 20 August 2026 from:
 
 - the two immutable Evidence Press predecessor releases identified in
@@ -19,3 +22,8 @@ This additive v0.5.0 candidate was assembled on 20 August 2026 from:
 
 Historical files are preserved as evidence. They are not silently rewritten
 to match the current claim ceiling.
+
+The public identity chain is the GitHub repository and immutable
+`v0.5.0-candidate` tag, Zenodo version DOI `10.5281/zenodo.22036030`, and the
+canonical Evidence Press reader page. The pre-publication workflow state is
+retained under `source-history/PREPUBLICATION_STATE.json`.

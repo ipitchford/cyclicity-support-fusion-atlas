@@ -2,5 +2,5 @@
   "schema": "cyclicity-release-expectations-v1",
   "version": "0.5.0-candidate",
   "exact_rank_receipt_sha256": "f4eeafefced0b12deffde6595fb0c1208a853020cec2721f22a548694f5fa1b2",
-  "atlas_case_records_sha256": "d057118ff96e65665fe54d0f6cddf19cd53d963c6e5a81ec2c522855248ed438"
+  "atlas_case_records_sha256": "84305a35d174394636dd7fdda7ab455425411ad7bb605e5a1fa7b229e5aa7356"
 }

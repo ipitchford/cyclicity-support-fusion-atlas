@@ -1,0 +1,158 @@
+{
+  "schema": "independent-verification-receipt-v1",
+  "target_bundle": "cyclicity-complete-session-bundle-2026-08-19",
+  "target_sha256": "fddde1b94e79fc0737c0392407783e6073ca2362864b2effb1f073cc6f103801",
+  "verification_dates": [
+    "2026-08-19",
+    "2026-08-20"
+  ],
+  "verifier": "independent re-implementation and audit (Claude, Anthropic), commissioned via Evidence Press Hermes pipeline",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "prime_backends": [
+      2305843009213693951,
+      2305843009213693921
+    ],
+    "exact_backend": "fractions.Fraction / QQ"
+  },
+  "method_independence": "support via Newton series reversion; rank via twisted de Rham Krylov reduction; both written without reference to bundle code",
+  "batteries": [
+    {
+      "id": "1",
+      "scope": "central identity q=|Sigma| cross-validation",
+      "counts": {
+        "comparisons": 278,
+        "controls_exact": 12,
+        "family_instances": 26,
+        "random": 240
+      },
+      "mismatches": 0,
+      "outcome": "pass",
+      "log": "out1.log"
+    },
+    {
+      "id": "2",
+      "scope": "deep-order supports; exceptional class-4 vanishing to t^-239; weight-monomial certification",
+      "counts": {
+        "parameter_values": 210
+      },
+      "outcome": "pass",
+      "log": "out2.log"
+    },
+    {
+      "id": "3",
+      "scope": "fusion formula 8.10 all block subsets; 8.12 heredity; 8.13; 8.6/8.7",
+      "counts": {
+        "decompositions": 10,
+        "heredity_pairs": 200,
+        "min_spectral_gap": "1e13"
+      },
+      "outcome": "pass",
+      "log": "out3.log"
+    },
+    {
+      "id": "4A",
+      "scope": "exhaustive Groebner sweep, all (degree, support) cases, degrees 5-20",
+      "counts": {
+        "cases": 1152,
+        "vacuity_certificates": true,
+        "power_only_certificates": true,
+        "union_certificates": true,
+        "anomalies": 0,
+        "uncertified": 0
+      },
+      "per_degree_case_formula": "1+(d-2)+C(d-2,2)",
+      "outcome": "pass",
+      "logs": [
+        "out5_14.log",
+        "out15_16.log",
+        "out17_18.log",
+        "out19.log",
+        "out20.log"
+      ]
+    },
+    {
+      "id": "4B",
+      "scope": "quartic-lift kill-class systems A(x^m+b), gamma!=0 saturation, m=3..7 (degrees 12-28)",
+      "results": {
+        "m=3": "kill-4 nonempty, contains collision orbit (control point exact, support {1,7,10} to depth 240); exactness settled by 4A at d=12",
+        "m=4..7": "all kill-class varieties EMPTY after saturation (truncation-robust)"
+      },
+      "conclusion": "indecomposable quartic lifts attain rank 3 only for m|3, confirmed 2<=m<=7; first unverified degree 32",
+      "outcome": "pass",
+      "log": "out4b.log"
+    },
+    {
+      "id": "4C",
+      "scope": "mass search binomials/trinomials degrees 15-24 + impostor composites + bundle pytest",
+      "counts": {
+        "screened": 56610,
+        "hits": 378,
+        "unclassified": 0,
+        "anomalies": 0,
+        "census": "72 cubicO per d=0 mod 3 (36+18+18), 18 quadO per even d, 0 at prime degrees"
+      },
+      "outcome": "pass",
+      "log": "out4c.log"
+    },
+    {
+      "id": "4D",
+      "scope": "extension-preservation loci by exact Groebner elimination; strata boundary sweeps (300 points)",
+      "results": "all loci exactly Theorem 9.1: empty/point/aligned-chain as predicted; Dickson cube recovers (r1,r2)=(-3,0)=D_3(y,1)",
+      "outcome": "pass",
+      "log": "out4d.log"
+    }
+  ],
+  "receipts_replayed": {
+    "verify_atlas.py": "31b35e53ddbfdf7541609991331413e06432ceed7d913bb2150331e32bfcffaf",
+    "tests/test_fusion_support.py": "pass"
+  },
+  "claims": {
+    "C1": {
+      "verdict": "proved_and_verified",
+      "p_true": 0.99
+    },
+    "C2": {
+      "verdict": "proved",
+      "p_true": 0.99
+    },
+    "C3": {
+      "verdict": "not_audited",
+      "p_true": null
+    },
+    "C4": {
+      "verdict": "proved_and_verified",
+      "p_true": 0.99
+    },
+    "C5_C6": {
+      "verdict": "partially_verified",
+      "p_true": 0.95
+    },
+    "C7": {
+      "verdict": "verified_d_le_20_general_proof_gapped",
+      "p_true_d_le_20": 0.98,
+      "p_true_all_d": 0.94,
+      "gap": "section 7.3 identity (7.12) derivation circular; conclusion confirmed for lift moduli 2<=m<=7"
+    },
+    "C8": {
+      "verdict": "verified_representative_loci",
+      "p_true": 0.95
+    },
+    "C9": {
+      "verdict": "replayed_pass",
+      "p_true": 0.99
+    },
+    "C10": {
+      "verdict": "out_of_scope",
+      "p_true": null
+    }
+  },
+  "structural_assertion": "class-0 support coefficient must vanish (centred trace theorem 3.8): enforced live in ~1600 support computations, zero firings",
+  "truncation_semantics": "emptiness certificates truncation-robust unconditionally; positive certificates close for d<=20 because any true rank<=3 polynomial satisfies the truncated conditions and certified varieties' member supports are independently known",
+  "recommended_repairs": [
+    "prove (7.12) directly from the fibre identity or reroute via certificates for d<=20 and m<=7 with a fresh argument for m>=8",
+    "add two-line heredity proof of Sigma((x^4+ax)^3)={1,7,10}",
+    "record certificate inventory in next atlas version"
+  ]
+}

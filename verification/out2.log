@@ -1,0 +1,18 @@
+=== Exceptional collision (x^4+ax)^3, d=12: claimed Sigma={1,7,10}; class 4 must vanish identically ===
+PASS  (x^4+ax)^3 mod P61                 depth N=240  classes realised [1, 7, 10]  allowed [1, 7, 10]  #params=80
+PASS  (x^4+ax)^3 mod P2                  depth N=240  classes realised [1, 7, 10]  allowed [1, 7, 10]  #params=10
+PASS  (x^4+x)^3 exact Fractions to t^-179: [1, 7, 10]
+
+Note: for this family a_k is a MONOMIAL in a (weight(a)=3, weight(a_k)=1-k),
+so vanishing at one generic parameter certifies vanishing for all a != 0, per coefficient.
+
+=== Other one-parameter families, deep order ===
+PASS  D_11(x,a)                          depth N=220  classes realised [1, 10]  allowed [1, 10]  #params=40
+PASS  (x^9+bx^3)^2                       depth N=216  classes realised [1, 7, 13]  allowed [1, 7, 13]  #params=40
+PASS  (x^6+bx^2)^2                       depth N=240  classes realised [1, 5, 9]  allowed [1, 5, 9]  #params=40
+PASS  (x^m+b)^3 m=4                      depth N=240  classes realised [1, 5, 9]  allowed [1, 5, 9]  #params=40
+
+=== Two-parameter cubic-over-power, deep order, random (A,B) ===
+PASS  cubic-over-power 40 random (A,B), m in {2,3,4}, depth 20d
+
+BATTERY 2: ALL PASS   (54.6s)

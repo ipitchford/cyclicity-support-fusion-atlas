@@ -1,0 +1,111 @@
+{
+  "schema": "evidence-press-mathematics-claims-v2",
+  "title": "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods",
+  "version": "0.5.0-candidate",
+  "status": "unrefereed-theorem-candidate",
+  "claims": [
+    {
+      "id": "T1",
+      "statement": "For every complex polynomial P of degree at least two, q(P,dx)=|Sigma(P)|.",
+      "scope": "all complex polynomial phases of degree at least two",
+      "locator": "MANUSCRIPT.md, Theorem 5.2",
+      "basis": ["formal-moment isomorphism", "active Kummer channels", "falling-factorial Vandermonde"],
+      "gate": ["tests/test_fusion_support.py", "cleanroom/fraction_audit.py", "verification/battery1.py", "verification/battery2.py"],
+      "status": "proved-in-unrefereed-candidate",
+      "external_assurance": false
+    },
+    {
+      "id": "T2",
+      "statement": "|Sigma(P)| equals the dimension of the reduced constant inverse-root span.",
+      "scope": "all complex polynomial phases of degree at least two",
+      "locator": "MANUSCRIPT.md, Theorem 6.1",
+      "basis": ["discrete Fourier transform of inverse branches", "disjoint Laurent support"],
+      "gate": ["tests/test_fusion_support.py", "verification/battery1.py"],
+      "status": "proved-in-unrefereed-candidate",
+      "external_assurance": false
+    },
+    {
+      "id": "T3",
+      "statement": "The fixed sectorial rapid-decay period matrix has the Fourier-Gamma determinant asymptotic and is invertible on the sector.",
+      "scope": "monic centred polynomial phases on the sectors specified in Section 7",
+      "locator": "MANUSCRIPT.md, Theorem 7.3 and Corollary 7.4",
+      "basis": ["uniform rapid decay", "dominated convergence", "Vandermonde determinant", "first-order determinant equation"],
+      "gate": ["cleanroom/period_matrix_spotcheck.py"],
+      "status": "proved-in-unrefereed-candidate",
+      "external_assurance": false
+    },
+    {
+      "id": "T4",
+      "statement": "For every actual decomposition P=R composed with Q, every block-sum dimension is the stated sum of Fourier-submatrix ranks.",
+      "scope": "all complex polynomial decompositions",
+      "locator": "MANUSCRIPT.md, Theorem 8.2",
+      "basis": ["support fibres modulo the right-factor degree", "discrete Fourier separation of block roots"],
+      "gate": ["tests/test_fusion_support.py", "verification/battery3.py"],
+      "status": "proved-in-unrefereed-candidate",
+      "external_assurance": false
+    },
+    {
+      "id": "T5",
+      "statement": "Equality fusion gives a canonical coarser polynomial right factor, unique up to affine change.",
+      "scope": "all actual complex polynomial decompositions",
+      "locator": "MANUSCRIPT.md, Theorem 9.2",
+      "basis": ["monodromy-invariant block system", "intermediate fields", "Luroth theorem", "one-pole polynomiality"],
+      "gate": ["tests/test_fusion_support.py", "cleanroom/fraction_audit.py"],
+      "status": "proved-in-unrefereed-candidate",
+      "external_assurance": false
+    },
+    {
+      "id": "T6",
+      "statement": "At global rank at most three, adjacent Ritt moves have exactly the eleven unordered rank diamonds displayed in Theorem 9.5.",
+      "scope": "rank-at-most-three actual adjacent Ritt moves",
+      "locator": "MANUSCRIPT.md, Theorems 9.4 and 9.5",
+      "basis": ["Chinese-remainder fibre-product constraint", "finite partition analysis"],
+      "gate": ["cleanroom/fraction_audit.py", "tests/test_fusion_support.py"],
+      "status": "proved-in-unrefereed-candidate",
+      "external_assurance": false
+    },
+    {
+      "id": "F1",
+      "statement": "The affine families in Theorem 13.1 exhaust q(P,dx)<=3 for degrees two through twenty.",
+      "scope": "2<=degree(P)<=20",
+      "locator": "MANUSCRIPT.md, Theorem 13.1",
+      "basis": ["direct degrees two through four", "1152 exact-rational Groebner case records", "complete support of positive families"],
+      "gate": ["run_core_checks.py", "receipts/atlas_case_records_d5_20.json", "RELEASE_EXPECTATIONS.json", "verification/negative_controls.py"],
+      "status": "finite-computer-assisted-theorem-candidate",
+      "trust_boundary": ["inverse-series generator", "source-to-encoding bridge", "case generator", "Python", "SymPy exact rational Groebner arithmetic"],
+      "external_assurance": false
+    },
+    {
+      "id": "C1",
+      "statement": "The families in Theorem 13.1 exhaust q(P,dx)<=3 in every degree.",
+      "scope": "all degrees",
+      "locator": "MANUSCRIPT.md, Conjecture 13.2",
+      "basis": ["finite theorem through degree twenty", "quartic lift elimination through modulus seven"],
+      "status": "conjecture",
+      "open_obligation": "non-circular quartic/cubic twisted-factor descent or an alternative monodromy proof",
+      "first_uncovered_case": "quartic lift modulus 8, total degree 32"
+    },
+    {
+      "id": "A1",
+      "statement": "For a generic functional on the complete rapid-decay period system, the minimal scalar ODE order is |Sigma(P)|.",
+      "scope": "generic functionals; particular cycles may annihilate active channels",
+      "locator": "MANUSCRIPT.md, Section 14.1",
+      "basis": ["T1", "T3", "cyclic-module duality"],
+      "status": "corollary-with-genericity-boundary"
+    },
+    {
+      "id": "D1",
+      "statement": "Fourier channels suggest exact tests for selected zero-cycle identities.",
+      "scope": "research direction only",
+      "locator": "MANUSCRIPT.md, Section 14.2",
+      "status": "exploratory-non-gated"
+    },
+    {
+      "id": "D2",
+      "statement": "Local inverse-series channels may support Laurent-polynomial moment classifications.",
+      "scope": "research direction only",
+      "locator": "MANUSCRIPT.md, Section 14.3",
+      "status": "exploratory-non-gated"
+    }
+  ]
+}

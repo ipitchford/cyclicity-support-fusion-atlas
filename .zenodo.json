@@ -1,0 +1,23 @@
+{
+  "title": "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [{"name": "Anonymous"}],
+  "description": "Unrefereed theorem candidate. Universal inverse-support and Fourier-fusion calculus, with a finite exact-arithmetic low-rank atlas through degree twenty. The all-degree atlas remains conjectural.",
+  "version": "0.5.0-candidate",
+  "publication_date": "2026-08-20",
+  "license": "cc-zero",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.21853682",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.21864884",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    }
+  ]
+}

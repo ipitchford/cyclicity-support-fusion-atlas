@@ -1,0 +1,64 @@
+{
+  "schema": "cyclicity-current-target-receipt-v1",
+  "version": "0.5.0-candidate",
+  "date": "2026-08-20",
+  "target": {
+    "identity": "sha256 of sorted '<file sha256><two spaces><relative path><newline>' records",
+    "payload_content_root_sha256": "7d7b959f8e3bc63d3e3f2ae58b52ac12749c889f9e82aa849a896d53b9ba99ca",
+    "payload_file_count": 113,
+    "excluded_from_content_root": [
+      "MANIFEST.sha256",
+      "verification/CURRENT_TARGET_RECEIPT.json"
+    ]
+  },
+  "claim_status": {
+    "T1-T6": "proved-in-unrefereed-candidate",
+    "F1": "finite-computer-assisted-theorem-candidate-through-degree-20",
+    "C1": "conjecture-all-degrees",
+    "A1": "generic-corollary",
+    "D1-D2": "exploratory-non-gated"
+  },
+  "release_gate": {
+    "command": "python3 run_core_checks.py",
+    "required_modes": [
+      "ordinary Python",
+      "python -O"
+    ],
+    "atlas_cases": 1152,
+    "fail_closed_on": [
+      "anomaly",
+      "missing certificate",
+      "digest mismatch",
+      "unlisted file"
+    ]
+  },
+  "frozen_receipts": {
+    "exact_rank_receipt_sha256": "f4eeafefced0b12deffde6595fb0c1208a853020cec2721f22a548694f5fa1b2",
+    "atlas_case_records_sha256": "d057118ff96e65665fe54d0f6cddf19cd53d963c6e5a81ec2c522855248ed438"
+  },
+  "documents": {
+    "manuscript_sha256": "ce4834576cb7ab82d80847a954364d20c73bb0c35678dfe52601cabb4176527d",
+    "pdf_sha256": "e56b4d2a9000a89174b5e3a580ff44c330a83232a9c40333976b917147aa1479",
+    "docx_sha256": "6b6bb1378e76b20723a68ef0ff60c83f7f85fc708da719b05c6667ab746293d2",
+    "html_sha256": "da1902befd19017a1d52cafd576d57d39bc2c5ef4b8802a4b5a116a787a08db9"
+  },
+  "lineage": [
+    {
+      "id": "EP1",
+      "url": "https://evidencepress.org/releases/cyclicity-loci-exponential-periods/",
+      "doi": "10.5281/zenodo.21853682"
+    },
+    {
+      "id": "EP2",
+      "url": "https://evidencepress.org/releases/cyclicity-root-span-low-rank/",
+      "doi": "10.5281/zenodo.21864884"
+    }
+  ],
+  "assurance_ceiling": [
+    "no unaffiliated specialist review",
+    "no proof-assistant formalisation",
+    "no second-CAS replay of the complete atlas",
+    "all-degree atlas remains open"
+  ],
+  "status": "pass-with-notes-for-specialist-circulation"
+}

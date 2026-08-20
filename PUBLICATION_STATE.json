@@ -1,0 +1,221 @@
+{
+  "assuranceYield": {
+    "findings": [],
+    "newCriticalByReview": [],
+    "stoppingReason": "prepare-only candidate completed; next meaningful assurance step is unaffiliated specialist review"
+  },
+  "authorization": {
+    "basis": null,
+    "evidencePressDeploy": false,
+    "publicGitHub": false,
+    "zenodoDraft": false,
+    "zenodoPublish": false
+  },
+  "budget": {
+    "elapsedMinutes": 0,
+    "hardStopMinutes": 180,
+    "hardStopRawTokens": 600000,
+    "lastCheckedAt": "2026-08-20T18:22:04.535Z",
+    "profile": "prepare-only",
+    "rawTokensCurrent": 0,
+    "rawTokensStart": 0,
+    "rawTokensUsed": 0,
+    "startedAt": "2026-08-20T18:22:04.535Z",
+    "state": "within-budget",
+    "targetMinutes": 120,
+    "targetRawTokens": 300000,
+    "tokenAccountingMethod": "runtime-fork-aware-counter-or-unavailable",
+    "uncachedInputTokensUsed": null
+  },
+  "closeout": {
+    "backupAudit": null,
+    "durableNote": null,
+    "finalElapsedMinutes": 61,
+    "finalRawTokensUsed": null,
+    "handoff": "specialist-circulation candidate with explicit all-degree hold",
+    "handoffRequired": true,
+    "modelReviews": 2,
+    "modelTurns": null
+  },
+  "coordination": {
+    "currentPhaseModelTurns": 1,
+    "endingAgentAudit": null,
+    "latestHandoff": null,
+    "maxModelTurnsPerPhase": 50,
+    "maxSubagents": 2,
+    "orphanedUiAgents": [],
+    "phaseTaskIds": [],
+    "startingAgentAudit": {
+      "agrees": true,
+      "apiRunning": 0,
+      "at": "2026-08-20T18:22:11.674Z",
+      "uiRunning": 0
+    },
+    "subagentsUsed": 0
+  },
+  "evidencePress": {
+    "branch": null,
+    "browserQa": null,
+    "canonicalUrl": null,
+    "checkout": null,
+    "contentCommitA": null,
+    "deploymentUrl": null,
+    "ledgerCommitB": null,
+    "mergedMainCommit": null,
+    "pageStructure": {
+      "contract": "canonical",
+      "exceptions": [],
+      "reason": null
+    },
+    "paperJsonUrl": null,
+    "protocolReadback": null,
+    "publicationIntegrity": null,
+    "pullRequests": [],
+    "readbackCommitC": null,
+    "readbackLedgerCommitD": null,
+    "repository": "https://github.com/ipitchford/evidence-press-site"
+  },
+  "github": {
+    "assets": [],
+    "ciStatus": null,
+    "mainCommit": null,
+    "releaseUrl": null,
+    "repository": null,
+    "tag": null,
+    "tagPayloadCommit": null
+  },
+  "integrityGate": {
+    "citations": "pass-with-priority-boundary",
+    "claimBoundary": "pass: universal core and degree-20 finite atlas separated from all-degree conjecture",
+    "decision": "PASS_WITH_NOTES for specialist circulation; prepare-only",
+    "licensing": "pass",
+    "manifest": "pass: complete current-target manifest",
+    "negativeControls": "pass: eight semantic mutations rejected in ordinary and optimized modes",
+    "pdf": "pass: 32 tagged A4 pages, folios, 26 bookmarks, visual sample and qpdf check",
+    "replay": "pass: clean extracted archive, ordinary plus optimized, 1152 cases each, frozen receipt parity",
+    "unresolved": []
+  },
+  "media": {
+    "art": null,
+    "audio": null,
+    "ogImage": null,
+    "transcript": null,
+    "youtubeThumbnail": null,
+    "youtubeVideo": null
+  },
+  "phases": [
+    {
+      "completedAt": "2026-08-20T18:22:11Z",
+      "evidence": ["source archives inventoried", "additive v0.5.0 worktree isolated"],
+      "id": 0,
+      "name": "recover-and-isolate",
+      "startedAt": "2026-08-20T18:22:04Z",
+      "status": "completed"
+    },
+    {
+      "completedAt": "2026-08-20T19:23:18Z",
+      "evidence": ["round-one closure", "clean full replay", "confirmation re-review", "document QA"],
+      "id": 1,
+      "name": "integrity-gate",
+      "startedAt": "2026-08-20T18:22:11Z",
+      "status": "completed"
+    },
+    {
+      "completedAt": null,
+      "evidence": ["not authorised by prepare-only route"],
+      "id": 2,
+      "name": "public-research-repository",
+      "startedAt": null,
+      "status": "skipped"
+    },
+    {
+      "completedAt": null,
+      "evidence": ["not authorised by prepare-only route"],
+      "id": 3,
+      "name": "github-zenodo-identity",
+      "startedAt": null,
+      "status": "skipped"
+    },
+    {
+      "completedAt": null,
+      "evidence": ["not authorised by prepare-only route"],
+      "id": 4,
+      "name": "evidence-press-authoring",
+      "startedAt": null,
+      "status": "skipped"
+    },
+    {
+      "completedAt": null,
+      "evidence": ["not requested; archival paper assets prepared locally"],
+      "id": 5,
+      "name": "communication-assets",
+      "startedAt": null,
+      "status": "skipped"
+    },
+    {
+      "completedAt": null,
+      "evidence": ["local complete manifest and release gate used; no public CI authorised"],
+      "id": 6,
+      "name": "composite-seal-and-ci",
+      "startedAt": null,
+      "status": "skipped"
+    },
+    {
+      "completedAt": null,
+      "evidence": ["no deployment authorised"],
+      "id": 7,
+      "name": "guarded-deploy-and-readback",
+      "startedAt": null,
+      "status": "skipped"
+    },
+    {
+      "completedAt": null,
+      "evidence": ["local archive and binding receipt produced; no public ledger authorised"],
+      "id": 8,
+      "name": "publication-ledger-and-closeout",
+      "startedAt": null,
+      "status": "skipped"
+    }
+  ],
+  "project": {
+    "slug": "cyclicity-support-fusion-atlas",
+    "sourcePath": ".",
+    "sourceSha256": null,
+    "status": "unrefereed-candidate",
+    "title": "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods"
+  },
+  "reviewPolicy": {
+    "confirmationReviewsUsed": 1,
+    "entries": [
+      {
+        "round": 1,
+        "type": "substantive",
+        "path": "reviews/ROUND1_FULL_REVIEW.md",
+        "decision": "major-revision"
+      },
+      {
+        "round": 2,
+        "type": "confirmation",
+        "path": "reviews/CONFIRMATION_REVIEW_R2.md",
+        "decision": "accept-for-specialist-circulation-with-notes"
+      }
+    ],
+    "exceptions": [],
+    "maxConfirmationReviews": 1,
+    "maxSubstantiveReviews": 1,
+    "substantiveReviewsUsed": 1
+  },
+  "route": "prepare-only",
+  "schemaVersion": "2.0",
+  "updatedAt": "2026-08-20T19:23:18Z",
+  "zenodo": {
+    "assetsByteIdentical": null,
+    "conceptDoi": null,
+    "depositionId": null,
+    "instance": "https://zenodo.org",
+    "recordId": null,
+    "recordUrl": null,
+    "status": null,
+    "versionDoi": null
+  }
+}

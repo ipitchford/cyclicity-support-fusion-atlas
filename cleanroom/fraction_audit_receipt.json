@@ -1,0 +1,787 @@
+{
+  "composition_projection_cases": [
+    {
+      "degree_P": 6,
+      "degree_Q": 3,
+      "name": "(y2+y)o x3",
+      "projected_support_mod_Q_degree": [
+        1
+      ],
+      "q_P": 2,
+      "q_Q": 1,
+      "support_P": [
+        1,
+        4
+      ]
+    },
+    {
+      "degree_P": 12,
+      "degree_Q": 4,
+      "name": "y3 o (x4+x)",
+      "projected_support_mod_Q_degree": [
+        1,
+        2,
+        3
+      ],
+      "q_P": 3,
+      "q_Q": 3,
+      "support_P": [
+        1,
+        7,
+        10
+      ]
+    },
+    {
+      "degree_P": 6,
+      "degree_Q": 3,
+      "name": "y2 o (x3+x)",
+      "projected_support_mod_Q_degree": [
+        1,
+        2
+      ],
+      "q_P": 2,
+      "q_Q": 2,
+      "support_P": [
+        1,
+        5
+      ]
+    },
+    {
+      "degree_P": 6,
+      "degree_Q": 2,
+      "name": "(y3+y)o x2",
+      "projected_support_mod_Q_degree": [
+        1
+      ],
+      "q_P": 3,
+      "q_Q": 1,
+      "support_P": [
+        1,
+        3,
+        5
+      ]
+    }
+  ],
+  "independence": "No import from the production module and no computer-algebra library; exact Fraction arithmetic only.",
+  "limitations": [
+    "The cyclic rank is sampled at four rational nonzero s-values and the maximum is taken; this is a fault control, not a symbolic proof over Q(s).",
+    "Inverse support is expanded through 8d coefficients; theorem proofs, not finite truncation, establish exhaustiveness.",
+    "Random cases are deterministic and producer-run, not external reproduction."
+  ],
+  "named_cases": [
+    {
+      "degree": 7,
+      "name": "power_7",
+      "sample_ranks": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "5": 1
+      },
+      "sampled_q": 1,
+      "support": [
+        1
+      ],
+      "support_witness_n": {
+        "1": 0
+      }
+    },
+    {
+      "degree": 7,
+      "name": "chebyshev_7",
+      "sample_ranks": {
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "5": 2
+      },
+      "sampled_q": 2,
+      "support": [
+        1,
+        6
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "6": 2
+      }
+    },
+    {
+      "degree": 6,
+      "name": "quadratic_over_power",
+      "sample_ranks": {
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "5": 2
+      },
+      "sampled_q": 2,
+      "support": [
+        1,
+        4
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "4": 3
+      }
+    },
+    {
+      "degree": 9,
+      "name": "cubic_over_power",
+      "sample_ranks": {
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "5": 3
+      },
+      "sampled_q": 3,
+      "support": [
+        1,
+        4,
+        7
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "4": 6,
+        "7": 3
+      }
+    },
+    {
+      "degree": 6,
+      "name": "aligned_rank_two",
+      "sample_ranks": {
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "5": 2
+      },
+      "sampled_q": 2,
+      "support": [
+        1,
+        5
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "5": 2
+      }
+    },
+    {
+      "degree": 12,
+      "name": "quartic_cubic_ritt",
+      "sample_ranks": {
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "5": 3
+      },
+      "sampled_q": 3,
+      "support": [
+        1,
+        7,
+        10
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "10": 3,
+        "7": 6
+      }
+    },
+    {
+      "degree": 8,
+      "name": "canonical_partial_fusion",
+      "sample_ranks": {
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "5": 2
+      },
+      "sampled_q": 2,
+      "support": [
+        1,
+        5
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "5": 4
+      }
+    },
+    {
+      "degree": 6,
+      "name": "rank_four_negative",
+      "sample_ranks": {
+        "1": 4,
+        "2": 4,
+        "3": 4,
+        "5": 4
+      },
+      "sampled_q": 4,
+      "support": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 5,
+        "4": 3,
+        "5": 2
+      }
+    },
+    {
+      "degree": 6,
+      "name": "generic_even_sextic_rank3",
+      "sample_ranks": {
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "5": 3
+      },
+      "sampled_q": 3,
+      "support": [
+        1,
+        3,
+        5
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "3": 4,
+        "5": 8
+      }
+    }
+  ],
+  "random_cases": [
+    {
+      "degree": 3,
+      "name": "random_d3_0",
+      "sample_ranks": {
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "5": 2
+      },
+      "sampled_q": 2,
+      "support": [
+        1,
+        2
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 2
+      }
+    },
+    {
+      "degree": 3,
+      "name": "random_d3_1",
+      "sample_ranks": {
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "5": 2
+      },
+      "sampled_q": 2,
+      "support": [
+        1,
+        2
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 2
+      }
+    },
+    {
+      "degree": 4,
+      "name": "random_d4_0",
+      "sample_ranks": {
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "5": 3
+      },
+      "sampled_q": 3,
+      "support": [
+        1,
+        2,
+        3
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 3,
+        "3": 2
+      }
+    },
+    {
+      "degree": 4,
+      "name": "random_d4_1",
+      "sample_ranks": {
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "5": 3
+      },
+      "sampled_q": 3,
+      "support": [
+        1,
+        2,
+        3
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 3,
+        "3": 2
+      }
+    },
+    {
+      "degree": 5,
+      "name": "random_d5_0",
+      "sample_ranks": {
+        "1": 4,
+        "2": 4,
+        "3": 4,
+        "5": 4
+      },
+      "sampled_q": 4,
+      "support": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 4,
+        "3": 3,
+        "4": 2
+      }
+    },
+    {
+      "degree": 5,
+      "name": "random_d5_1",
+      "sample_ranks": {
+        "1": 4,
+        "2": 4,
+        "3": 4,
+        "5": 4
+      },
+      "sampled_q": 4,
+      "support": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 4,
+        "3": 3,
+        "4": 2
+      }
+    },
+    {
+      "degree": 6,
+      "name": "random_d6_0",
+      "sample_ranks": {
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "5": 5
+      },
+      "sampled_q": 5,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 11,
+        "3": 4,
+        "4": 3,
+        "5": 2
+      }
+    },
+    {
+      "degree": 6,
+      "name": "random_d6_1",
+      "sample_ranks": {
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "5": 5
+      },
+      "sampled_q": 5,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 5,
+        "3": 4,
+        "4": 3,
+        "5": 2
+      }
+    },
+    {
+      "degree": 7,
+      "name": "random_d7_0",
+      "sample_ranks": {
+        "1": 6,
+        "2": 6,
+        "3": 6,
+        "5": 6
+      },
+      "sampled_q": 6,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 6,
+        "3": 5,
+        "4": 4,
+        "5": 10,
+        "6": 2
+      }
+    },
+    {
+      "degree": 7,
+      "name": "random_d7_1",
+      "sample_ranks": {
+        "1": 6,
+        "2": 6,
+        "3": 6,
+        "5": 6
+      },
+      "sampled_q": 6,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 6,
+        "3": 5,
+        "4": 4,
+        "5": 3,
+        "6": 2
+      }
+    },
+    {
+      "degree": 8,
+      "name": "random_d8_0",
+      "sample_ranks": {
+        "1": 7,
+        "2": 7,
+        "3": 7,
+        "5": 7
+      },
+      "sampled_q": 7,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 7,
+        "3": 6,
+        "4": 5,
+        "5": 4,
+        "6": 3,
+        "7": 2
+      }
+    },
+    {
+      "degree": 8,
+      "name": "random_d8_1",
+      "sample_ranks": {
+        "1": 7,
+        "2": 7,
+        "3": 7,
+        "5": 7
+      },
+      "sampled_q": 7,
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "support_witness_n": {
+        "1": 0,
+        "2": 7,
+        "3": 6,
+        "4": 5,
+        "5": 4,
+        "6": 3,
+        "7": 2
+      }
+    }
+  ],
+  "report_sha256_without_this_field": "9b503010cde2194c98181cbf4ad798832813ae398b26314c5e49fdac8e5d8323",
+  "ritt_diamond": {
+    "count": 11,
+    "types": [
+      {
+        "bottom": 1,
+        "example": {
+          "S": [
+            0
+          ],
+          "a": 2,
+          "b": 3,
+          "h": 1,
+          "oriented": [
+            1,
+            1
+          ]
+        },
+        "intermediate_unordered": [
+          1,
+          1
+        ],
+        "top": 1
+      },
+      {
+        "bottom": 1,
+        "example": {
+          "S": [
+            0,
+            2
+          ],
+          "a": 2,
+          "b": 3,
+          "h": 1,
+          "oriented": [
+            1,
+            2
+          ]
+        },
+        "intermediate_unordered": [
+          1,
+          2
+        ],
+        "top": 2
+      },
+      {
+        "bottom": 1,
+        "example": {
+          "S": [
+            0,
+            1
+          ],
+          "a": 2,
+          "b": 3,
+          "h": 1,
+          "oriented": [
+            2,
+            2
+          ]
+        },
+        "intermediate_unordered": [
+          2,
+          2
+        ],
+        "top": 2
+      },
+      {
+        "bottom": 2,
+        "example": {
+          "S": [
+            0,
+            1
+          ],
+          "a": 2,
+          "b": 3,
+          "h": 2,
+          "oriented": [
+            2,
+            2
+          ]
+        },
+        "intermediate_unordered": [
+          2,
+          2
+        ],
+        "top": 2
+      },
+      {
+        "bottom": 1,
+        "example": {
+          "S": [
+            0,
+            2,
+            4
+          ],
+          "a": 2,
+          "b": 3,
+          "h": 1,
+          "oriented": [
+            1,
+            3
+          ]
+        },
+        "intermediate_unordered": [
+          1,
+          3
+        ],
+        "top": 3
+      },
+      {
+        "bottom": 1,
+        "example": {
+          "S": [
+            0,
+            1,
+            3
+          ],
+          "a": 2,
+          "b": 3,
+          "h": 1,
+          "oriented": [
+            2,
+            2
+          ]
+        },
+        "intermediate_unordered": [
+          2,
+          2
+        ],
+        "top": 3
+      },
+      {
+        "bottom": 1,
+        "example": {
+          "S": [
+            0,
+            1,
+            2
+          ],
+          "a": 2,
+          "b": 3,
+          "h": 1,
+          "oriented": [
+            2,
+            3
+          ]
+        },
+        "intermediate_unordered": [
+          2,
+          3
+        ],
+        "top": 3
+      },
+      {
+        "bottom": 1,
+        "example": {
+          "S": [
+            0,
+            1,
+            2
+          ],
+          "a": 3,
+          "b": 4,
+          "h": 1,
+          "oriented": [
+            3,
+            3
+          ]
+        },
+        "intermediate_unordered": [
+          3,
+          3
+        ],
+        "top": 3
+      },
+      {
+        "bottom": 2,
+        "example": {
+          "S": [
+            0,
+            1,
+            4
+          ],
+          "a": 2,
+          "b": 3,
+          "h": 2,
+          "oriented": [
+            2,
+            3
+          ]
+        },
+        "intermediate_unordered": [
+          2,
+          3
+        ],
+        "top": 3
+      },
+      {
+        "bottom": 2,
+        "example": {
+          "S": [
+            0,
+            1,
+            2
+          ],
+          "a": 2,
+          "b": 3,
+          "h": 2,
+          "oriented": [
+            3,
+            3
+          ]
+        },
+        "intermediate_unordered": [
+          3,
+          3
+        ],
+        "top": 3
+      },
+      {
+        "bottom": 3,
+        "example": {
+          "S": [
+            0,
+            1,
+            2
+          ],
+          "a": 2,
+          "b": 3,
+          "h": 3,
+          "oriented": [
+            3,
+            3
+          ]
+        },
+        "intermediate_unordered": [
+          3,
+          3
+        ],
+        "top": 3
+      }
+    ]
+  },
+  "schema": "cyclicity-cleanroom-fraction-audit-v1",
+  "status": "pass"
+}

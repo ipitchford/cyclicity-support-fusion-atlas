@@ -1,0 +1,49 @@
+{
+  "interpretation": "Entry errors decrease and the scaled determinant ratio tends to 1 as s tends to 0.",
+  "leading_determinant": {
+    "im": "4.80045981886341736e-46",
+    "re": "-1.96870124321530247"
+  },
+  "limitations": "Same-producer numerical quadrature; checks signs and asymptotic behaviour but is not proof or independent reproduction.",
+  "phase": "x^4+x^2+x",
+  "precision_decimal_digits": 45,
+  "ray_angles": [
+    "pi/4",
+    "3pi/4",
+    "5pi/4",
+    "7pi/4"
+  ],
+  "runs": [
+    {
+      "determinant_nonzero": true,
+      "determinant_ratio_to_leading_constant": {
+        "im": "2.98322270350762627e-46",
+        "re": "0.985111939603062661"
+      },
+      "max_entry_error": "0.102712139506439309",
+      "s": "0.03"
+    },
+    {
+      "determinant_nonzero": true,
+      "determinant_ratio_to_leading_constant": {
+        "im": "2.40500525562294523e-46",
+        "re": "0.995012479192682313"
+      },
+      "max_entry_error": "0.0530639420675226885",
+      "s": "0.01"
+    },
+    {
+      "determinant_nonzero": true,
+      "determinant_ratio_to_leading_constant": {
+        "im": "2.4652522533650691e-46",
+        "re": "0.998501124437710874"
+      },
+      "max_entry_error": "0.026765214880699992",
+      "s": "0.003"
+    }
+  ],
+  "schema": "period-matrix-fourier-gamma-spotcheck-v1",
+  "sector_centre_arg": 0,
+  "sha256_without_this_field": "0902c1fe268b2912a4a9302949c554d0519c1162e4c80bcbdfbb6615671a85e8",
+  "status": "pass"
+}

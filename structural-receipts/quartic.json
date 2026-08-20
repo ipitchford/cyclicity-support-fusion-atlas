@@ -1,0 +1,177 @@
+{
+  "certificate_sha256": "4a8f68be95d6d9696c2c7f2db04d9afccc4b77cd1e479d62538ba187bf79a726",
+  "claim_boundary": {
+    "not_computed": [
+      "the complete decomposition lattice of P",
+      "whether each divisor degree occurs as a right factor",
+      "novelty, priority, or external specialist validation"
+    ],
+    "proved_by_companion_manuscript": [
+      "q(P,dx)=|Sigma(P)|=dim W_P^red",
+      "the Fourier block-rank formula for every actual decomposition",
+      "Ritt-move invariance of the support classification"
+    ]
+  },
+  "degree": 4,
+  "fusion_profiles_by_candidate_right_degree": {
+    "2": {
+      "block_spans_form_direct_sum": false,
+      "claim_boundary": "This profile applies when P has a polynomial right factor of degree 2; divisibility alone does not assert that such a factor exists.",
+      "each_block_span_dimension": 2,
+      "equality_stabilizer_H": [
+        0
+      ],
+      "fibre_size_partition": [
+        2,
+        1
+      ],
+      "fibres_L_c": {
+        "0": [
+          1
+        ],
+        "1": [
+          0,
+          1
+        ]
+      },
+      "full_fusion_all_block_spans_equal": false,
+      "global_cyclic_rank": 3,
+      "number_of_distinct_block_spans": 2,
+      "outer_degree_n": 2,
+      "pairwise_intersection_dimension_by_delta": {
+        "0": 2,
+        "1": 1
+      },
+      "right_factor_cyclic_rank": 2,
+      "right_factor_degree_m": 2,
+      "support": [
+        1,
+        2,
+        3
+      ],
+      "total_degree": 4
+    },
+    "4": {
+      "block_spans_form_direct_sum": true,
+      "claim_boundary": "This profile applies when P has a polynomial right factor of degree 4; divisibility alone does not assert that such a factor exists.",
+      "each_block_span_dimension": 3,
+      "equality_stabilizer_H": [
+        0
+      ],
+      "fibre_size_partition": [
+        1,
+        1,
+        1
+      ],
+      "fibres_L_c": {
+        "1": [
+          0
+        ],
+        "2": [
+          0
+        ],
+        "3": [
+          0
+        ]
+      },
+      "full_fusion_all_block_spans_equal": true,
+      "global_cyclic_rank": 3,
+      "number_of_distinct_block_spans": 1,
+      "outer_degree_n": 1,
+      "pairwise_intersection_dimension_by_delta": {
+        "0": 3
+      },
+      "right_factor_cyclic_rank": 3,
+      "right_factor_degree_m": 4,
+      "support": [
+        1,
+        2,
+        3
+      ],
+      "total_degree": 4
+    }
+  },
+  "input": {
+    "phase": "x**4 + x"
+  },
+  "input_sha256": "98714ed26bb8f3cdd4eaa6b977cba9a6a445377e2a4fa130f2ccb291cbbcc6eb",
+  "inverse_at_infinity": {
+    "nonzero_terms_through_stopping_order": [
+      {
+        "coefficient": "1",
+        "residue_mod_degree": 1,
+        "t_exponent": 1
+      },
+      {
+        "coefficient": "-1/4",
+        "residue_mod_degree": 2,
+        "t_exponent": -2
+      },
+      {
+        "coefficient": "-1/32",
+        "residue_mod_degree": 3,
+        "t_exponent": -5
+      }
+    ],
+    "stopping_rule": "support_size equals exact twisted cyclic rank",
+    "support": [
+      1,
+      2,
+      3
+    ],
+    "support_size": 3,
+    "terms_computed": 6,
+    "witnesses": {
+      "1": {
+        "coefficient": "1",
+        "series_order": 0,
+        "t_exponent": 1
+      },
+      "2": {
+        "coefficient": "-1/4",
+        "series_order": 3,
+        "t_exponent": -2
+      },
+      "3": {
+        "coefficient": "-1/32",
+        "series_order": 6,
+        "t_exponent": -5
+      }
+    }
+  },
+  "normalisation": {
+    "normalised": "x**4 + x",
+    "original": "x**4 + x",
+    "source_change": "x_old = x_new - (0)",
+    "target_scale_divisor": "1",
+    "target_shift_before_scaling": "0"
+  },
+  "schema": "cyclicity-support-fusion-certificate-v1",
+  "status": "pass",
+  "theorem_identity": {
+    "all_equal": true,
+    "inverse_support_size": 3,
+    "reduced_root_span_dimension": 3,
+    "twisted_cyclic_rank": 3
+  },
+  "twisted_krylov": {
+    "ambient_rank": 3,
+    "cyclic_rank": 3,
+    "first_dependence": null,
+    "independence": {
+      "minor_denominator": "64",
+      "minor_is_nonzero": true,
+      "minor_numerator": "27",
+      "pivot_rows_zero_based": [
+        0,
+        1,
+        2
+      ]
+    },
+    "matrix_sha256": "182d8261555774566fcd63586143cbb9d2a4556adfb3aacf8d15c9709746473b",
+    "matrix_shape": [
+      3,
+      3
+    ]
+  }
+}

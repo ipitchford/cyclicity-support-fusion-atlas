@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this unrefereed candidate, cite this exact version."
+title: "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods"
+type: article
+version: 0.5.0-candidate
+date-released: 2026-08-20
+authors:
+  - family-names: Anonymous
+license: CC0-1.0
+repository-code: "PENDING_PREPARE_ONLY"
+abstract: >-
+  An unrefereed theorem candidate proving a universal inverse-support,
+  cyclic-rank and root-span identity, a Fourier law for polynomial
+  decomposition blocks, and a finite exact-arithmetic low-rank atlas through
+  degree twenty.

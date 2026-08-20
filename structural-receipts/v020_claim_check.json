@@ -1,0 +1,50 @@
+{
+  "canonical_partial_fusion": {
+    "degree2_distinct_spans": 2,
+    "degree2_equality_stabilizer": [
+      0,
+      2
+    ],
+    "predicted_coarser_right_degree": 4,
+    "q": 2,
+    "support": [
+      1,
+      5
+    ]
+  },
+  "cleanroom_named_cases": 9,
+  "cleanroom_random_cases": 12,
+  "cleanroom_ritt_types": 11,
+  "cleanroom_status": "pass",
+  "negative_control": {
+    "q": 4,
+    "support": [
+      1,
+      2,
+      4,
+      5
+    ]
+  },
+  "period_spotcheck_status": "pass",
+  "ritt_collision": {
+    "degree3_distinct_spans": 4,
+    "degree3_profile": [
+      3
+    ],
+    "degree4_full_fusion": true,
+    "degree4_profile": [
+      1,
+      1,
+      1
+    ],
+    "q": 3,
+    "support": [
+      1,
+      7,
+      10
+    ]
+  },
+  "schema": "cyclicity-v020-claim-check-v1",
+  "sha256_without_this_field": "668131abc94d11dc98cddd3d93a44b8fd6ee28a643d145da110fafdde94a6751",
+  "status": "pass"
+}

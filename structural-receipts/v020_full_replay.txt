@@ -1,0 +1,11 @@
+$ python tests/test_fusion_support.py
+all support, cyclic-rank, fusion, and Ritt-view tests passed
+$ python cleanroom/fraction_audit.py
+PASS: 9 named, 12 random, 4 composition cases; 11 Ritt diamond types
+/mnt/data/cyclicity-unconditional-fusion-v0.2.0-candidate/cleanroom/fraction_audit_receipt.json
+$ python cleanroom/period_matrix_spotcheck.py
+PASS: Fourier-Gamma period-matrix spot check
+{'s': '0.03', 'max_entry_error': '0.102712139506439309', 'determinant_ratio_to_leading_constant': {'re': '0.985111939603062661', 'im': '2.98322270350762627e-46'}, 'determinant_nonzero': True}
+{'s': '0.01', 'max_entry_error': '0.0530639420675226885', 'determinant_ratio_to_leading_constant': {'re': '0.995012479192682313', 'im': '2.40500525562294523e-46'}, 'determinant_nonzero': True}
+{'s': '0.003', 'max_entry_error': '0.026765214880699992', 'determinant_ratio_to_leading_constant': {'re': '0.998501124437710874', 'im': '2.4652522533650691e-46'}, 'determinant_nonzero': True}
+/mnt/data/cyclicity-unconditional-fusion-v0.2.0-candidate/cleanroom/period_matrix_spotcheck_receipt.json

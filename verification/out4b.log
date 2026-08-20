@@ -1,0 +1,24 @@
+=== Battery 4B: quartic lifts A(x^m+b), A = y^4 + be y^2 + ga y, kill one class ===
+m=3 d=12 kill class  4: NONEMPTY dim=1 stable(to 8d)=False  GB=[-ga*(3510*b**2*ga**2 - 2376*b*be**2*ga - 400*be**4 + 9261*be*ga**2)/400, ga*(52*b**2*be**2 - 54*b*be*ga + 50*be**3 + 27*ga**2)/52, -(270*b**2*be*ga - 16*b*be**3 - 135*b*ga**2 + 351*be**2*ga)/16, (20*b**3 + 18*b*be + 27*ga)/20]
+m=3 d=12 kill class  7: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=3 d=12 kill class 10: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=4 d=16 kill class  5: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=4 d=16 kill class  9: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=4 d=16 kill class 13: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=5 d=20 kill class  6: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=5 d=20 kill class 11: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=5 d=20 kill class 16: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=6 d=24 kill class  7: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=6 d=24 kill class 13: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=6 d=24 kill class 19: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=7 d=28 kill class  8: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=7 d=28 kill class 15: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+m=7 d=28 kill class 22: EMPTY after ga!=0 saturation (6 conditions)  -> only decomposable ga=0 branch
+[75.7s]
+
+--- m=3 positive control: point (be,ga,b)=(-3/8,-1/8,3/4) from A(z)=z(z+1)^3 shifted ---
+point lies on kill-4 variety: True
+support of lift at control point (exact, depth 240): [1, 7, 10]
+orbit relations p6=p9^2/3, p3=p9^3/27, sparsity: True  (p9=3, p6=3, p3=1)
+
+BATTERY 4B: PASS - lifts collapse exactly as the atlas predicts

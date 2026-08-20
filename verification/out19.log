@@ -1,0 +1,11 @@
+degree 19: 154 support cases analysed in 120.1s
+
+=== SWEEP SUMMARY (degrees 19..19, 120.1s) ===
+vacuous (variety = full space, matching saturating family): 2
+exact power-only certificates: 136
+exact union-of-predicted-components certificates: 16
+other OK: 0
+anomalies: 0  []
+no-certificate (needs manual review): 0  []
+
+BATTERY 4A: NO COUNTEREXAMPLE STRUCTURE FOUND

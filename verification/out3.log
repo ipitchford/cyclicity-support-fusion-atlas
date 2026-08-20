@@ -1,0 +1,16 @@
+=== Structured fusion cases: formula 8.10, 8.12, 8.13, 8.6, 8.7 ===
+PASS  (x^4+x)^3  full fusion               d=12 q(P)=3 q(Q)=3 L={1:[0], 2:[2], 3:[1]} min_gap=4.7e+14
+PASS  D_15 = D_3(D_5(x,1),1)               d=15 q(P)=2 q(Q)=2 L={1:[0], 4:[2]} min_gap=4.2e+15
+PASS  (x^6+x^2)^2 aligned square           d=12 q(P)=3 q(Q)=3 L={1:[0], 3:[1], 5:[0]} min_gap=3.7e+14
+PASS  (x^6+x^4+x^2)^2 no-fusion mutation   d=12 q(P)=6 q(Q)=3 L={1:[0, 1], 3:[0, 1], 5:[0, 1]} min_gap=1.6e+14
+PASS  (x^8+x^2)^3 mutation                 d=24 q(P)=4 q(Q)=4 L={1:[0], 3:[2], 5:[1], 7:[0]} min_gap=8.7e+13
+PASS  (x^3+x)^2                            d= 6 q(P)=2 q(Q)=2 L={1:[0], 2:[1]} min_gap=4.5e+15
+PASS  (x^3+x)^2+ (x^3+x) partial           d= 6 q(P)=4 q(Q)=2 L={1:[0, 1], 2:[0, 1]} min_gap=2.2e+15
+PASS  (x^3+x)^3+(x^3+x)^2                  d= 9 q(P)=6 q(Q)=2 L={1:[0, 1, 2], 2:[0, 1, 2]} min_gap=1.3e+14
+PASS  (x^4+x)^2                            d= 8 q(P)=6 q(Q)=3 L={1:[0, 1], 2:[0, 1], 3:[0, 1]} min_gap=2.1e+13
+PASS  random R3 o Q4                       d=12 q(P)=9 q(Q)=3 L={1:[0, 1, 2], 2:[0, 1, 2], 3:[0, 1, 2]} min_gap=4.3e+14
+
+=== Heredity 8.12 on 200 random pairs (exact, mod two primes) ===
+heredity: 200 pairs x 2 primes, 0 failures
+
+BATTERY 3: ALL PASS

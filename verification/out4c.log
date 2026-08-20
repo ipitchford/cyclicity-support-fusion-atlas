@@ -1,0 +1,17 @@
+=== binomials x^d + a x^j, a in [-9..9]\0, degrees 15..24 ===
+binomials screened: 3150  (2s)
+=== trinomials x^d + a x^j + b x^i, a,b in [-3..3]\0 ===
+trinomials screened: 53460  (42s)
+
+=== confirming 378 screen hits ===
+hit census (degree, family): {(15, 'cubicO'): 72, (16, 'quadO'): 18, (18, 'cubicO'): 72, (18, 'quadO'): 18, (20, 'quadO'): 18, (21, 'cubicO'): 72, (22, 'quadO'): 18, (24, 'cubicO'): 72, (24, 'quadO'): 18}
+anomalies among hits: 0
+
+=== impostor composites (must NOT be rank 3) ===
+  (x^4+x)^6: q=6 Sigma=[1, 7, 10, 13, 19, 22]  identity OK
+  (x^4+x^2)^3: q=6 Sigma=[1, 3, 5, 7, 9, 11]  identity OK
+  (x^12+x^3)^3: q=4 Sigma=[1, 10, 19, 28]  identity OK
+  (x^4+2x)^3 + x^3: q=4 Sigma=[1, 4, 7, 10]  identity OK
+  (x^6+x^2)^2 + x^4: q=3 Sigma=[1, 5, 9]  identity OK
+
+BATTERY 4C: PASS  total 56s

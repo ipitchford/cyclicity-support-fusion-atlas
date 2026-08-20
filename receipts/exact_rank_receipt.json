@@ -1,0 +1,80 @@
+{
+  "checks": [
+    {
+      "degree": 9,
+      "name": "power_9",
+      "phase": "x**9",
+      "rank": 1
+    },
+    {
+      "degree": 5,
+      "name": "dickson_5",
+      "phase": "x**5 - 5*x**3 + 5*x",
+      "rank": 2
+    },
+    {
+      "degree": 8,
+      "name": "quadratic_over_power_m4",
+      "phase": "x**8 + 2*x**4 + 1",
+      "rank": 2
+    },
+    {
+      "degree": 9,
+      "name": "generic_cubic_over_power_m3",
+      "phase": "x**9 + 2*x**6 + 3*x**3",
+      "rank": 3
+    },
+    {
+      "degree": 6,
+      "name": "dickson_sextic_lower_locus",
+      "phase": "x**6 - 6*x**4 + 9*x**2",
+      "rank": 2
+    },
+    {
+      "degree": 4,
+      "name": "quartic_generic",
+      "phase": "x**4 + x**2 + x",
+      "rank": 3
+    },
+    {
+      "degree": 12,
+      "name": "quartic_collision",
+      "phase": "x**12 + 3*x**9 + 3*x**6 + x**3",
+      "rank": 3
+    },
+    {
+      "degree": 12,
+      "name": "rank3_square_m2",
+      "phase": "x**12 + 2*x**8 + x**4",
+      "rank": 3
+    },
+    {
+      "degree": 18,
+      "name": "rank3_square_m3",
+      "phase": "x**18 + 2*x**12 + x**6",
+      "rank": 3
+    },
+    {
+      "degree": 12,
+      "name": "square_alignment_mutation",
+      "phase": "x**12 + 2*x**10 + 3*x**8 + 2*x**6 + x**4",
+      "rank": 6
+    },
+    {
+      "degree": 8,
+      "name": "quartic_pullback_m2_generic",
+      "phase": "x**8 + x**4 + x**2",
+      "rank": 4
+    },
+    {
+      "degree": 24,
+      "name": "quartic_collision_extra_power",
+      "phase": "x**24 + 3*x**18 + 3*x**12 + x**6",
+      "rank": 4
+    }
+  ],
+  "method": "exact twisted-de-Rham Krylov rank over Q(s)",
+  "schema": "coefficient-atlas-exact-rank-v1",
+  "sha256": "31b35e53ddbfdf7541609991331413e06432ceed7d913bb2150331e32bfcffaf",
+  "status": "pass"
+}

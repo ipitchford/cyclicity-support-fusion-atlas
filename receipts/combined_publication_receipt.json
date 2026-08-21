@@ -34,14 +34,14 @@
     "original_research_text_and_data": "CC0-1.0",
     "third_party_material": "existing terms or NOASSERTION"
   },
-  "receipt_sha256": "6a6fe130cf474bb3fb012d7d8dc86f1228aa5f20927ffaf19df0a9969a7204e6",
+  "receipt_sha256": "005a793c703287ae3896b5869303b8417a34325b1032ae5c8f32c1b330c61a60",
   "schema": "cyclicity-combined-publication-receipt-v1",
   "status": "pass-for-public-unrefereed-candidate-release",
   "verification": {
     "amplitude_laurent_replay": "python3 run_amplitude_laurent_checks.py",
     "amplitude_receipt_file_sha256": "ab1805e3f1fbb8192c9c8f18ed4fb58fee74d93ea02ede76b313dedf3cedaf1b",
     "amplitude_receipt_schema": "amplitude-laurent-test-receipt-v1",
-    "combined_manifest_sha256": "0daf522bdae6d52839c1cbff9ca3009960bcee72419c89d814b09d8c66855d56",
+    "combined_manifest_sha256": "77488aad57353a76a63e33810a6e963d88a5dcb74677de8f4ae5bd5898500c7c",
     "deterministic_document_bytes": true,
     "document_gate": "python3 tools/check_combined_release.py",
     "global_receipt_schema": "cyclicity-global-completion-receipt-v2",

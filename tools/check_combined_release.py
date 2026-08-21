@@ -149,7 +149,9 @@ def check_pdf() -> dict[str, object]:
     )
     require(not legacy_tokens, f"legacy source notation exposed in PDF: {legacy_tokens}")
     words = len(re.findall(r"\b[\w'-]+\b", text, flags=re.UNICODE))
-    require(6500 <= words <= 9000, f"unexpected extracted word count: {words}")
+    # Poppler's text segmentation varies slightly across macOS and Ubuntu.
+    # Keep this as a gross truncation/inflation alarm, not an exact token gate.
+    require(6500 <= words <= 9500, f"unexpected extracted word count: {words}")
     return {"pages": 25, "bookmarks": 36, "extracted_words": words}
 
 

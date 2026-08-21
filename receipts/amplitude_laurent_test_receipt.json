@@ -1,0 +1,31 @@
+{
+  "amplitude_case_digests": [
+    "994b40f760bec8cd10561263185d628247426c1fc89644b5ec36303fdb188a54",
+    "eef974afbb356a2813b00f098d82a1bcf22f0dc7cd7f5222e06d2f4d21aada65",
+    "6219ecd6161b2f3c2bf45bacf7afaee72886a621c27cd8efa32dbed6a6a5fabd",
+    "1579a47b00add1cb25de42cbe7e154ed210435d44ab4d2e62a45b17047c9ca81",
+    "c065af750789cc70960c3442f4ffdae919cf035a4ae2409236c7dd3961cca2fe",
+    "c4ada824e6bff6e1ae66808be5aa82babfe837e64e99ba44303d67b5a9299f78"
+  ],
+  "claim_boundary": {
+    "amplitude_cases": "exact theorem-to-CAS comparisons",
+    "endpoint_cases": "finite direct regressions for proved composition mechanisms",
+    "laurent_zero_prefixes": "finite evidence, not all-moment certificates"
+  },
+  "endpoint_moments_checked": 16,
+  "laurent_amplitude_case_digests": [
+    "89839558a57390401c57036e85b6df15414f3847e0998b0ad06b02f303b5f442",
+    "9e556cda16a42b0222773a00c92e60d81199c14f41300261cec7c42c81687181"
+  ],
+  "laurent_case_digests": [
+    "d05d1f78f5fa3b50c43520178998895ecd0f3f10eb33ea8e41a0dce01f5fd250",
+    "8d70e0b92901503760a3dfeb246c1e0da531bd7ca6fee75bda627f26975a9357",
+    "d9a902780c2f223ff94e140492453753c620c714357ea4655bd451b6cfb0bff4",
+    "b87cb42db5c6568890a13df1d4a1e3b8112d5d2cb9ca140f568aebb55cb941be"
+  ],
+  "rank_zero_case_digest": "70d7930cb6f2cc99a9b0f2a9b19398f4b1a930398c993b830e9e8b401e7e6fb0",
+  "receipt_sha256": "dd906dac423ba934f345a12bf0681e6e6dfdbf11b7cfda4704f05c21bc3e158f",
+  "schema": "amplitude-laurent-test-receipt-v1",
+  "semantic_mutations_rejected": 2,
+  "status": "pass"
+}

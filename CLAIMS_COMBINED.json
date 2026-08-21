@@ -1,0 +1,112 @@
+{
+  "schema": "evidence-press-claim-ledger-v1",
+  "version": "0.7.0-candidate",
+  "primary_artifact": "Inverse-Root-Support-Amplitudes-and-Laurent-Moments.pdf",
+  "claims": [
+    {
+      "id": "COMB-1",
+      "statement": "For every complex polynomial P, the fixed-seed cyclic rank equals the nonzero inverse-residue support size and the reduced constant span dimension of its generic inverse roots.",
+      "status": "theorem_candidate",
+      "basis": [
+        "COMBINED_GLOBAL_COMPLETION.md#theorem-2.1-root-span-equals-inverse-support",
+        "COMBINED_AMPLITUDE_LAURENT.md#theorem-14.1-polynomial-amplitude-support-theorem"
+      ]
+    },
+    {
+      "id": "COMB-2",
+      "statement": "Relative to the named imported classification results, Theorem 11.1 gives the complete all-degree coefficient atlas for complex polynomial phases of fixed-seed cyclic rank at most three.",
+      "status": "conditional_theorem_candidate",
+      "depends_on": [
+        "BKN26 primitive monodromy and length-two block-kernel results",
+        "BK16 source-to-Muller-list transmission",
+        "C25 finite projective-group tables",
+        "MZ08 Ritt-decomposition framework"
+      ],
+      "basis": [
+        "COMBINED_GLOBAL_COMPLETION.md#theorem-11.1-complex-low-rank-coefficient-atlas",
+        "GLOBAL_COMPLETION_ASSURANCE.md",
+        "run_global_completion_checks.py"
+      ]
+    },
+    {
+      "id": "COMB-3",
+      "statement": "Relative to the same named inputs, Sections 7 through 10 classify every proper rank-preserving polynomial extension of an Atlas phase.",
+      "status": "conditional_theorem_candidate",
+      "basis": [
+        "COMBINED_GLOBAL_COMPLETION.md#rank-preserving-extensions-in-ranks-one-and-two",
+        "COMBINED_GLOBAL_COMPLETION.md#rank-three-cubic-over-power-extensions",
+        "COMBINED_GLOBAL_COMPLETION.md#rank-three-quartic-extensions",
+        "COMBINED_GLOBAL_COMPLETION.md#completion-of-the-first-increase-cases"
+      ]
+    },
+    {
+      "id": "COMB-4",
+      "statement": "For every polynomial phase P and polynomial amplitude A dx with primitive G, the amplitude cyclic rank equals the non-trace residue support size of G(xi(t)) and the reduced constant span dimension of the values G(x_j).",
+      "status": "theorem_candidate",
+      "basis": [
+        "COMBINED_AMPLITUDE_LAURENT.md#theorem-14.1-polynomial-amplitude-support-theorem",
+        "src/amplitude_support.py",
+        "tests/test_amplitude_laurent.py"
+      ]
+    },
+    {
+      "id": "COMB-5",
+      "statement": "The polynomial-amplitude cyclic rank is zero exactly when its primitive G belongs to C[P].",
+      "status": "theorem_candidate",
+      "basis": [
+        "COMBINED_AMPLITUDE_LAURENT.md#corollary-14.2-universal-rank-zero-amplitudes"
+      ]
+    },
+    {
+      "id": "COMB-6",
+      "statement": "Vanishing on a specified zero-dimensional cycle is equivalent to Fourier annihilation on every active primitive-amplitude channel.",
+      "status": "theorem_candidate",
+      "basis": [
+        "COMBINED_AMPLITUDE_LAURENT.md#theorem-15.1-support-annihilation-on-a-zero-cycle"
+      ]
+    },
+    {
+      "id": "COMB-7",
+      "statement": "The endpoint table classifies persistent polynomial moments for every phase in the q(P) at most three Atlas.",
+      "status": "conditional_theorem_candidate",
+      "depends_on": [
+        "Pakovich-Muzychuk DOI 10.1112/plms/pdp010",
+        "COMB-2 all-degree Atlas and its right-factor audit"
+      ],
+      "basis": [
+        "COMBINED_AMPLITUDE_LAURENT.md#theorem-17.1-low-rank-persistent-moment-classification"
+      ]
+    },
+    {
+      "id": "COMB-8",
+      "statement": "For every Laurent phase with zero-pole order m and every Laurent amplitude A dz, its kth residue moment is the tau to the mk minus 1 coefficient of A(phi(tau)) phi prime(tau).",
+      "status": "theorem_candidate",
+      "basis": [
+        "COMBINED_AMPLITUDE_LAURENT.md#theorem-18.1-laurent-local-channel-criterion",
+        "src/laurent_moments.py",
+        "tests/test_amplitude_laurent.py"
+      ]
+    },
+    {
+      "id": "COMB-X1",
+      "statement": "A finite zero prefix proves persistent Laurent moment vanishing.",
+      "status": "not_claimed"
+    },
+    {
+      "id": "COMB-X2",
+      "statement": "Every persistent Laurent solution is a composition solution.",
+      "status": "not_claimed",
+      "reason": "The PPZ10 indecomposable case study rules out this general template."
+    },
+    {
+      "id": "COMB-X3",
+      "statement": "The combined candidate is externally refereed, independently reproduced, fully formalised, or priority-certified.",
+      "status": "not_claimed"
+    },
+    {
+      "id": "COMB-X4",
+      "statement": "The package provides a finite normal-form classification for all Laurent phase-amplitude pairs.",
+      "status": "not_claimed"
+    }
+  ]
+}

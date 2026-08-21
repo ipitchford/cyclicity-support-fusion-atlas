@@ -1,122 +1,59 @@
 {
-  "schema": "evidence-press-mathematics-claims-v2",
-  "title": "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods: All-Degree Low-Rank Completion",
-  "version": "0.6.0-candidate",
-  "status": "unrefereed-theorem-candidate-relative-to-named-imports",
+  "schema": "evidence-press-claim-ledger-v1",
+  "version": "0.7.0-candidate",
+  "title": "Inverse-Root Support, Polynomial Amplitudes, and Laurent Moment Channels",
+  "primary_artifact": "Inverse-Root-Support-Amplitudes-and-Laurent-Moments.pdf",
   "claims": [
     {
-      "id": "T1",
-      "statement": "For every complex polynomial P of degree at least two, q(P,dx)=|Sigma(P)|.",
-      "scope": "all complex polynomial phases of degree at least two",
-      "locator": "MANUSCRIPT.md, Theorem 5.2; inherited in ALL_DEGREE_GLOBAL_COMPLETION.md, Theorem 2.1",
-      "basis": ["formal-moment isomorphism", "active Kummer channels", "falling-factorial Vandermonde"],
-      "gate": ["tests/test_fusion_support.py", "cleanroom/fraction_audit.py", "verification/battery1.py", "verification/battery2.py"],
-      "status": "proved-in-unrefereed-candidate",
-      "external_assurance": false
+      "id": "COMB-1",
+      "statement": "For every complex polynomial P, the fixed-seed cyclic rank equals the nonzero inverse-residue support size and the reduced constant span dimension of its generic inverse roots.",
+      "status": "theorem_candidate",
+      "basis": ["Theorem 2.1", "Theorem 14.1"]
     },
     {
-      "id": "T2",
-      "statement": "|Sigma(P)| equals the dimension of the reduced constant inverse-root span.",
-      "scope": "all complex polynomial phases of degree at least two",
-      "locator": "MANUSCRIPT.md, Theorem 6.1; ALL_DEGREE_GLOBAL_COMPLETION.md, Theorem 2.1",
-      "basis": ["discrete Fourier transform of inverse branches", "disjoint Laurent support"],
-      "gate": ["tests/test_fusion_support.py", "verification/battery1.py", "run_global_completion_checks.py"],
-      "status": "proved-in-unrefereed-candidate",
-      "external_assurance": false
+      "id": "COMB-2",
+      "statement": "Relative to named imported classifications, Theorem 11.1 gives the complete all-degree coefficient atlas for complex polynomial phases of fixed-seed cyclic rank at most three.",
+      "status": "conditional_theorem_candidate",
+      "basis": ["Theorem 11.1", "GLOBAL_COMPLETION_ASSURANCE.md"]
     },
     {
-      "id": "T3",
-      "statement": "The fixed sectorial rapid-decay period matrix has the Fourier-Gamma determinant asymptotic and is invertible on the sector.",
-      "scope": "monic centred polynomial phases on the sectors specified in MANUSCRIPT.md Section 7",
-      "locator": "MANUSCRIPT.md, Theorem 7.3 and Corollary 7.4",
-      "basis": ["uniform rapid decay", "dominated convergence", "Vandermonde determinant", "first-order determinant equation"],
-      "gate": ["cleanroom/period_matrix_spotcheck.py"],
-      "status": "proved-in-unrefereed-candidate",
-      "external_assurance": false
+      "id": "COMB-3",
+      "statement": "Relative to the same inputs, Sections 7 through 10 classify every proper rank-preserving polynomial extension of an Atlas phase.",
+      "status": "conditional_theorem_candidate"
     },
     {
-      "id": "T4",
-      "statement": "For every actual decomposition P=R composed with Q, every block-sum dimension is the stated sum of Fourier-submatrix ranks.",
-      "scope": "all complex polynomial decompositions",
-      "locator": "MANUSCRIPT.md, Theorem 8.2",
-      "basis": ["support fibres modulo the right-factor degree", "discrete Fourier separation of block roots"],
-      "gate": ["tests/test_fusion_support.py", "verification/battery3.py"],
-      "status": "proved-in-unrefereed-candidate",
-      "external_assurance": false
+      "id": "COMB-4",
+      "statement": "For every polynomial phase P and polynomial amplitude A dx with primitive G, the amplitude cyclic rank equals the non-trace inverse support size of G and the reduced constant span dimension of the values G(x_j).",
+      "status": "theorem_candidate",
+      "basis": ["Theorem 14.1", "src/amplitude_support.py"]
     },
     {
-      "id": "T5",
-      "statement": "Equality fusion gives a canonical coarser polynomial right factor, unique up to affine change.",
-      "scope": "all actual complex polynomial decompositions",
-      "locator": "MANUSCRIPT.md, Theorem 9.2",
-      "basis": ["monodromy-invariant block system", "intermediate fields", "Luroth theorem", "one-pole polynomiality"],
-      "gate": ["tests/test_fusion_support.py", "cleanroom/fraction_audit.py"],
-      "status": "proved-in-unrefereed-candidate",
-      "external_assurance": false
+      "id": "COMB-5",
+      "statement": "The polynomial-amplitude cyclic rank is zero exactly when its primitive G belongs to C[P].",
+      "status": "theorem_candidate",
+      "basis": ["Corollary 14.2"]
     },
     {
-      "id": "T6",
-      "statement": "At global rank at most three, adjacent Ritt moves have exactly the eleven unordered rank diamonds displayed in Theorem 9.5.",
-      "scope": "rank-at-most-three actual adjacent Ritt moves",
-      "locator": "MANUSCRIPT.md, Theorems 9.4 and 9.5",
-      "basis": ["Chinese-remainder fibre-product constraint", "finite partition analysis"],
-      "gate": ["cleanroom/fraction_audit.py", "tests/test_fusion_support.py"],
-      "status": "proved-in-unrefereed-candidate",
-      "external_assurance": false
+      "id": "COMB-6",
+      "statement": "Vanishing on a specified zero-dimensional cycle is equivalent to Fourier annihilation on every active primitive-amplitude channel.",
+      "status": "theorem_candidate",
+      "basis": ["Theorem 15.1"]
     },
     {
-      "id": "F1",
-      "statement": "The affine families in Theorem 13.1 exhaust q(P,dx)<=3 for degrees two through twenty.",
-      "scope": "2<=degree(P)<=20",
-      "locator": "MANUSCRIPT.md, Theorem 13.1",
-      "basis": ["direct degrees two through four", "1152 exact-rational Groebner case records", "complete support of positive families"],
-      "gate": ["run_core_checks.py", "receipts/atlas_case_records_d5_20.json", "RELEASE_EXPECTATIONS.json", "verification/negative_controls.py"],
-      "status": "finite-computer-assisted-theorem-candidate",
-      "trust_boundary": ["inverse-series generator", "source-to-encoding bridge", "case generator", "Python", "SymPy exact rational Groebner arithmetic"],
-      "external_assurance": false
+      "id": "COMB-7",
+      "statement": "The endpoint table classifies persistent polynomial moments for every phase in the q(P) at most three Atlas.",
+      "status": "conditional_theorem_candidate",
+      "depends_on": ["Pakovich-Muzychuk DOI 10.1112/plms/pdp010", "COMB-2"]
     },
     {
-      "id": "C1",
-      "statement": "Up to affine equivalence and lower-rank intersections, every complex polynomial P with q(P,dx)<=3 belongs to the power, Dickson, quadratic-over-power, cubic-over-power, indecomposable-quartic, or degree-twelve quartic-collision families listed in Theorem 11.1.",
-      "scope": "all complex polynomial degrees at least two, relative to the named primitive-polynomial-monodromy and finite-projective-group classification inputs",
-      "locator": "ALL_DEGREE_GLOBAL_COMPLETION.md, Theorem 11.1",
-      "basis": ["inherited root-span interface", "invariant-integral finite-pole/infinity descent", "source-exact primitive-factor audit", "full-block stabiliser", "coefficient-stratified Kummer transport", "direct all-degree Dickson invariant-field proof", "quartic kernel classification"],
-      "gate": ["run_global_completion_checks.py", "GLOBAL_COMPLETION_MANIFEST.sha256", "receipts/global_completion_receipt.json", "programme/GLOBAL_COMPLETION_QUALITY_GATE.md"],
-      "status": "proved-in-unrefereed-candidate-relative-to-named-imports",
-      "trust_boundary": ["correctness and applicability of imported classification theorems", "written function-field and monodromy arguments not completely formalised", "source-to-encoding bridge", "producer-side internal review"],
-      "external_assurance": false
+      "id": "COMB-8",
+      "statement": "For every Laurent phase with zero-pole order m and every Laurent amplitude A dz, its kth residue moment is the tau to the mk minus 1 coefficient of A(phi(tau)) phi prime(tau).",
+      "status": "theorem_candidate",
+      "basis": ["Theorem 18.1", "src/laurent_moments.py"]
     },
-    {
-      "id": "E1",
-      "statement": "The proper rank-preserving outer extensions are exactly powers by powers, aligned Dickson extensions in one dihedral tower, the aligned square of an odd-centred cubic-over-power phase, and the cubic collision of the exceptional quartic.",
-      "scope": "all proper polynomial outer extensions of the rank-at-most-three families in C1, over the complex numbers and relative to the same named imports",
-      "locator": "ALL_DEGREE_GLOBAL_COMPLETION.md, Sections 7-11 and Theorem 11.1",
-      "basis": ["full-block stabiliser", "direct rational-function Dickson invariant field", "coefficient-stratified Kummer line transport", "composition-kernel theorems", "non-repetition audit"],
-      "gate": ["run_global_completion_checks.py", "DICKSON_EXTENSION_COMPLETION.md", "KUMMER_NORMALIZER_MANIFEST.sha256", "receipts/global_completion_receipt.json"],
-      "status": "proved-in-unrefereed-candidate-relative-to-named-imports",
-      "external_assurance": false
-    },
-    {
-      "id": "A1",
-      "statement": "For a generic functional on the complete rapid-decay period system, the minimal scalar ODE order is |Sigma(P)|.",
-      "scope": "generic functionals; particular cycles may annihilate active channels",
-      "locator": "MANUSCRIPT.md, Section 14.1",
-      "basis": ["T1", "T3", "cyclic-module duality"],
-      "status": "corollary-with-genericity-boundary"
-    },
-    {
-      "id": "D1",
-      "statement": "Fourier channels suggest exact tests for selected zero-cycle identities.",
-      "scope": "research direction only",
-      "locator": "MANUSCRIPT.md, Section 14.2",
-      "status": "exploratory-non-gated"
-    },
-    {
-      "id": "D2",
-      "statement": "Local inverse-series channels may support Laurent-polynomial moment classifications.",
-      "scope": "research direction only",
-      "locator": "MANUSCRIPT.md, Section 14.3",
-      "status": "exploratory-non-gated"
-    }
+    {"id": "COMB-X1", "statement": "A finite zero prefix proves persistent Laurent moment vanishing.", "status": "not_claimed"},
+    {"id": "COMB-X2", "statement": "Every persistent Laurent solution is a composition solution.", "status": "not_claimed"},
+    {"id": "COMB-X3", "statement": "The candidate is externally refereed, independently reproduced, fully formalised, or priority-certified.", "status": "not_claimed"},
+    {"id": "COMB-X4", "statement": "The package gives a finite normal-form classification for all Laurent phase-amplitude pairs.", "status": "not_claimed"}
   ]
 }

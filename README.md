@@ -1,85 +1,81 @@
-# Inverse-Root Support and Fourier Fusion
+# Inverse-Root Support, Polynomial Amplitudes, and Laurent Moment Channels
 
-Version **0.6.0-candidate** is an additive successor to the public v0.5.0
-candidate and the two earlier fixed-seed cyclicity releases.
+Version **0.7.0-candidate** is the combined flagship successor in the
+`cyclicity-support-fusion-atlas` lineage.
 
 ## Decision
 
 **GO for public specialist circulation as an unrefereed theorem candidate;
 HOLD for promotion as an externally established theorem.**
 
-Relative to the named primitive-polynomial-monodromy and finite-projective-
-group classification results, the successor proves an all-degree
-classification of complex polynomial phases with fixed-seed cyclic rank at
-most three. It also classifies all proper rank-preserving outer extensions.
-The proof closes the inherited root-span interface, finite-pole/infinity-order
-descent, primitive-factor audit, coefficient-stratified Kummer transport, and
-arbitrary mixed Dickson chains. The finite degree-20 and preregistered
-degree-32 computations remain regression and bridge evidence, not the basis
-of the universal claim.
+The unified paper presents the all-degree fixed-seed coefficient atlas for
+complex polynomial phases with cyclic rank at most three, relative to named
+classification inputs, together with every rank-preserving polynomial
+extension. It then treats arbitrary polynomial amplitudes, exact vanishing on
+a specified zero-cycle, persistent endpoint moments for every Atlas phase, and
+an exact local inverse criterion for Laurent moments.
+
+No finite all-Laurent normal-form atlas, external specialist review,
+independent reproduction, complete formalisation, or priority certification is
+claimed.
 
 ## Start here
 
-- `All-Degree-Low-Rank-Coefficient-Atlas.pdf`: reader-facing successor paper.
-- `ALL_DEGREE_GLOBAL_COMPLETION.md`: sealed all-degree proof.
-- `ALL_DEGREE_RELEASE.md` and `ALL_DEGREE_RELEASE_BACK_MATTER.md`: release
-  framing, correction record, limitations, and disclosures.
-- `STATUS.md`, `ASSURANCE.md`, and `GLOBAL_COMPLETION_ASSURANCE.md`: decision
-  and assurance ceiling.
-- `CLAIMS.json` and `CLAIM_EVIDENCE_MAP.json`: machine-readable claims,
-  locators, predecessor bridge, and release gates.
-- `GLOBAL_COMPLETION_SOURCE_AUDIT.md` and `CITATION_AUDIT.md`: imported-result
-  and literature-search boundaries.
-- `MANUSCRIPT.md`: preserved v0.5 predecessor manuscript; its Conjecture 13.2
-  is superseded only by the additive proof named above.
+- `Inverse-Root-Support-Amplitudes-and-Laurent-Moments.pdf`: 25-page primary
+  manuscript.
+- `COMBINED_RELEASE_FRONT.md`, `COMBINED_GLOBAL_COMPLETION.md`,
+  `COMBINED_AMPLITUDE_LAURENT.md`, and `COMBINED_RELEASE_BACK.md`: accessible
+  manuscript sources.
+- `COMBINED_STATUS.md` and `COMBINED_ASSURANCE.md`: publication decision and
+  assurance boundary.
+- `CLAIMS_COMBINED.json`: machine-readable positive claims and non-claims.
+- `REPRODUCE_COMBINED.md`: exact replay, rendering, manifest, and visual-QA
+  route.
+- `COMBINED_MANIFEST.sha256`: focused theorem/document seal.
+- `MANIFEST_v0.7.0.sha256`: complete v0.7 public archive inventory.
+
+The v0.6 Atlas PDF and v0.7 short amplitude/Laurent companion remain present
+as predecessor artifacts. They are not deleted or rewritten in place.
 
 ## Authoritative replay
 
 ```bash
 python3 run_global_completion_checks.py
+python3 run_amplitude_laurent_checks.py
+python3 tools/check_combined_release.py
+python3 tools/build_combined_publication.py verify
 ```
 
-The command verifies every bounded predecessor and successor manifest,
-replays the repaired Kummer component, checks the global semantic receipt in
-ordinary and optimised Python, rejects thirteen adversarial mutations in each
-mode, and reruns the independent SymPy and Lean controls. A release replay
-must end with all three explicit global-gate lines; silence or timeout is not
-a pass.
-
-The deterministic publication archive is controlled separately:
-
-```bash
-python3 tools/build_all_degree_release.py verify
-```
+The first two commands replay the mathematical components in ordinary and
+optimised Python with semantic mutation controls. The third checks the merged
+document, claims, citations, predecessor hashes, PDF structure, and focused
+manifest. The fourth checks complete publication-manifest coverage.
 
 ## Immutable identity
 
 - Repository: <https://github.com/ipitchford/cyclicity-support-fusion-atlas>
-- Candidate tag: `v0.6.0-candidate`
-- Exact-version DOI: <https://doi.org/10.5281/zenodo.22045144>
+- Candidate tag: `v0.7.0-candidate`
+- Exact-version DOI: <https://doi.org/10.5281/zenodo.22049564>
 - Concept DOI: <https://doi.org/10.5281/zenodo.22036029>
-- Reader page: <https://evidencepress.org/releases/cyclicity-support-fusion-atlas/>
-- Preserved predecessor: tag `v0.5.0-candidate`, DOI
-  <https://doi.org/10.5281/zenodo.22036030>
+- Reader page:
+  <https://evidencepress.org/releases/cyclicity-support-fusion-atlas/>
+- Preserved v0.6 DOI: <https://doi.org/10.5281/zenodo.22045144>
 
-These surfaces establish availability and byte identity. They do not
-establish unaffiliated reproduction, complete formalisation, external
-specialist sign-off, journal peer review, correctness of imported
-classifications, or settled novelty and priority.
+These surfaces establish availability, version identity, and byte integrity.
+They do not establish mathematical correctness, unaffiliated reproduction,
+peer review, acceptance, novelty, or priority.
 
-## Rebuild release metadata and archive
-
-After any authorised change to release bytes:
+## Deterministic archive
 
 ```bash
-python3 tools/build_all_degree_release.py freeze
-python3 tools/build_all_degree_release.py archive \
-  ../cyclicity-support-fusion-atlas-v0.6.0-candidate.zip
-python3 tools/build_all_degree_release.py bind-archive \
-  ../cyclicity-support-fusion-atlas-v0.6.0-candidate.zip \
-  receipts/all_degree_archive_receipt.json
+python3 tools/build_combined_publication.py freeze
+python3 tools/build_combined_publication.py archive \
+  ../cyclicity-support-fusion-atlas-v0.7.0-candidate.zip
+python3 tools/build_combined_publication.py bind-archive \
+  ../cyclicity-support-fusion-atlas-v0.7.0-candidate.zip \
+  receipts/combined_archive_receipt.json
 ```
 
-The archive builder verifies complete manifest coverage, sorts members, fixes
-timestamps, strips host metadata, and records the archive, manifest, release
-receipt, and PDF identities together.
+Original research prose and structured records are released under CC0-1.0;
+original code and tests are MIT. Third-party material retains its existing
+terms or `NOASSERTION`, as detailed in `LICENSES.md`.

@@ -1,14 +1,19 @@
 {
   "name": "cyclicity-support-fusion-atlas-release",
   "private": true,
-  "version": "0.6.0-candidate",
-  "description": "Deterministic static mathematics renderer for the v0.6 Evidence Press candidate",
+  "version": "0.7.0-candidate",
+  "description": "Deterministic renderer and integrity gate for the unified cyclicity, amplitude, and Laurent candidate",
   "license": "MIT",
   "dependencies": {
     "katex": "0.18.4"
   },
   "scripts": {
-    "render:paper": "python3 tools/render_all_degree_paper.py",
+    "render:paper": "python3 tools/render_combined_paper.py",
+    "render:companion": "python3 tools/render_amplitude_laurent_paper.py",
+    "render:atlas": "python3 tools/render_all_degree_paper.py",
+    "check:combined": "python3 tools/check_combined_release.py",
+    "freeze:publication": "python3 tools/build_combined_publication.py freeze",
+    "verify:publication": "python3 tools/build_combined_publication.py verify",
     "test:pdf": "python3 -m unittest tests/test_pdf_tex_preflight.py -v"
   }
 }

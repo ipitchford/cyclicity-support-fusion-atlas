@@ -5,7 +5,7 @@ Scholarly creator: **Anonymous**
 Repository maintainer and Evidence Press publisher: **Ian Pitchford**. This is
 an operational and publication role, not scholarly authorship.
 
-This additive v0.6.0 candidate was assembled on 21 August 2026 from:
+The v0.7.0 combined candidate was assembled on 21 August 2026 from:
 
 - the two immutable fixed-seed Evidence Press predecessor releases identified
   in `MANUSCRIPT.md`;
@@ -20,6 +20,9 @@ This additive v0.6.0 candidate was assembled on 21 August 2026 from:
   monodromy/scaling repair, and uniform coefficient-extraction stages;
 - the inherited root-span, pole-descent, primitive-audit, Kummer, Dickson,
   and rank-preserving-extension completion materials; and
+- the arbitrary polynomial-amplitude, specified zero-cycle, endpoint-moment,
+  and Laurent local-channel extension, including exact checks and explicit
+  non-claims; and
 - the current receipts, bounded manifests, Lean and CAS sources, semantic
   mutations, two internal specialist re-audits, source audit, free-route
   literature snapshot, static-math rendering, and raw-TeX PDF preflight.
@@ -29,8 +32,9 @@ match the current claim ceiling. In particular, `MANUSCRIPT.md` remains the
 v0.5 predecessor manuscript: its Conjecture 13.2 is superseded only by the
 additive proof `ALL_DEGREE_GLOBAL_COMPLETION.md`, not retroactively altered.
 
-The v0.6 identity chain is the GitHub repository and immutable
-`v0.6.0-candidate` tag, Zenodo version DOI `10.5281/zenodo.22045144`, concept
+The v0.7 identity chain is the GitHub repository and immutable
+`v0.7.0-candidate` tag, Zenodo version DOI `10.5281/zenodo.22049564`, concept
 DOI `10.5281/zenodo.22036029`, and canonical Evidence Press reader page. The
-workflow-only `GLOBAL_PUBLICATION_STATE.json` is intentionally excluded from
-the public payload manifest and archive.
+v0.6 tag and DOI `10.5281/zenodo.22045144` remain immutable predecessors.
+Operational publication-state files are intentionally excluded from the v0.7
+archive; the complete public-byte boundary is `MANIFEST_v0.7.0.sha256`.

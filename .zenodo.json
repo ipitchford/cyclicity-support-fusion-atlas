@@ -1,10 +1,10 @@
 {
-  "title": "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods: All-Degree Low-Rank Completion",
+  "title": "Inverse-Root Support, Polynomial Amplitudes, and Laurent Moment Channels",
   "upload_type": "publication",
   "publication_type": "preprint",
   "creators": [{"name": "Anonymous"}],
-  "description": "Public unrefereed theorem candidate, relative to named primitive-polynomial-monodromy and finite-projective-group classification inputs. This additive successor proves an all-degree classification of complex polynomial phases with fixed seed dx and cyclic rank at most three, together with all proper rank-preserving outer extensions. It preserves and corrects the earlier candidate: a false uniform Kummer-kernel assertion is replaced by a coefficient-stratified theorem and exceptional-stratum descent. Lean and separate CAS implementations check scoped consequences; no external reproduction, complete formalisation, peer review, or priority certification is claimed.",
-  "version": "0.6.0-candidate",
+  "description": "Public unrefereed combined theorem candidate. Relative to named primitive-polynomial-monodromy, block-kernel, finite-projective-group, and Ritt inputs, it gives the all-degree fixed-seed coefficient atlas at cyclic rank at most three and classifies all rank-preserving polynomial extensions. It further treats arbitrary polynomial amplitudes, exact vanishing on specified zero-cycles, persistent endpoint moments for Atlas phases, and an exact Laurent local-channel criterion. No finite all-Laurent atlas, external reproduction, complete formalisation, peer review, or priority certification is claimed.",
+  "version": "0.7.0-candidate",
   "publication_date": "2026-08-21",
   "license": "cc-zero",
   "access_right": "open",
@@ -12,37 +12,18 @@
     "polynomial exponential periods",
     "inverse-root support",
     "cyclic rank",
+    "polynomial amplitudes",
+    "zero-dimensional cycles",
+    "polynomial moment problem",
+    "Laurent polynomial moments",
     "polynomial decomposition",
-    "Ritt theory",
-    "Dickson polynomials",
-    "Kummer theory",
-    "computer-assisted verification"
+    "Ritt theory"
   ],
   "related_identifiers": [
-    {
-      "identifier": "https://github.com/ipitchford/cyclicity-support-fusion-atlas",
-      "relation": "isSupplementTo",
-      "scheme": "url"
-    },
-    {
-      "identifier": "https://evidencepress.org/releases/cyclicity-support-fusion-atlas/",
-      "relation": "isSupplementTo",
-      "scheme": "url"
-    },
-    {
-      "identifier": "10.5281/zenodo.22036030",
-      "relation": "isNewVersionOf",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.5281/zenodo.21853682",
-      "relation": "isSupplementTo",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.5281/zenodo.21864884",
-      "relation": "isSupplementTo",
-      "scheme": "doi"
-    }
+    {"identifier": "https://github.com/ipitchford/cyclicity-support-fusion-atlas", "relation": "isSupplementTo", "scheme": "url"},
+    {"identifier": "https://evidencepress.org/releases/cyclicity-support-fusion-atlas/", "relation": "isSupplementTo", "scheme": "url"},
+    {"identifier": "10.5281/zenodo.22045144", "relation": "isNewVersionOf", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.21853682", "relation": "isSupplementTo", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.21864884", "relation": "isSupplementTo", "scheme": "doi"}
   ]
 }

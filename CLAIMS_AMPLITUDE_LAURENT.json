@@ -1,0 +1,53 @@
+{
+  "schema": "evidence-press-claim-ledger-v1",
+  "version": "0.7.0-candidate",
+  "claims": [
+    {
+      "id": "AL-1",
+      "statement": "For every polynomial phase P and polynomial amplitude A dx with primitive G, q(P,A dx) equals the non-trace residue support size of G(xi) and the reduced constant span dimension of the values G(x_j).",
+      "status": "theorem_candidate",
+      "basis": ["AMPLITUDE_LAURENT_EXTENSION.md#theorem-2.1-polynomial-amplitude-support-theorem", "src/amplitude_support.py", "tests/test_amplitude_laurent.py"]
+    },
+    {
+      "id": "AL-2",
+      "statement": "The amplitude cyclic rank is zero exactly when G belongs to C[P].",
+      "status": "theorem_candidate",
+      "basis": ["AMPLITUDE_LAURENT_EXTENSION.md#corollary-2.2-universal-rank-zero-amplitudes"]
+    },
+    {
+      "id": "AL-3",
+      "statement": "Vanishing on a specified zero-dimensional cycle is equivalent to Fourier annihilation on every active primitive-amplitude channel.",
+      "status": "theorem_candidate",
+      "basis": ["AMPLITUDE_LAURENT_EXTENSION.md#theorem-3.1-support-annihilation-on-a-zero-cycle"]
+    },
+    {
+      "id": "AL-4",
+      "statement": "The endpoint table classifies persistent polynomial moments for every phase in the q(P)<=3 Atlas.",
+      "status": "conditional_theorem_candidate",
+      "depends_on": ["Pakovich-Muzychuk DOI 10.1112/plms/pdp010", "EP3 v0.6 all-degree Atlas and right-factor audit"],
+      "basis": ["AMPLITUDE_LAURENT_EXTENSION.md#theorem-5.1-low-rank-persistent-moment-classification"]
+    },
+    {
+      "id": "AL-5",
+      "statement": "For every Laurent phase with zero-pole order m and every Laurent amplitude A dz, its kth residue moment is the tau^(mk-1) coefficient of A(phi) phi prime.",
+      "status": "theorem_candidate",
+      "basis": ["AMPLITUDE_LAURENT_EXTENSION.md#theorem-6.1-laurent-local-channel-criterion", "src/laurent_moments.py"]
+    },
+    {
+      "id": "AL-X1",
+      "statement": "A finite zero prefix proves persistent Laurent moment vanishing.",
+      "status": "not_claimed"
+    },
+    {
+      "id": "AL-X2",
+      "statement": "All persistent Laurent solutions are composition solutions.",
+      "status": "not_claimed",
+      "reason": "The PPZ10 indecomposable case study rules out this general template."
+    },
+    {
+      "id": "AL-X3",
+      "statement": "The successor is externally refereed, independently reproduced, fully formalized, or priority-certified.",
+      "status": "not_claimed"
+    }
+  ]
+}

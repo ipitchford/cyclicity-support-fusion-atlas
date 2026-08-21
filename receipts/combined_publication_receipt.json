@@ -1,0 +1,53 @@
+{
+  "claim_status": {
+    "endpoint_moments_q_at_most_three": "conditional-unrefereed-theorem-candidate",
+    "external_independent_reproduction": false,
+    "finite_all_laurent_atlas": false,
+    "fixed_seed_all_degree_atlas": "unrefereed-candidate-relative-to-named-imports",
+    "laurent_local_channel": "unrefereed-theorem-candidate",
+    "polynomial_amplitudes": "unrefereed-theorem-candidate",
+    "priority_certified": false,
+    "rank_preserving_extensions": "unrefereed-candidate-relative-to-named-imports",
+    "specialist_peer_review": false,
+    "specified_zero_cycles": "unrefereed-theorem-candidate"
+  },
+  "creator": "Anonymous",
+  "date": "2026-08-21",
+  "documents": {
+    "back_matter_sha256": "e50b75f267e5b425df6188243ac61628ee1be0dce809faefd885aac02aa076be",
+    "extension_body_sha256": "904aaf6f87eacc02e211014b5b2b4c9dcb6a450c62ba5af3e77be137c71d5691",
+    "fixed_seed_body_sha256": "8fd2c106995d23109a06cf98a9c91d153ccf12029d85e7b61b3304af4587b71e",
+    "front_matter_sha256": "96c960cb94ca48fe7098b2ac51c929db68f893f9481cd3dba4386e6c7b65e90d",
+    "html_sha256": "72c1f4faea80765f28e02bc40d2d2b92c98e1946da4651ad3081aff8d56db50b",
+    "pdf_pages": 25,
+    "pdf_sha256": "4ea6ca81ac20ec826096b8efe068577a0c859789ce658324ee2111296bef83ba"
+  },
+  "identifiers": {
+    "concept_doi": "10.5281/zenodo.22036029",
+    "evidence_press": "https://evidencepress.org/releases/cyclicity-support-fusion-atlas/",
+    "previous_version_doi": "10.5281/zenodo.22045144",
+    "repository": "https://github.com/ipitchford/cyclicity-support-fusion-atlas",
+    "version_doi": "10.5281/zenodo.22049564"
+  },
+  "licensing": {
+    "original_code_and_tests": "MIT",
+    "original_research_text_and_data": "CC0-1.0",
+    "third_party_material": "existing terms or NOASSERTION"
+  },
+  "receipt_sha256": "6a6fe130cf474bb3fb012d7d8dc86f1228aa5f20927ffaf19df0a9969a7204e6",
+  "schema": "cyclicity-combined-publication-receipt-v1",
+  "status": "pass-for-public-unrefereed-candidate-release",
+  "verification": {
+    "amplitude_laurent_replay": "python3 run_amplitude_laurent_checks.py",
+    "amplitude_receipt_file_sha256": "ab1805e3f1fbb8192c9c8f18ed4fb58fee74d93ea02ede76b313dedf3cedaf1b",
+    "amplitude_receipt_schema": "amplitude-laurent-test-receipt-v1",
+    "combined_manifest_sha256": "0daf522bdae6d52839c1cbff9ca3009960bcee72419c89d814b09d8c66855d56",
+    "deterministic_document_bytes": true,
+    "document_gate": "python3 tools/check_combined_release.py",
+    "global_receipt_schema": "cyclicity-global-completion-receipt-v2",
+    "global_receipt_sha256": "7bfaca3adf5bcd71c66cae2c674a3b560500e596e420d0de55920790b35a8b43",
+    "global_replay": "python3 run_global_completion_checks.py",
+    "normal_optimized_parity": true
+  },
+  "version": "0.7.0-candidate"
+}

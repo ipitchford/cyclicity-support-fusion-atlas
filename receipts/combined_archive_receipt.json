@@ -1,0 +1,13 @@
+{
+  "archive": "cyclicity-support-fusion-atlas-v0.7.0-candidate.zip",
+  "archive_sha256": "f8db1f6bbcc80f6b022788a23694504d7e8e65eb0117241b8fd7198b4ee66b59",
+  "archive_size_bytes": 5604464,
+  "date": "2026-08-21",
+  "manifest_sha256": "095245c32baa2d3025157e97ae3e79f3c7d49da5dd2d238e194603a92b888eb9",
+  "pdf_sha256": "4ea6ca81ac20ec826096b8efe068577a0c859789ce658324ee2111296bef83ba",
+  "release_receipt_sha256": "6a6fe130cf474bb3fb012d7d8dc86f1228aa5f20927ffaf19df0a9969a7204e6",
+  "schema": "cyclicity-combined-archive-binding-v1",
+  "status": "archive-bound",
+  "version": "0.7.0-candidate",
+  "version_doi": "10.5281/zenodo.22049564"
+}

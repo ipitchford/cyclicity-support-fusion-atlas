@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this unrefereed candidate, cite this exact version."
-title: "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods: All-Degree Low-Rank Completion"
+title: "Inverse-Root Support, Polynomial Amplitudes, and Laurent Moment Channels"
 type: article
-version: 0.6.0-candidate
+version: 0.7.0-candidate
 date-released: 2026-08-21
 authors:
   - family-names: Anonymous
@@ -11,12 +11,13 @@ repository-code: "https://github.com/ipitchford/cyclicity-support-fusion-atlas"
 url: "https://evidencepress.org/releases/cyclicity-support-fusion-atlas/"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.22045144
+    value: 10.5281/zenodo.22049564
     description: Exact-version DOI for this candidate
 abstract: >-
-  An unrefereed theorem candidate, relative to named classification results,
-  proving an all-degree classification of complex polynomial phases with
-  fixed seed dx and cyclic rank at most three and classifying every proper
-  rank-preserving outer extension. Scoped Lean and separate exact CAS controls
-  accompany the written proof; external reproduction and peer review remain
-  outstanding.
+  An unrefereed combined theorem candidate. Relative to named classification
+  inputs, it gives the all-degree fixed-seed coefficient atlas at cyclic rank
+  at most three and all rank-preserving polynomial extensions. It also treats
+  arbitrary polynomial amplitudes, specified zero-cycles, persistent endpoint
+  moments for Atlas phases, and an exact local Laurent coefficient criterion.
+  External reproduction, complete formalisation, peer review, and priority
+  certification remain outstanding.

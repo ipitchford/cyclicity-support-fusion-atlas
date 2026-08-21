@@ -39,13 +39,23 @@ def find_raw_tex(text: str) -> list[dict[str, object]]:
 def extract_text(pdf: Path) -> str:
     with tempfile.TemporaryDirectory(prefix="pdf-tex-preflight-") as directory:
         output = Path(directory) / "text.txt"
-        completed = subprocess.run(
-            ["pdftotext", "-layout", str(pdf), str(output)],
-            check=False,
-            text=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-        )
+        try:
+            completed = subprocess.run(
+                ["pdftotext", "-layout", str(pdf), str(output)],
+                check=False,
+                text=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+            )
+        except FileNotFoundError:
+            try:
+                import fitz
+            except ImportError as exc:
+                raise RuntimeError(
+                    "neither pdftotext nor the pinned PyMuPDF fallback is available"
+                ) from exc
+            with fitz.open(pdf) as document:
+                return "\n\f\n".join(page.get_text("text", sort=True) for page in document)
         if completed.returncode != 0:
             raise RuntimeError(f"pdftotext failed ({completed.returncode}): {completed.stdout}")
         return output.read_text(errors="replace")

@@ -1,9 +1,9 @@
 {
   "archive": "cyclicity-support-fusion-atlas-v0.6.0-candidate.zip",
-  "archive_sha256": "781f0ae5ed6afc450eaec3ac3e7ce99bb5ff9c2efad97ecdf1ef4a47f51a77ca",
-  "archive_size_bytes": 2897310,
+  "archive_sha256": "866f97323f862c9cc45ea02c5894fc0fdc54bedbf28ef7c8c4bd1ee825e1efbf",
+  "archive_size_bytes": 2897689,
   "date": "2026-08-21",
-  "manifest_sha256": "ebf2dee3dfb915ed10346ea2cc89999fd06240a1c50d30039f9626237ee8f3b1",
+  "manifest_sha256": "fc0af7a675d25d4b5676ea162d311dff3926517328587580d301838ea8b2e524",
   "pdf_sha256": "b0cc6d997a3f74777e522c667840d8bb2c32afd3d2ff699e0d7023db9a65d74a",
   "release_receipt_sha256": "1aa9f3349ac0f3dbea46dd56447797809be3f745f997172fec4db915d4067224",
   "schema": "cyclicity-all-degree-archive-binding-v1",

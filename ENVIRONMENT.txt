@@ -1,15 +1,25 @@
-Authoritative replay environment for v0.5.0-candidate
-Date: 2026-08-20
+Authoritative replay environment for v0.6.0-candidate
+Date: 2026-08-21
 Platform: macOS 26.5.2, arm64
 Python: 3.14.6
 SymPy: 1.14.0
 NumPy: 2.4.2
 mpmath: 1.3.0
-Pandoc: 3.9
 PyMuPDF: 1.27.1
-Google Chrome: 151.0.7922.138
+Node.js: 25.2.1
+npm: 11.6.2
+KaTeX: 0.18.4
+Pandoc: 3.9
+WeasyPrint: 68.1
+Google Chrome: 151.0.7922.170
 qpdf: 12.3.2
+Lean: 4.32.1, compiler commit f054605aea4b840552cca2e725580bffd1e1b704
+Lake: 5.0.0-src+f054605
+Mathlib commit: 520045ab14e26149ee970e2e617ca04b09bde5d6
+Singular: 4.4.1 (44105, 64 bit)
 
-The inherited verification receipt records Python 3.12.3 and SymPy 1.14.0.
-That earlier environment is historical evidence, not the authoritative
-environment for this candidate. No container, Nix or Guix lock is supplied.
+Python packages are pinned in requirements.txt and KaTeX is pinned in
+package-lock.json. The Lean receipt records the compiler and Mathlib
+identities. Historical receipts record earlier environments and remain
+historical cross-version evidence. No container, Nix, or Guix lock is
+supplied.

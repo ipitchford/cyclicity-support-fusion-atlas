@@ -1,0 +1,97 @@
+{
+  "schema": "cyclicity-global-completion-protocol-v2",
+  "date": "2026-08-21",
+  "status": "post-implementation identity protocol",
+  "assessment_boundary": "Verify the local algebraic consequences used by the inherited root-span, finite-pole, primitive-factor, and rank-preserving-extension interfaces; authenticate the repaired coefficient-stratified Kummer component and the direct all-degree Dickson invariant-field proof; and preserve all imported classifications, external review, and publication as explicit assurance boundaries.",
+  "exact_claims": {
+    "pole_order_theorems": [
+      "lower_coefficient_floor_zero",
+      "top_coefficient_floor_one",
+      "polynomial_constant_of_natDegree_lt_one"
+    ],
+    "full_block_theorems": [
+      "fixed_spanning_family_is_identity",
+      "partial_support_kernel_impossible"
+    ],
+    "scalar_extension_theorems": [
+      "cubic_scalar_trivial_of_A_ne_zero",
+      "cubic_scalar_one_or_neg_one",
+      "aligned_square_cubic_no_repeat",
+      "quartic_scalar_cube_one",
+      "quartic_scalar_trivial_of_A_ne_zero",
+      "collision_equal_multipliers_force_cube_one",
+      "collision_deck_multiplier_one"
+    ],
+    "primitive_character_theorems": [
+      "a5_a4_trivial_multiplicity_numerator_zero",
+      "a5_a4_nontrivial_linear_numerator_zero",
+      "psl3_2_s4_trivial_multiplicity_numerator_zero",
+      "psl3_2_s4_sign_multiplicity_numerator_zero"
+    ]
+  },
+  "source_identities": {
+    "behajaina_koenig_neftin": {
+      "arxiv": "2603.27609v2",
+      "date": "2026-07-31",
+      "locators": ["Theorem 2.3", "Theorem 2.4", "Theorem 2.7", "Theorem 3.3", "Theorem 6.1"]
+    },
+    "burda_khovanskii": {
+      "arxiv": "1209.5137v1",
+      "source_archive_sha256": "480784bdc15acc8dfe0d31dc37b6d78834e75bb0531ee70f02a1d000d892a7a7",
+      "locator": "thm:mullerthm"
+    },
+    "calbeto": {
+      "arxiv": "2510.00718v1",
+      "source_archive_sha256": "24e8ee90ad6270ca52f2db696a0c7891dc4b99f3d1012ee5936875b9835280e7",
+      "locators": ["Table 1", "Table 2"]
+    }
+  },
+  "cas_requirements": {
+    "exact_check_keys": [
+      "muller_exceptional_inventory",
+      "pgl2_primitive_source",
+      "pgl2_formal_candidates",
+      "pgl3_intersection",
+      "character_multiplicities",
+      "cubic_scalar_factors",
+      "quartic_scalar_factors",
+      "collision_expansion",
+      "collision_saturated_multiplier_gcd",
+      "aligned_square_quadratic_coefficient"
+    ],
+    "bounded_dickson_case_count": 81,
+    "bounded_floor_case_count": 2079,
+    "all_degree_claim": false
+  },
+  "component_requirements": {
+    "kummer": {
+      "receipt_schema": "cyclicity-kummer-normalizer-receipt-v2",
+      "lock_schema": "cyclicity-kummer-normalizer-lock-v2",
+      "uniform_full_kummer_kernel_claim": false,
+      "exceptional_even_relation_encoded": true
+    },
+    "dickson": {
+      "proof_kind": "direct rational-function invariant-field argument",
+      "bounded_grid_is_proof": false,
+      "covers_arbitrary_outer_degree": true
+    },
+    "internal_reaudits": {
+      "finite_linear_group": "pass",
+      "monodromy_ritt": "pass"
+    }
+  },
+  "negative_controls": [
+    "Reject removal or reordering of a Lean theorem.",
+    "Reject a rehashed complete-formalization claim.",
+    "Reject a rehashed external-independence claim.",
+    "Reject substitution of an imported source identity or source hash.",
+    "Reject replacement of the candidate-relative boundary by an established-theorem claim.",
+    "Reject a CAS receipt that promotes bounded Dickson checks to an all-degree proof.",
+    "Reject mutation or removal of the authenticated Kummer v2 component receipt.",
+    "Reject revival of the false uniform full Kummer-kernel claim.",
+    "Reject mutation or removal of the direct Dickson proof identity.",
+    "Reject promotion of either internal re-audit to external independence or peer review.",
+    "Reject any Lean source containing sorry, admit, or an axiom declaration."
+  ],
+  "claim_boundary": "The successor is an internally complete all-degree theorem candidate over C relative to the named primitive-monodromy, finite-projective-subgroup, character-table, and composition-kernel results. The repaired Kummer v2 component withdraws the false uniform full-kernel claim and treats its exceptional even-exponent stratum by descent. The Dickson extension is proved uniformly in writing by a rational-function invariant-field argument; its bounded grid is regression evidence only. Lean checks sixteen local arithmetic, spanning, scalar, and character consequences, and separate CAS implementations check the stated exact consequences. Laurent-series inversion, algebraic-function-field integrality, the direct Dickson field argument, monodromy, Ritt theory, imported classifications, novelty priority, external independent reproduction, peer review, and publication are not formally verified or claimed."
+}

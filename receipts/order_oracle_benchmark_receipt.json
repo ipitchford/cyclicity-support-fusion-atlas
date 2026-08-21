@@ -1,0 +1,193 @@
+{
+  "all_exact_krylov_residuals_zero": true,
+  "all_expected_orders_match": true,
+  "all_expected_supports_match": true,
+  "case_count": 8,
+  "cases": [
+    {
+      "certificate_file": "power_degree_7.json",
+      "certificate_file_sha256": "267f55a95e69418979ce847924cd7c8c283a943bd79129a54bd62ec0bc70d3e4",
+      "certificate_sha256": "bfd5e1613fb8f90f0abfbc13499dfc5624207ac7441d92397755ad26e1280766",
+      "degree": 7,
+      "exact_krylov_residual_zero": true,
+      "generic_minimal_order": 1,
+      "id": "power_degree_7",
+      "inverse_support": [
+        1
+      ],
+      "operator_coefficients_low_to_high": [
+        "1",
+        "7*s"
+      ],
+      "phase": "x**7",
+      "role": "rank-one anchor"
+    },
+    {
+      "certificate_file": "dickson_degree_5.json",
+      "certificate_file_sha256": "f3d81f9a4faa6793dbe45c20eb1fbc001d639524ff584ffd3470fceffc72cd11",
+      "certificate_sha256": "665828c9850ee838df294e1b8332f03127b9f205232f734dbf48c34d58d15d5f",
+      "degree": 5,
+      "exact_krylov_residual_zero": true,
+      "generic_minimal_order": 2,
+      "id": "dickson_degree_5",
+      "inverse_support": [
+        1,
+        4
+      ],
+      "operator_coefficients_low_to_high": [
+        "-25*s**2 - 1",
+        "25*s",
+        "25*s**2"
+      ],
+      "phase": "16*x**5 - 20*x**3 + 5*x",
+      "role": "rank-two Dickson anchor"
+    },
+    {
+      "certificate_file": "quartic_rank_3.json",
+      "certificate_file_sha256": "9f5bd8278aef251b0125752798a9833ec4ad9610f6f115f02a2f35c06c7fd92f",
+      "certificate_sha256": "552f0389a9888f6e861cb3507e46807633e856411239d48309e06751eda7fa2d",
+      "degree": 4,
+      "exact_krylov_residual_zero": true,
+      "generic_minimal_order": 3,
+      "id": "quartic_rank_3",
+      "inverse_support": [
+        1,
+        2,
+        3
+      ],
+      "operator_coefficients_low_to_high": [
+        "1085*s**4 + 2614*s**3 - 1468*s**2 + 1200*s - 48",
+        "16*s*(350*s**3 + 220*s**2 - 279*s - 42)",
+        "128*s**2*(35*s**2 + 99*s - 30)",
+        "256*s**3*(35*s - 6)"
+      ],
+      "phase": "x**4 + x**2 + x",
+      "role": "generic exact-rank quartic"
+    },
+    {
+      "certificate_file": "quartic_rank_drop.json",
+      "certificate_file_sha256": "583022b37a2493dec2384e5a6165ac54a850884c964bc51a41a032205d09ad56",
+      "certificate_sha256": "d845e469ed740990c813f4bf4c232ca7027b50821b2186407cc5ce605e8ef6f8",
+      "degree": 4,
+      "exact_krylov_residual_zero": true,
+      "generic_minimal_order": 2,
+      "id": "quartic_rank_drop",
+      "inverse_support": [
+        1,
+        3
+      ],
+      "operator_coefficients_low_to_high": [
+        "2*s - 1",
+        "4*s*(s + 4)",
+        "16*s**2"
+      ],
+      "phase": "x**4 + x**2",
+      "role": "quartic rank-drop control"
+    },
+    {
+      "certificate_file": "aligned_square_degree_12.json",
+      "certificate_file_sha256": "3722bb8ebf9afacaa3daee64d51efd673c02af506a62a57d99a47be72e256c3b",
+      "certificate_sha256": "50438412a13bf7bae50200ae004126353d9dc5e29a8625168c310a381c7b26f3",
+      "degree": 12,
+      "exact_krylov_residual_zero": true,
+      "generic_minimal_order": 3,
+      "id": "aligned_square_degree_12",
+      "inverse_support": [
+        1,
+        5,
+        9
+      ],
+      "operator_coefficients_low_to_high": [
+        "32*s + 21",
+        "4*s*(112*s + 141)",
+        "16*s**2*(16*s + 243)",
+        "1728*s**3"
+      ],
+      "phase": "(x**6 + x**2)**2",
+      "role": "rank-preserving power composition"
+    },
+    {
+      "certificate_file": "misaligned_square_degree_12.json",
+      "certificate_file_sha256": "dbcf8a282cf97020ca3e2b1991062b9f2d50edd1277435d01fd4c9098ba9854c",
+      "certificate_sha256": "62ea960fd63720d4c53145572da7a472a2ee47a69c292ecf35dfe7d3c100b54d",
+      "degree": 12,
+      "exact_krylov_residual_zero": true,
+      "generic_minimal_order": 6,
+      "id": "misaligned_square_degree_12",
+      "inverse_support": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "operator_coefficients_low_to_high": [
+        "9*(92897280*s**5 - 2502420480*s**4 - 4010925824*s**3 + 3953737952*s**2 + 213500512*s - 386715)",
+        "48*s*(998645760*s**5 - 17825310720*s**4 - 5859663648*s**3 - 357964776*s**2 + 2096041789*s + 10441305)",
+        "48*s**2*(2345656320*s**5 - 38978956800*s**4 + 76501156224*s**3 - 89056402032*s**2 - 126143912392*s + 2234052555)",
+        "1536*s**3*(34836480*s**5 - 756645120*s**4 + 8527598336*s**3 - 70670219688*s**2 - 38916903498*s + 344563065)",
+        "256*s**4*(23224320*s**5 - 1097897472*s**4 + 56223288192*s**3 - 651170538672*s**2 - 282627351208*s + 1994289255)",
+        "-4096*s**5*(5483520*s**4 - 1238159552*s**3 + 14702173008*s**2 + 5593036550*s - 34903791)",
+        "2985984*s**6*(161280*s**3 - 1836128*s**2 - 639336*s + 3683)"
+      ],
+      "phase": "(x**6 + x**4 + x**2)**2",
+      "role": "support-mutation negative control"
+    },
+    {
+      "certificate_file": "exceptional_collision_degree_12.json",
+      "certificate_file_sha256": "3da20ca3dc60d42ced371cad52f50fde407f41221e2e204e5379e8476fdc584f",
+      "certificate_sha256": "dbd424fa5b3bf1b1e3469f5a0e787f114fd19118a92c9fa62a1ae130d1fc7bac",
+      "degree": 12,
+      "exact_krylov_residual_zero": true,
+      "generic_minimal_order": 3,
+      "id": "exceptional_collision_degree_12",
+      "inverse_support": [
+        1,
+        7,
+        10
+      ],
+      "operator_coefficients_low_to_high": [
+        "2*(81*s + 20)",
+        "18*s*(81*s + 200)",
+        "27*s**2*(27*s + 640)",
+        "6912*s**3"
+      ],
+      "phase": "(x**4 + x)**3",
+      "role": "exceptional rank-three Ritt collision"
+    },
+    {
+      "certificate_file": "rank_creation_degree_6.json",
+      "certificate_file_sha256": "f5e7813545091bd7a1a2603d44d62b999e4bba725d084242fa92e03f1297fc66",
+      "certificate_sha256": "0e6f5201e99beeebb5a90f2e36274d572275f9fc04427671efb4955c9967781c",
+      "degree": 6,
+      "exact_krylov_residual_zero": true,
+      "generic_minimal_order": 4,
+      "id": "rank_creation_degree_6",
+      "inverse_support": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "operator_coefficients_low_to_high": [
+        "5332*s**5 + 69248*s**4 + 97793*s**3 + 23554*s**2 - 14160*s - 360",
+        "s*(51944*s**4 + 441931*s**3 + 419546*s**2 + 68640*s + 12960)",
+        "s**2*(190963*s**3 + 1169273*s**2 + 1140480*s + 244620)",
+        "216*s**3*(1849*s**2 + 9503*s + 1350)",
+        "11664*s**4*(43*s + 5)"
+      ],
+      "phase": "(x**3 + x)**2 + (x**3 + x)",
+      "role": "rank-creation negative control"
+    }
+  ],
+  "claim_boundary": {
+    "individual_cycle": "A chosen rapid-decay cycle may satisfy a lower-order equation.",
+    "numerics": "Real-line quadrature is a spot control and is not theorem evidence.",
+    "order": "Generic minimal order on the complete rapid-decay period solution space."
+  },
+  "receipt_sha256": "06232f1f1a867d91b1a168afee6644d17c0e95ec6763beea49925cfc6fd627c1",
+  "schema": "exponential-period-order-oracle-benchmark-receipt-v1",
+  "spec_sha256": "18405aa2c2d14fad6f77b7842827febb1c8fd63b35c74c87cb1fc1a03905a29b",
+  "status": "pass"
+}

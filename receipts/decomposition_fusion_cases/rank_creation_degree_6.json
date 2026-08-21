@@ -1,0 +1,68 @@
+{
+  "chains": [
+    {
+      "all_factors_indecomposable_over_Q_by_sympy": true,
+      "exact_composition_validated": true,
+      "factor_degrees": [
+        2,
+        3
+      ],
+      "factors_outer_to_inner": [
+        "x**2+x",
+        "x**3+x"
+      ],
+      "name": "quadratic_after_cubic",
+      "proper_suffix_nodes_inner_to_outer": [
+        {
+          "actual_suffix_rank": 2,
+          "actual_suffix_support": [
+            1,
+            2
+          ],
+          "direct_sum": true,
+          "fibre_size_partition": [
+            2,
+            2
+          ],
+          "full_fusion": false,
+          "number_of_distinct_block_spans": 2,
+          "pairwise_intersection_dimension_by_delta": {
+            "0": 2,
+            "1": 0
+          },
+          "predicted_rank_from_parent_support_projection": 2,
+          "suffix": "x**3 + x",
+          "suffix_degree": 3,
+          "suffix_start_zero_based": 1
+        }
+      ],
+      "rank_creation_by_level": [
+        2
+      ],
+      "ranks_inner_to_full": [
+        2,
+        4
+      ],
+      "total_rank_creation": 2
+    }
+  ],
+  "claim_boundary": "The supplied chains and at most one SymPy-discovered chain are exact decomposition witnesses. This report does not assert that they exhaust the complete decomposition lattice over C.",
+  "degree": 6,
+  "global_rank": 4,
+  "global_support": [
+    1,
+    2,
+    4,
+    5
+  ],
+  "phase": "(x**3+x)**2+(x**3+x)",
+  "report_sha256": "9cf53105faf322456b82b1c88d977980a3cb7e4dcc077b6a4146f63b8df111c2",
+  "ritt_consistency": {
+    "all_chains_compose_exactly": true,
+    "every_actual_suffix_rank_matches_support_projection": true,
+    "global_rank_same_across_chains": true
+  },
+  "schema": "decomposition-aware-fusion-report-v1",
+  "status": "pass",
+  "validated_chain_count": 1
+}

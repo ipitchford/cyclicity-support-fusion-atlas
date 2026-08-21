@@ -1,0 +1,71 @@
+target_id: all-degree-inverse-support-classification-v1
+search_date: 2026-08-21
+intended_contribution_unit: assembled-theorem-and-proof
+claim:
+  exact_statement: |
+    Over C, classify every polynomial P for which the fixed amplitude dx has
+    cyclic rank at most three in the polynomial exponential Gauss-Manin
+    system, equivalently reduced inverse-root span at most three; classify all
+    rank-preserving outer extensions along every complete polynomial
+    decomposition and Ritt move; and give an all-m Kummer-line normalizer
+    argument closing the cubic-over-power case, relative to explicitly named
+    primitive-monodromy, finite-projective-group, and composition-kernel
+    classification theorems.
+  exclusions:
+    - No claim to invent twisted de Rham reduction, Picard-Fuchs computation, or cyclic-vector theory.
+    - No claim to reprove Ritt's decomposition theorems or primitive polynomial-monodromy classifications.
+    - No claim to reprove finite subgroup classifications of PGL2(C) or PGL3(C).
+    - No absolute novelty, priority, field-wide impact, external reproduction, or peer-review claim.
+    - No Laurent-polynomial, positive-characteristic, or arbitrary-amplitude extension.
+normalisation:
+  field: C
+  phase: monic and source-centred up to invertible affine source and target changes
+  seed: dx
+  rank: generic minimal scalar ODE order for the complete rapid-decay period solution space
+  root_span: reduced constant span of the local inverse roots of P(X)-z
+  trace: constant trace line removed
+  decomposition: complete polynomial decompositions modulo affine insertions and Ritt moves
+fingerprints:
+  rank_preserving_extensions:
+    - powers: x^m -> x^(mn)
+    - Dickson: D_m(x,a) -> D_(mn)(x,a)
+    - aligned_square: x^(3m)+b*x^m -> (x^(3m)+b*x^m)^2
+    - quartic_collision: x^4+a*x -> (x^4+a*x)^3
+  exceptional_degree_12_support: [1, 7, 10]
+  kummer_spectral_eliminant: 2*(zeta+1)^2
+aliases:
+  analysis:
+    - fixed-seed cyclic vector for polynomial exponential periods
+    - minimal Picard-Fuchs order for Laplace-type polynomial integrals
+    - twisted de Rham Krylov rank
+  algebra:
+    - linear relations among generic inverse roots
+    - reduced root span of P(X)-t
+    - permutation-module quotient under polynomial monodromy
+    - imprimitivity systems and polynomial decomposition
+  dynamics:
+    - zero-dimensional Abelian integrals
+    - polynomial moment problem
+    - balanced and unbalanced zero-cycles
+  group_theory:
+    - primitive polynomial monodromy with low-dimensional quotient
+    - monodromy of compositions of indecomposable polynomials
+known_invariants:
+  fixed_seed_rank: q(P,dx)
+  inverse_support: Sigma(P)
+  reduced_root_span: W_P
+  block_fusion: equality and intersection ranks of decomposition-block spans
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  corpora:
+    - arXiv title, abstract, and indexed full text
+    - Zenodo primary preprints
+    - parent bibliography and open primary manuscripts
+    - zbMATH Open REST API query results
+    - complete retrieved OpenAlex citing sets for named seed works
+    - Semantic Scholar citation cross-checks
+  missing:
+    - MathSciNet full-corpus search
+    - citation indexes outside the complete retrieved OpenAlex result sets
+    - non-English full-text search
+    - author enquiry

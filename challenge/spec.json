@@ -1,0 +1,18 @@
+{
+  "schema": "inverse-support-fraction-replay-challenge-v1",
+  "cases": [
+    {"id": "power_degree_7", "coefficients_ascending": ["0", "0", "0", "0", "0", "0", "0", "1"], "support_depth": 84, "s_specialisations": ["3/7", "-5/2", "7/3"]},
+    {"id": "dickson_degree_5", "coefficients_ascending": ["0", "5", "0", "-20", "0", "16"], "support_depth": 80, "s_specialisations": ["3/7", "-5/2", "7/3"]},
+    {"id": "quartic_rank_3", "coefficients_ascending": ["0", "1", "1", "0", "1"], "support_depth": 64, "s_specialisations": ["3/7", "-5/2", "7/3"]},
+    {"id": "quartic_rank_drop", "coefficients_ascending": ["0", "0", "1", "0", "1"], "support_depth": 64, "s_specialisations": ["3/7", "-5/2", "7/3"]},
+    {"id": "affine_quartic", "coefficients_ascending": ["59", "99", "72", "24", "3"], "support_depth": 64, "s_specialisations": ["3/7", "-5/2", "7/3"]},
+    {"id": "aligned_square_degree_12", "coefficients_ascending": ["0", "0", "0", "0", "1", "0", "0", "0", "2", "0", "0", "0", "1"], "support_depth": 180, "s_specialisations": ["3/7", "-5/2", "7/3"]},
+    {"id": "misaligned_square_degree_12", "coefficients_ascending": ["0", "0", "0", "0", "1", "0", "2", "0", "3", "0", "2", "0", "1"], "support_depth": 180, "s_specialisations": ["3/7", "-5/2", "7/3"]},
+    {"id": "exceptional_collision_degree_12", "coefficients_ascending": ["0", "0", "0", "1", "0", "0", "3", "0", "0", "3", "0", "0", "1"], "support_depth": 240, "s_specialisations": ["3/7", "-5/2", "7/3"]},
+    {"id": "rank_creation_degree_6", "coefficients_ascending": ["0", "1", "1", "1", "2", "0", "1"], "support_depth": 96, "s_specialisations": ["3/7", "-5/2", "7/3"]},
+    {"id": "generic_degree_12", "coefficients_ascending": ["0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "1", "0", "1"], "support_depth": 144, "s_specialisations": ["3/7", "-5/2", "7/3"]},
+    {"id": "quartic_basic", "coefficients_ascending": ["0", "1", "0", "0", "1"], "support_depth": 64, "s_specialisations": ["3/7", "-5/2", "7/3"]},
+    {"id": "even_sextic", "coefficients_ascending": ["1", "0", "1", "0", "0", "0", "1"], "support_depth": 96, "s_specialisations": ["3/7", "-5/2", "7/3"]}
+  ],
+  "claim_boundary": "Finite exact replay challenge. Agreement is within-programme assurance unless performed by an unaffiliated implementation."
+}

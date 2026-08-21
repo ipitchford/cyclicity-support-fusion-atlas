@@ -1,0 +1,14 @@
+{
+  "name": "cyclicity-support-fusion-atlas-release",
+  "private": true,
+  "version": "0.6.0-candidate",
+  "description": "Deterministic static mathematics renderer for the v0.6 Evidence Press candidate",
+  "license": "MIT",
+  "dependencies": {
+    "katex": "0.18.4"
+  },
+  "scripts": {
+    "render:paper": "python3 tools/render_all_degree_paper.py",
+    "test:pdf": "python3 -m unittest tests/test_pdf_tex_preflight.py -v"
+  }
+}

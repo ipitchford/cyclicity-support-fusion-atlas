@@ -1,0 +1,22 @@
+{
+  "files": {
+    "ALL_DEGREE_GLOBAL_COMPLETION.md": "d58272c1a007c6e1f15cea28b089af64df565c4ff8cc4878f1192de54461d04c",
+    "ALL_DEGREE_GLOBAL_REVIEW.md": "4a56525818a74ad1835a238859dd7a7eb2fde6fdf2274bbcae1cf8a937443be0",
+    "DICKSON_EXTENSION_COMPLETION.md": "a5a3b39a90d4c2b44c09b1ffdc78a7c14e0ecf8cc201ea35c36cb4c5b9e3219c",
+    "GLOBAL_COMPLETION_SOURCE_AUDIT.md": "766c19cd9a76cffbefbcaacf3db93f62c6b4fbef4d7903ec0101787d6314d64d",
+    "KUMMER_NORMALIZER_MANIFEST.sha256": "73f6e5eb02c4e156728272004910d2e035423ffc1d0a10408ea0c121cf9e8ca3",
+    "cleanroom/global_interface_audit.py": "fc216bd3ca0c66cc953f32dd972610d8cea3034833f9ea7a0faec3b1784da154",
+    "formal/global_verification_protocol.json": "9c11b61a25a22733ae2b45b47d8b680cb2cec4ede074168161412f5335a7b925",
+    "formal/lean/CyclicityGlobal.lean": "f2933b57e441e415aa373b7dca1d653700646d486e456a4515723f5255fff983",
+    "formal/lean/GLOBAL_README.md": "37701f6f9d6c27cf30b930f0e8d74d2b68e2e58fbbe7d577b762245a3e65e8a1",
+    "programme/FINITE_LINEAR_GROUP_REFEREE_REPORT.md": "330a81e19e01dcc97dc1cd24bb750968eb170ed5c7ad1886c2db2c070957352e",
+    "programme/MONODROMY_RITT_REFEREE_REPORT.md": "9ee7fe4959336ceb5f397934d03f7fe23bfbe38e9601fd367638d4016545ecab",
+    "receipts/kummer_normalizer_receipt.json": "d7ca3f6004833feb7347f3db96cb3b794917658b0de6cf468106494c885f7c9e",
+    "tools/run_global_completion.py": "b9211dcd69226342fefd858cf0dc5d089b52cc328a0141c67d233fca88e6fa72"
+  },
+  "hash_algorithm": "sha256",
+  "lock_sha256": "b2be73c61d4e77d11d0c5559cb0797e95e35f678952a9b3ce3f156d8bb992ad0",
+  "schema": "cyclicity-global-completion-lock-v2",
+  "seal_boundary": "Post-implementation source-identity lock for an internal theorem candidate. It is not prospective preregistration, external review, a formalization of the imported classifications, publication, or proof of novelty.",
+  "status": "sealed"
+}

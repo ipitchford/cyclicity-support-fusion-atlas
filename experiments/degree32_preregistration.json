@@ -1,0 +1,47 @@
+{
+  "schema": "degree32-quartic-lift-preregistration-v1",
+  "registered_date": "2026-08-21",
+  "research_question": "For the first uncovered quartic lift m=8, can a nondegenerate phase A(x^8+b), with A(y)=y^4+beta*y^2+gamma*y and gamma nonzero, lose any one of the four candidate inverse-support classes while retaining the other three?",
+  "object": {
+    "m": 8,
+    "degree": 32,
+    "phase_family": "A(x^8+b), A(y)=y^4+beta*y^2+gamma*y",
+    "parameters": ["beta", "gamma", "b"],
+    "nondegenerate_saturation": "gamma != 0",
+    "candidate_support_classes": [1, 9, 17, 25],
+    "killed_classes_tested": [9, 17, 25]
+  },
+  "method": {
+    "inverse_reversion_depth": 192,
+    "depth_rule": "6*d",
+    "condition_rule": "collect every nonzero inverse coefficient whose residue class is outside the three allowed classes",
+    "elimination": "exact Groebner basis over Q in beta,gamma,b,w with grevlex and equation w*gamma-1",
+    "primary_endpoint": "whether the gamma-saturated ideal is the unit ideal for each killed class",
+    "secondary_endpoints": [
+      "number of distinct confinement conditions",
+      "Groebner basis and Krull dimension if a saturated locus survives"
+    ]
+  },
+  "prospective_predictions": {
+    "primary": "All three gamma-saturated ideals are the unit ideal; no nondegenerate three-class locus survives.",
+    "per_class": {
+      "9": "empty after gamma != 0 saturation",
+      "17": "empty after gamma != 0 saturation",
+      "25": "empty after gamma != 0 saturation"
+    },
+    "secondary": "Six distinct confinement conditions are expected for each killed class, matching m=4 through m=7."
+  },
+  "adjudication": {
+    "confirmed": "all three saturated ideals are unit ideals",
+    "falsified": "at least one killed class has a nonempty gamma-saturated locus",
+    "mixed": "the primary prediction holds but a secondary prediction fails, or different killed classes have different outcomes",
+    "inconclusive": "the exact computation fails, times out, exhausts resources, or cannot verify the sealed code/protocol hashes"
+  },
+  "stopping_rule": "Run the sealed runner once on all three killed classes. Do not alter depths, equations, monomial order or saturation after inspecting results. Any follow-up is a separately registered successor experiment.",
+  "claim_boundary": [
+    "This is one finite family-blind elimination within the quartic-lift ansatz.",
+    "A confirmed result extends the exact quartic-lift computation to m=8 only.",
+    "It does not prove the all-degree atlas, the cubic descent, or completeness across all degree-32 polynomials.",
+    "A nonempty locus is a candidate requiring exact family interpretation and rank confirmation; it is not automatically a counterexample to every atlas statement."
+  ]
+}

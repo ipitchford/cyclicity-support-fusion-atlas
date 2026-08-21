@@ -1,0 +1,483 @@
+{
+  "claim_boundary": "Second-engine internal assurance: Singular checks the bounded m=2..32 elimination loci and Lean checks the displayed local algebraic implications. This does not formalise the all-m coefficient-extraction proof, monodromy/scaling lemma, finite-pole descent, inherited primitive audit, or rank-preserving extension theorem; it is not external independent reproduction.",
+  "engines": {
+    "lean": {
+      "kernel_status": "pass",
+      "lake_version": "Lake version 5.0.0-src+f054605 (Lean version 4.32.1)",
+      "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+      "source_sha256": "7ef478d1c1d3b309d2338067ffb1fd85402e50691fdad6edaa63e1894e3096dc",
+      "theorem_count": 11,
+      "theorems": [
+        "cubic_powered_root",
+        "quartic_powered_root",
+        "cubic_m4_forces_power",
+        "quartic_m2_obstruction",
+        "quartic_m3_forces_a_zero",
+        "quartic_m5_forces_degenerate",
+        "quartic_m6_obstruction",
+        "quartic_m9_forces_degenerate",
+        "cubic_m2_elementary",
+        "quartic_m3_second_elementary",
+        "quartic_m3_third_elementary"
+      ],
+      "version": "Lean (version 4.32.1, arm64-apple-darwin24.6.0, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)"
+    },
+    "singular": {
+      "case_count": 62,
+      "positive_resultants": {
+        "cubic": "y3+2y2a+ya2-e2",
+        "quartic": "y4+3y3c+3y2c2+yc3+e3"
+      },
+      "raw_output_sha256": "4f129f91e9cfd5a4283b0ca3b1ae00f3d532c0c03f838cf6fb86d78aed1e1660",
+      "records": [
+        {
+          "condition_count": 0,
+          "empty_after_nondegenerate_saturation": false,
+          "m": 2,
+          "reduced_standard_basis": "aw-1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 2,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 3,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 1,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 4,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 2,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 5,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 3,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 6,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 3,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 7,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 3,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 8,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 5,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 9,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 4,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 10,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 5,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 11,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 6,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 12,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 6,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 13,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 6,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 14,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 8,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 15,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 7,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 16,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 8,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 17,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 9,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 18,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 9,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 19,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 9,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 20,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 11,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 21,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 10,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 22,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 11,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 23,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 12,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 24,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 12,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 25,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 12,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 26,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 14,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 27,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 13,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 28,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 14,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 29,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 15,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 30,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 15,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 31,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 15,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 32,
+          "reduced_standard_basis": "1",
+          "type": "cubic"
+        },
+        {
+          "condition_count": 2,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 2,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 2,
+          "empty_after_nondegenerate_saturation": false,
+          "m": 3,
+          "reduced_standard_basis": "cw-1,a",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 6,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 4,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 5,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 5,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 8,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 6,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 8,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 7,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 12,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 8,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 11,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 9,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 14,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 10,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 14,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 11,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 18,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 12,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 17,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 13,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 20,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 14,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 20,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 15,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 24,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 16,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 23,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 17,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 26,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 18,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 26,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 19,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 30,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 20,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 29,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 21,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 32,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 22,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 32,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 23,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 36,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 24,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 35,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 25,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 38,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 26,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 38,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 27,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 42,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 28,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 41,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 29,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 44,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 30,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 44,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 31,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        },
+        {
+          "condition_count": 48,
+          "empty_after_nondegenerate_saturation": true,
+          "m": 32,
+          "reduced_standard_basis": "1",
+          "type": "quartic"
+        }
+      ],
+      "source_sha256": "0dfde11c333eb9c5b134df25324d4e42f5c3281d545c82a78e25d8877bee4e5e",
+      "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+    }
+  },
+  "lock_sha256": "aaeea44daab158c278037b331d3c0afda9ce63d988793386c48cf05ea784e144",
+  "protocol_sha256": "ecb3e275ab310e18a3fa83d90ae9bacbf6401101d358f1a6d92ca5995a564fb4",
+  "receipt_sha256": "df86daf1727b3cb54dc691d431b18d79b818af0e7c5dfa697a46276b0cfb22e2",
+  "schema": "cyclicity-independent-formalization-receipt-v1",
+  "separation": {
+    "algebra_engine": "Singular, not SymPy",
+    "external_independence": false,
+    "formal_kernel": "Lean 4 with Mathlib",
+    "orchestrator": "Python standard library only"
+  },
+  "status": "pass"
+}

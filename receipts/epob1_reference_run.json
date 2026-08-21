@@ -1,0 +1,295 @@
+{
+  "benchmark_version": "1.0.0",
+  "cases": [
+    {
+      "ambient_order": 6,
+      "compression_ratio_ambient_over_order": "6/1",
+      "degree": 7,
+      "id": "power_degree_7",
+      "operator_coefficient_characters": 4,
+      "operator_median_seconds": 0.012796834023902193,
+      "operator_seconds": [
+        0.01537824998376891,
+        0.012796834023902193,
+        0.012476833013352007
+      ],
+      "order": 1,
+      "prediction_median_seconds": 0.010483958991244435,
+      "prediction_seconds": [
+        0.036628958012443036,
+        0.010483958991244435,
+        0.009627957973862067
+      ],
+      "status": "pass",
+      "support": [
+        1
+      ],
+      "track": "operator"
+    },
+    {
+      "ambient_order": 4,
+      "compression_ratio_ambient_over_order": "4/2",
+      "degree": 5,
+      "id": "dickson_degree_5",
+      "operator_coefficient_characters": 23,
+      "operator_median_seconds": 0.036569375020917505,
+      "operator_seconds": [
+        0.058770167001057416,
+        0.036569375020917505,
+        0.033876959001645446
+      ],
+      "order": 2,
+      "prediction_median_seconds": 0.020220125006744638,
+      "prediction_seconds": [
+        0.038865124981384724,
+        0.020220125006744638,
+        0.01988866602187045
+      ],
+      "status": "pass",
+      "support": [
+        1,
+        4
+      ],
+      "track": "operator"
+    },
+    {
+      "ambient_order": 3,
+      "compression_ratio_ambient_over_order": "3/3",
+      "degree": 4,
+      "id": "quartic_rank_3",
+      "operator_coefficient_characters": 135,
+      "operator_median_seconds": 0.11655208401498385,
+      "operator_seconds": [
+        0.15185620801639743,
+        0.11655208401498385,
+        0.11273829199490137
+      ],
+      "order": 3,
+      "prediction_median_seconds": 0.028149374993517995,
+      "prediction_seconds": [
+        0.09406962498906069,
+        0.028149374993517995,
+        0.027585000003455207
+      ],
+      "status": "pass",
+      "support": [
+        1,
+        2,
+        3
+      ],
+      "track": "operator"
+    },
+    {
+      "ambient_order": 3,
+      "compression_ratio_ambient_over_order": "3/2",
+      "degree": 4,
+      "id": "quartic_rank_drop",
+      "operator_coefficient_characters": 25,
+      "operator_median_seconds": 0.018778416997520253,
+      "operator_seconds": [
+        0.025249416998121887,
+        0.018735791993094608,
+        0.018778416997520253
+      ],
+      "order": 2,
+      "prediction_median_seconds": 0.009274041978642344,
+      "prediction_seconds": [
+        0.013432249979814515,
+        0.008974625001428649,
+        0.009274041978642344
+      ],
+      "status": "pass",
+      "support": [
+        1,
+        3
+      ],
+      "track": "operator"
+    },
+    {
+      "ambient_order": 3,
+      "compression_ratio_ambient_over_order": "3/3",
+      "degree": 4,
+      "id": "affine_quartic",
+      "operator_coefficient_characters": 90,
+      "operator_median_seconds": 0.06545862500206567,
+      "operator_seconds": [
+        0.10096725000767037,
+        0.06545862500206567,
+        0.05011250000097789
+      ],
+      "order": 3,
+      "prediction_median_seconds": 0.005852000002050772,
+      "prediction_seconds": [
+        0.009925042017130181,
+        0.005796292010927573,
+        0.005852000002050772
+      ],
+      "status": "pass",
+      "support": [
+        1,
+        2,
+        3
+      ],
+      "track": "operator"
+    },
+    {
+      "ambient_order": 11,
+      "compression_ratio_ambient_over_order": "11/3",
+      "degree": 12,
+      "id": "aligned_square_degree_12",
+      "operator_coefficient_characters": 55,
+      "operator_median_seconds": 0.4841772499785293,
+      "operator_seconds": [
+        0.5376651669794228,
+        0.4812832079769578,
+        0.4841772499785293
+      ],
+      "order": 3,
+      "prediction_median_seconds": 0.36756879201857373,
+      "prediction_seconds": [
+        0.597438124998007,
+        0.36756879201857373,
+        0.3666795000026468
+      ],
+      "status": "pass",
+      "support": [
+        1,
+        5,
+        9
+      ],
+      "track": "operator"
+    },
+    {
+      "ambient_order": 11,
+      "compression_ratio_ambient_over_order": "11/6",
+      "degree": 12,
+      "id": "misaligned_square_degree_12",
+      "operator_coefficient_characters": 672,
+      "operator_median_seconds": 2.518929166981252,
+      "operator_seconds": [
+        2.772966250020545,
+        2.513622332975501,
+        2.518929166981252
+      ],
+      "order": 6,
+      "prediction_median_seconds": 2.4903311659872998,
+      "prediction_seconds": [
+        3.797539291001158,
+        2.4903311659872998,
+        2.490255458978936
+      ],
+      "status": "pass",
+      "support": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "track": "operator"
+    },
+    {
+      "ambient_order": 11,
+      "compression_ratio_ambient_over_order": "11/3",
+      "degree": 12,
+      "id": "exceptional_collision_degree_12",
+      "operator_coefficient_characters": 59,
+      "operator_median_seconds": 0.6748275000136346,
+      "operator_seconds": [
+        0.7548067080206238,
+        0.6748275000136346,
+        0.6739229169907048
+      ],
+      "order": 3,
+      "prediction_median_seconds": 0.5273123329970986,
+      "prediction_seconds": [
+        0.81660049999482,
+        0.5271907499991357,
+        0.5273123329970986
+      ],
+      "status": "pass",
+      "support": [
+        1,
+        7,
+        10
+      ],
+      "track": "operator"
+    },
+    {
+      "ambient_order": 5,
+      "compression_ratio_ambient_over_order": "5/4",
+      "degree": 6,
+      "id": "rank_creation_degree_6",
+      "operator_coefficient_characters": 235,
+      "operator_median_seconds": 0.44520620800904,
+      "operator_seconds": [
+        0.5094450420001522,
+        0.44520620800904,
+        0.44320604199310765
+      ],
+      "order": 4,
+      "prediction_median_seconds": 0.3900093749980442,
+      "prediction_seconds": [
+        0.5117680000257678,
+        0.3900093749980442,
+        0.3835935409879312
+      ],
+      "status": "pass",
+      "support": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "track": "operator"
+    },
+    {
+      "ambient_order": 11,
+      "compression_ratio_ambient_over_order": "11/11",
+      "degree": 12,
+      "id": "generic_degree_12",
+      "operator_coefficient_characters": null,
+      "operator_median_seconds": null,
+      "operator_seconds": [],
+      "order": 11,
+      "prediction_median_seconds": 1.9519967499945778,
+      "prediction_seconds": [
+        1.9631130839989055,
+        1.9490699579764623,
+        1.9519967499945778
+      ],
+      "status": "pass",
+      "support": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "track": "rank_only"
+    }
+  ],
+  "claim_boundary": "Reference correctness and local timings only; no cross-system performance claim.",
+  "environment": {
+    "implementation": "CPython",
+    "mpmath": "1.3.0",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6",
+    "sympy": "1.14.0"
+  },
+  "repeats": 3,
+  "schema": "epob1-reference-run-v1",
+  "scores": {
+    "operator": "9/9",
+    "order": "10/10",
+    "support": "10/10"
+  },
+  "status": "pass"
+}

@@ -1,0 +1,98 @@
+{
+  "adjudication": "confirmed",
+  "claim_boundary": [
+    "This is one finite family-blind elimination within the quartic-lift ansatz.",
+    "A confirmed result extends the exact quartic-lift computation to m=8 only.",
+    "It does not prove the all-degree atlas, the cubic descent, or completeness across all degree-32 polynomials.",
+    "A nonempty locus is a candidate requiring exact family interpretation and rank confirmation; it is not automatically a counterexample to every atlas statement."
+  ],
+  "completed_utc": "2026-08-21T03:27:00.887322+00:00",
+  "degree": 32,
+  "elapsed_seconds": 4.691495333012426,
+  "inverse_reversion_depth": 192,
+  "m": 8,
+  "primary_prediction_confirmed": true,
+  "records": [
+    {
+      "allowed_classes": [
+        1,
+        17,
+        25
+      ],
+      "condition_count": 6,
+      "condition_orders": [
+        24,
+        56,
+        88,
+        120,
+        152,
+        184
+      ],
+      "conditions_sha256": "9620a19db87a83b9cc9cf0a04937104513cdc30cf6f0ae0758f6f19ff56b41b6",
+      "empty_after_gamma_saturation": true,
+      "killed_class": 9,
+      "saturated_basis": [
+        "1"
+      ]
+    },
+    {
+      "allowed_classes": [
+        1,
+        9,
+        25
+      ],
+      "condition_count": 6,
+      "condition_orders": [
+        16,
+        48,
+        80,
+        112,
+        144,
+        176
+      ],
+      "conditions_sha256": "75cb5661e0da2c8bc11bf2ce46eda7a28583426413cd75581432511d1e331b3f",
+      "empty_after_gamma_saturation": true,
+      "killed_class": 17,
+      "saturated_basis": [
+        "1"
+      ]
+    },
+    {
+      "allowed_classes": [
+        1,
+        9,
+        17
+      ],
+      "condition_count": 6,
+      "condition_orders": [
+        8,
+        40,
+        72,
+        104,
+        136,
+        168
+      ],
+      "conditions_sha256": "783f9e00061c7d5434a86b46c71710ffcd12e7eff444b8801fead296200db4d3",
+      "empty_after_gamma_saturation": true,
+      "killed_class": 25,
+      "saturated_basis": [
+        "1"
+      ]
+    }
+  ],
+  "result_sha256": "f72a3468c0acbe193673fe46ba9fb7006bff77aac4d4cb03adf02bea6bf2efae",
+  "schema": "degree32-quartic-lift-result-v1",
+  "seal": {
+    "execution_state_at_seal": "not_run",
+    "parent_git_commit": "ce4e129bed2c1ea5dd7b778488d7bec2b76deb7d",
+    "preregistration": "degree32_preregistration.json",
+    "preregistration_sha256": "9b5bdd27011a1810efe6e77aa041a56772acaf7c220918369e985a338a6f8911",
+    "runner": "degree32_quartic_lift.py",
+    "runner_sha256": "35a19fc4e521e1dc34b5a5d3be9b9851cab5bcef89cd0f9f2d9fe126716e2cd6",
+    "schema": "degree32-preregistration-lock-v1",
+    "sealed_utc": "2026-08-21T03:26:47.358810+00:00"
+  },
+  "secondary_prediction_confirmed": true,
+  "started_utc": "2026-08-21T03:26:56.195774+00:00",
+  "status": "complete"
+}

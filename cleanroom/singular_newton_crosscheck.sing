@@ -1,0 +1,108 @@
+// Independent Singular elimination check for the Newton-descent boundary.
+//
+// This program uses no Python/SymPy algebra and imports no project code.  It
+// computes direct resultants, extracts the conditions that the first n-1
+// powered-root coefficients be independent of e, and checks those conditions
+// after saturating by the nondegeneracy parameter.
+
+option(redSB);
+ring r = 0,(x,y,e,a,c,w),lp;
+
+proc coeffConditions(poly powered, int rootDegree)
+{
+  ideal conditions = 0;
+  poly inY = powered;
+  poly coefficient;
+  poly derivative;
+  poly inE;
+  poly eCoefficient;
+  int yIndex;
+  int eIndex;
+
+  // Coefficients are extracted from low to high y-degree.  Ignore the
+  // constant coefficient (index 0) and monic leading coefficient (degree).
+  for (yIndex = 0; yIndex <= rootDegree; yIndex++)
+  {
+    coefficient = subst(inY,y,0);
+    inY = (inY-coefficient)/y;
+    if ((yIndex > 0) && (yIndex < rootDegree))
+    {
+      derivative = diff(coefficient,e);
+      inE = derivative;
+      while (inE != 0)
+      {
+        eCoefficient = subst(inE,e,0);
+        if (eCoefficient != 0)
+        {
+          conditions[size(conditions)+1] = eCoefficient;
+        }
+        inE = (inE-eCoefficient)/e;
+      }
+    }
+  }
+  return(conditions);
+}
+
+proc runCase(string kind, int rootDegree, poly phase, poly nonzero, int survivor, int m)
+{
+  poly powered = resultant(phase,y-x^m,x);
+  ideal conditions = coeffConditions(powered,rootDegree);
+  ideal saturated = conditions, w*nonzero-1;
+  ideal basis = std(saturated);
+  int empty = (reduce(1,basis) == 0);
+  int expectedEmpty = (m != survivor);
+
+  if (empty != expectedEmpty)
+  {
+    "FAIL|unexpected_locus|"+kind+"|"+string(m)+"|"+string(empty);
+    quit;
+  }
+  if ((kind == "quartic") && (m == 3) && (reduce(a,basis) != 0))
+  {
+    "FAIL|quartic_survivor_does_not_force_a_zero";
+    quit;
+  }
+
+  "CASE|"+kind+"|"+string(m)+"|"+string(empty)+"|"+
+    string(size(conditions))+"|"+string(basis);
+  return(powered);
+}
+
+poly cubicPhase = x^3+a*x+e;
+poly quarticPhase = x^4+a*x^2+c*x+e;
+poly cubicPositive;
+poly quarticPositive;
+poly currentCubic;
+poly currentQuartic;
+int m;
+
+"META|schema|singular-newton-independent-v1";
+"META|range|2|32";
+for (m = 2; m <= 32; m++)
+{
+  currentCubic = runCase("cubic",3,cubicPhase,a,2,m);
+  if (m == 2) { cubicPositive = currentCubic; }
+}
+for (m = 2; m <= 32; m++)
+{
+  currentQuartic = runCase("quartic",4,quarticPhase,c,3,m);
+  if (m == 3) { quarticPositive = subst(currentQuartic,a,0); }
+}
+
+poly expectedCubic = y*(y+a)^2-e^2;
+poly expectedQuartic = y*(y+c)^3+e^3;
+if (cubicPositive-expectedCubic != 0)
+{
+  "FAIL|cubic_positive_identity";
+  quit;
+}
+if (quarticPositive-expectedQuartic != 0)
+{
+  "FAIL|quartic_positive_identity";
+  quit;
+}
+
+"IDENTITY|cubic|"+string(cubicPositive);
+"IDENTITY|quartic|"+string(quarticPositive);
+"SINGULAR_NEWTON_PASS";
+quit;

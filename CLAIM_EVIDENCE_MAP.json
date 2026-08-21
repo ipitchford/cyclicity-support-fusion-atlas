@@ -1,6 +1,6 @@
 {
   "schema": "cyclicity-claim-evidence-map-v1",
-  "version": "0.5.0-candidate",
+  "version": "0.6.0-candidate",
   "parents": [
     {
       "id": "EP1",
@@ -16,61 +16,67 @@
       "url": "https://evidencepress.org/releases/cyclicity-root-span-low-rank/",
       "doi": "10.5281/zenodo.21864884",
       "inherited": ["reduced inverse-root span", "right-factor heredity", "low-rank frontier"],
-      "superseded_boundary": "the imported stationary-phase bridge is replaced by Theorem 4.3 and the fusion obstruction by Theorem 8.2"
+      "superseded_boundary": "the imported stationary-phase bridge is replaced by MANUSCRIPT.md Theorem 4.3 and the fusion obstruction by Theorem 8.2"
+    },
+    {
+      "id": "EP3",
+      "title": "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods",
+      "url": "https://evidencepress.org/releases/cyclicity-support-fusion-atlas/",
+      "doi": "10.5281/zenodo.22036030",
+      "tag": "v0.5.0-candidate",
+      "inherited": ["T1-T6", "finite atlas F1", "degree-20 exact receipts", "Conjecture 13.2 as the historical frontier"],
+      "superseded_boundary": "Conjecture 13.2 is promoted only in the additive v0.6 proof C1; the parent manuscript and manifest remain unchanged"
     }
   ],
   "claims": {
     "T1": {
-      "current_locators": ["MANUSCRIPT.md#theorem-52--unconditional-support-formula"],
-      "source_history": ["source-history/UNCONDITIONAL_FUSION_v0.2.0.md, Sections 4-5"],
+      "current_locators": ["MANUSCRIPT.md, Theorem 5.2", "ALL_DEGREE_GLOBAL_COMPLETION.md, Theorem 2.1"],
       "current_tests": ["tests/test_fusion_support.py", "cleanroom/fraction_audit.py", "verification/battery1.py", "verification/battery2.py"],
       "assurance_ceiling": "written theorem candidate plus producer and within-programme replay"
     },
     "T2": {
-      "current_locators": ["MANUSCRIPT.md#theorem-61--root-span-as-inverse-support"],
-      "source_history": ["source-history/UNCONDITIONAL_FUSION_v0.2.0.md, Section 6"],
-      "current_tests": ["tests/test_fusion_support.py", "verification/battery1.py"],
+      "current_locators": ["MANUSCRIPT.md, Theorem 6.1", "ALL_DEGREE_GLOBAL_COMPLETION.md, Theorem 2.1"],
+      "current_tests": ["tests/test_fusion_support.py", "verification/battery1.py", "run_global_completion_checks.py"],
       "assurance_ceiling": "written theorem candidate"
     },
     "T3": {
-      "current_locators": ["MANUSCRIPT.md#theorem-73--fourier--gamma-period-determinant"],
-      "source_history": ["source-history/UNCONDITIONAL_FUSION_v0.2.0.md, Section 7"],
+      "current_locators": ["MANUSCRIPT.md, Theorem 7.3 and Corollary 7.4"],
       "current_tests": ["cleanroom/period_matrix_spotcheck.py"],
       "assurance_ceiling": "written theorem candidate plus numerical asymptotic spot control"
     },
     "T4": {
-      "current_locators": ["MANUSCRIPT.md#theorem-82--complete-block-fusion-rank-formula"],
-      "source_history": ["source-history/UNCONDITIONAL_FUSION_v0.2.0.md, Section 8"],
+      "current_locators": ["MANUSCRIPT.md, Theorem 8.2"],
       "current_tests": ["tests/test_fusion_support.py", "verification/battery3.py"],
       "assurance_ceiling": "written theorem candidate plus exact and numerical finite controls"
     },
     "T5": {
-      "current_locators": ["MANUSCRIPT.md#theorem-92--equality-fusion-exposes-an-actual-factor"],
-      "source_history": ["source-history/UNCONDITIONAL_FUSION_v0.2.0.md, Section 9.2"],
+      "current_locators": ["MANUSCRIPT.md, Theorem 9.2"],
       "current_tests": ["tests/test_fusion_support.py"],
       "assurance_ceiling": "written theorem candidate; no external specialist audit"
     },
     "T6": {
-      "current_locators": ["MANUSCRIPT.md#theorem-95--complete-low-rank-ritt-table"],
-      "source_history": ["source-history/UNCONDITIONAL_FUSION_v0.2.0.md, Section 9.4"],
+      "current_locators": ["MANUSCRIPT.md, Theorems 9.4 and 9.5"],
       "current_tests": ["cleanroom/fraction_audit.py"],
       "assurance_ceiling": "written finite combinatorial theorem candidate"
     },
     "F1": {
-      "current_locators": ["MANUSCRIPT.md#theorem-131--finite-low-rank-atlas"],
-      "source_history": ["source-history/COEFFICIENT_ATLAS_v0.3.0.md", "verification/HISTORICAL_VERIFICATION_REPORT.md"],
+      "current_locators": ["MANUSCRIPT.md, Theorem 13.1"],
       "current_tests": ["run_core_checks.py", "receipts/atlas_case_records_d5_20.json", "verification/negative_controls.py"],
-      "assurance_ceiling": "finite computer-assisted theorem candidate under stated software and encoding trust base"
+      "assurance_ceiling": "finite computer-assisted theorem candidate under the stated software and encoding trust base"
     },
     "C1": {
-      "current_locators": ["MANUSCRIPT.md#conjecture-132--all-degree-atlas"],
-      "source_history": ["source-history/COEFFICIENT_ATLAS_v0.3.0.md", "verification/HISTORICAL_VERIFICATION_REPORT.md"],
-      "current_tests": ["verification/battery4b.py", "verification/battery4d.py"],
-      "assurance_ceiling": "conjecture; first uncovered case degree 32"
+      "current_locators": ["ALL_DEGREE_GLOBAL_COMPLETION.md, Theorem 11.1"],
+      "predecessor_locator": "MANUSCRIPT.md, Conjecture 13.2",
+      "current_tests": ["run_global_completion_checks.py", "GLOBAL_COMPLETION_MANIFEST.sha256", "receipts/global_completion_receipt.json", "tests/test_global_completion.py"],
+      "assurance_ceiling": "proved in an unrefereed candidate relative to named imported classifications; no external specialist validation"
+    },
+    "E1": {
+      "current_locators": ["ALL_DEGREE_GLOBAL_COMPLETION.md, Sections 7-11 and Theorem 11.1", "DICKSON_EXTENSION_COMPLETION.md", "KUMMER_NORMALIZER_COMPLETION.md"],
+      "current_tests": ["run_global_completion_checks.py", "receipts/global_completion_receipt.json", "receipts/kummer_normalizer_receipt.json"],
+      "assurance_ceiling": "proved in an unrefereed candidate relative to named imported classifications; internal re-audits only"
     },
     "A1": {
-      "current_locators": ["MANUSCRIPT.md#141-generic-minimal-ode-order-proved-corollary"],
-      "source_history": ["source-history/APPLICATIONS_AS_SUPPLIED.md"],
+      "current_locators": ["MANUSCRIPT.md, Section 14.1"],
       "current_tests": [],
       "assurance_ceiling": "generic corollary; exploratory demonstrations excluded"
     }

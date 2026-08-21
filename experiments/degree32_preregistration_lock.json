@@ -1,0 +1,10 @@
+{
+  "execution_state_at_seal": "not_run",
+  "parent_git_commit": "ce4e129bed2c1ea5dd7b778488d7bec2b76deb7d",
+  "preregistration": "degree32_preregistration.json",
+  "preregistration_sha256": "9b5bdd27011a1810efe6e77aa041a56772acaf7c220918369e985a338a6f8911",
+  "runner": "degree32_quartic_lift.py",
+  "runner_sha256": "35a19fc4e521e1dc34b5a5d3be9b9851cab5bcef89cd0f9f2d9fe126716e2cd6",
+  "schema": "degree32-preregistration-lock-v1",
+  "sealed_utc": "2026-08-21T03:26:47.358810+00:00"
+}

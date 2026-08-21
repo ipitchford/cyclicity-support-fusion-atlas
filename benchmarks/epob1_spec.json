@@ -1,0 +1,23 @@
+{
+  "schema": "epob1-spec-v1",
+  "version": "1.0.0",
+  "cases": [
+    {"id": "power_degree_7", "phase": "x**7", "track": "operator"},
+    {"id": "dickson_degree_5", "phase": "16*x**5 - 20*x**3 + 5*x", "track": "operator"},
+    {"id": "quartic_rank_3", "phase": "x**4 + x**2 + x", "track": "operator"},
+    {"id": "quartic_rank_drop", "phase": "x**4 + x**2", "track": "operator"},
+    {"id": "affine_quartic", "phase": "3*((x+2)**4+(x+2))+5", "track": "operator"},
+    {"id": "aligned_square_degree_12", "phase": "(x**6 + x**2)**2", "track": "operator"},
+    {"id": "misaligned_square_degree_12", "phase": "(x**6 + x**4 + x**2)**2", "track": "operator"},
+    {"id": "exceptional_collision_degree_12", "phase": "(x**4 + x)**3", "track": "operator"},
+    {"id": "rank_creation_degree_6", "phase": "(x**3 + x)**2 + (x**3 + x)", "track": "operator"},
+    {"id": "generic_degree_12", "phase": "x**12 + x**10 + x**3", "track": "rank_only"}
+  ],
+  "scoring": {
+    "order_points_per_case": 1,
+    "support_points_per_case": 1,
+    "operator_points_per_operator_case": 1,
+    "operator_equivalence": "common nonzero rational-function factor"
+  },
+  "claim_boundary": "Generic order on the complete rapid-decay period solution space; no individual-cycle or performance-superiority claim."
+}

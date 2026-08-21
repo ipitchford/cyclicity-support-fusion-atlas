@@ -1,0 +1,61 @@
+{
+  "schema_version": "research-quality-gate-1.0",
+  "assessment_id": "cyclicity-independent-formalization-2026-08-21",
+  "as_of": "2026-08-21",
+  "attribution": "anonymous",
+  "assessors": ["internal-QA"],
+  "assessment_boundary": "Assess the Singular bounded elimination and eleven Lean statements for additive candidate assurance, not the complete all-degree theorem.",
+  "decision_supported": "Whether to integrate this evidence and change the assurance description.",
+  "claim": {
+    "text": "Singular reproduces all cubic/quartic elimination loci for 2 <= m <= 32, and Lean's kernel verifies eleven named local algebraic statements.",
+    "scope": "Local Newton-descent algebra only.",
+    "output_type": "formal proof and mathematical software certificate",
+    "field": ["algebra", "polynomial decomposition", "computer-assisted proof"],
+    "identifiers": ["cyclicity-independent-formalization-v1"]
+  },
+  "novelty_handoff": {
+    "outcome": "BOUNDED UNCERTAINTY",
+    "search_date": "2026-08-21",
+    "corpus_boundary": "Parent references plus bounded arXiv and HAL primary-manuscript searches.",
+    "closest_prior_art": ["Established creative-telescoping and minimal-telescoper methods recorded in programme/NOVELTY_GATE.md."],
+    "unresolved_priority_questions": ["Formalisation-specific prior art was not refreshed after the third-party CAS rerun trigger."]
+  },
+  "prior": {
+    "originality": {"score": 2, "confidence": "medium", "justification": "Retrospective structured prior only; a separate verification artefact was plausible but priority was bounded."},
+    "significance": {"score": 3, "confidence": "high", "justification": "The target was the local obstruction in the all-degree candidate proof."},
+    "rigour": {"score": 3, "confidence": "medium", "justification": "Distinct engines, statement mapping, semantic verification, and negative controls were feasible."},
+    "expected_action": "go with controls"
+  },
+  "outcome": {
+    "originality": {"score": 2, "confidence": "medium", "justification": "Newly constructed package with no refreshed formalisation-specific novelty search."},
+    "significance": {"score": 3, "confidence": "high", "justification": "Directly strengthens the repaired Newton descent and independently binds the sign-sensitive quartic identity."},
+    "rigour": {"score": 3, "confidence": "high for stated boundary", "justification": "62 exact loci, 11 kernel-checked statements, source lock, semantic verifier, and six adversarial mutations."},
+    "summary_score": 65.5,
+    "summary_formula": "100 * ((O/4)*(S/4)*(R/4))^(1/3)",
+    "decision": "go with controls"
+  },
+  "assurance": {
+    "status": "formally verified",
+    "checks": ["Singular bounded elimination", "Lean kernel check", "semantic receipt verification", "six adversarial mutations"],
+    "independence": "Different CAS and proof kernel, same producer; not external independent reproduction.",
+    "limits": ["Formal verification covers eleven local statements only.", "Uniform all-m and inherited theorem dependencies are not formalised.", "No fresh isolated Mathlib build was performed."]
+  },
+  "reception": {
+    "status": "immature",
+    "as_of": "2026-08-21",
+    "openalex": {"work_id": null, "fwci": null, "citation_normalized_percentile": null, "cited_by_count": null, "coverage_notes": "Not applicable to this new internal artefact."},
+    "opencitations": {"incoming_citations": null, "coverage_notes": "Not applicable."},
+    "reuse_and_impact": [],
+    "negative_post_publication_signals": []
+  },
+  "evidence": [
+    {"claim": "bounded second-engine loci", "path": "receipts/independent_formalization_receipt.json", "status": "pass"},
+    {"claim": "local formal statements", "path": "formal/lean/CyclicityNewton.lean", "status": "pass"},
+    {"claim": "semantic mutation resistance", "path": "tests/test_independent_formalization.py", "status": "pass"}
+  ],
+  "red_flags": ["Post-implementation lock is not prospective preregistration.", "Formal statement correspondence has not been externally reviewed."],
+  "missing_evidence": ["Formal monodromy/scaling lemma", "Formal uniform coefficient-extraction argument", "External specialist audit", "Fresh isolated environment replay"],
+  "reviewer_disagreement": [],
+  "reassessment": {"next_date": null, "reason": "After specialist statement-correspondence review or extension of the formalisation boundary."},
+  "sources": ["programme/NOVELTY_GATE.md", "INDEPENDENT_FORMALIZATION.md", "research-quality-gate v1.0.0"]
+}

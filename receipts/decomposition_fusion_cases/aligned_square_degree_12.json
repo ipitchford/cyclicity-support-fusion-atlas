@@ -1,0 +1,169 @@
+{
+  "chains": [
+    {
+      "all_factors_indecomposable_over_Q_by_sympy": true,
+      "exact_composition_validated": true,
+      "factor_degrees": [
+        2,
+        3,
+        2
+      ],
+      "factors_outer_to_inner": [
+        "x**2",
+        "x**3+x",
+        "x**2"
+      ],
+      "name": "degrees_2_3_2",
+      "proper_suffix_nodes_inner_to_outer": [
+        {
+          "actual_suffix_rank": 1,
+          "actual_suffix_support": [
+            1
+          ],
+          "direct_sum": false,
+          "fibre_size_partition": [
+            3
+          ],
+          "full_fusion": false,
+          "number_of_distinct_block_spans": 3,
+          "pairwise_intersection_dimension_by_delta": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 0
+          },
+          "predicted_rank_from_parent_support_projection": 1,
+          "suffix": "x**2",
+          "suffix_degree": 2,
+          "suffix_start_zero_based": 2
+        },
+        {
+          "actual_suffix_rank": 3,
+          "actual_suffix_support": [
+            1,
+            3,
+            5
+          ],
+          "direct_sum": false,
+          "fibre_size_partition": [
+            1,
+            1,
+            1
+          ],
+          "full_fusion": true,
+          "number_of_distinct_block_spans": 1,
+          "pairwise_intersection_dimension_by_delta": {
+            "0": 3,
+            "1": 3
+          },
+          "predicted_rank_from_parent_support_projection": 3,
+          "suffix": "x**6 + x**2",
+          "suffix_degree": 6,
+          "suffix_start_zero_based": 1
+        }
+      ],
+      "rank_creation_by_level": [
+        2,
+        0
+      ],
+      "ranks_inner_to_full": [
+        1,
+        3,
+        3
+      ],
+      "total_rank_creation": 2
+    },
+    {
+      "all_factors_indecomposable_over_Q_by_sympy": true,
+      "exact_composition_validated": true,
+      "factor_degrees": [
+        3,
+        2,
+        2
+      ],
+      "factors_outer_to_inner": [
+        "x**3+2*x**2+x",
+        "x**2",
+        "x**2"
+      ],
+      "name": "degrees_3_2_2",
+      "proper_suffix_nodes_inner_to_outer": [
+        {
+          "actual_suffix_rank": 1,
+          "actual_suffix_support": [
+            1
+          ],
+          "direct_sum": false,
+          "fibre_size_partition": [
+            3
+          ],
+          "full_fusion": false,
+          "number_of_distinct_block_spans": 3,
+          "pairwise_intersection_dimension_by_delta": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 0
+          },
+          "predicted_rank_from_parent_support_projection": 1,
+          "suffix": "x**2",
+          "suffix_degree": 2,
+          "suffix_start_zero_based": 2
+        },
+        {
+          "actual_suffix_rank": 1,
+          "actual_suffix_support": [
+            1
+          ],
+          "direct_sum": true,
+          "fibre_size_partition": [
+            3
+          ],
+          "full_fusion": false,
+          "number_of_distinct_block_spans": 3,
+          "pairwise_intersection_dimension_by_delta": {
+            "0": 1,
+            "1": 0,
+            "2": 0
+          },
+          "predicted_rank_from_parent_support_projection": 1,
+          "suffix": "x**4",
+          "suffix_degree": 4,
+          "suffix_start_zero_based": 1
+        }
+      ],
+      "rank_creation_by_level": [
+        0,
+        2
+      ],
+      "ranks_inner_to_full": [
+        1,
+        1,
+        3
+      ],
+      "total_rank_creation": 2
+    }
+  ],
+  "claim_boundary": "The supplied chains and at most one SymPy-discovered chain are exact decomposition witnesses. This report does not assert that they exhaust the complete decomposition lattice over C.",
+  "degree": 12,
+  "global_rank": 3,
+  "global_support": [
+    1,
+    5,
+    9
+  ],
+  "phase": "(x**6+x**2)**2",
+  "report_sha256": "c586e58f104f0a14c96ceb44f40c25f80758478c318cac8eb439921a14440c99",
+  "ritt_consistency": {
+    "all_chains_compose_exactly": true,
+    "every_actual_suffix_rank_matches_support_projection": true,
+    "global_rank_same_across_chains": true
+  },
+  "schema": "decomposition-aware-fusion-report-v1",
+  "status": "pass",
+  "validated_chain_count": 2
+}

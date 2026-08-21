@@ -1,0 +1,182 @@
+{
+  "certificate_sha256": "62ea960fd63720d4c53145572da7a472a2ee47a69c292ecf35dfe7d3c100b54d",
+  "claim_boundary": {
+    "annihilation": "The displayed operator annihilates every rapid-decay period I_Gamma(s)=integral_Gamma exp(sP(x)) dx.",
+    "input": "Trusted rational polynomial expressions only.",
+    "minimality": "Its order is minimal for a generic functional on the complete period solution space; a particular cycle may have lower order.",
+    "not_established": [
+      "that an arbitrary contour is rapid-decay",
+      "minimality for every individual cycle",
+      "novelty, priority, specialist review, or independent reproduction"
+    ]
+  },
+  "degree": 12,
+  "input": {
+    "phase": "(x**6 + x**4 + x**2)**2"
+  },
+  "input_sha256": "c7013f4307f0fe968bcfaeaa1bc45b512c3d68a0b127698c59cccb02776045a9",
+  "inverse_at_infinity_certificate": {
+    "nonzero_terms_through_stopping_order": [
+      {
+        "coefficient": "1",
+        "residue_mod_degree": 1,
+        "t_exponent": 1
+      },
+      {
+        "coefficient": "-1/6",
+        "residue_mod_degree": 11,
+        "t_exponent": -1
+      },
+      {
+        "coefficient": "-1/8",
+        "residue_mod_degree": 9,
+        "t_exponent": -3
+      },
+      {
+        "coefficient": "29/1296",
+        "residue_mod_degree": 7,
+        "t_exponent": -5
+      },
+      {
+        "coefficient": "-127/31104",
+        "residue_mod_degree": 5,
+        "t_exponent": -7
+      },
+      {
+        "coefficient": "3/256",
+        "residue_mod_degree": 3,
+        "t_exponent": -9
+      }
+    ],
+    "stopping_rule": "support_size equals exact twisted cyclic rank",
+    "support": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "support_size": 6,
+    "terms_computed": 10,
+    "witnesses": {
+      "1": {
+        "coefficient": "1",
+        "series_order": 0,
+        "t_exponent": 1
+      },
+      "11": {
+        "coefficient": "-1/6",
+        "series_order": 2,
+        "t_exponent": -1
+      },
+      "3": {
+        "coefficient": "3/256",
+        "series_order": 10,
+        "t_exponent": -9
+      },
+      "5": {
+        "coefficient": "-127/31104",
+        "series_order": 8,
+        "t_exponent": -7
+      },
+      "7": {
+        "coefficient": "29/1296",
+        "series_order": 6,
+        "t_exponent": -5
+      },
+      "9": {
+        "coefficient": "-1/8",
+        "series_order": 4,
+        "t_exponent": -3
+      }
+    }
+  },
+  "minimality_certificate_for_normalised_phase": {
+    "ambient_rank": 11,
+    "cyclic_rank": 6,
+    "first_dependence": {
+      "coefficients_low_to_high": [
+        "-(92897280*s**5 - 2502420480*s**4 - 4010925824*s**3 + 3953737952*s**2 + 213500512*s - 386715)/(331776*s**6*(161280*s**3 - 1836128*s**2 - 639336*s + 3683))",
+        "-(998645760*s**5 - 17825310720*s**4 - 5859663648*s**3 - 357964776*s**2 + 2096041789*s + 10441305)/(62208*s**5*(161280*s**3 - 1836128*s**2 - 639336*s + 3683))",
+        "-(2345656320*s**5 - 38978956800*s**4 + 76501156224*s**3 - 89056402032*s**2 - 126143912392*s + 2234052555)/(62208*s**4*(161280*s**3 - 1836128*s**2 - 639336*s + 3683))",
+        "-(34836480*s**5 - 756645120*s**4 + 8527598336*s**3 - 70670219688*s**2 - 38916903498*s + 344563065)/(1944*s**3*(161280*s**3 - 1836128*s**2 - 639336*s + 3683))",
+        "-(23224320*s**5 - 1097897472*s**4 + 56223288192*s**3 - 651170538672*s**2 - 282627351208*s + 1994289255)/(11664*s**2*(161280*s**3 - 1836128*s**2 - 639336*s + 3683))",
+        "(5483520*s**4 - 1238159552*s**3 + 14702173008*s**2 + 5593036550*s - 34903791)/(729*s*(161280*s**3 - 1836128*s**2 - 639336*s + 3683))"
+      ],
+      "dependent_iterate": 6,
+      "orientation": "[P^q dx] = sum_i coefficient[i] [P^i dx]",
+      "residual_is_zero": true
+    },
+    "independence": {
+      "minor_denominator": "45137758519296*s**10",
+      "minor_is_nonzero": true,
+      "minor_numerator": "5*(161280*s**3 - 1836128*s**2 - 639336*s + 3683)",
+      "pivot_rows_zero_based": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ]
+    },
+    "matrix_sha256": "f7fcae7feedc8643f3ded3bcbbf7997c7d7df2cfb18f88c345b5fb54d1914d19",
+    "matrix_shape": [
+      11,
+      11
+    ]
+  },
+  "normalisation": {
+    "normalised": "x**12 + 2*x**10 + 3*x**8 + 2*x**6 + x**4",
+    "original": "x**12 + 2*x**10 + 3*x**8 + 2*x**6 + x**4",
+    "source_change": "x_old = x_new - (0)",
+    "target_scale_divisor": "1",
+    "target_shift_before_scaling": "0"
+  },
+  "order_prediction": {
+    "all_equal": true,
+    "generic_minimal_order": 6,
+    "inverse_support": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "inverse_support_size": 6,
+    "reduced_root_span_dimension": 6,
+    "twisted_cyclic_rank": 6
+  },
+  "scalar_operator_for_original_phase": {
+    "coefficient_order": "low_derivative_to_high_derivative",
+    "coefficients": [
+      "9*(92897280*s**5 - 2502420480*s**4 - 4010925824*s**3 + 3953737952*s**2 + 213500512*s - 386715)",
+      "48*s*(998645760*s**5 - 17825310720*s**4 - 5859663648*s**3 - 357964776*s**2 + 2096041789*s + 10441305)",
+      "48*s**2*(2345656320*s**5 - 38978956800*s**4 + 76501156224*s**3 - 89056402032*s**2 - 126143912392*s + 2234052555)",
+      "1536*s**3*(34836480*s**5 - 756645120*s**4 + 8527598336*s**3 - 70670219688*s**2 - 38916903498*s + 344563065)",
+      "256*s**4*(23224320*s**5 - 1097897472*s**4 + 56223288192*s**3 - 651170538672*s**2 - 282627351208*s + 1994289255)",
+      "-4096*s**5*(5483520*s**4 - 1238159552*s**3 + 14702173008*s**2 + 5593036550*s - 34903791)",
+      "2985984*s**6*(161280*s**3 - 1836128*s**2 - 639336*s + 3683)"
+    ],
+    "derivation_symbol": "D_s",
+    "equation": "sum_{j=0}^q coefficients[j] * I^(j)(s) = 0",
+    "exact_krylov_residual_zero": true,
+    "independent_variable": "s",
+    "leading_derivative_coefficient": "2985984*s**6*(161280*s**3 - 1836128*s**2 - 639336*s + 3683)",
+    "order": 6,
+    "original_phase_krylov_matrix_sha256": "4834ff1e10dbe7b0d4276130a6818c0c1e2b217cac654e8dd9bec6d37ffd45d9",
+    "pivot_rows_zero_based": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "primitive_integer_polynomial_coefficients": true
+  },
+  "schema": "exponential-period-order-oracle-certificate-v1",
+  "status": "pass"
+}

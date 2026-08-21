@@ -1,0 +1,67 @@
+{
+  "assurance": {
+    "complete_atlas_formalization": false,
+    "external_independence": false,
+    "formal_kernel": true
+  },
+  "claim_boundary": "Lean kernel verification covers the projective scaling algebra, common rescaling, exact selected coefficient sums, modular witnesses for arbitrary natural exponents, coefficient nonvanishing, and the uniform cubic/quartic boundary theorems. The written proof supplies their complex polynomial-monodromy and formal-series interpretation. Analytic continuation, finite-pole descent, the parent root-span theorem, the remaining primitive audit, and rank-preserving extensions are not formalized here; this is internal assurance, not external independent reproduction or peer review.",
+  "formalized_boundary": {
+    "coefficients": "exact selected negative-binomial finite sums over QQ",
+    "cubic_candidates_before_E2": [
+      2,
+      4
+    ],
+    "quartic_candidates_before_E2": [
+      2,
+      3,
+      5,
+      6,
+      9
+    ],
+    "scaling": "lifted root-of-unity phases through common rescaling",
+    "uniformity": "constructive mod-3 and mod-4 witnesses for arbitrary natural m"
+  },
+  "lean": {
+    "kernel_status": "pass",
+    "lake_version": "Lake version 5.0.0-src+f054605 (Lean version 4.32.1)",
+    "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+    "placeholder_scan": "pass",
+    "source_sha256": "8ca2b9930ff7584aad87b64808b4ac53cacddfdc2e100343cdba606e466922cb",
+    "theorem_count": 25,
+    "theorems": [
+      "projective_swap_equal",
+      "lifted_relation_power_projective",
+      "projective_s3_constant",
+      "projective_s4_constant",
+      "scaling_powers_equal_s3",
+      "scaling_powers_equal_s4",
+      "common_rescale_of_equal_powers",
+      "cubic_coeff_zero",
+      "cubic_coeff_two",
+      "cubic_coeff_four",
+      "quartic_coeff_zero",
+      "quartic_coeff_two",
+      "quartic_coeff_three",
+      "quartic_coeff_five",
+      "quarticInvCoeff_a_zero",
+      "quartic_coeff_six_at_a_zero",
+      "quartic_coeff_nine_at_a_zero",
+      "cubic_uniform_residual_witness",
+      "quartic_uniform_residual_witness_a_ne_zero",
+      "quartic_uniform_residual_witness_a_zero",
+      "cubic_uniform_coefficient_nonzero",
+      "quartic_uniform_coefficient_nonzero_a_ne_zero",
+      "quartic_uniform_coefficient_nonzero_a_zero",
+      "cubic_uniform_boundary",
+      "quartic_uniform_boundary"
+    ],
+    "uniform_upper_cutoff": null,
+    "version": "Lean (version 4.32.1, arm64-apple-darwin24.6.0, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)"
+  },
+  "lock_sha256": "ca745e4cb3e7d0acc6666ba9f41529701fd8bded8449b0ea2056bfcae8bfcaa3",
+  "proof_note_sha256": "a3e2f9e325fb6d617b2ecd0a38c868390ccd669af6756b2f8d87190169e584de",
+  "protocol_sha256": "93a6dfa7a4e6185c6e6af5e9ef73c24f00cb96e9ff3f96f3a8465b3e7af133e3",
+  "receipt_sha256": "0c8998f771668825cbacf9a3ff17297fe7f0bf5e93da0b8d1d814eaad0a09114",
+  "schema": "cyclicity-uniform-structural-receipt-v1",
+  "status": "pass"
+}

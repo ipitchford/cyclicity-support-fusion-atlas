@@ -1,0 +1,16 @@
+{
+  "application_manifest_sha256": "4fae2344c7ac4840e959cbbde3ce17be79af910d5031c3302cd4714153576d23",
+  "dependency_sha256": {
+    "verification/battery4a_fast.py": "4895890f14a684a090cb8fa936603aee959044e0f6907c4540139d41aba28dbf",
+    "verification/lib.py": "a2c0fa2d9186d5e1d4b7c72072865cae691ba461614554d826ac1c759e0e37d9",
+    "verification/symconstr.py": "6a31499f5fb22a3ffa34f8e250b867cfdb642d8d9c9ce454d6f354ccc7ba65bf"
+  },
+  "execution_state_at_seal": "not_run",
+  "parent_git_commit": "ce4e129bed2c1ea5dd7b778488d7bec2b76deb7d",
+  "preregistration": "degree32_universal_preregistration.json",
+  "preregistration_sha256": "66239785a9fd594be98b3c4643758523b5eafcb1f3a3009f33d7dbbc1c29b388",
+  "runner": "degree32_universal_runner.py",
+  "runner_sha256": "1e08655737f4e9cf653d0e225f518edde65ac983905463fc4e8e8acb0a5b9e94",
+  "schema": "degree32-universal-lock-v1",
+  "sealed_utc": "2026-08-21T06:55:48.972464+00:00"
+}

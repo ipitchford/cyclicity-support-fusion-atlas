@@ -1,0 +1,48 @@
+{
+  "schema": "exponential-period-order-oracle-claims-v1",
+  "status": "unpublished-unrefereed-research-extension",
+  "parent": {
+    "title": "Inverse-Root Support and Fourier Fusion",
+    "version": "0.5.0-candidate",
+    "doi": "10.5281/zenodo.22036030",
+    "git_commit": "ce4e129bed2c1ea5dd7b778488d7bec2b76deb7d"
+  },
+  "claims": {
+    "O1": {
+      "statement": "The first exact twisted-Krylov dependence produces a scalar operator annihilating every rapid-decay period covered by the parent construction.",
+      "status": "effective-corollary-of-parent-theorems",
+      "evidence": ["src/order_oracle.py", "ORDER_ORACLE.md#1-mathematical-contract"]
+    },
+    "O2": {
+      "statement": "The operator order equals inverse-support size and is minimal for a generic functional on the complete period solution space.",
+      "status": "effective-corollary-with-genericity-boundary",
+      "evidence": ["MANUSCRIPT.md#141-generic-minimal-ode-order-proved-corollary", "src/order_oracle.py"]
+    },
+    "O3": {
+      "statement": "Eight named benchmark phases reproduce their expected support, order, primitive operator, and exact zero residual.",
+      "status": "finite-exact-computation",
+      "evidence": ["benchmarks/order_oracle_cases.json", "receipts/order_oracle_benchmark_receipt.json", "receipts/order_oracle_cases/"]
+    },
+    "O4": {
+      "statement": "The exceptional degree-twelve phase (x^4+x)^3 has generic order three, while x^12+x^10+x^3 has exact generic rank eleven.",
+      "status": "exact-computational-comparison-under-parent-theorem",
+      "evidence": ["receipts/order_oracle_cases/exceptional_collision_degree_12.json", "receipts/order_oracle_generic_degree12_control.json"]
+    },
+    "O5": {
+      "statement": "Seven selected convergent real-line periods satisfy the displayed operators to relative residual at most 1e-12 in the recorded run.",
+      "status": "numerical-spot-control-only",
+      "evidence": ["receipts/order_oracle_numerical_spotcheck.json"]
+    }
+  },
+  "not_claimed": [
+    "minimal order for every individual rapid-decay cycle",
+    "admissibility of an arbitrary contour",
+    "support for coefficients outside the trusted rational-input implementation",
+    "external software speedups",
+    "independent external reproduction",
+    "specialist or editorial peer review",
+    "formal verification",
+    "novelty or priority",
+    "publication of this extension"
+  ]
+}

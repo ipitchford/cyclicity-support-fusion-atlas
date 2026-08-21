@@ -1,0 +1,79 @@
+{
+  "schema": "exponential-period-order-oracle-benchmark-spec-v1",
+  "description": "Eight exact benchmark phases spanning the low-order atlas, the exceptional collision, and semantic negative controls.",
+  "cases": [
+    {
+      "id": "power_degree_7",
+      "phase": "x**7",
+      "expected_degree": 7,
+      "expected_order": 1,
+      "expected_support": [1],
+      "role": "rank-one anchor"
+    },
+    {
+      "id": "dickson_degree_5",
+      "phase": "16*x**5 - 20*x**3 + 5*x",
+      "expected_degree": 5,
+      "expected_order": 2,
+      "expected_support": [1, 4],
+      "role": "rank-two Dickson anchor"
+    },
+    {
+      "id": "quartic_rank_3",
+      "phase": "x**4 + x**2 + x",
+      "expected_degree": 4,
+      "expected_order": 3,
+      "expected_support": [1, 2, 3],
+      "numeric_real_line_s": [-1, "-1/2"],
+      "role": "generic exact-rank quartic"
+    },
+    {
+      "id": "quartic_rank_drop",
+      "phase": "x**4 + x**2",
+      "expected_degree": 4,
+      "expected_order": 2,
+      "expected_support": [1, 3],
+      "numeric_real_line_s": [-1, -2],
+      "role": "quartic rank-drop control"
+    },
+    {
+      "id": "aligned_square_degree_12",
+      "phase": "(x**6 + x**2)**2",
+      "expected_degree": 12,
+      "expected_order": 3,
+      "expected_support": [1, 5, 9],
+      "numeric_real_line_s": [-1],
+      "role": "rank-preserving power composition"
+    },
+    {
+      "id": "misaligned_square_degree_12",
+      "phase": "(x**6 + x**4 + x**2)**2",
+      "expected_degree": 12,
+      "expected_order": 6,
+      "expected_support": [1, 3, 5, 7, 9, 11],
+      "role": "support-mutation negative control"
+    },
+    {
+      "id": "exceptional_collision_degree_12",
+      "phase": "(x**4 + x)**3",
+      "expected_degree": 12,
+      "expected_order": 3,
+      "expected_support": [1, 7, 10],
+      "numeric_real_line_s": [-1, "-3/4"],
+      "role": "exceptional rank-three Ritt collision"
+    },
+    {
+      "id": "rank_creation_degree_6",
+      "phase": "(x**3 + x)**2 + (x**3 + x)",
+      "expected_degree": 6,
+      "expected_order": 4,
+      "expected_support": [1, 2, 4, 5],
+      "role": "rank-creation negative control"
+    }
+  ],
+  "claim_boundary": {
+    "order": "Generic minimal order on the complete rapid-decay period solution space.",
+    "individual_cycle": "A chosen rapid-decay cycle may satisfy a lower-order equation.",
+    "numerics": "Real-line quadrature is a spot control and is not theorem evidence."
+  }
+}

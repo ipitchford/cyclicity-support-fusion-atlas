@@ -2,81 +2,97 @@
 
 ## Authoritative environment
 
-`ENVIRONMENT.txt` records macOS 26.5.2 arm64, Python 3.14.6, SymPy 1.14.0,
-NumPy 2.4.2, mpmath 1.3.0, PyMuPDF 1.27.1, Pandoc 3.9, Chrome
-151.0.7922.138 and qpdf 12.3.2. `requirements.txt` pins the Python packages.
-The earlier Python 3.12.3 receipt is retained as historical cross-version
-evidence, not as a competing current specification.
+`ENVIRONMENT.txt` records the operating system and principal engines used for
+the v0.6 gate. Python dependencies remain pinned in `requirements.txt`; KaTeX
+is pinned in `package-lock.json`. The Lean receipt records both the compiler
+commit and the Mathlib commit. Earlier environment records and receipts remain
+historical cross-version evidence, not competing current specifications.
 
-## One-command release gate
+No container, Nix, or Guix lock is supplied. A clean-machine rerun may
+therefore require equivalent toolchain installation before replay.
+
+## One-command all-degree gate
 
 From the package root:
 
 ```bash
-python3 run_core_checks.py
+python3 run_global_completion_checks.py
 ```
 
-The default command:
+The command:
 
-1. verifies every package file against `MANIFEST.sha256` and rejects unlisted
-   or stale entries;
-2. runs structural support/fusion tests, the Fraction audit and the
-   Fourier–Gamma spot check;
-3. runs exact-rank, support/rank, deep-support, fusion/heredity, quartic-lift,
-   family-blind sparse-search and extension-locus batteries;
-4. reruns all 1,152 degree-5-to-20 Gröbner cases;
-5. repeats the suite with assertions disabled under `python3 -O`;
-6. requires ordinary and optimised receipts to be byte-identical and equal to
-   `RELEASE_EXPECTATIONS.json`; and
-7. rejects eight deliberate semantic corruptions, including fail-open exit
-   behaviour and corrupted manifest or receipt bytes.
+1. verifies the immutable v0.5 parent bytes and every bounded successor
+   manifest;
+2. replays the predecessor uniform all-`m` gate, including the repaired
+   nineteen-check Kummer component;
+3. verifies the global semantic receipt under ordinary and optimised Python;
+4. rejects thirteen deliberate global receipt mutations in each mode;
+5. reruns the separate exact SymPy implementation under ordinary and
+   optimised Python and requires frozen-byte parity;
+6. rebuilds the global Lean/CAS receipt and requires ordinary/optimised and
+   frozen-byte parity; and
+7. ends only with `GLOBAL ALL-DEGREE COMPLETION GATE PASS`,
+   `PUBLIC UNREFEREED-CANDIDATE RELEASE GO`, and
+   `EXTERNALLY ESTABLISHED THEOREM PROMOTION REMAINS HOLD`.
 
-`--quick --development` omits the exhaustive sweep and frozen-byte checks. It
-is a development convenience, not a release result.
+`--skip-engine-recompute` verifies frozen receipts without rerunning Lean and
+SymPy. It is a diagnostic convenience, not the authoritative release replay.
+The v0.5 exhaustive degree-20 gate remains independently replayable with
+`python3 run_core_checks.py`.
 
-## Document build
+## Formal and computational scope
 
-The archival HTML and DOCX are generated from `MANUSCRIPT.md` with Pandoc's
-`tex_math_dollars` and `tex_math_single_backslash` extensions enabled. The
-HTML uses native MathML and `paper.css`; headless Chrome prints the A4 PDF.
-`tools/finalize_pdf.py` then adds folios, metadata and 26 content-resolved
-bookmarks. `qpdf --check` and representative rasterised pages supply syntax
-and visual controls. The exact commands and tools remain inspectable in the
-package rather than being treated as manuscript evidence.
+The Lean layer checks sixteen named consequences involving pole order,
+spanning, scalar extensions, and primitive characters. It does not formalise
+Laurent-series/function-field integrality, the direct Dickson invariant-field
+argument, Kummer or Ritt theory, or the imported classification theorems.
 
-## Current full sweep
+The separate SymPy path performs ten exact global checks and bounded
+regressions over 2,079 pole-floor cases and 81 Dickson composition pairs. The
+Kummer component performs nineteen exact checks. These computations validate
+their encodings and catch semantic corruption; they do not independently
+certify the entire source-to-encoding bridge.
 
-The current ordinary run completed all 1,152 cases in 573.2 seconds:
+## Reader-document build and raw-TeX stop rule
 
-- 45 vacuous/full-family cases;
-- 884 power-only radical-containment cases;
-- 223 union-of-components cases;
-- 0 anomalies; and
-- 0 missing certificates.
+The archival paper is assembled from `ALL_DEGREE_RELEASE.md`, the sealed proof
+`ALL_DEGREE_GLOBAL_COMPLETION.md`, and
+`ALL_DEGREE_RELEASE_BACK_MATTER.md`. The build uses Pandoc parsing, static
+KaTeX 0.18.4 rendering, WeasyPrint PDF generation, and PyMuPDF finalisation:
 
-The 674.2-second figure in inherited batch logs and the 855.6-second figure in
-the v0.4 review are retained as different runs on different execution paths.
-They are not merged into one provenance claim. The current authoritative
-receipt omits wall time because time is environment-dependent.
+```bash
+python3 tools/render_all_degree_paper.py
+python3 tools/pdf_tex_preflight.py All-Degree-Low-Rank-Coefficient-Atlas.pdf
+```
 
-The clean extracted-archive release replay completed the normal sweep in
-602.2 seconds and the optimised sweep in 559.4 seconds. Both produced the same
-case census and byte-identical receipts matching the frozen expectations; the
-top-level command returned `RELEASE GATE PASS`.
+The preflight scans rendered text for leaked TeX delimiters and commands. It
+is required in addition to PDF syntax checks and rasterised-page visual QA,
+because text extraction alone previously failed to reveal literal display
+math on reader-facing pages. Any raw-TeX finding is a release blocker.
 
-## Per-case record
+## Deterministic release archive
 
-`receipts/atlas_case_records_d5_20.json` contains one record per support case:
-degree, support, truncation bounds, predicted families and dimension,
-stability result, defining-ideal and Gröbner-basis digests, outcome and
-reduction witness, plus software versions.
+```bash
+python3 tools/build_all_degree_release.py freeze
+python3 tools/build_all_degree_release.py archive \
+  ../cyclicity-support-fusion-atlas-v0.6.0-candidate.zip
+python3 tools/build_all_degree_release.py bind-archive \
+  ../cyclicity-support-fusion-atlas-v0.6.0-candidate.zip \
+  receipts/all_degree_archive_receipt.json
+```
+
+The root manifest covers every public payload byte except the manifest itself,
+the archive binding written after the archive exists, and the workflow-only
+`GLOBAL_PUBLICATION_STATE.json`. The archive uses sorted paths, fixed UTC
+timestamps, normalised permissions, and no host metadata. A qualifying
+release replay occurs again from a fresh extraction of that archive.
 
 ## Trust and exclusion boundary
 
-Exact arithmetic does not remove trust in the inverse-series implementation,
-case enumeration, coefficient-family bridge or computer algebra system. No
-proof-assistant checker is supplied.
-
-The ODE, zero-cycle and Laurent programs are exploratory. They are preserved
-but excluded because their existing controls can report `REVIEW` or a
-dimension mismatch without failing.
+The imported primitive-polynomial-monodromy and finite-projective-group
+classification results are pinned and scoped but not re-proved. The two
+specialist re-audits are internal and model-assisted. No external independent
+reproduction, complete formalisation, journal review, or priority
+certification is claimed. Positive-characteristic, zero-cycle,
+Laurent-polynomial, and arbitrary-amplitude extensions remain outside the
+theorem.

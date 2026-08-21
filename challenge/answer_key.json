@@ -1,0 +1,17 @@
+{
+  "schema": "inverse-support-fraction-replay-answer-key-v1",
+  "cases": [
+    {"id": "power_degree_7", "rank": 1, "support": [1]},
+    {"id": "dickson_degree_5", "rank": 2, "support": [1, 4]},
+    {"id": "quartic_rank_3", "rank": 3, "support": [1, 2, 3]},
+    {"id": "quartic_rank_drop", "rank": 2, "support": [1, 3]},
+    {"id": "affine_quartic", "rank": 3, "support": [1, 2, 3]},
+    {"id": "aligned_square_degree_12", "rank": 3, "support": [1, 5, 9]},
+    {"id": "misaligned_square_degree_12", "rank": 6, "support": [1, 3, 5, 7, 9, 11]},
+    {"id": "exceptional_collision_degree_12", "rank": 3, "support": [1, 7, 10]},
+    {"id": "rank_creation_degree_6", "rank": 4, "support": [1, 2, 4, 5]},
+    {"id": "generic_degree_12", "rank": 11, "support": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]},
+    {"id": "quartic_basic", "rank": 3, "support": [1, 2, 3]},
+    {"id": "even_sextic", "rank": 3, "support": [1, 3, 5]}
+  ]
+}

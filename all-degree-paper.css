@@ -1,0 +1,42 @@
+/* v0.6 PDF/HTML overrides; the v0.5 paper.css remains historically frozen. */
+math annotation,
+math annotation-xml {
+  display: none;
+}
+
+math[display="block"] {
+  text-align: center;
+}
+
+.katex-display {
+  margin: 0.9em 0;
+  page-break-inside: avoid;
+}
+
+.katex {
+  font-size: 1em;
+}
+
+/* Keep short declarations and release notices together on the final page. */
+#ethics-declaration,
+#author-contributions-credit,
+#conflict-of-interest,
+#funding,
+#ai-disclosure {
+  margin-top: 0.9em;
+  padding-top: 0.2em;
+  font-size: 17pt;
+}
+
+#citation,
+#third-party-rendering-notice {
+  margin-top: 0.65em;
+  font-size: 11pt;
+}
+
+#citation + p,
+#third-party-rendering-notice + p {
+  margin: 0.25em 0;
+  font-size: 9.5pt;
+  line-height: 1.35;
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "cyclicity-independent-formalization-protocol-v1",
+  "date": "2026-08-21",
+  "status": "post-implementation identity protocol; expected results were already known",
+  "assessment_boundary": "Check the local cubic and quartic Newton-descent algebra with engines that do not use SymPy or import the existing project checkers.",
+  "exact_claims": {
+    "singular_bounded_elimination": {
+      "range": [2, 32],
+      "cubic_nondegenerate_survivors": [2],
+      "quartic_nondegenerate_survivors": [3],
+      "quartic_survivor_locus": "a=0",
+      "cubic_positive_resultant": "y3+2y2a+ya2-e2",
+      "quartic_positive_resultant": "y4+3y3c+3y2c2+yc3+e3"
+    },
+    "lean_kernel": {
+      "root_map_identities": [
+        "cubic_powered_root",
+        "quartic_powered_root"
+      ],
+      "coefficient_obstructions": [
+        "cubic_m4_forces_power",
+        "quartic_m2_obstruction",
+        "quartic_m3_forces_a_zero",
+        "quartic_m5_forces_degenerate",
+        "quartic_m6_obstruction",
+        "quartic_m9_forces_degenerate"
+      ],
+      "displayed_elementary_identities": [
+        "cubic_m2_elementary",
+        "quartic_m3_second_elementary",
+        "quartic_m3_third_elementary"
+      ]
+    }
+  },
+  "methods": {
+    "cas": "Singular direct resultants over QQ, coefficient extraction in e, lexicographic standard bases, and Rabinowitsch saturation by w*a-1 or w*c-1",
+    "formal": "Lean 4 plus Mathlib; kernel-check ring, linear_combination, norm_num, and linarith proof terms",
+    "orchestration": "Python standard library only; no symbolic-algebra imports"
+  },
+  "separation_controls": [
+    "The Singular source imports no project module and invokes no Python algebra.",
+    "The Lean source imports Mathlib but no project checker or generated CAS expression.",
+    "The Singular locus table and Lean theorem list are parsed against this protocol.",
+    "Source hashes and engine identities are recorded in the receipt."
+  ],
+  "negative_controls": [
+    "Reject a rehashed receipt with a changed survivor locus.",
+    "Reject a rehashed receipt with a weakened claim boundary.",
+    "Reject a source/lock mismatch.",
+    "Reject missing Lean theorem declarations or any failed kernel check."
+  ],
+  "claim_boundary": "Second-engine internal assurance: Singular checks the bounded m=2..32 elimination loci and Lean checks the displayed local algebraic implications. This does not formalise the all-m coefficient-extraction proof, monodromy/scaling lemma, finite-pole descent, inherited primitive audit, or rank-preserving extension theorem; it is not external independent reproduction."
+}

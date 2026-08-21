@@ -1,0 +1,121 @@
+{
+  "assurance": {
+    "external_independence": false,
+    "finite_group_classification_reproved": false,
+    "independent_implementation": true,
+    "symbolic_identity_checks": true
+  },
+  "bounded_regression_controls": {
+    "all_degree_claim": false,
+    "dickson_case_count": 81,
+    "dickson_m_range": [
+      2,
+      10
+    ],
+    "dickson_n_range": [
+      2,
+      10
+    ],
+    "floor_case_count": 2079,
+    "floor_n_range": [
+      2,
+      64
+    ]
+  },
+  "claim_boundary": "Exact symbolic checks cover the transcribed finite-list intersections, character sums, scalar-factor equations, collision expansion and scalar saturation. Bounded floor and Dickson checks are regression controls only. This receipt does not prove the imported classifications or the all-degree theorem.",
+  "engine": {
+    "name": "SymPy",
+    "version": "1.14.0"
+  },
+  "exact_checks": {
+    "aligned_square_quadratic_coefficient": "2*b",
+    "character_multiplicities": {
+      "A5_to_A4_nontrivial_linear": "0",
+      "A5_to_A4_trivial": "0",
+      "PSL3_2_to_S4_sign": "0",
+      "PSL3_2_to_S4_trivial": "0"
+    },
+    "collision_expansion": "b**3*x**3 + 3*b**2*x**6 + 3*b*x**9 + x**12",
+    "collision_saturated_multiplier_gcd": "(c - 1)*(c**2 + c + 1)",
+    "cubic_scalar_factors": [
+      "A*(c - 1)",
+      "B*(c - 1)*(c + 1)"
+    ],
+    "muller_exceptional_inventory": [
+      [
+        "M11",
+        11
+      ],
+      [
+        "M23",
+        23
+      ],
+      [
+        "PGL2(5)",
+        6
+      ],
+      [
+        "PGL2(7)",
+        8
+      ],
+      [
+        "PGammaL2(8)",
+        9
+      ],
+      [
+        "PGammaL2(9)",
+        10
+      ],
+      [
+        "PGammaL3(4)",
+        21
+      ],
+      [
+        "PSL2(11)",
+        11
+      ],
+      [
+        "PSL3(2)",
+        7
+      ],
+      [
+        "PSL3(3)",
+        13
+      ],
+      [
+        "PSL4(2)",
+        15
+      ],
+      [
+        "PSL5(2)",
+        31
+      ]
+    ],
+    "pgl2_formal_candidates": [
+      [
+        "A5",
+        5
+      ],
+      [
+        "S4",
+        4
+      ]
+    ],
+    "pgl2_primitive_source": [
+      "A4",
+      "A5",
+      "S4"
+    ],
+    "pgl3_intersection": [
+      "A5",
+      "PSL2(7)"
+    ],
+    "quartic_scalar_factors": [
+      "A*(c - 1)*(c + 1)",
+      "B*(c - 1)*(c**2 + c + 1)"
+    ]
+  },
+  "receipt_sha256": "da2c5b165ba486094ec3d2b9054f17a25ef5d9b3ab36f5ab5912877dea2a8c75",
+  "schema": "cyclicity-global-interface-cas-receipt-v1",
+  "status": "pass"
+}

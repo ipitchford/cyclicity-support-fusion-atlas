@@ -1,0 +1,57 @@
+target_id: exponential-period-oracle-applications-v1
+search_date: 2026-08-21
+intended_contribution_unit: computation-and-bridge
+claim:
+  exact_statement: |
+    Construct a versioned benchmark and certificate protocol for the exact
+    generic ODE order and scalar operator of rapid-decay periods
+    integral exp(s P(x)) dx for rational polynomial phases; connect verified
+    polynomial decomposition witnesses to Fourier-fusion reports; provide a
+    separate Fraction-only replay challenge; and prospectively test the first
+    uncovered quartic-lift case m=8, degree 32.
+  exclusions:
+    - No claim that order-aware creative telescoping or minimal telescopers are new.
+    - No claim of speedup in a third-party CAS without running that CAS.
+    - No claim that a finite degree-32 result proves the all-degree atlas.
+    - No claim of independent external reproduction.
+source:
+  originating_reference: "Inverse-Root Support and Fourier Fusion, v0.5.0-candidate, Sections 13-14"
+  url: "https://doi.org/10.5281/zenodo.22036030"
+normalisation:
+  indices: "inverse-support residue classes are in Z/deg(P)Z with trace class 0 removed"
+  scaling: "support is computed on the affine-normalised phase; the displayed ODE is for the original phase"
+  basis_order: "operator coefficients run from D_s^0 to D_s^q"
+  symmetries:
+    - affine source and target changes preserve order
+    - operators are compared up to a common nonzero rational-function factor
+sequences:
+  - name: benchmark generic orders
+    exact_values: ["1", "2", "3", "2", "3", "6", "3", "4", "11"]
+    natural_scalings: ["order divided by deg(P)-1"]
+generating_functions: []
+matrices: []
+aliases:
+  analysis:
+    - polynomial exponential periods
+    - twisted de Rham cyclic rank
+    - Picard-Fuchs operator
+  probability: []
+  combinatorics:
+    - inverse-support residue set
+    - polynomial decomposition chain
+  mathematical_physics:
+    - oscillatory integral differential equation
+    - special-function ODE
+  statistics_optimisation_ml:
+    - solver preflight
+    - symbolic benchmark corpus
+known_invariants:
+  cyclic_rank: "q(P,dx)=|Sigma(P)|"
+  ambient_rank: "deg(P)-1"
+  fusion: "Fourier ranks of support fibres for actual right factors"
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora:
+    - arXiv full text
+    - HAL primary manuscripts
+    - parent references

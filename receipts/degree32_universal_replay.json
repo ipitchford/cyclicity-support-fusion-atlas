@@ -1,0 +1,19 @@
+{
+  "byte_identical": true,
+  "case_count": 466,
+  "claim_boundary": "Within-programme deterministic parity; not external independent reproduction.",
+  "mathematical_receipt_sha256": "fbb09a99a6dba6802c1589b3e7aa5ea85f5cb3649f60a68fe81b5d8833f3b43f",
+  "optimized": {
+    "file_sha256": "3d6791222e2a7c7159238ef2eda93a21035e234730d4b7f5259e3a0f25acfa36",
+    "mode": "python3 -O",
+    "terminal_reported_seconds": 817.6
+  },
+  "ordinary": {
+    "file_sha256": "3d6791222e2a7c7159238ef2eda93a21035e234730d4b7f5259e3a0f25acfa36",
+    "mode": "python3",
+    "terminal_reported_seconds": 808.2
+  },
+  "replay_sha256": "df63f922ba3863dfbe0c88ae97971c3953aa17e4ee68c785241dae0249b77167",
+  "schema": "degree32-universal-replay-receipt-v1",
+  "status": "pass"
+}

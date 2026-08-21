@@ -1,0 +1,125 @@
+{
+  "certificate_sha256": "552f0389a9888f6e861cb3507e46807633e856411239d48309e06751eda7fa2d",
+  "claim_boundary": {
+    "annihilation": "The displayed operator annihilates every rapid-decay period I_Gamma(s)=integral_Gamma exp(sP(x)) dx.",
+    "input": "Trusted rational polynomial expressions only.",
+    "minimality": "Its order is minimal for a generic functional on the complete period solution space; a particular cycle may have lower order.",
+    "not_established": [
+      "that an arbitrary contour is rapid-decay",
+      "minimality for every individual cycle",
+      "novelty, priority, specialist review, or independent reproduction"
+    ]
+  },
+  "degree": 4,
+  "input": {
+    "phase": "x**4 + x**2 + x"
+  },
+  "input_sha256": "49a05f787f69b0978fd53ea7b30e8841c168eb490be7220a53bc0c1dfd1b90de",
+  "inverse_at_infinity_certificate": {
+    "nonzero_terms_through_stopping_order": [
+      {
+        "coefficient": "1",
+        "residue_mod_degree": 1,
+        "t_exponent": 1
+      },
+      {
+        "coefficient": "-1/4",
+        "residue_mod_degree": 3,
+        "t_exponent": -1
+      },
+      {
+        "coefficient": "-1/4",
+        "residue_mod_degree": 2,
+        "t_exponent": -2
+      }
+    ],
+    "stopping_rule": "support_size equals exact twisted cyclic rank",
+    "support": [
+      1,
+      2,
+      3
+    ],
+    "support_size": 3,
+    "terms_computed": 3,
+    "witnesses": {
+      "1": {
+        "coefficient": "1",
+        "series_order": 0,
+        "t_exponent": 1
+      },
+      "2": {
+        "coefficient": "-1/4",
+        "series_order": 3,
+        "t_exponent": -2
+      },
+      "3": {
+        "coefficient": "-1/4",
+        "series_order": 2,
+        "t_exponent": -1
+      }
+    }
+  },
+  "minimality_certificate_for_normalised_phase": {
+    "ambient_rank": 3,
+    "cyclic_rank": 3,
+    "first_dependence": null,
+    "independence": {
+      "minor_denominator": "64*s",
+      "minor_is_nonzero": true,
+      "minor_numerator": "35*s - 6",
+      "pivot_rows_zero_based": [
+        0,
+        1,
+        2
+      ]
+    },
+    "matrix_sha256": "34bc401255f2639bbfb8413cc7a85aec919b584d8bcfed707fa1d248265b24bc",
+    "matrix_shape": [
+      3,
+      3
+    ]
+  },
+  "normalisation": {
+    "normalised": "x**4 + x**2 + x",
+    "original": "x**4 + x**2 + x",
+    "source_change": "x_old = x_new - (0)",
+    "target_scale_divisor": "1",
+    "target_shift_before_scaling": "0"
+  },
+  "order_prediction": {
+    "all_equal": true,
+    "generic_minimal_order": 3,
+    "inverse_support": [
+      1,
+      2,
+      3
+    ],
+    "inverse_support_size": 3,
+    "reduced_root_span_dimension": 3,
+    "twisted_cyclic_rank": 3
+  },
+  "scalar_operator_for_original_phase": {
+    "coefficient_order": "low_derivative_to_high_derivative",
+    "coefficients": [
+      "1085*s**4 + 2614*s**3 - 1468*s**2 + 1200*s - 48",
+      "16*s*(350*s**3 + 220*s**2 - 279*s - 42)",
+      "128*s**2*(35*s**2 + 99*s - 30)",
+      "256*s**3*(35*s - 6)"
+    ],
+    "derivation_symbol": "D_s",
+    "equation": "sum_{j=0}^q coefficients[j] * I^(j)(s) = 0",
+    "exact_krylov_residual_zero": true,
+    "independent_variable": "s",
+    "leading_derivative_coefficient": "256*s**3*(35*s - 6)",
+    "order": 3,
+    "original_phase_krylov_matrix_sha256": "fbec628973a8c6544e3b841b75f5a969fef9c3ee0c9d636b6398fa06cd5ba8f0",
+    "pivot_rows_zero_based": [
+      0,
+      1,
+      2
+    ],
+    "primitive_integer_polynomial_coefficients": true
+  },
+  "schema": "exponential-period-order-oracle-certificate-v1",
+  "status": "pass"
+}

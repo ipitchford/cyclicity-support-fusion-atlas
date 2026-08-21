@@ -1,0 +1,65 @@
+{
+  "claim_boundary": "Numerical real-line quadrature spot control; not theorem evidence, not an independent implementation, and not a minimality proof.",
+  "decimal_precision": 60,
+  "record_count": 7,
+  "records": [
+    {
+      "id": "quartic_rank_3",
+      "order": 3,
+      "relative_residual": "4.8661187406988306987e-62",
+      "s": "-1",
+      "status": "pass",
+      "threshold": "1.0e-12"
+    },
+    {
+      "id": "quartic_rank_3",
+      "order": 3,
+      "relative_residual": "1.6027006451631387544e-62",
+      "s": "-1/2",
+      "status": "pass",
+      "threshold": "1.0e-12"
+    },
+    {
+      "id": "quartic_rank_drop",
+      "order": 2,
+      "relative_residual": "0.0",
+      "s": "-1",
+      "status": "pass",
+      "threshold": "1.0e-12"
+    },
+    {
+      "id": "quartic_rank_drop",
+      "order": 2,
+      "relative_residual": "3.6288642977467251376e-62",
+      "s": "-2",
+      "status": "pass",
+      "threshold": "1.0e-12"
+    },
+    {
+      "id": "aligned_square_degree_12",
+      "order": 3,
+      "relative_residual": "5.7328012668700723606e-62",
+      "s": "-1",
+      "status": "pass",
+      "threshold": "1.0e-12"
+    },
+    {
+      "id": "exceptional_collision_degree_12",
+      "order": 3,
+      "relative_residual": "6.2290096818984267023e-63",
+      "s": "-1",
+      "status": "pass",
+      "threshold": "1.0e-12"
+    },
+    {
+      "id": "exceptional_collision_degree_12",
+      "order": 3,
+      "relative_residual": "1.2229460818276886224e-62",
+      "s": "-3/4",
+      "status": "pass",
+      "threshold": "1.0e-12"
+    }
+  ],
+  "schema": "exponential-period-order-oracle-numerical-spotcheck-v1",
+  "status": "pass"
+}

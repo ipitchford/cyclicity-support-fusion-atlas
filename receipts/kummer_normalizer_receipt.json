@@ -1,0 +1,84 @@
+{
+  "assurance": {
+    "complete_all_degree_formalization": false,
+    "exceptional_even_relation_encoded": true,
+    "external_independence": false,
+    "formal_local_algebra": true,
+    "peer_reviewed": false,
+    "published": false,
+    "separate_cas_implementation": true,
+    "uniform_full_kummer_kernel_claim": false,
+    "written_stratified_all_m_transport": true
+  },
+  "cas": {
+    "engine": {
+      "name": "SymPy",
+      "version": "1.14.0"
+    },
+    "exact_checks": {
+      "a4_automorphisms": {
+        "all_realized_by_octahedral_conjugation": true,
+        "automorphism_count": 24
+      },
+      "affine_power_cubic_identity": true,
+      "affine_power_fourier_determinant_nonzero": true,
+      "affine_power_sign_solution_count": 1,
+      "degenerate_cubic_discriminant": "-(-C + t)*(-4*A**3 - 27*C + 27*t)",
+      "dickson_degree_six_target_translation": true,
+      "discriminant_quotient_degree": 1,
+      "exceptional_cubic_factorization": true,
+      "exceptional_even_square_factorization": true,
+      "exceptional_pair_relation": "y_i*y_j=(y_k+r)^2",
+      "kummer_reflection_characteristic_identity": true,
+      "octahedral_realisation": {
+        "faithful_body_diagonal_action": true,
+        "rotation_count": 24
+      },
+      "ordinary_centralizer": 1,
+      "s4_automorphisms": {
+        "all_inner": true,
+        "automorphism_count": 24,
+        "inner_count": 24
+      },
+      "sign_twisted_intertwiners": 0,
+      "tetrahedral_normalizer": {
+        "automorphism_representatives_signed_monomial": true,
+        "character_intertwiner_dimensions": [
+          1,
+          1,
+          1
+        ],
+        "linear_character_count": 3,
+        "normalizer_preserves_coordinate_axes": true,
+        "projective_centralizer_representatives_diagonal": true,
+        "rotation_count": 12
+      },
+      "three_cycle_obstruction": "coprime coefficient equations",
+      "transposition_characteristic_identity": true,
+      "transposition_elimination": "-2*(z + 1)**2"
+    },
+    "semantic_sha256": "281da4693f34d0cfd26fa131653c3ae0db343d7d0a301dc9dbf4adf7cb58b718"
+  },
+  "claim_boundary": "The successor proves a coefficient-stratified all-m transport theorem in writing: it withdraws the false uniform full-kernel claim, detects the exceptional even-exponent relations, and reroutes that stratum by decomposition descent. Lean checks five coefficient-algebra statements, and a separate SymPy/Python implementation checks nineteen symbolic and finite-group consequences. Kummer theory, divisor valuations, the block-stabiliser lemma, decomposition descent, polynomial monodromy, Ritt theory, the complete all-degree classification, novelty, external independent reproduction, peer review, and publication are not formally verified or claimed.",
+  "lean": {
+    "kernel_status": "pass",
+    "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+    "placeholder_scan": "pass",
+    "source_sha256": "8aa30a8915107aa89bdc9d33f00b82ddca31b42441a98d79ae56b24100329ca1",
+    "theorem_count": 5,
+    "theorems": [
+      "transposition_characteristic_identity",
+      "kummer_reflection_characteristic_identity",
+      "transposition_coefficients_force_neg_one",
+      "three_cycle_coefficients_impossible",
+      "nontrivial_line_permutation_obstructed"
+    ],
+    "version": "Lean (version 4.32.1, arm64-apple-darwin24.6.0, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)"
+  },
+  "lock_sha256": "113f595d63d1074a38577324978313fb54b491705f8c670d98efde22738e2205",
+  "proof_note_sha256": "6e033e13abbf59724399d062bd7ccfe2fee089b3bd770d8565a349afcfdcab1f",
+  "protocol_sha256": "0db0a161a4fd4588f234c770130e07c7b049be622e3e271a91b9395ff4d02a80",
+  "receipt_sha256": "4b50a66a1fef7619685b43c94258142ff6edd461ecef5ffd8589af289aef7e5a",
+  "schema": "cyclicity-kummer-normalizer-receipt-v2",
+  "status": "pass"
+}

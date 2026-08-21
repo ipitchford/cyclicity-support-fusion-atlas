@@ -1,0 +1,31 @@
+{
+  "schema": "cyclicity-global-completion-quality-gate-v2",
+  "date": "2026-08-21",
+  "internal_decision": "pass",
+  "public_unrefereed_candidate_release": "go",
+  "externally_established_theorem_promotion": "hold",
+  "interfaces": {
+    "inherited_root_span": "pass",
+    "finite_pole_infinity_order": "pass",
+    "primitive_factor_audit": "pass_relative_to_named_imports",
+    "rank_preserving_extensions": "pass"
+  },
+  "replay": {
+    "lean_theorems": 16,
+    "cas_exact_checks": 10,
+    "mutation_controls_normal": 13,
+    "mutation_controls_optimized": 13,
+    "frozen_acceptance_normal": 1,
+    "frozen_acceptance_optimized": 1
+  },
+  "assurance": {
+    "candidate_complete_relative_to_named_imports": true,
+    "complete_formalization": false,
+    "internal_separate_reaudits": true,
+    "external_independence": false,
+    "peer_reviewed": false,
+    "novelty_search_status": "bounded_uncertainty",
+    "published": false
+  },
+  "next_gate": "External polynomial-monodromy/Ritt and finite-linear-group specialist review, plus independent reproduction; candidate labelling remains mandatory until then."
+}

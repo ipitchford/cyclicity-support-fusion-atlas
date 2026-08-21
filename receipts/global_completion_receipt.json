@@ -1,0 +1,121 @@
+{
+  "assurance": {
+    "candidate_complete_relative_to_named_imports": true,
+    "complete_atlas_formalization": false,
+    "external_independence": false,
+    "formal_kernel": true,
+    "imported_classifications_formalized": false,
+    "independent_cas_implementation": true,
+    "internal_separate_reaudits": true,
+    "peer_reviewed": false,
+    "published": false,
+    "uniform_full_kummer_kernel_claim": false
+  },
+  "cas": {
+    "bounded_regression_controls": {
+      "all_degree_claim": false,
+      "dickson_case_count": 81,
+      "dickson_m_range": [
+        2,
+        10
+      ],
+      "dickson_n_range": [
+        2,
+        10
+      ],
+      "floor_case_count": 2079,
+      "floor_n_range": [
+        2,
+        64
+      ]
+    },
+    "engine": {
+      "name": "SymPy",
+      "version": "1.14.0"
+    },
+    "exact_check_keys": [
+      "aligned_square_quadratic_coefficient",
+      "character_multiplicities",
+      "collision_expansion",
+      "collision_saturated_multiplier_gcd",
+      "cubic_scalar_factors",
+      "muller_exceptional_inventory",
+      "pgl2_formal_candidates",
+      "pgl2_primitive_source",
+      "pgl3_intersection",
+      "quartic_scalar_factors"
+    ],
+    "file_sha256": "1bb778a73646fb4040a976a753806a2a05bd9c5ea3e12093069b98070bcd7729",
+    "receipt_sha256": "da2c5b165ba486094ec3d2b9054f17a25ef5d9b3ab36f5ab5912877dea2a8c75",
+    "schema": "cyclicity-global-interface-cas-receipt-v1"
+  },
+  "claim_boundary": "The successor is an internally complete all-degree theorem candidate over C relative to the named primitive-monodromy, finite-projective-subgroup, character-table, and composition-kernel results. The repaired Kummer v2 component withdraws the false uniform full-kernel claim and treats its exceptional even-exponent stratum by descent. The Dickson extension is proved uniformly in writing by a rational-function invariant-field argument; its bounded grid is regression evidence only. Lean checks sixteen local arithmetic, spanning, scalar, and character consequences, and separate CAS implementations check the stated exact consequences. Laurent-series inversion, algebraic-function-field integrality, the direct Dickson field argument, monodromy, Ritt theory, imported classifications, novelty priority, external independent reproduction, peer review, and publication are not formally verified or claimed.",
+  "interfaces": {
+    "finite_pole_infinity_order": "written invariant-integral descent plus Lean degree-to-constancy kernel",
+    "inherited_root_span": "written DFT and disjoint-residue proof; q equality imports the parent formal-moment theorem",
+    "primitive_factor_audit": "source-exact group intersections, stabilisers, and restriction-character numerators",
+    "rank_preserving_extensions": "full-block stabiliser, repaired stratified Kummer transport, direct all-degree Dickson invariant-field proof, quartic kernels, and non-repetition"
+  },
+  "lean": {
+    "kernel_status": "pass",
+    "lake_version": "Lake version 5.0.0-src+f054605 (Lean version 4.32.1)",
+    "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+    "placeholder_scan": "pass",
+    "source_sha256": "f2933b57e441e415aa373b7dca1d653700646d486e456a4515723f5255fff983",
+    "theorem_count": 16,
+    "theorems": [
+      "lower_coefficient_floor_zero",
+      "top_coefficient_floor_one",
+      "polynomial_constant_of_natDegree_lt_one",
+      "fixed_spanning_family_is_identity",
+      "partial_support_kernel_impossible",
+      "cubic_scalar_trivial_of_A_ne_zero",
+      "cubic_scalar_one_or_neg_one",
+      "aligned_square_cubic_no_repeat",
+      "quartic_scalar_cube_one",
+      "quartic_scalar_trivial_of_A_ne_zero",
+      "collision_equal_multipliers_force_cube_one",
+      "collision_deck_multiplier_one",
+      "a5_a4_trivial_multiplicity_numerator_zero",
+      "a5_a4_nontrivial_linear_numerator_zero",
+      "psl3_2_s4_trivial_multiplicity_numerator_zero",
+      "psl3_2_s4_sign_multiplicity_numerator_zero"
+    ],
+    "version": "Lean (version 4.32.1, arm64-apple-darwin24.6.0, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)"
+  },
+  "lock_sha256": "b2be73c61d4e77d11d0c5559cb0797e95e35f678952a9b3ce3f156d8bb992ad0",
+  "proof_components": {
+    "dickson": {
+      "bounded_grid_is_proof": false,
+      "covers_arbitrary_outer_degree": true,
+      "proof_kind": "direct rational-function invariant-field argument",
+      "proof_note_sha256": "a5a3b39a90d4c2b44c09b1ffdc78a7c14e0ecf8cc201ea35c36cb4c5b9e3219c"
+    },
+    "internal_reaudits": {
+      "external_independence": false,
+      "finite_linear_group": {
+        "report_sha256": "330a81e19e01dcc97dc1cd24bb750968eb170ed5c7ad1886c2db2c070957352e",
+        "status": "pass"
+      },
+      "monodromy_ritt": {
+        "report_sha256": "9ee7fe4959336ceb5f397934d03f7fe23bfbe38e9601fd367638d4016545ecab",
+        "status": "pass"
+      }
+    },
+    "kummer": {
+      "exceptional_even_relation_encoded": true,
+      "file_sha256": "d7ca3f6004833feb7347f3db96cb3b794917658b0de6cf468106494c885f7c9e",
+      "manifest_sha256": "73f6e5eb02c4e156728272004910d2e035423ffc1d0a10408ea0c121cf9e8ca3",
+      "receipt_schema": "cyclicity-kummer-normalizer-receipt-v2",
+      "receipt_sha256": "4b50a66a1fef7619685b43c94258142ff6edd461ecef5ffd8589af289aef7e5a",
+      "uniform_full_kummer_kernel_claim": false
+    }
+  },
+  "proof_note_sha256": "d58272c1a007c6e1f15cea28b089af64df565c4ff8cc4878f1192de54461d04c",
+  "protocol_sha256": "9c11b61a25a22733ae2b45b47d8b680cb2cec4ede074168161412f5335a7b925",
+  "receipt_sha256": "7bfaca3adf5bcd71c66cae2c674a3b560500e596e420d0de55920790b35a8b43",
+  "review_sha256": "4a56525818a74ad1835a238859dd7a7eb2fde6fdf2274bbcae1cf8a937443be0",
+  "schema": "cyclicity-global-completion-receipt-v2",
+  "source_audit_sha256": "766c19cd9a76cffbefbcaacf3db93f62c6b4fbef4d7903ec0101787d6314d64d",
+  "status": "pass"
+}

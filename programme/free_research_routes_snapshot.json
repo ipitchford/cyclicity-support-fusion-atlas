@@ -1,0 +1,3751 @@
+{
+  "assurance_boundary": {
+    "does_not_support": [
+      "an exhaustive literature search",
+      "an exhaustive MathSciNet search",
+      "complete citation-forward coverage across all indexes",
+      "absence of prior work",
+      "novelty or priority certification",
+      "mathematical correctness"
+    ],
+    "supports": [
+      "reproducible public-route query counts",
+      "provider-specific forward-citation inventories for the named DOI seeds",
+      "bibliographic identity cross-checks",
+      "explicit diagnosis of remaining access and coverage gaps"
+    ]
+  },
+  "generated_at_utc": "2026-08-21T12:27:55.200318+00:00",
+  "providers": {
+    "ams_mathscinet": {
+      "documentation": "https://mathscinet.ams.org/mathscinet/help/mr_lookup_help.html",
+      "finding": "paid_only_for_required_capability",
+      "limitation": "The free tools do not expose a full topical MathSciNet search, reviews, or a complete MathSciNet citation graph. Automated topical scraping was not attempted.",
+      "route": "AMS Batch MR Lookup for bibliographic matching only"
+    },
+    "crossref": {
+      "documentation": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "route": "official REST API"
+    },
+    "google_scholar": {
+      "finding": "not_in_source",
+      "limitation": "No official public API; scraping was not attempted."
+    },
+    "openalex": {
+      "documentation": "https://help.openalex.org/",
+      "route": "official REST API; no-key request succeeded for this snapshot"
+    },
+    "opencitations": {
+      "access_token_used": false,
+      "data_terms": "CC0",
+      "documentation": "https://opencitations.net/querying/",
+      "route": "official REST API; free token encouraged but not required for this snapshot"
+    },
+    "semantic_scholar": {
+      "api_key_used": false,
+      "documentation": "https://www.semanticscholar.org/product/api",
+      "route": "official Academic Graph REST API; no-key request succeeded for this snapshot"
+    },
+    "zbmath_open": {
+      "data_terms": "CC-BY-SA-4.0 under the provider API terms",
+      "documentation": "https://api.zbmath.org/",
+      "route": "official public REST API"
+    }
+  },
+  "purpose": "Supplement the bounded novelty audit with documented free discovery, metadata, and citation routes.",
+  "request_log": [
+    {
+      "bytes": 11305,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.579,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.4064/aa-89-1-53-96"
+    },
+    {
+      "bytes": 6458,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.481,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "url": "https://api.openalex.org/works?filter=cites%3AW923887523&per-page=200&select=id%2Cdoi%2Ctitle%2Cpublication_year%2Ctype"
+    },
+    {
+      "bytes": 5774,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.154,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "OpenCitations Index",
+      "url": "https://api.opencitations.net/index/v2/citations/doi:10.4064%2Faa-89-1-53-96"
+    },
+    {
+      "bytes": 8792,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.611,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "Semantic Scholar",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.4064%2Faa-89-1-53-96/citations?limit=100&fields=paperId%2Ctitle%2Cyear%2CexternalIds%2Curl"
+    },
+    {
+      "bytes": 1571,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.353,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "Crossref",
+      "url": "https://api.crossref.org/works/10.4064%2Faa-89-1-53-96"
+    },
+    {
+      "bytes": 13371,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.647,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1112/plms/pdp010"
+    },
+    {
+      "bytes": 7966,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.544,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "url": "https://api.openalex.org/works?filter=cites%3AW2110222469&per-page=200&select=id%2Cdoi%2Ctitle%2Cpublication_year%2Ctype"
+    },
+    {
+      "bytes": 11087,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.157,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "OpenCitations Index",
+      "url": "https://api.opencitations.net/index/v2/citations/doi:10.1112%2Fplms%2Fpdp010"
+    },
+    {
+      "bytes": 22308,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.684,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "Semantic Scholar",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1112%2Fplms%2Fpdp010/citations?limit=100&fields=paperId%2Ctitle%2Cyear%2CexternalIds%2Curl"
+    },
+    {
+      "bytes": 2726,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.343,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "Crossref",
+      "url": "https://api.crossref.org/works/10.1112%2Fplms%2Fpdp010"
+    },
+    {
+      "bytes": 14213,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.598,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1090/mcom/4081"
+    },
+    {
+      "bytes": 581,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.231,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "url": "https://api.openalex.org/works?filter=cites%3AW4408331422&per-page=200&select=id%2Cdoi%2Ctitle%2Cpublication_year%2Ctype"
+    },
+    {
+      "bytes": 925,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.267,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "OpenCitations Index",
+      "url": "https://api.opencitations.net/index/v2/citations/doi:10.1090%2Fmcom%2F4081"
+    },
+    {
+      "bytes": 1768,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.505,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "Semantic Scholar",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1090%2Fmcom%2F4081/citations?limit=100&fields=paperId%2Ctitle%2Cyear%2CexternalIds%2Curl"
+    },
+    {
+      "bytes": 17948,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.443,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "Crossref",
+      "url": "https://api.crossref.org/works/10.1090%2Fmcom%2F4081"
+    },
+    {
+      "elapsed_seconds": 0.586,
+      "finding": "empty_result",
+      "http_status": 404,
+      "provider": "zbMATH Open",
+      "url": "https://api.zbmath.org/v1/document/_search?search_string=%22fixed-seed+cyclicity%22&results_per_page=100"
+    },
+    {
+      "elapsed_seconds": 0.326,
+      "finding": "empty_result",
+      "http_status": 404,
+      "provider": "zbMATH Open",
+      "url": "https://api.zbmath.org/v1/document/_search?search_string=%22inverse-root+support%22&results_per_page=100"
+    },
+    {
+      "elapsed_seconds": 0.419,
+      "finding": "empty_result",
+      "http_status": 404,
+      "provider": "zbMATH Open",
+      "url": "https://api.zbmath.org/v1/document/_search?search_string=%22exponential+Gauss-Manin%22+AND+polynomial&results_per_page=100"
+    },
+    {
+      "elapsed_seconds": 0.293,
+      "finding": "empty_result",
+      "http_status": 404,
+      "provider": "zbMATH Open",
+      "url": "https://api.zbmath.org/v1/document/_search?search_string=%22polynomial+monodromy%22+AND+composition&results_per_page=100"
+    },
+    {
+      "bytes": 571324,
+      "content_type": "application/json",
+      "elapsed_seconds": 2.658,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "zbMATH Open",
+      "url": "https://api.zbmath.org/v1/document/_search?search_string=Gauss-Manin+polynomial&results_per_page=100"
+    },
+    {
+      "bytes": 228069,
+      "content_type": "application/json",
+      "elapsed_seconds": 1.221,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "zbMATH Open",
+      "url": "https://api.zbmath.org/v1/document/_search?search_string=monodromy+polynomial+composition&results_per_page=100"
+    },
+    {
+      "bytes": 61660,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.841,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "zbMATH Open",
+      "url": "https://api.zbmath.org/v1/document/_search?search_string=%22polynomial+moment+problem%22&results_per_page=100"
+    },
+    {
+      "bytes": 166992,
+      "content_type": "application/json",
+      "elapsed_seconds": 0.98,
+      "finding": "success",
+      "http_status": 200,
+      "provider": "zbMATH Open",
+      "url": "https://api.zbmath.org/v1/document/_search?search_string=%22linear+relations%22+roots+polynomial&results_per_page=100"
+    }
+  ],
+  "schema": "cyclicity-free-research-routes-audit-v1",
+  "seeds": {
+    "combot_root_relations": {
+      "cross_index_comparison": {
+        "interpretation": "Provider-specific citation graphs; differing counts and partial overlaps are coverage evidence, not contradictions and not universal exhaustiveness.",
+        "openalex_records": 1,
+        "openalex_rows_matching_opencitations": 1,
+        "openalex_rows_matching_semantic_scholar": 1,
+        "opencitations_records": 3,
+        "opencitations_rows_matching_openalex": 1,
+        "semantic_scholar_records": 5,
+        "semantic_scholar_rows_matching_openalex": 1
+      },
+      "crossref": {
+        "doi": "10.1090/mcom/4081",
+        "is_referenced_by_count": 3,
+        "reference_count": 30,
+        "relation": {},
+        "title": "Computing linear relations between polynomial roots",
+        "type": "journal-article"
+      },
+      "identity": {
+        "doi": "10.1090/mcom/4081",
+        "key": "combot_root_relations",
+        "title": "Computing linear relations between polynomial roots"
+      },
+      "openalex": {
+        "records": [
+          {
+            "doi": "10.1145/3776698",
+            "openalex": "W7119480457",
+            "title": "Determination Problems for Orbit Closures and Matrix Groups",
+            "type": "article",
+            "year": 2026
+          }
+        ],
+        "reported": 1,
+        "retrieved": 1,
+        "seed": {
+          "cited_by_count": 1,
+          "doi": "10.1090/mcom/4081",
+          "id": "W4408331422",
+          "publication_year": 2025,
+          "title": "Computing linear relations between polynomial roots",
+          "updated_date": "2026-08-19T15:00:24.278416"
+        }
+      },
+      "opencitations": {
+        "records": [
+          {
+            "creation": "2026",
+            "identifiers": {
+              "arxiv": "2509.06752",
+              "omid": "br/06023087688"
+            },
+            "oci": "06023087688-0606319733",
+            "timespan": "P0Y"
+          },
+          {
+            "creation": "2026-01-08",
+            "identifiers": {
+              "doi": "10.1145/3776698",
+              "omid": "br/06013472646"
+            },
+            "oci": "06013472646-0606319733",
+            "timespan": "P0Y9M28D"
+          },
+          {
+            "creation": "2026",
+            "identifiers": {
+              "arxiv": "2505.02577",
+              "omid": "br/06023061326"
+            },
+            "oci": "06023061326-0606319733",
+            "timespan": "P0Y"
+          }
+        ],
+        "reported": 3,
+        "retrieved": 3
+      },
+      "semantic_scholar": {
+        "records": [
+          {
+            "arxiv": "2509.06752",
+            "doi": "10.1108/ftpgl-07-2025-0071",
+            "paper_id": "dc75e126f5c22ad90f9d472e69fa29f8a530a158",
+            "title": "Termination Analysis of Linear-Constraint Programs",
+            "url": "https://www.semanticscholar.org/paper/dc75e126f5c22ad90f9d472e69fa29f8a530a158",
+            "year": 2025
+          },
+          {
+            "arxiv": "2505.02577",
+            "doi": null,
+            "paper_id": "58fdcfd6e95f1db55ce16bde9c3e94cae7fe0b7f",
+            "title": "Computing the Zariski closure of a finitely generated matrix group",
+            "url": "https://www.semanticscholar.org/paper/58fdcfd6e95f1db55ce16bde9c3e94cae7fe0b7f",
+            "year": 2025
+          },
+          {
+            "arxiv": "2504.14413",
+            "doi": "10.48550/arxiv.2504.14413",
+            "paper_id": "10d934367b1982802e090de8defedb5d2afd6818",
+            "title": "On the p-adic Skolem Problem",
+            "url": "https://www.semanticscholar.org/paper/10d934367b1982802e090de8defedb5d2afd6818",
+            "year": 2025
+          },
+          {
+            "arxiv": "2407.04626",
+            "doi": "10.1145/3776698",
+            "paper_id": "7d2925f3d4ddc4c6a7c97a4d1e448cca832129ae",
+            "title": "Determination Problems for Orbit Closures and Matrix Groups",
+            "url": "https://www.semanticscholar.org/paper/7d2925f3d4ddc4c6a7c97a4d1e448cca832129ae",
+            "year": 2024
+          },
+          {
+            "arxiv": "2405.07953",
+            "doi": null,
+            "paper_id": "f047d8696f1251d12a4c8cf1dbe9254ca3fb2df5",
+            "title": "On the Decidability of Monadic Theories of Arithmetic Predicates",
+            "url": "https://www.semanticscholar.org/paper/f047d8696f1251d12a4c8cf1dbe9254ca3fb2df5",
+            "year": 2024
+          }
+        ],
+        "reported": 5,
+        "retrieved": 5
+      }
+    },
+    "girstmair_root_relations": {
+      "cross_index_comparison": {
+        "interpretation": "Provider-specific citation graphs; differing counts and partial overlaps are coverage evidence, not contradictions and not universal exhaustiveness.",
+        "openalex_records": 25,
+        "openalex_rows_matching_opencitations": 16,
+        "openalex_rows_matching_semantic_scholar": 18,
+        "opencitations_records": 17,
+        "opencitations_rows_matching_openalex": 16,
+        "semantic_scholar_records": 25,
+        "semantic_scholar_rows_matching_openalex": 19
+      },
+      "crossref": {
+        "doi": "10.4064/aa-89-1-53-96",
+        "is_referenced_by_count": 15,
+        "reference_count": 0,
+        "relation": {},
+        "title": "Linear relations between roots of polynomials",
+        "type": "journal-article"
+      },
+      "identity": {
+        "doi": "10.4064/aa-89-1-53-96",
+        "key": "girstmair_root_relations",
+        "title": "Linear relations between roots of polynomials"
+      },
+      "openalex": {
+        "records": [
+          {
+            "doi": null,
+            "openalex": "W3100234087",
+            "title": "Solution of the polynomial moment problem",
+            "type": "article",
+            "year": 2009
+          },
+          {
+            "doi": "10.17323/1609-4514-2013-13-4-693-731",
+            "openalex": "W2963570286",
+            "title": "On Rational Functions Orthogonal to All Powers of a Given Rational Function on a Curve",
+            "type": "article",
+            "year": 2013
+          },
+          {
+            "doi": "10.1007/s41884-023-00111-2",
+            "openalex": "W4382986594",
+            "title": "Gibbs manifolds",
+            "type": "article",
+            "year": 2023
+          },
+          {
+            "doi": "10.1215/ijm/1258136212",
+            "openalex": "W1497235731",
+            "title": "On the degree of a linear form in conjugates of an algebraic number",
+            "type": "article",
+            "year": 2002
+          },
+          {
+            "doi": "10.1090/s0002-9939-2014-12168-x",
+            "openalex": "W2013314017",
+            "title": "Linear recurrence sequences satisfying congruence conditions",
+            "type": "article",
+            "year": 2014
+          },
+          {
+            "doi": "10.1090/mcom/4081",
+            "openalex": "W4408331422",
+            "title": "Computing linear relations between polynomial roots",
+            "type": "article",
+            "year": 2025
+          },
+          {
+            "doi": "10.4064/aa131-1-1",
+            "openalex": "W2016345856",
+            "title": "Sur les relations entre les racines d'un polyn\u00f4me",
+            "type": "article",
+            "year": 2008
+          },
+          {
+            "doi": "10.1016/j.jsc.2020.08.001",
+            "openalex": "W2994659472",
+            "title": "A fast algorithm for computing multiplicative relations between the roots of a generic polynomial",
+            "type": "article",
+            "year": 2020
+          },
+          {
+            "doi": "10.2140/ant.2020.14.1291",
+            "openalex": "W2920829099",
+            "title": "Roots of L-functions of characters over functionfields, generic linear independence and biases",
+            "type": "article",
+            "year": 2020
+          },
+          {
+            "doi": "10.5802/jtnb.738",
+            "openalex": "W2328237453",
+            "title": "A propos de la relation galoisienne <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"> <mml:mrow> <mml:msub> <mml:mi>x</mml:mi> <mml:mn>1</mml:mn> </mml:msub> <mml:mo>=</mml:mo> <mml:msub> <mml:mi>x</mml:mi> <mml:mn>2</mml:mn> </mml:msub> <mml:mo>+</mml:mo> <mml:msub> <mml:mi>x</mml:mi> <mml:mn>3</mml:mn> </mml:msub> </mml:mrow> </mml:math>",
+            "type": "article",
+            "year": 2011
+          },
+          {
+            "doi": "10.5802/jtnb.597",
+            "openalex": "W2315273450",
+            "title": "La relation lin\u00e9aire <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"> <mml:mrow> <mml:mi>a</mml:mi> <mml:mo>=</mml:mo> <mml:mi>b</mml:mi> <mml:mo>+</mml:mo> <mml:mi>c</mml:mi> <mml:mo>+</mml:mo> <mml:mo>\u22ef</mml:mo> <mml:mo>+</mml:mo> <mml:mi>t</mml:mi> </mml:mrow> </mml:math> entre les racines d\u2019un polyn\u00f4me",
+            "type": "article",
+            "year": 2008
+          },
+          {
+            "doi": "10.4064/aa127-3-7",
+            "openalex": "W2330660553",
+            "title": "The Galois relation x<sub>1</sub>=x<sub>2</sub>+x<sub>3</sub>for finite simple groups",
+            "type": "article",
+            "year": 2007
+          },
+          {
+            "doi": "10.4064/aa107-1-4",
+            "openalex": "W1999046363",
+            "title": "Additive relations with conjugate algebraic numbers",
+            "type": "article",
+            "year": 2003
+          },
+          {
+            "doi": "10.1007/s10474-018-0788-9",
+            "openalex": "W2963375177",
+            "title": "On the number of integer polynomials with multiplicatively dependent roots",
+            "type": "article",
+            "year": 2018
+          },
+          {
+            "doi": "10.48550/arxiv.0910.2105",
+            "openalex": "W143710625",
+            "title": "On rational functions orthogonal to all powers of a given rational function on a curve",
+            "type": "preprint",
+            "year": 2009
+          },
+          {
+            "doi": "10.1081/agb-200063528",
+            "openalex": "W2064811941",
+            "title": "On Invariant Relations between Zeros of Polynomials",
+            "type": "article",
+            "year": 2005
+          },
+          {
+            "doi": "10.1007/s11253-007-0064-6",
+            "openalex": "W2004435039",
+            "title": "Multiplicative relations with conjugate algebraic numbers",
+            "type": "article",
+            "year": 2007
+          },
+          {
+            "doi": "10.48550/arxiv.1704.08279",
+            "openalex": "W2610385540",
+            "title": "Necessary and sufficient conditions for meromorphic integrability near a curve",
+            "type": "preprint",
+            "year": 2017
+          },
+          {
+            "doi": "10.48550/arxiv.1707.04965",
+            "openalex": "W2737220677",
+            "title": "On the number of integer polynomials with multiplicatively dependent roots",
+            "type": "preprint",
+            "year": 2017
+          },
+          {
+            "doi": "10.5802/jtnb.1116",
+            "openalex": "W2944599367",
+            "title": "Linear relations with conjugates of a Salem number",
+            "type": "article",
+            "year": 2020
+          },
+          {
+            "doi": "10.1007/978-3-030-60026-6_36",
+            "openalex": "W3021946922",
+            "title": "Characterizing Triviality of the Exponent Lattice of a Polynomial Through Galois and Galois-Like Groups",
+            "type": "conference-paper",
+            "year": 2020
+          },
+          {
+            "doi": "10.1007/s10623-025-01724-7",
+            "openalex": "W4413744513",
+            "title": "Linearization of polynomials in prime characteristic, with applications to the Golay code and Steiner system",
+            "type": "article",
+            "year": 2025
+          },
+          {
+            "doi": "10.3336/gm.60.2.04",
+            "openalex": "W7117421840",
+            "title": "Linear relations between three algebraic conjugates of degree twice a prime",
+            "type": "article",
+            "year": 2025
+          },
+          {
+            "doi": "10.1007/s40687-026-00616-z",
+            "openalex": "W7140075439",
+            "title": "PV number as a completely normal basis generator of finite abelian extensions or dihedral extensions of number fields",
+            "type": "article",
+            "year": 2026
+          },
+          {
+            "doi": "10.1023/a:1024215022506",
+            "openalex": "W91434528",
+            "title": "Relations with Conjugate Numbers Over a Finite Field",
+            "type": "article",
+            "year": 2003
+          }
+        ],
+        "reported": 25,
+        "retrieved": 25,
+        "seed": {
+          "cited_by_count": 25,
+          "doi": "10.4064/aa-89-1-53-96",
+          "id": "W923887523",
+          "publication_year": 1999,
+          "title": "Linear relations between roots of polynomials",
+          "updated_date": "2025-11-06T03:46:38.306776"
+        }
+      },
+      "opencitations": {
+        "records": [
+          {
+            "creation": "2009-03-31",
+            "identifiers": {
+              "doi": "10.1112/plms/pdp010",
+              "omid": "br/06301052253",
+              "openalex": "W3100234087"
+            },
+            "oci": "06301052253-06110984153",
+            "timespan": "P10Y"
+          },
+          {
+            "creation": "2017-04-26",
+            "identifiers": {
+              "arxiv": "1704.08279v1",
+              "omid": "br/06404305399"
+            },
+            "oci": "06404305399-06110984153",
+            "timespan": "P18Y"
+          },
+          {
+            "creation": "2020-08-21",
+            "identifiers": {
+              "doi": "10.5802/jtnb.1116",
+              "omid": "br/06202083783",
+              "openalex": "W3080113950"
+            },
+            "oci": "06202083783-06110984153",
+            "timespan": "P21Y"
+          },
+          {
+            "creation": "2007-07",
+            "identifiers": {
+              "doi": "10.1007/s11253-007-0064-6",
+              "omid": "br/06240401048",
+              "openalex": "W2004435039"
+            },
+            "oci": "06240401048-06110984153",
+            "timespan": "P8Y"
+          },
+          {
+            "creation": "2021-05",
+            "identifiers": {
+              "doi": "10.1016/j.jsc.2020.08.001",
+              "omid": "br/06190114130",
+              "openalex": "W3048132303"
+            },
+            "oci": "06190114130-06110984153",
+            "timespan": "P22Y"
+          },
+          {
+            "creation": "2025-08-27",
+            "identifiers": {
+              "doi": "10.1007/s10623-025-01724-7",
+              "omid": "br/06012566252",
+              "openalex": "W4413744513"
+            },
+            "oci": "06012566252-06110984153",
+            "timespan": "P26Y"
+          },
+          {
+            "creation": "2020-07-13",
+            "identifiers": {
+              "doi": "10.2140/ant.2020.14.1291",
+              "omid": "br/06203100598",
+              "openalex": "W2920829099"
+            },
+            "oci": "06203100598-06110984153",
+            "timespan": "P21Y"
+          },
+          {
+            "creation": "2010",
+            "identifiers": {
+              "doi": "10.5802/jtnb.738",
+              "omid": "br/062201407114",
+              "openalex": "W2328237453"
+            },
+            "oci": "062201407114-06110984153",
+            "timespan": "P11Y"
+          },
+          {
+            "creation": "2013",
+            "identifiers": {
+              "doi": "10.17323/1609-4514-2013-13-4-693-731",
+              "omid": "br/062102074242",
+              "openalex": "W2963570286"
+            },
+            "oci": "062102074242-06110984153",
+            "timespan": "P14Y"
+          },
+          {
+            "creation": "2008-12-02",
+            "identifiers": {
+              "doi": "10.5802/jtnb.597",
+              "omid": "br/06013686816"
+            },
+            "oci": "06013686816-06110984153",
+            "timespan": "P9Y"
+          },
+          {
+            "creation": "2020",
+            "identifiers": {
+              "doi": "10.1007/978-3-030-60026-6_36",
+              "omid": "br/061901958523",
+              "openalex": "W3097120435"
+            },
+            "oci": "061901958523-06110984153",
+            "timespan": "P21Y"
+          },
+          {
+            "creation": "2003-04",
+            "identifiers": {
+              "doi": "10.1023/a:1024215022506",
+              "omid": "br/06015541034"
+            },
+            "oci": "06015541034-06110984153",
+            "timespan": "P4Y"
+          },
+          {
+            "creation": "2005-06",
+            "identifiers": {
+              "doi": "10.1081/agb-200063528",
+              "omid": "br/06703717564",
+              "openalex": "W2064811941"
+            },
+            "oci": "06703717564-06110984153",
+            "timespan": "P6Y"
+          },
+          {
+            "creation": "2018-01-22",
+            "identifiers": {
+              "doi": "10.1007/s10474-018-0788-9",
+              "omid": "br/06401775415",
+              "openalex": "W2963375177"
+            },
+            "oci": "06401775415-06110984153",
+            "timespan": "P19Y"
+          },
+          {
+            "creation": "2025-03-11",
+            "identifiers": {
+              "doi": "10.1090/mcom/4081",
+              "omid": "br/0606319733",
+              "openalex": "W4408331422"
+            },
+            "oci": "0606319733-06110984153",
+            "timespan": "P26Y"
+          },
+          {
+            "creation": "2025-12-20",
+            "identifiers": {
+              "doi": "10.3336/gm.60.2.04",
+              "omid": "br/06014629168"
+            },
+            "oci": "06014629168-06110984153",
+            "timespan": "P26Y"
+          },
+          {
+            "creation": "2023-07-03",
+            "identifiers": {
+              "doi": "10.1007/s41884-023-00111-2",
+              "omid": "br/062603972313",
+              "openalex": "W4382986594"
+            },
+            "oci": "062603972313-06110984153",
+            "timespan": "P24Y"
+          }
+        ],
+        "reported": 17,
+        "retrieved": 17
+      },
+      "semantic_scholar": {
+        "records": [
+          {
+            "arxiv": "2606.10672",
+            "doi": null,
+            "paper_id": "6208f5c2142180597863cb17a2c0a0faf4e098a6",
+            "title": "Linear relations of four conjugates of an algebraic number of degree eight",
+            "url": "https://www.semanticscholar.org/paper/6208f5c2142180597863cb17a2c0a0faf4e098a6",
+            "year": 2026
+          },
+          {
+            "arxiv": "2608.03583",
+            "doi": null,
+            "paper_id": "3a40ba76a27f411170af0007aa0576863df01321",
+            "title": "No three algebraic conjugates of degree sixteen sum to zero",
+            "url": "https://www.semanticscholar.org/paper/3a40ba76a27f411170af0007aa0576863df01321",
+            "year": 2026
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1007/s40687-026-00616-z",
+            "paper_id": "bf47c5e3e5e03dd41f70fd2710ae2349672900b5",
+            "title": "PV number as a completely normal basis generator of finite abelian extensions or dihedral extensions of number fields",
+            "url": "https://www.semanticscholar.org/paper/bf47c5e3e5e03dd41f70fd2710ae2349672900b5",
+            "year": 2026
+          },
+          {
+            "arxiv": null,
+            "doi": "10.3336/gm.60.2.04",
+            "paper_id": "25954977bd9ca07d9483a88d051c1fec0431b42c",
+            "title": "Linear relations between three algebraic conjugates of degree twice a prime",
+            "url": "https://www.semanticscholar.org/paper/25954977bd9ca07d9483a88d051c1fec0431b42c",
+            "year": 2025
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1090/mcom/4081",
+            "paper_id": "2a89cc55ecd062443682aeb643ed9d867935174a",
+            "title": "Computing linear relations between polynomial roots",
+            "url": "https://www.semanticscholar.org/paper/2a89cc55ecd062443682aeb643ed9d867935174a",
+            "year": 2025
+          },
+          {
+            "arxiv": "2411.07785",
+            "doi": "10.1007/s10623-025-01724-7",
+            "paper_id": "9494d3e1f817df5df3dbcd180cea6c4cebd299dc",
+            "title": "Linearization of polynomials in prime characteristic, with applications to the Golay code and Steiner system",
+            "url": "https://www.semanticscholar.org/paper/9494d3e1f817df5df3dbcd180cea6c4cebd299dc",
+            "year": 2024
+          },
+          {
+            "arxiv": "2211.15490",
+            "doi": "10.1007/s41884-023-00111-2",
+            "paper_id": "43fc65396283e4001159a4e355e3a9cf84f0187e",
+            "title": "Gibbs manifolds",
+            "url": "https://www.semanticscholar.org/paper/43fc65396283e4001159a4e355e3a9cf84f0187e",
+            "year": 2022
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1016/j.jsc.2020.08.001",
+            "paper_id": "8eb1f1739175986a51b9c07992e8c38762b61ca1",
+            "title": "A fast algorithm for computing multiplicative relations between the roots of a generic polynomial",
+            "url": "https://www.semanticscholar.org/paper/8eb1f1739175986a51b9c07992e8c38762b61ca1",
+            "year": 2021
+          },
+          {
+            "arxiv": "2005.01963",
+            "doi": "10.1007/978-3-030-60026-6_36",
+            "paper_id": "dc9160e4669a90f68ec7116c59166892346d7bb9",
+            "title": "Characterizing Triviality of the Exponent Lattice of A Polynomial through Galois and Galois-Like Groups",
+            "url": "https://www.semanticscholar.org/paper/dc9160e4669a90f68ec7116c59166892346d7bb9",
+            "year": 2020
+          },
+          {
+            "arxiv": "1905.04023",
+            "doi": "10.5802/jtnb.1116",
+            "paper_id": "f7fa523656f1819e421132dd4911c527d932247b",
+            "title": "Linear relations with conjugates of a Salem number",
+            "url": "https://www.semanticscholar.org/paper/f7fa523656f1819e421132dd4911c527d932247b",
+            "year": 2019
+          },
+          {
+            "arxiv": "1903.05491",
+            "doi": "10.2140/ant.2020.14.1291",
+            "paper_id": "0beb0c0c5e107c0d852115c8db4aca3233902a81",
+            "title": "Roots of L-functions of characters over function fields, generic linear independence and biases",
+            "url": "https://www.semanticscholar.org/paper/0beb0c0c5e107c0d852115c8db4aca3233902a81",
+            "year": 2019
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1007/s10474-018-0788-9",
+            "paper_id": "0faa646f9f0ae868fb66e27f0be501f53c6ffa54",
+            "title": "On the number of integer polynomials with multiplicatively dependent roots",
+            "url": "https://www.semanticscholar.org/paper/0faa646f9f0ae868fb66e27f0be501f53c6ffa54",
+            "year": 2018
+          },
+          {
+            "arxiv": "1707.04965",
+            "doi": "10.1007/s10474-018-0788-9",
+            "paper_id": "a1a4a5700f9316f3722cf688fef5ad37cdd230ab",
+            "title": "On the number of integer polynomials with multiplicatively dependent roots",
+            "url": "https://www.semanticscholar.org/paper/a1a4a5700f9316f3722cf688fef5ad37cdd230ab",
+            "year": 2017
+          },
+          {
+            "arxiv": "1704.08279",
+            "doi": null,
+            "paper_id": "76dac4fbe79f2606de44eadc53f70d60cfe121f4",
+            "title": "Necessary and sufficient conditions for meromorphic integrability near a curve",
+            "url": "https://www.semanticscholar.org/paper/76dac4fbe79f2606de44eadc53f70d60cfe121f4",
+            "year": 2017
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1090/gsm/155",
+            "paper_id": "2f7802f0a4ab3e2524dd5022f86786c57d34f243",
+            "title": "An Introduction to the Representation Theory of Groups",
+            "url": "https://www.semanticscholar.org/paper/2f7802f0a4ab3e2524dd5022f86786c57d34f243",
+            "year": 2014
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1090/s0002-9939-2014-12168-x",
+            "paper_id": "2784b56196391c60a87186427ee2ffc7c2f35bab",
+            "title": "Linear recurrence sequences satisfying congruence conditions",
+            "url": "https://www.semanticscholar.org/paper/2784b56196391c60a87186427ee2ffc7c2f35bab",
+            "year": 2014
+          },
+          {
+            "arxiv": "0910.2105",
+            "doi": "10.17323/1609-4514-2013-13-4-693-731",
+            "paper_id": "5f8462806448f2a92695c80d683ed81e8d460005",
+            "title": "On rational functions orthogonal to all powers of a given rational function on a curve",
+            "url": "https://www.semanticscholar.org/paper/5f8462806448f2a92695c80d683ed81e8d460005",
+            "year": 2009
+          },
+          {
+            "arxiv": "0710.4085",
+            "doi": "10.1112/plms/pdp010",
+            "paper_id": "850e5a0aa5d8590fbcfec5eb2ab0e2b35b78490d",
+            "title": "Solution of the polynomial moment problem",
+            "url": "https://www.semanticscholar.org/paper/850e5a0aa5d8590fbcfec5eb2ab0e2b35b78490d",
+            "year": 2007
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1007/s11253-007-0064-6",
+            "paper_id": "96c457592f863fa0568f4375260541370babd59c",
+            "title": "Multiplicative relations with conjugate algebraic numbers",
+            "url": "https://www.semanticscholar.org/paper/96c457592f863fa0568f4375260541370babd59c",
+            "year": 2007
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1081/agb-200063528",
+            "paper_id": "784be3d066964301c84a419af48991fa2ce988a1",
+            "title": "On Invariant Relations between Zeros of Polynomials",
+            "url": "https://www.semanticscholar.org/paper/784be3d066964301c84a419af48991fa2ce988a1",
+            "year": 2005
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1023/a:1024215022506",
+            "paper_id": "fcda697a08b9ecc96447cdfddc2da772baecaaf7",
+            "title": "Relations with Conjugate Numbers Over a Finite Field",
+            "url": "https://www.semanticscholar.org/paper/fcda697a08b9ecc96447cdfddc2da772baecaaf7",
+            "year": 2003
+          },
+          {
+            "arxiv": null,
+            "doi": "10.5802/jtnb.738",
+            "paper_id": "ed11b75385a9200b01ce61f3a801803637d3a6d3",
+            "title": "A propos de la relation galoisienne $x_1=x_2+x_3$",
+            "url": "https://www.semanticscholar.org/paper/ed11b75385a9200b01ce61f3a801803637d3a6d3",
+            "year": 2010
+          },
+          {
+            "arxiv": null,
+            "doi": "10.4064/aa131-1-1",
+            "paper_id": "fc8d91c2749f9abdc29471fa440d1f50f62ced0a",
+            "title": "Sur les relations entre les racines d'un polyn\u00f4me",
+            "url": "https://www.semanticscholar.org/paper/fc8d91c2749f9abdc29471fa440d1f50f62ced0a",
+            "year": 2008
+          },
+          {
+            "arxiv": null,
+            "doi": "10.4064/aa127-3-7",
+            "paper_id": "2de3b6fe832ac1c1f1da942a8544f4f62c785543",
+            "title": "The Galois relation x1 = x2 + x3 for finite simple groups",
+            "url": "https://www.semanticscholar.org/paper/2de3b6fe832ac1c1f1da942a8544f4f62c785543",
+            "year": 2007
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": null,
+            "title": "2 2 O ct 2 00 7 Solution of the polynomial moment problem",
+            "url": null,
+            "year": null
+          }
+        ],
+        "reported": 25,
+        "retrieved": 25
+      }
+    },
+    "pakovich_muzychuk_moment_problem": {
+      "cross_index_comparison": {
+        "interpretation": "Provider-specific citation graphs; differing counts and partial overlaps are coverage evidence, not contradictions and not universal exhaustiveness.",
+        "openalex_records": 28,
+        "openalex_rows_matching_opencitations": 27,
+        "openalex_rows_matching_semantic_scholar": 27,
+        "opencitations_records": 32,
+        "opencitations_rows_matching_openalex": 27,
+        "semantic_scholar_records": 64,
+        "semantic_scholar_rows_matching_openalex": 30
+      },
+      "crossref": {
+        "doi": "10.1112/plms/pdp010",
+        "is_referenced_by_count": 27,
+        "reference_count": 0,
+        "relation": {},
+        "title": "Solution of the polynomial moment problem",
+        "type": "journal-article"
+      },
+      "identity": {
+        "doi": "10.1112/plms/pdp010",
+        "key": "pakovich_muzychuk_moment_problem",
+        "title": "Solution of the polynomial moment problem"
+      },
+      "openalex": {
+        "records": [
+          {
+            "doi": "10.1016/j.jalgebra.2011.09.036",
+            "openalex": "W2964335362",
+            "title": "Mathieu subspaces of associative algebras",
+            "type": "article",
+            "year": 2011
+          },
+          {
+            "doi": "10.1016/j.jpaa.2009.10.007",
+            "openalex": "W2963394288",
+            "title": "Generalizations of the image conjecture and the Mathieu conjecture",
+            "type": "article",
+            "year": 2009
+          },
+          {
+            "doi": "10.4007/annals.2010.172.437",
+            "openalex": "W2010471949",
+            "title": "Center conditions at infinity for Abel differential equations",
+            "type": "article",
+            "year": 2010
+          },
+          {
+            "doi": "10.1016/j.bulsci.2009.06.003",
+            "openalex": "W2963919212",
+            "title": "Prime and composite Laurent polynomials",
+            "type": "article",
+            "year": 2009
+          },
+          {
+            "doi": "10.1007/s12346-011-0054-9",
+            "openalex": "W2009269145",
+            "title": "Centers for Trigonometric Abel Equations",
+            "type": "article",
+            "year": 2011
+          },
+          {
+            "doi": "10.1016/j.jmaa.2012.09.006",
+            "openalex": "W2013841917",
+            "title": "A simple solution of some composition conjectures for Abel equations",
+            "type": "article",
+            "year": 2012
+          },
+          {
+            "doi": "10.1016/j.bulsci.2010.06.002",
+            "openalex": "W2036453561",
+            "title": "Moment vanishing problem and positivity: Some examples",
+            "type": "article",
+            "year": 2010
+          },
+          {
+            "doi": "10.1112/s0010437x12000620",
+            "openalex": "W2962920694",
+            "title": "Generalized \u2018second Ritt theorem\u2019 and explicit solution of the polynomial moment problem",
+            "type": "article",
+            "year": 2013
+          },
+          {
+            "doi": "10.1088/0951-7715/23/7/007",
+            "openalex": "W2046421274",
+            "title": "Tree composition condition and moments vanishing",
+            "type": "article",
+            "year": 2010
+          },
+          {
+            "doi": "10.1007/s10688-010-0003-4",
+            "openalex": "W2088248539",
+            "title": "The monodromy problem and the tangential center problem",
+            "type": "article",
+            "year": 2010
+          },
+          {
+            "doi": "10.1016/j.exmath.2015.12.002",
+            "openalex": "W2247053840",
+            "title": "The center problem and composition condition for Abel differential equations",
+            "type": "article",
+            "year": 2015
+          },
+          {
+            "doi": "10.1017/etds.2014.94",
+            "openalex": "W2002141833",
+            "title": "Algebraic geometry of the center-focus problem for Abel differential equations",
+            "type": "article",
+            "year": 2014
+          },
+          {
+            "doi": "10.1007/s13398-012-0112-4",
+            "openalex": "W1971638361",
+            "title": "Algebraic geometry of Abel differential equation",
+            "type": "article",
+            "year": 2012
+          },
+          {
+            "doi": "10.1007/s11856-017-1449-3",
+            "openalex": "W2963320959",
+            "title": "On decompositions of trigonometric polynomials",
+            "type": "article",
+            "year": 2017
+          },
+          {
+            "doi": "10.1007/s12346-010-0018-5",
+            "openalex": "W2001679716",
+            "title": "Some Algebraic Aspects of the Center Problem for Ordinary Differential Equations",
+            "type": "article",
+            "year": 2010
+          },
+          {
+            "doi": "10.1016/j.jde.2015.07.009",
+            "openalex": "W2962849847",
+            "title": "Uniform upper bounds for the cyclicity of the zero solution of the Abel differential equation",
+            "type": "article",
+            "year": 2015
+          },
+          {
+            "doi": "10.1088/0951-7715/25/11/3197",
+            "openalex": "W1991349162",
+            "title": "Composition conditions for classes of analytic functions",
+            "type": "article",
+            "year": 2012
+          },
+          {
+            "doi": "10.5802/ahl.41",
+            "openalex": "W3040720524",
+            "title": "On the center-focus problem for the equation <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"> <mml:mrow> <mml:mfrac> <mml:mrow> <mml:mi mathvariant=\"normal\">d</mml:mi> <mml:mi>y</mml:mi> </mml:mrow> <mml:mrow> <mml:mi mathvariant=\"normal\">d</mml:mi> <mml:mi>x</mml:mi> </mml:mrow> </mml:mfrac> <mml:mo>+</mml:mo> <mml:msubsup> <mml:mi>\u03a3</mml:mi> <mml:mrow> <mml:mi>i</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn> </mml:mrow> <mml:mi>n</mml:mi> </mml:msubsup> <mml:msub> <mml:mi>a</mml:mi> <mml:mi>i</mml:mi> </mml:msub> <mml:mrow> <mml:mo>(</mml:mo> <mml:mi>x</mml:mi> <mml:mo>)</mml:mo> </mml:mrow> <mml:msup> <mml:mi>y</mml:mi> <mml:mi>i</mml:mi> </mml:msup> <mml:mo>=</mml:mo> <mml:mn>0</mml:mn> <mml:mo>,</mml:mo> <mml:mn>0</mml:mn> <mml:mo>\u2264</mml:mo> <mml:mi>x</mml:mi> <mml:mo>\u2264</mml:mo> <mml:mn>1</mml:mn> </mml:mrow> </mml:math> where <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"> <mml:msub> <mml:mi>a</mml:mi> <mml:mi>i</mml:mi> </mml:msub> </mml:math> are polynomials",
+            "type": "article",
+            "year": 2020
+          },
+          {
+            "doi": "10.14232/ejqtde.2019.1.95",
+            "openalex": "W2998743651",
+            "title": "On the composition conjecture for a class of rigid systems",
+            "type": "article",
+            "year": 2019
+          },
+          {
+            "doi": "10.4213/faa2980",
+            "openalex": "W2318528244",
+            "title": "\u041f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 \u043c\u043e\u043d\u043e\u0434\u0440\u043e\u043c\u0438\u0438 \u0438 \u0438\u043d\u0444\u0438\u043d\u0438\u0442\u0435\u0437\u0438\u043c\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 \u0444\u043e\u043a\u0443\u0441\u0430",
+            "type": "article",
+            "year": 2010
+          },
+          {
+            "doi": "10.1134/s0016266321040018",
+            "openalex": "W3034409981",
+            "title": "Infinitesimal Center Problem on Zero Cycles and the Composition Conjecture",
+            "type": "article",
+            "year": 2021
+          },
+          {
+            "doi": "10.1016/j.na.2011.02.049",
+            "openalex": "W2026455125",
+            "title": "Abel-like differential equations with a unique limit cycle",
+            "type": "article",
+            "year": 2011
+          },
+          {
+            "doi": "10.1007/s12346-014-0118-8",
+            "openalex": "W2099522961",
+            "title": "Parametric Center-Focus Problem for Abel Equation",
+            "type": "article",
+            "year": 2014
+          },
+          {
+            "doi": "10.1007/s10958-014-2031-8",
+            "openalex": "W2061471690",
+            "title": "Integral Geometry Problems with Incomplete Data",
+            "type": "article",
+            "year": 2014
+          },
+          {
+            "doi": "10.1088/0951-7715/27/7/1611",
+            "openalex": "W2090971091",
+            "title": "The moment finiteness problem and characterization of universal centres of ordinary differential equations with analytic coefficients",
+            "type": "article",
+            "year": 2014
+          },
+          {
+            "doi": "10.1017/etds.2014.104",
+            "openalex": "W2134532571",
+            "title": "Universal curves in the center problem for Abel differential equations",
+            "type": "article",
+            "year": 2014
+          },
+          {
+            "doi": "10.1017/etds.2012.143",
+            "openalex": "W2073184890",
+            "title": "On the trigonometric moment problem",
+            "type": "article",
+            "year": 2012
+          },
+          {
+            "doi": "10.4213/faa3854",
+            "openalex": "W3211200407",
+            "title": "\u0418\u043d\u0444\u0438\u043d\u0438\u0442\u0435\u0437\u0438\u043c\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 \u0446\u0435\u043d\u0442\u0440\u0430 \u043d\u0430 \u043d\u0443\u043b\u0435\u0432\u044b\u0445 \u0446\u0438\u043a\u043b\u0430\u0445 \u0438 \u0433\u0438\u043f\u043e\u0442\u0435\u0437\u0430 \u043a\u043e\u043c\u043f\u043e\u0437\u0438\u0446\u0438\u0438",
+            "type": "article",
+            "year": 2021
+          }
+        ],
+        "reported": 28,
+        "retrieved": 28,
+        "seed": {
+          "cited_by_count": 28,
+          "doi": "10.1112/plms/pdp010",
+          "id": "W2110222469",
+          "publication_year": 2009,
+          "title": "Solution of the polynomial moment problem",
+          "updated_date": "2026-08-05T07:39:15.569665"
+        }
+      },
+      "opencitations": {
+        "records": [
+          {
+            "creation": "2010",
+            "identifiers": {
+              "arxiv": "0908.2508",
+              "omid": "br/06022238030"
+            },
+            "oci": "06022238030-06301052253",
+            "timespan": "P0Y"
+          },
+          {
+            "creation": "2012-01",
+            "identifiers": {
+              "doi": "10.1016/j.jalgebra.2011.09.036",
+              "omid": "br/0648053098",
+              "openalex": "W2964335362"
+            },
+            "oci": "0648053098-06301052253",
+            "timespan": "P2Y9M"
+          },
+          {
+            "creation": "2014-09-02",
+            "identifiers": {
+              "doi": "10.1007/s10958-014-2031-8",
+              "omid": "br/061102197285",
+              "openalex": "W2061471690"
+            },
+            "oci": "061102197285-06301052253",
+            "timespan": "P5Y5M2D"
+          },
+          {
+            "creation": "2010-06-08",
+            "identifiers": {
+              "doi": "10.1088/0951-7715/23/7/007",
+              "omid": "br/06802141451",
+              "openalex": "W2046421274"
+            },
+            "oci": "06802141451-06301052253",
+            "timespan": "P1Y2M8D"
+          },
+          {
+            "creation": "2020-07-10",
+            "identifiers": {
+              "doi": "10.5802/ahl.41",
+              "omid": "br/061701993212",
+              "openalex": "W3040720524"
+            },
+            "oci": "061701993212-06301052253",
+            "timespan": "P11Y3M10D"
+          },
+          {
+            "creation": "2009-10",
+            "identifiers": {
+              "doi": "10.1016/j.bulsci.2009.06.003",
+              "omid": "br/06702970867",
+              "openalex": "W2963919212"
+            },
+            "oci": "06702970867-06301052253",
+            "timespan": "P0Y6M"
+          },
+          {
+            "creation": "2013-02",
+            "identifiers": {
+              "doi": "10.1016/j.jmaa.2012.09.006",
+              "omid": "br/06902770338",
+              "openalex": "W2013841917"
+            },
+            "oci": "06902770338-06301052253",
+            "timespan": "P3Y10M"
+          },
+          {
+            "creation": "2014-04-01",
+            "identifiers": {
+              "doi": "10.5565/publmat_extra14_12",
+              "omid": "br/0660784095",
+              "openalex": "W2078889211"
+            },
+            "oci": "0660784095-06301052253",
+            "timespan": "P5Y0M1D"
+          },
+          {
+            "creation": "2011-10-18",
+            "identifiers": {
+              "doi": "10.1007/s12346-011-0054-9",
+              "omid": "br/061401458602",
+              "openalex": "W2009269145"
+            },
+            "oci": "061401458602-06301052253",
+            "timespan": "P2Y6M18D"
+          },
+          {
+            "creation": "2012-10-15",
+            "identifiers": {
+              "doi": "10.1088/0951-7715/25/11/3197",
+              "omid": "br/06802141070",
+              "openalex": "W1991349162"
+            },
+            "oci": "06802141070-06301052253",
+            "timespan": "P3Y6M15D"
+          },
+          {
+            "creation": "2014-12-15",
+            "identifiers": {
+              "doi": "10.1017/etds.2014.104",
+              "omid": "br/06803032072",
+              "openalex": "W2134532571"
+            },
+            "oci": "06803032072-06301052253",
+            "timespan": "P5Y8M15D"
+          },
+          {
+            "creation": "2011-07",
+            "identifiers": {
+              "doi": "10.1016/j.na.2011.02.049",
+              "omid": "br/062101558257",
+              "openalex": "W2026455125"
+            },
+            "oci": "062101558257-06301052253",
+            "timespan": "P2Y3M"
+          },
+          {
+            "creation": "2010-03",
+            "identifiers": {
+              "doi": "10.1007/s10688-010-0003-4",
+              "omid": "br/06701574237",
+              "openalex": "W2088248539"
+            },
+            "oci": "06701574237-06301052253",
+            "timespan": "P0Y11M"
+          },
+          {
+            "creation": "2010",
+            "identifiers": {
+              "doi": "10.4213/faa2980",
+              "omid": "br/06103079753",
+              "openalex": "W2318528244"
+            },
+            "oci": "06103079753-06301052253",
+            "timespan": "P0Y"
+          },
+          {
+            "creation": "2013",
+            "identifiers": {
+              "doi": "10.1090/conm/591/11826",
+              "omid": "br/06103373059",
+              "openalex": "W4251474361"
+            },
+            "oci": "06103373059-06301052253",
+            "timespan": "P3Y"
+          },
+          {
+            "creation": "2021-10",
+            "identifiers": {
+              "doi": "10.1134/s0016266321040018",
+              "omid": "br/06701573708",
+              "openalex": "W3034409981"
+            },
+            "oci": "06701573708-06301052253",
+            "timespan": "P12Y6M"
+          },
+          {
+            "creation": "2014-11-06",
+            "identifiers": {
+              "doi": "10.1017/etds.2014.94",
+              "omid": "br/06803032095",
+              "openalex": "W3098027397"
+            },
+            "oci": "06803032095-06301052253",
+            "timespan": "P5Y7M6D"
+          },
+          {
+            "creation": "2012-11-16",
+            "identifiers": {
+              "doi": "10.1017/etds.2012.143",
+              "omid": "br/06902642209",
+              "openalex": "W2962914304"
+            },
+            "oci": "06902642209-06301052253",
+            "timespan": "P3Y7M16D"
+          },
+          {
+            "creation": "2010-06-27",
+            "identifiers": {
+              "doi": "10.4007/annals.2010.172.437",
+              "omid": "br/061101519131",
+              "openalex": "W2010471949"
+            },
+            "oci": "061101519131-06301052253",
+            "timespan": "P1Y2M27D"
+          },
+          {
+            "creation": "2021",
+            "identifiers": {
+              "doi": "10.4213/faa3854",
+              "omid": "br/06103078832",
+              "openalex": "W3211200407"
+            },
+            "oci": "06103078832-06301052253",
+            "timespan": "P11Y"
+          },
+          {
+            "creation": "2015-12",
+            "identifiers": {
+              "doi": "10.1016/j.jde.2015.07.009",
+              "omid": "br/0670333934",
+              "openalex": "W2962849847"
+            },
+            "oci": "0670333934-06301052253",
+            "timespan": "P6Y8M"
+          },
+          {
+            "creation": "2019",
+            "identifiers": {
+              "doi": "10.14232/ejqtde.2019.1.95",
+              "omid": "br/06802768914",
+              "openalex": "W2998743651"
+            },
+            "oci": "06802768914-06301052253",
+            "timespan": "P9Y"
+          },
+          {
+            "creation": "2017-03",
+            "identifiers": {
+              "doi": "10.1007/s11856-017-1449-3",
+              "omid": "br/06102398551",
+              "openalex": "W2963320959"
+            },
+            "oci": "06102398551-06301052253",
+            "timespan": "P7Y11M"
+          },
+          {
+            "creation": "2016",
+            "identifiers": {
+              "doi": "10.1016/j.exmath.2015.12.002",
+              "omid": "br/06202201480",
+              "openalex": "W2247053840"
+            },
+            "oci": "06202201480-06301052253",
+            "timespan": "P6Y"
+          },
+          {
+            "creation": "2014-08-03",
+            "identifiers": {
+              "doi": "10.1007/s12346-014-0118-8",
+              "omid": "br/061401458544",
+              "openalex": "W2099522961"
+            },
+            "oci": "061401458544-06301052253",
+            "timespan": "P5Y4M3D"
+          },
+          {
+            "creation": "2013-01-29",
+            "identifiers": {
+              "doi": "10.1112/s0010437x12000620",
+              "omid": "br/062301601796",
+              "openalex": "W2962920694"
+            },
+            "oci": "062301601796-06301052253",
+            "timespan": "P3Y9M29D"
+          },
+          {
+            "creation": "2010",
+            "identifiers": {
+              "doi": "10.1090/conm/532/10490",
+              "omid": "br/06503424111",
+              "openalex": "W4323439711"
+            },
+            "oci": "06503424111-06301052253",
+            "timespan": "P0Y"
+          },
+          {
+            "creation": "2010-07",
+            "identifiers": {
+              "doi": "10.1016/j.jpaa.2009.10.007",
+              "omid": "br/06130909301",
+              "openalex": "W2963394288"
+            },
+            "oci": "06130909301-06301052253",
+            "timespan": "P1Y3M"
+          },
+          {
+            "creation": "2013",
+            "identifiers": {
+              "doi": "10.17323/1609-4514-2013-13-4-555-583",
+              "omid": "br/062102074209",
+              "openalex": "W2963250829"
+            },
+            "oci": "062102074209-06301052253",
+            "timespan": "P3Y"
+          },
+          {
+            "creation": "2012-11-30",
+            "identifiers": {
+              "doi": "10.1007/s13398-012-0112-4",
+              "omid": "br/0650609883",
+              "openalex": "W1971638361"
+            },
+            "oci": "0650609883-06301052253",
+            "timespan": "P3Y8M0D"
+          },
+          {
+            "creation": "2014-06-24",
+            "identifiers": {
+              "doi": "10.1088/0951-7715/27/7/1611",
+              "omid": "br/06702122074",
+              "openalex": "W2090971091"
+            },
+            "oci": "06702122074-06301052253",
+            "timespan": "P5Y2M24D"
+          },
+          {
+            "creation": "2010-06-19",
+            "identifiers": {
+              "doi": "10.1007/s12346-010-0018-5",
+              "omid": "br/061401458638",
+              "openalex": "W2001679716"
+            },
+            "oci": "061401458638-06301052253",
+            "timespan": "P1Y2M19D"
+          }
+        ],
+        "reported": 32,
+        "retrieved": 32
+      },
+      "semantic_scholar": {
+        "records": [
+          {
+            "arxiv": "2606.30122",
+            "doi": "10.48550/arxiv.2606.30122",
+            "paper_id": "2fdc3f95aacb35f4a64a6c05d165447fa6163015",
+            "title": "A polynomial moment approach to a rank condition for continuous-stage Runge-Kutta methods",
+            "url": "https://www.semanticscholar.org/paper/2fdc3f95aacb35f4a64a6c05d165447fa6163015",
+            "year": 2026
+          },
+          {
+            "arxiv": null,
+            "doi": "10.5802/ahl.41",
+            "paper_id": "792037d8bd731647981232499f552f1a7e224829",
+            "title": "On the center-focus problem for the equation $\\protect \\frac{\\protect \\mathrm{d}y}{\\protect \\mathrm{d}x} + \\Sigma _{i=1}^{n} a_i(x) y^i = 0, 0\\le x \\le 1$ where $a_i$ are polynomials",
+            "url": "https://www.semanticscholar.org/paper/792037d8bd731647981232499f552f1a7e224829",
+            "year": 2020
+          },
+          {
+            "arxiv": "2006.07600",
+            "doi": "10.1134/s0016266321040018",
+            "paper_id": "445ebc902628df9f6afc057eae2ebb7a4aa8adea",
+            "title": "Infinitesimal Center Problem on Zero Cycles and the Composition Conjecture",
+            "url": "https://www.semanticscholar.org/paper/445ebc902628df9f6afc057eae2ebb7a4aa8adea",
+            "year": 2020
+          },
+          {
+            "arxiv": "1811.10506",
+            "doi": null,
+            "paper_id": "4a4c118ccba618ed8fa117950c667f3c58641a6c",
+            "title": "Two lectures on the center-focus problem for the equation $\\frac{dy}{dx} + \\sum_{i=1}^n a_i(x) y^i = 0, 0\\leq x \\leq 1$ where $a_i$ are polynomials",
+            "url": "https://www.semanticscholar.org/paper/4a4c118ccba618ed8fa117950c667f3c58641a6c",
+            "year": 2018
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "3392698e3ff357f668979756aa1ab322464d3b7c",
+            "title": "Some new families of definite polynomials and the composition conjectures",
+            "url": "https://www.semanticscholar.org/paper/3392698e3ff357f668979756aa1ab322464d3b7c",
+            "year": 2017
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1007/978-1-4471-7287-1",
+            "paper_id": "196a7353a9cb55f5d386887c4eba72362d772273",
+            "title": "Ergodic Theory and Dynamical Systems",
+            "url": "https://www.semanticscholar.org/paper/196a7353a9cb55f5d386887c4eba72362d772273",
+            "year": 2016
+          },
+          {
+            "arxiv": "1504.02208",
+            "doi": "10.1016/j.jde.2015.07.009",
+            "paper_id": "eb635780fe722f57ffe79b35acfefd391fee3006",
+            "title": "Uniform upper bounds for the cyclicity of the zero solution of the Abel differential equation",
+            "url": "https://www.semanticscholar.org/paper/eb635780fe722f57ffe79b35acfefd391fee3006",
+            "year": 2015
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1007/s10958-014-2031-8",
+            "paper_id": "eed3016c03e2662b401f50dc48f86192d782b116",
+            "title": "Integral Geometry Problems with Incomplete Data",
+            "url": "https://www.semanticscholar.org/paper/eed3016c03e2662b401f50dc48f86192d782b116",
+            "year": 2014
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1007/s10958-014-2031-8",
+            "paper_id": "67aeb171b9cff21f619571e94ec3681492d8e183",
+            "title": "Integral Geometry Problems with Incomplete Data",
+            "url": "https://www.semanticscholar.org/paper/67aeb171b9cff21f619571e94ec3681492d8e183",
+            "year": 2014
+          },
+          {
+            "arxiv": "1407.0150",
+            "doi": "10.4171/jems/719",
+            "paper_id": "9362448312e95284758be44f0e380f7b1ad7d771",
+            "title": "Solution of the parametric center problem for the Abel differential equation",
+            "url": "https://www.semanticscholar.org/paper/9362448312e95284758be44f0e380f7b1ad7d771",
+            "year": 2014
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1088/0951-7715/27/7/1611",
+            "paper_id": "ec022bec162b4d8c318d3ac86c319edd230f755d",
+            "title": "The moment finiteness problem and characterization of universal centres of ordinary differential equations with analytic coefficients",
+            "url": "https://www.semanticscholar.org/paper/ec022bec162b4d8c318d3ac86c319edd230f755d",
+            "year": 2014
+          },
+          {
+            "arxiv": "1405.4924",
+            "doi": "10.1017/etds.2014.104",
+            "paper_id": "6f72e699f751ed05f7e6c8d96150688d02e7ee7b",
+            "title": "Universal curves in the center problem for Abel differential equations",
+            "url": "https://www.semanticscholar.org/paper/6f72e699f751ed05f7e6c8d96150688d02e7ee7b",
+            "year": 2014
+          },
+          {
+            "arxiv": null,
+            "doi": "10.5565/publmat_extra14_12",
+            "paper_id": "34d79e79372c736b4afa2cd4945e84d8ec99b43f",
+            "title": "From Abel equations to Jacobian conjecture",
+            "url": "https://www.semanticscholar.org/paper/34d79e79372c736b4afa2cd4945e84d8ec99b43f",
+            "year": 2014
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1007/s13398-012-0112-4",
+            "paper_id": "b9fde63cc83ce5370dd166c7a6b7f823fd80be1f",
+            "title": "Algebraic geometry of Abel differential equation",
+            "url": "https://www.semanticscholar.org/paper/b9fde63cc83ce5370dd166c7a6b7f823fd80be1f",
+            "year": 2014
+          },
+          {
+            "arxiv": "1312.1609",
+            "doi": "10.1007/s12346-014-0118-8",
+            "paper_id": "3fed81685a48e809368e33449e13ff2e88c81af2",
+            "title": "Parametric Center-Focus Problem for Abel Equation",
+            "url": "https://www.semanticscholar.org/paper/3fed81685a48e809368e33449e13ff2e88c81af2",
+            "year": 2013
+          },
+          {
+            "arxiv": "1307.5594",
+            "doi": "10.1007/s11856-017-1449-3",
+            "paper_id": "cb6dd0e81441095b6ac190bd58de478f7d6a174b",
+            "title": "On decompositions of trigonometric polynomials",
+            "url": "https://www.semanticscholar.org/paper/cb6dd0e81441095b6ac190bd58de478f7d6a174b",
+            "year": 2013
+          },
+          {
+            "arxiv": "1305.4303",
+            "doi": null,
+            "paper_id": "cd16cde7544dbd39d769ecfc2ca823d59ed5d7e4",
+            "title": "Moments Finiteness Problem and Center Problem for Ordinary Differential Equations",
+            "url": "https://www.semanticscholar.org/paper/cd16cde7544dbd39d769ecfc2ca823d59ed5d7e4",
+            "year": 2013
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1112/plms/pds050",
+            "paper_id": "4f6159f15a17e7980377256e92f374df86c181c8",
+            "title": "Universal centres and composition conditions",
+            "url": "https://www.semanticscholar.org/paper/4f6159f15a17e7980377256e92f374df86c181c8",
+            "year": 2013
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1016/j.jmaa.2012.09.006",
+            "paper_id": "80a2af299423440bb29d84bcf0f175f58eae7b3d",
+            "title": "A simple solution of some composition conjectures for Abel equations",
+            "url": "https://www.semanticscholar.org/paper/80a2af299423440bb29d84bcf0f175f58eae7b3d",
+            "year": 2013
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1007/s13398-012-0112-4",
+            "paper_id": "ee603ada891dd584b86b238d1d74ac4788b2b901",
+            "title": "Algebraic geometry of Abel differential equation",
+            "url": "https://www.semanticscholar.org/paper/ee603ada891dd584b86b238d1d74ac4788b2b901",
+            "year": 2012
+          },
+          {
+            "arxiv": "1211.1296",
+            "doi": "10.1017/etds.2014.94",
+            "paper_id": "6884465e3c4afe8cf783f285348ba5b37084e2f5",
+            "title": "Algebraic geometry of the center-focus problem for Abel differential equations",
+            "url": "https://www.semanticscholar.org/paper/6884465e3c4afe8cf783f285348ba5b37084e2f5",
+            "year": 2012
+          },
+          {
+            "arxiv": "1205.5661",
+            "doi": "10.1090/conm/591",
+            "paper_id": "81cae4c0857be67f71ef1e94abac883273cc405c",
+            "title": "Reconstruction of Planar Domains from Partial Integral Measurements",
+            "url": "https://www.semanticscholar.org/paper/81cae4c0857be67f71ef1e94abac883273cc405c",
+            "year": 2012
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1007/s12346-011-0054-9",
+            "paper_id": "71be8273b722d9316685b4eeef32f135766ad287",
+            "title": "Centers for Trigonometric Abel Equations",
+            "url": "https://www.semanticscholar.org/paper/71be8273b722d9316685b4eeef32f135766ad287",
+            "year": 2012
+          },
+          {
+            "arxiv": "1203.2589",
+            "doi": "10.1088/0951-7715/25/11/3197",
+            "paper_id": "b32e33a96ee84f16800195430f1868e156e47fa1",
+            "title": "Composition conditions for classes of analytic functions",
+            "url": "https://www.semanticscholar.org/paper/b32e33a96ee84f16800195430f1868e156e47fa1",
+            "year": 2012
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "24e3133521ecf56fd30efeca0bb3d26833dd5ef5",
+            "title": "Tangential center problem in dimension zero",
+            "url": "https://www.semanticscholar.org/paper/24e3133521ecf56fd30efeca0bb3d26833dd5ef5",
+            "year": 2012
+          },
+          {
+            "arxiv": "1202.5896",
+            "doi": "10.17323/1609-4514-2013-13-4-555-583",
+            "paper_id": "75a5397461f57884aa6e6d00ee1f0aa650846fd8",
+            "title": "Inductive Solution of the Tangential Center Problem on Zero-Cycles",
+            "url": "https://www.semanticscholar.org/paper/75a5397461f57884aa6e6d00ee1f0aa650846fd8",
+            "year": 2012
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1007/s12346-011-0054-9",
+            "paper_id": "244ed13761013a4b097f37d8a40063eb7b1ec8bb",
+            "title": "Centers for Trigonometric Abel Equations",
+            "url": "https://www.semanticscholar.org/paper/244ed13761013a4b097f37d8a40063eb7b1ec8bb",
+            "year": 2011
+          },
+          {
+            "arxiv": "1108.0172",
+            "doi": "10.1017/etds.2012.143",
+            "paper_id": "33ef99f935c892df539fd3789d241f7a886b8d82",
+            "title": "On the trigonometric moment problem",
+            "url": "https://www.semanticscholar.org/paper/33ef99f935c892df539fd3789d241f7a886b8d82",
+            "year": 2011
+          },
+          {
+            "arxiv": "1107.3029",
+            "doi": "10.4171/cmh/314",
+            "paper_id": "6140db6631d9813e912a1784068651f02a1be818",
+            "title": "Moments on Riemann surfaces and hyperelliptic Abelian integrals",
+            "url": "https://www.semanticscholar.org/paper/6140db6631d9813e912a1784068651f02a1be818",
+            "year": 2011
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1016/j.na.2011.02.049",
+            "paper_id": "ce84c5db15e8b17387b9fb5c4a7d5dc870bf6d26",
+            "title": "Abel-like differential equations with a unique limit cycle",
+            "url": "https://www.semanticscholar.org/paper/ce84c5db15e8b17387b9fb5c4a7d5dc870bf6d26",
+            "year": 2011
+          },
+          {
+            "arxiv": "1101.1777",
+            "doi": "10.1112/plms/pdt012",
+            "paper_id": "09ef4d182da876e7f3c673cb42d37cd1c205180b",
+            "title": "Vanishing Abelian integrals on zero\u2010dimensional cycles",
+            "url": "https://www.semanticscholar.org/paper/09ef4d182da876e7f3c673cb42d37cd1c205180b",
+            "year": 2011
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "0247b255867f28e82c2741b584558c2597dd6f02",
+            "title": "Persistent and tangential center problem and abelian integrals in dimension zero",
+            "url": "https://www.semanticscholar.org/paper/0247b255867f28e82c2741b584558c2597dd6f02",
+            "year": 2011
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1088/0951-7715/23/7/007",
+            "paper_id": "37d7b8a187a44187b539e3e581395fe42cb141a9",
+            "title": "Tree composition condition and moments vanishing",
+            "url": "https://www.semanticscholar.org/paper/37d7b8a187a44187b539e3e581395fe42cb141a9",
+            "year": 2010
+          },
+          {
+            "arxiv": null,
+            "doi": "10.4007/annals.2010.172.437",
+            "paper_id": "a27c7925b71907445da26cd7ac6617fd0f58ec54",
+            "title": "Center conditions at infinity for Abel differential equations",
+            "url": "https://www.semanticscholar.org/paper/a27c7925b71907445da26cd7ac6617fd0f58ec54",
+            "year": 2010
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1007/s12346-010-0018-5",
+            "paper_id": "3aec99536aad26054e5c1b8f66270996ecfe1f3b",
+            "title": "Some Algebraic Aspects of the Center Problem for Ordinary Differential Equations",
+            "url": "https://www.semanticscholar.org/paper/3aec99536aad26054e5c1b8f66270996ecfe1f3b",
+            "year": 2010
+          },
+          {
+            "arxiv": "1005.4260",
+            "doi": "10.1016/j.jalgebra.2011.09.036",
+            "paper_id": "5fb9078c49911f45e6b226695de156c10af7e09a",
+            "title": "Mathieu Subspaces of Associative Algebras",
+            "url": "https://www.semanticscholar.org/paper/5fb9078c49911f45e6b226695de156c10af7e09a",
+            "year": 2010
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1007/s10688-010-0003-4",
+            "paper_id": "39db3b86e91e7ca4a3e2f7a233c237d844215a4d",
+            "title": "The monodromy problem and the tangential center problem",
+            "url": "https://www.semanticscholar.org/paper/39db3b86e91e7ca4a3e2f7a233c237d844215a4d",
+            "year": 2010
+          },
+          {
+            "arxiv": "0910.2691",
+            "doi": "10.1090/conm/532/10490",
+            "paper_id": "5ea600533583aaf9c6cfa88f2edb40b75d656f55",
+            "title": "Laurent Polynomial Moment Problem: A Case Study",
+            "url": "https://www.semanticscholar.org/paper/5ea600533583aaf9c6cfa88f2edb40b75d656f55",
+            "year": 2009
+          },
+          {
+            "arxiv": "0910.2105",
+            "doi": "10.17323/1609-4514-2013-13-4-693-731",
+            "paper_id": "5f8462806448f2a92695c80d683ed81e8d460005",
+            "title": "On rational functions orthogonal to all powers of a given rational function on a curve",
+            "url": "https://www.semanticscholar.org/paper/5f8462806448f2a92695c80d683ed81e8d460005",
+            "year": 2009
+          },
+          {
+            "arxiv": "0908.2508",
+            "doi": "10.1112/s0010437x12000620",
+            "paper_id": "a935fe79dc9c4e7cf5e6d0d3e372663d6ecb0678",
+            "title": "Generalized \u2018second Ritt theorem\u2019 and explicit solution of the polynomial moment problem",
+            "url": "https://www.semanticscholar.org/paper/a935fe79dc9c4e7cf5e6d0d3e372663d6ecb0678",
+            "year": 2009
+          },
+          {
+            "arxiv": "0902.0212",
+            "doi": "10.1016/j.jpaa.2009.10.007",
+            "paper_id": "53d822168f346fb0934eb6df14a43c60e9d73254",
+            "title": "Generalizations of the Image Conjecture and the Mathieu Conjecture",
+            "url": "https://www.semanticscholar.org/paper/53d822168f346fb0934eb6df14a43c60e9d73254",
+            "year": 2009
+          },
+          {
+            "arxiv": "0810.5206",
+            "doi": null,
+            "paper_id": "7a6564b760a0c0c55ed8765f1dde939f7d7c716a",
+            "title": "Signal Acquisition from Measurements via Non-Linear Models",
+            "url": "https://www.semanticscholar.org/paper/7a6564b760a0c0c55ed8765f1dde939f7d7c716a",
+            "year": 2008
+          },
+          {
+            "arxiv": "0712.4142",
+            "doi": null,
+            "paper_id": "5ab5cd22dacf7fba1dbeb026ace6297ada0e4db4",
+            "title": "Analogues of the Jordan-Holder theorem for transitive G-sets",
+            "url": "https://www.semanticscholar.org/paper/5ab5cd22dacf7fba1dbeb026ace6297ada0e4db4",
+            "year": 2007
+          },
+          {
+            "arxiv": "0710.3860",
+            "doi": "10.1016/j.bulsci.2009.06.003",
+            "paper_id": "2a02a5a2f74192fd707a5d5d44e8df29cf6747c0",
+            "title": "Prime and composite Laurent polynomials",
+            "url": "https://www.semanticscholar.org/paper/2a02a5a2f74192fd707a5d5d44e8df29cf6747c0",
+            "year": 2007
+          },
+          {
+            "arxiv": "0710.1902",
+            "doi": null,
+            "paper_id": "3232847bdbe8132d5b1164291795ec5eb6cf7ebe",
+            "title": "Decompositions of Laurent polynomials",
+            "url": "https://www.semanticscholar.org/paper/3232847bdbe8132d5b1164291795ec5eb6cf7ebe",
+            "year": 2007
+          },
+          {
+            "arxiv": "math/0701791",
+            "doi": "10.1007/s12220-008-9016-0",
+            "paper_id": "074bfbc1920c32cb6f3a6f136118741d346c110b",
+            "title": "Linear versus Non-Linear Acquisition of Step-Functions",
+            "url": "https://www.semanticscholar.org/paper/074bfbc1920c32cb6f3a6f136118741d346c110b",
+            "year": 2007
+          },
+          {
+            "arxiv": null,
+            "doi": "10.14232/ejqtde.2019.1.95",
+            "paper_id": "a535604b9723f162f5a29fb49e889595fbe49c87",
+            "title": "On the composition conjecture for a class of rigid systems",
+            "url": "https://www.semanticscholar.org/paper/a535604b9723f162f5a29fb49e889595fbe49c87",
+            "year": 2019
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "2a784daad5bbec80d268bfe59eec571cd4f6744a",
+            "title": "Electronic Journal of Qualitative Theory of Differential Equations",
+            "url": "https://www.semanticscholar.org/paper/2a784daad5bbec80d268bfe59eec571cd4f6744a",
+            "year": 2019
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "bafcf48c553c3dc7e6f7f96ecc85e1498a921b55",
+            "title": "FUNCTIONAL EQUATIONS IN COMPLEX ANALYSIS AND NUMBER THEORY",
+            "url": "https://www.semanticscholar.org/paper/bafcf48c553c3dc7e6f7f96ecc85e1498a921b55",
+            "year": 2017
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "8ee61376fbfaa393309ad0e714634fc31177a896",
+            "title": "Functional composition is a generalized symmetry",
+            "url": "https://www.semanticscholar.org/paper/8ee61376fbfaa393309ad0e714634fc31177a896",
+            "year": 2016
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1016/j.exmath.2015.12.002",
+            "paper_id": "a6e7ef87aae7d45b0065519cb22ecf4ba376d56f",
+            "title": "The center problem and composition condition for Abel differential equations",
+            "url": "https://www.semanticscholar.org/paper/a6e7ef87aae7d45b0065519cb22ecf4ba376d56f",
+            "year": 2016
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "f6baf7961f3199b2c1d2e117826d5925673ebe97",
+            "title": "EQUAL COMPOSITIONS OF RATIONAL FUNCTIONS",
+            "url": "https://www.semanticscholar.org/paper/f6baf7961f3199b2c1d2e117826d5925673ebe97",
+            "year": 2015
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "20e4b4afb08b677b4ecc1198c6bdcf41918c4b99",
+            "title": "Moments onRiemann surfaces andhyperellipticAbelian integrals",
+            "url": "https://www.semanticscholar.org/paper/20e4b4afb08b677b4ecc1198c6bdcf41918c4b99",
+            "year": 2014
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "a1c1efe7460d1e90ff291f51ca39e91043ddf5d7",
+            "title": "Dedicated to Jaume Llibre for his 60th birthday",
+            "url": "https://www.semanticscholar.org/paper/a1c1efe7460d1e90ff291f51ca39e91043ddf5d7",
+            "year": 2014
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "7ff7a29115f54a2c3a0b68cccd17ac49a40d937d",
+            "title": "C A ] 2 5 M ay 2 01 2 Reconstruction of Planar Domains from Partial Integral Measurements",
+            "url": "https://www.semanticscholar.org/paper/7ff7a29115f54a2c3a0b68cccd17ac49a40d937d",
+            "year": 2014
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "fc21c84cf54876d7abd91025e77fd68d738e43da",
+            "title": "The solution of the Composition Conjecture for Abel equations",
+            "url": "https://www.semanticscholar.org/paper/fc21c84cf54876d7abd91025e77fd68d738e43da",
+            "year": 2013
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1016/j.bulsci.2010.06.002",
+            "paper_id": "689ea05d170f54a5f12b417ce889a34bc9024716",
+            "title": "Moment vanishing problem and positivity: Some examples",
+            "url": "https://www.semanticscholar.org/paper/689ea05d170f54a5f12b417ce889a34bc9024716",
+            "year": 2011
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "14447e3a16f98a298b81bee526426d5669250f67",
+            "title": "INTEGRABILITY AND LIMIT CYCLES FOR ABEL EQUATIONS",
+            "url": "https://www.semanticscholar.org/paper/14447e3a16f98a298b81bee526426d5669250f67",
+            "year": 2011
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "5e9b2a76129bda8a4e61e302290cc22988cf3d4a",
+            "title": "TITLE FUNCTIONAL COMPOSITION IS A GENERALIZED SYMMETRY",
+            "url": "https://www.semanticscholar.org/paper/5e9b2a76129bda8a4e61e302290cc22988cf3d4a",
+            "year": 2010
+          },
+          {
+            "arxiv": null,
+            "doi": "10.4213/faa2980",
+            "paper_id": "26720026c9edc614228678ef3b355b91f1f1b687",
+            "title": "\u041f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 \u043c\u043e\u043d\u043e\u0434\u0440\u043e\u043c\u0438\u0438 \u0438 \u0438\u043d\u0444\u0438\u043d\u0438\u0442\u0435\u0437\u0438\u043c\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430 \u0444\u043e\u043a\u0443\u0441\u0430@@@The Monodromy Problem and the Tangential Center Problem",
+            "url": "https://www.semanticscholar.org/paper/26720026c9edc614228678ef3b355b91f1f1b687",
+            "year": 2010
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "4b4d44d986fbb3ed1758c0db0b4bd73d7c3a5ca7",
+            "title": "FUNCTIONAL COMPOSITION IS A GENERALIZED SYMMETRY",
+            "url": "https://www.semanticscholar.org/paper/4b4d44d986fbb3ed1758c0db0b4bd73d7c3a5ca7",
+            "year": 2010
+          },
+          {
+            "arxiv": null,
+            "doi": "10.1016/j.exmath.2009.02.002",
+            "paper_id": "f33b6d586f8f8935f5cd3580dd9e74e0a9b78773",
+            "title": "The composition conjecture for Abel equation",
+            "url": "https://www.semanticscholar.org/paper/f33b6d586f8f8935f5cd3580dd9e74e0a9b78773",
+            "year": 2009
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "ffd082ca6db97a50750abe2d8d8df27b66343bdc",
+            "title": "C V ] 2 2 O ct 2 00 7 Prime and composite Laurent polynomials",
+            "url": "https://www.semanticscholar.org/paper/ffd082ca6db97a50750abe2d8d8df27b66343bdc",
+            "year": 2009
+          },
+          {
+            "arxiv": null,
+            "doi": null,
+            "paper_id": "a700c89c5327480e749c3e8760250ce53c5c9329",
+            "title": "Algebraic and Analytic Techniques for Polynomial Vector Fields",
+            "url": "https://www.semanticscholar.org/paper/a700c89c5327480e749c3e8760250ce53c5c9329",
+            "year": null
+          }
+        ],
+        "reported": 64,
+        "retrieved": 64
+      }
+    }
+  },
+  "snapshot_sha256": "e06fed0e4d4a67e815e151314a15a97a6a12303957dfb56d51ac8eb8ca223dc8",
+  "zbmath_queries": [
+    {
+      "finding": "empty_result",
+      "query": "\"fixed-seed cyclicity\"",
+      "records": [],
+      "reported": 0,
+      "retrieved": 0
+    },
+    {
+      "finding": "empty_result",
+      "query": "\"inverse-root support\"",
+      "records": [],
+      "reported": 0,
+      "retrieved": 0
+    },
+    {
+      "finding": "empty_result",
+      "query": "\"exponential Gauss-Manin\" AND polynomial",
+      "records": [],
+      "reported": 0,
+      "retrieved": 0
+    },
+    {
+      "finding": "empty_result",
+      "query": "\"polynomial monodromy\" AND composition",
+      "records": [],
+      "reported": 0,
+      "retrieved": 0
+    },
+    {
+      "finding": "success",
+      "query": "Gauss-Manin polynomial",
+      "records": [
+        {
+          "authors": [
+            "Dimca, Alexandru",
+            "Saito, Morihiko"
+          ],
+          "dois": [
+            "10.1353/ajm.2001.0001"
+          ],
+          "id": 1626385,
+          "identifier": "0990.14004",
+          "title": "Algebraic Gauss-Mann systems and Brieskorn modules",
+          "year": "2001",
+          "zbmath_url": "https://zbmath.org/1626385"
+        },
+        {
+          "authors": [
+            "Varchenko, Alexandre N."
+          ],
+          "dois": [],
+          "id": 3676276,
+          "identifier": "0434.32008",
+          "title": "Gauss-Manin connection of isolated singular point and Bernstein polynomial",
+          "year": "1980",
+          "zbmath_url": "https://zbmath.org/3676276"
+        },
+        {
+          "authors": [
+            "Saito, Morihiko"
+          ],
+          "dois": [
+            "10.5427/jsing.2018.18l"
+          ],
+          "id": 6982807,
+          "identifier": "1405.32040",
+          "title": "On the structure of Brieskorn lattices. II",
+          "year": "2018",
+          "zbmath_url": "https://zbmath.org/6982807"
+        },
+        {
+          "authors": [
+            "Friedland, Shmuel"
+          ],
+          "dois": [
+            "10.4064/ap-72-3-219-249"
+          ],
+          "id": 1441762,
+          "identifier": "0972.14003",
+          "title": "Monodromy, differential equations and the Jacobian conjecture",
+          "year": "1999",
+          "zbmath_url": "https://zbmath.org/1441762"
+        },
+        {
+          "authors": [
+            "Douai, Antoine",
+            "Sabbah, Claude"
+          ],
+          "dois": [
+            "10.5802/aif.1974"
+          ],
+          "id": 2014672,
+          "identifier": "1079.32016",
+          "title": "Gauss-Manin systems, Brieskorn lattices and Frobenius structures. I.",
+          "year": "2003",
+          "zbmath_url": "https://zbmath.org/2014672"
+        },
+        {
+          "authors": [
+            "Daniel Barlet"
+          ],
+          "dois": [],
+          "id": 900268285,
+          "identifier": "arXiv:1512.07062",
+          "title": "A note on some fiber-integrals",
+          "year": "2015",
+          "zbmath_url": "https://zbmath.org/900268285"
+        },
+        {
+          "authors": [
+            "Victor Buchstaber",
+            "Mikhail Kornev",
+            "Vladimir Rubtsov"
+          ],
+          "dois": [],
+          "id": 903026120,
+          "identifier": "arXiv:2604.26641",
+          "title": "Two-Valued Groups, Chazy Equation, Dubrovin-Frobenius Structures, and QYBE",
+          "year": "2026",
+          "zbmath_url": "https://zbmath.org/903026120"
+        },
+        {
+          "authors": [
+            "Noumi, Masatoshi"
+          ],
+          "dois": [
+            "10.3836/tjm/1270152991"
+          ],
+          "id": 3882724,
+          "identifier": "0554.32009",
+          "title": "Expansion of the solutions of a Gauss-Manin system at a point of infinity",
+          "year": "1984",
+          "zbmath_url": "https://zbmath.org/3882724"
+        },
+        {
+          "authors": [
+            "Daniel Barlet"
+          ],
+          "dois": [],
+          "id": 900162818,
+          "identifier": "arXiv:1305.6778",
+          "title": "Algebraic differential equations associated to some polynomials",
+          "year": "2013",
+          "zbmath_url": "https://zbmath.org/900162818"
+        },
+        {
+          "authors": [
+            "Sabbah, Claude"
+          ],
+          "dois": [],
+          "id": 5141433,
+          "identifier": "1113.14011",
+          "title": "Hypergeometric periods for a tame polynomial",
+          "year": "2006",
+          "zbmath_url": "https://zbmath.org/5141433"
+        },
+        {
+          "authors": [
+            "Varchenko, Alexander"
+          ],
+          "dois": [
+            "10.3390/math5040052"
+          ],
+          "id": 6898681,
+          "identifier": "1406.33013",
+          "title": "Solutions modulo \\(p\\) of Gauss-Manin differential equations for multidimensional hypergeometric integrals and associated Bethe ansatz",
+          "year": "2017",
+          "zbmath_url": "https://zbmath.org/6898681"
+        },
+        {
+          "authors": [
+            "Ishiura, Shinzo",
+            "Noumi, Masatoshi"
+          ],
+          "dois": [
+            "10.3792/pjaa.58.13"
+          ],
+          "id": 3830343,
+          "identifier": "0524.32013",
+          "title": "A calculus of the Gauss-Manin system of type \\(A_ k\\). I: The residual representation. II: The Hamiltonian representation",
+          "year": "1982",
+          "zbmath_url": "https://zbmath.org/3830343"
+        },
+        {
+          "authors": [
+            "Douai, Antoine",
+            "Sabbah, Claude"
+          ],
+          "dois": [],
+          "id": 2196368,
+          "identifier": "1079.32017",
+          "title": "Gauss-Manin systems, Brieskorn lattices and Frobenius structures. II",
+          "year": "2004",
+          "zbmath_url": "https://zbmath.org/2196368"
+        },
+        {
+          "authors": [
+            "Sabbah, Claude"
+          ],
+          "dois": [
+            "10.1016/s0764-4442(99)80254-7"
+          ],
+          "id": 1334128,
+          "identifier": "0967.32028",
+          "title": "P\u00e9riode hyperg\u00e9om\u00e9trique pour un polyn\u00f4me mod\u00e9r\u00e9",
+          "year": "1999",
+          "zbmath_url": "https://zbmath.org/1334128"
+        },
+        {
+          "authors": [
+            "Vlasenko, Masha"
+          ],
+          "dois": [
+            "10.1016/j.indag.2018.07.004"
+          ],
+          "id": 6939371,
+          "identifier": "1423.11199",
+          "title": "Higher Hasse-Witt matrices",
+          "year": "2018",
+          "zbmath_url": "https://zbmath.org/6939371"
+        },
+        {
+          "authors": [
+            "Saito, Morihiko"
+          ],
+          "dois": [
+            "10.1007/bf01457153"
+          ],
+          "id": 4021601,
+          "identifier": "0628.32038",
+          "title": "Exponents and Newton polyhedra of isolated hypersurface singularities",
+          "year": "1988",
+          "zbmath_url": "https://zbmath.org/4021601"
+        },
+        {
+          "authors": [
+            "Dimca, Alexandru",
+            "Saito, Morihiko"
+          ],
+          "dois": [],
+          "id": 203026,
+          "identifier": "0824.14016",
+          "title": "On the cohomology of a general fiber of a polynomial map",
+          "year": "1993",
+          "zbmath_url": "https://zbmath.org/203026"
+        },
+        {
+          "authors": [
+            "Barlet, Daniel"
+          ],
+          "dois": [],
+          "id": 5640118,
+          "identifier": "1193.32017",
+          "title": "Vanishing periods and \\((a,b)\\)-modules generated by one element",
+          "year": "2009",
+          "zbmath_url": "https://zbmath.org/5640118"
+        },
+        {
+          "authors": [
+            "Daniel Barlet"
+          ],
+          "dois": [],
+          "id": 900073947,
+          "identifier": "arXiv:0912.0135",
+          "title": "Le th\u00e8me d'une p\u00e9riode \u00e9vanescente",
+          "year": "2009",
+          "zbmath_url": "https://zbmath.org/900073947"
+        },
+        {
+          "authors": [
+            "Haoxu Wang"
+          ],
+          "dois": [],
+          "id": 902432863,
+          "identifier": "arXiv:2403.02105",
+          "title": "Newton Polyhedrons and Hodge Numbers of Non-degenerate Laurent Polynomials",
+          "year": "2024",
+          "zbmath_url": "https://zbmath.org/902432863"
+        },
+        {
+          "authors": [
+            "Barlet, Daniel"
+          ],
+          "dois": [
+            "10.1007/s12188-014-0094-6"
+          ],
+          "id": 6399617,
+          "identifier": "1350.32027",
+          "title": "The theme of a vanishing period",
+          "year": "2014",
+          "zbmath_url": "https://zbmath.org/6399617"
+        },
+        {
+          "authors": [
+            "Bertolin, Cristiana"
+          ],
+          "dois": [
+            "10.1017/s0004972700034043"
+          ],
+          "id": 1061917,
+          "identifier": "0927.11038",
+          "title": "\\(G\\)-functions and cohomology of singular hypersurfaces",
+          "year": "1997",
+          "zbmath_url": "https://zbmath.org/1061917"
+        },
+        {
+          "authors": [
+            "Movasati, Hossein"
+          ],
+          "dois": [],
+          "id": 5168435,
+          "identifier": "1117.14014",
+          "title": "Calculation of mixed Hodge structures, Gauss-Manin connections and Picard-Fuchs equations",
+          "year": "2007",
+          "zbmath_url": "https://zbmath.org/5168435"
+        },
+        {
+          "authors": [
+            "Christol, Gilles"
+          ],
+          "dois": [],
+          "id": 4136093,
+          "identifier": "0694.13013",
+          "title": "Diagonales de fractions rationelles. (Diagonals of rational fractions)",
+          "year": "1988",
+          "zbmath_url": "https://zbmath.org/4136093"
+        },
+        {
+          "authors": [
+            "Daniel Barlet"
+          ],
+          "dois": [],
+          "id": 900138055,
+          "identifier": "arXiv:1203.5990",
+          "title": "Contruction of quasi-invariant holomorphic parameters for the Gauss-Manin connection of a holomorphic map to a curve (second version)",
+          "year": "2012",
+          "zbmath_url": "https://zbmath.org/900138055"
+        },
+        {
+          "authors": [
+            "Dimca, Alexandru"
+          ],
+          "dois": [
+            "10.1016/0040-9383(85)90009-6"
+          ],
+          "id": 3957600,
+          "identifier": "0595.32011",
+          "title": "Monodromy and Betti numbers of weighted complete intersections",
+          "year": "1985",
+          "zbmath_url": "https://zbmath.org/3957600"
+        },
+        {
+          "authors": [
+            "Igusa, Junichi"
+          ],
+          "dois": [],
+          "id": 3927339,
+          "identifier": "0579.32010",
+          "title": "Complex power of a hypersurface with isolated singularity",
+          "year": "1985",
+          "zbmath_url": "https://zbmath.org/3927339"
+        },
+        {
+          "authors": [
+            "Movasati, Hossein"
+          ],
+          "dois": [
+            "10.5802/aif.2276"
+          ],
+          "id": 5176605,
+          "identifier": "1123.14007",
+          "title": "Mixed Hodge structure of affine hypersurfaces",
+          "year": "2007",
+          "zbmath_url": "https://zbmath.org/5176605"
+        },
+        {
+          "authors": [
+            "Alexander Varchenko",
+            "Vadim Vologodsky"
+          ],
+          "dois": [],
+          "id": 902476058,
+          "identifier": "arXiv:2405.05159",
+          "title": "Finding all solutions to the KZ equations in characteristic $p$",
+          "year": "2024",
+          "zbmath_url": "https://zbmath.org/902476058"
+        },
+        {
+          "authors": [
+            "Kostov, Vladimir P."
+          ],
+          "dois": [],
+          "id": 1551956,
+          "identifier": "0979.34066",
+          "title": "Gauss-Manin systems of polynomials of two variables can be made Fuchsian",
+          "year": "2000",
+          "zbmath_url": "https://zbmath.org/1551956"
+        },
+        {
+          "authors": [
+            "Hertling, Claus",
+            "Stahlke, Colin"
+          ],
+          "dois": [
+            "10.1023/a:1005012325661"
+          ],
+          "id": 1295088,
+          "identifier": "0955.32022",
+          "title": "Bernstein polynomial and Tjurina number",
+          "year": "1999",
+          "zbmath_url": "https://zbmath.org/1295088"
+        },
+        {
+          "authors": [
+            "Vlasenko, Masha"
+          ],
+          "dois": [
+            "10.1007/978-3-030-04161-8_39"
+          ],
+          "id": 7075746,
+          "identifier": "1415.15031",
+          "title": "On \\(p\\)-adic unit-root formulas",
+          "year": "2019",
+          "zbmath_url": "https://zbmath.org/7075746"
+        },
+        {
+          "authors": [
+            "Aleksandrov, A. G."
+          ],
+          "dois": [],
+          "id": 1857874,
+          "identifier": "1021.32011",
+          "title": "Moduli of logarithmic connections along a free divisor",
+          "year": "2002",
+          "zbmath_url": "https://zbmath.org/1857874"
+        },
+        {
+          "authors": [
+            "Dimca, Alexandru",
+            "Saito, Morihiko"
+          ],
+          "dois": [
+            "10.1215/s0012-7094-06-13523-8"
+          ],
+          "id": 5077261,
+          "identifier": "1117.14012",
+          "title": "A generalization of Griffiths's theorem on rational integrals",
+          "year": "2006",
+          "zbmath_url": "https://zbmath.org/5077261"
+        },
+        {
+          "authors": [
+            "Pech, C.",
+            "Rietsch, K.",
+            "Williams, L."
+          ],
+          "dois": [
+            "10.1016/j.aim.2016.03.020"
+          ],
+          "id": 6619029,
+          "identifier": "1359.53072",
+          "title": "On Landau-Ginzburg models for quadrics and flat sections of Dubrovin connections",
+          "year": "2016",
+          "zbmath_url": "https://zbmath.org/6619029"
+        },
+        {
+          "authors": [
+            "Holzapfel, R.-P."
+          ],
+          "dois": [],
+          "id": 3957288,
+          "identifier": "0595.14017",
+          "title": "Geometry and arithmetic. Around Euler partial differential equations",
+          "year": "1986",
+          "zbmath_url": "https://zbmath.org/3957288"
+        },
+        {
+          "authors": [
+            "Batyrev, Victor V."
+          ],
+          "dois": [
+            "10.1215/s0012-7094-93-06917-7"
+          ],
+          "id": 179196,
+          "identifier": "0812.14035",
+          "title": "Variations of the mixed Hodge structure of affine hypersurfaces in algebraic tori",
+          "year": "1993",
+          "zbmath_url": "https://zbmath.org/179196"
+        },
+        {
+          "authors": [
+            "Reichelt, Thomas",
+            "Sevenheck, Christian"
+          ],
+          "dois": [
+            "10.1090/s1056-3911-2014-00625-1"
+          ],
+          "id": 6434529,
+          "identifier": "1349.14139",
+          "title": "Logarithmic Frobenius manifolds, hypergeometric systems and quantum \\(\\mathcal D\\)-modules",
+          "year": "2015",
+          "zbmath_url": "https://zbmath.org/6434529"
+        },
+        {
+          "authors": [
+            "Gekeler, Ernst-Ulrich"
+          ],
+          "dois": [
+            "10.1007/bfb0091142"
+          ],
+          "id": 15723,
+          "identifier": "0735.14016",
+          "title": "De Rham cohomology and the Gauss-Manin connection for Drinfeld modules",
+          "year": "1990",
+          "zbmath_url": "https://zbmath.org/15723"
+        },
+        {
+          "authors": [
+            "Andr\u00e9, Yves",
+            "Baldassarri, Francesco"
+          ],
+          "dois": [],
+          "id": 1548760,
+          "identifier": "0995.14003",
+          "title": "De Rham cohomology of differential modules on algebraic varieties",
+          "year": "2001",
+          "zbmath_url": "https://zbmath.org/1548760"
+        },
+        {
+          "authors": [
+            "Benditkis, Sergey",
+            "Novikov, Dmitry"
+          ],
+          "dois": [
+            "10.5802/afst.1314"
+          ],
+          "id": 5987641,
+          "identifier": "1243.34042",
+          "title": "On the number of zeros of Melnikov functions",
+          "year": "2011",
+          "zbmath_url": "https://zbmath.org/5987641"
+        },
+        {
+          "authors": [
+            "Andr\u00e9, Yves"
+          ],
+          "dois": [],
+          "id": 41964,
+          "identifier": "0688.10032",
+          "title": "G-functions and geometry",
+          "year": "1989",
+          "zbmath_url": "https://zbmath.org/41964"
+        },
+        {
+          "authors": [
+            "Adolphson, Alan",
+            "Sperber, Steven"
+          ],
+          "dois": [
+            "10.24033/asens.1741"
+          ],
+          "id": 913813,
+          "identifier": "0911.11030",
+          "title": "On the zeta function of a complete intersection",
+          "year": "1996",
+          "zbmath_url": "https://zbmath.org/913813"
+        },
+        {
+          "authors": [
+            "Pech, Clelia",
+            "Rietsch, Konstanze"
+          ],
+          "dois": [
+            "10.21915/bimas.2018301"
+          ],
+          "id": 6982220,
+          "identifier": "1423.14324",
+          "title": "A comparison of Landau-Ginzburg models for odd dimensional quadrics",
+          "year": "2018",
+          "zbmath_url": "https://zbmath.org/6982220"
+        },
+        {
+          "authors": [
+            "Sevenheck, Christian"
+          ],
+          "dois": [
+            "10.5802/aif.2606"
+          ],
+          "id": 5899956,
+          "identifier": "1221.34237",
+          "title": "Bernstein polynomials and spectral numbers for linear free divisors",
+          "year": "2011",
+          "zbmath_url": "https://zbmath.org/5899956"
+        },
+        {
+          "authors": [
+            "Schulze, Mathias"
+          ],
+          "dois": [
+            "10.1016/j.jsc.2004.10.001"
+          ],
+          "id": 5202009,
+          "identifier": "1128.32017",
+          "title": "Good bases for tame polynomials",
+          "year": "2005",
+          "zbmath_url": "https://zbmath.org/5202009"
+        },
+        {
+          "authors": [
+            "Roucairol, C\u00e9line"
+          ],
+          "dois": [
+            "10.24033/bsmf.2510"
+          ],
+          "id": 5145490,
+          "identifier": "1122.32019",
+          "title": "Irregularity of an analogue of the Gauss-Manin systems",
+          "year": "2006",
+          "zbmath_url": "https://zbmath.org/5145490"
+        },
+        {
+          "authors": [
+            "\u017bo\u0142\u0105dek, Henryk"
+          ],
+          "dois": [],
+          "id": 5009146,
+          "identifier": "1103.32015",
+          "title": "The monodromy group",
+          "year": "2006",
+          "zbmath_url": "https://zbmath.org/5009146"
+        },
+        {
+          "authors": [
+            "Uribe, Marco",
+            "Movasati, Hossein"
+          ],
+          "dois": [],
+          "id": 6921563,
+          "identifier": "1406.37005",
+          "title": "Limit cycles, Abelian integral and Hilbert's sixteenth problem. Paper from the 31st Brazilian mathematics colloquium -- 31\\(^{\\text o}\\) Col\u00f3quio Brasileiro de Matem\u00e1tica, IMPA, Rio de Janeiro, Brazil, July 30 -- August 5, 2017",
+          "year": "2017",
+          "zbmath_url": "https://zbmath.org/6921563"
+        },
+        {
+          "authors": [
+            "Gekeler, Ernst-Ulrich"
+          ],
+          "dois": [],
+          "id": 4152513,
+          "identifier": "0703.11066",
+          "title": "Quasi-periodic functions and Drinfeld modular forms",
+          "year": "1989",
+          "zbmath_url": "https://zbmath.org/4152513"
+        },
+        {
+          "authors": [
+            "Guimar\u00e3es, Andr\u00e9a",
+            "Hefez, Abramo"
+          ],
+          "dois": [
+            "10.5802/aif.2322"
+          ],
+          "id": 5225872,
+          "identifier": "1130.32013",
+          "title": "Bernstein-Sato polynomials and spectral numbers",
+          "year": "2007",
+          "zbmath_url": "https://zbmath.org/5225872"
+        },
+        {
+          "authors": [
+            "Cox, David A.",
+            "Katz, Sheldon"
+          ],
+          "dois": [],
+          "id": 1270593,
+          "identifier": "0951.14026",
+          "title": "Mirror symmetry and algebraic geometry",
+          "year": "1999",
+          "zbmath_url": "https://zbmath.org/1270593"
+        },
+        {
+          "authors": [
+            "Gorbounov, Vassily",
+            "Smirnov, Maxim"
+          ],
+          "dois": [
+            "10.1017/s0017089514000433"
+          ],
+          "id": 6480883,
+          "identifier": "1341.14023",
+          "title": "Some remarks on Landau-Ginzburg potentials for odd-dimensional quadrics",
+          "year": "2015",
+          "zbmath_url": "https://zbmath.org/6480883"
+        },
+        {
+          "authors": [
+            "M\u00f6ller, Martin",
+            "Viehweg, Eckart",
+            "Zuo, Kang"
+          ],
+          "dois": [],
+          "id": 5130703,
+          "identifier": "1112.14027",
+          "title": "Special families of curves, of abelian varieties, and of certain minimal manifolds over curves",
+          "year": "2006",
+          "zbmath_url": "https://zbmath.org/5130703"
+        },
+        {
+          "authors": [
+            "Jinzenji, Masao"
+          ],
+          "dois": [
+            "10.1007/978-4-431-54270-4_12"
+          ],
+          "id": 6189208,
+          "identifier": "1275.53084",
+          "title": "Mirror map as generating function of intersection numbers",
+          "year": "2013",
+          "zbmath_url": "https://zbmath.org/6189208"
+        },
+        {
+          "authors": [
+            "Bath, Daniel",
+            "Saito, Morihiko"
+          ],
+          "dois": [
+            "10.1090/jag/833"
+          ],
+          "id": 8025792,
+          "identifier": "1573.14064",
+          "title": "Twisted logarithmic complexes of positively weighted homogeneous divisors",
+          "year": "2025",
+          "zbmath_url": "https://zbmath.org/8025792"
+        },
+        {
+          "authors": [
+            "zbMATH Open Web Interface contents unavailable due to conflicting licenses.",
+            "zbMATH Open Web Interface contents unavailable due to conflicting licenses."
+          ],
+          "dois": [
+            "10.1080/00927872.2018.1464171"
+          ],
+          "id": 7065469,
+          "identifier": "1441.13062",
+          "title": "zbMATH Open Web Interface contents unavailable due to conflicting licenses.",
+          "year": "2019",
+          "zbmath_url": "https://zbmath.org/7065469"
+        },
+        {
+          "authors": [
+            "Sevenheck, Christian"
+          ],
+          "dois": [
+            "10.1007/s00209-012-1068-y"
+          ],
+          "id": 6176512,
+          "identifier": "1272.32026",
+          "title": "Duality of Gau\u00df-Manin systems associated to linear free divisors",
+          "year": "2013",
+          "zbmath_url": "https://zbmath.org/6176512"
+        },
+        {
+          "authors": [
+            "Douai, Antoine"
+          ],
+          "dois": [
+            "10.1016/s0007-4497(01)01081-8"
+          ],
+          "id": 1624931,
+          "identifier": "0984.32017",
+          "title": "On the Gauss-Manin system of a tame polynomial",
+          "year": "2001",
+          "zbmath_url": "https://zbmath.org/1624931"
+        },
+        {
+          "authors": [
+            "Ishibashi, Yoshihisa",
+            "Shiraishi, Yuuki",
+            "Takahashi, Atsushi"
+          ],
+          "dois": [
+            "10.2748/tmj/1568772180"
+          ],
+          "id": 7155352,
+          "identifier": "1433.53116",
+          "title": "Primitive forms for affine cusp polynomials",
+          "year": "2019",
+          "zbmath_url": "https://zbmath.org/7155352"
+        },
+        {
+          "authors": [
+            "\u017bo\u0142\u0105dek, Henryk"
+          ],
+          "dois": [
+            "10.1007/978-3-031-91270-2"
+          ],
+          "id": 8052576,
+          "identifier": "1580.30001",
+          "title": "The monodromy group",
+          "year": "2025",
+          "zbmath_url": "https://zbmath.org/8052576"
+        },
+        {
+          "authors": [
+            "Simpson, Carlos T."
+          ],
+          "dois": [
+            "10.1007/bf02698895"
+          ],
+          "id": 753832,
+          "identifier": "0891.14006",
+          "title": "Moduli of representations of the fundamental group of a smooth projective variety. II",
+          "year": "1995",
+          "zbmath_url": "https://zbmath.org/753832"
+        },
+        {
+          "authors": [
+            "Barco, Davide",
+            "Hien, Marco",
+            "Hohl, Andreas",
+            "Sevenheck, Christian"
+          ],
+          "dois": [
+            "10.1093/imrn/rnac095"
+          ],
+          "id": 7702897,
+          "identifier": "1523.14037",
+          "title": "Betti structures of hypergeometric equations",
+          "year": "2023",
+          "zbmath_url": "https://zbmath.org/7702897"
+        },
+        {
+          "authors": [
+            "Li, Jun",
+            "Liu, Chiu-Chu Melissa"
+          ],
+          "dois": [
+            "10.4310/sdg.2019.v24.n1.a5"
+          ],
+          "id": 7817746,
+          "identifier": "1545.14043",
+          "title": "Counting curves in quintic Calabi-Yau threefolds and Landau-Ginzburg models",
+          "year": "2022",
+          "zbmath_url": "https://zbmath.org/7817746"
+        },
+        {
+          "authors": [
+            "Maaref, Fay\u00e7al"
+          ],
+          "dois": [
+            "10.5802/afst.924"
+          ],
+          "id": 1491216,
+          "identifier": "0965.32020",
+          "title": "On an irregular analogue of the Gauss-Manin connection",
+          "year": "1999",
+          "zbmath_url": "https://zbmath.org/1491216"
+        },
+        {
+          "authors": [
+            "Douai, Antoine"
+          ],
+          "dois": [
+            "10.1007/s10883-005-8817-8"
+          ],
+          "id": 5021451,
+          "identifier": "1096.32015",
+          "title": "Picard-Fuchs equations and Gauss-Manin systems with a view towards the Riemann-Hilbert problem",
+          "year": "2005",
+          "zbmath_url": "https://zbmath.org/5021451"
+        },
+        {
+          "authors": [
+            "Bailly-Maitre, Gilles"
+          ],
+          "dois": [
+            "10.24033/bsmf.2364"
+          ],
+          "id": 1463889,
+          "identifier": "0952.14009",
+          "title": "About the Gauss-Manin local system associated to a polynomial of two variables",
+          "year": "2000",
+          "zbmath_url": "https://zbmath.org/1463889"
+        },
+        {
+          "authors": [
+            "Douai Antoine"
+          ],
+          "dois": [],
+          "id": 900234099,
+          "identifier": "arXiv:1411.7179",
+          "title": "Gauss-Manin systems of wild regular functions: Givental-Hori-Vafa models of smooth hypersurfaces in weighted projective spaces as an example",
+          "year": "2014",
+          "zbmath_url": "https://zbmath.org/900234099"
+        },
+        {
+          "authors": [
+            "Bailly-Maitre, Gilles"
+          ],
+          "dois": [
+            "10.1016/s0007-4497(00)01063-0"
+          ],
+          "id": 1569458,
+          "identifier": "0997.32023",
+          "title": "Gauss-Manin connection of hyperelliptic polynomials",
+          "year": "2000",
+          "zbmath_url": "https://zbmath.org/1569458"
+        }
+      ],
+      "reported": 69,
+      "retrieved": 69
+    },
+    {
+      "finding": "success",
+      "query": "monodromy polynomial composition",
+      "records": [
+        {
+          "authors": [
+            "Burda, Y.",
+            "Khovanskii, A."
+          ],
+          "dois": [
+            "10.1007/s40598-015-0036-0"
+          ],
+          "id": 6553470,
+          "identifier": "1393.12004",
+          "title": "Polynomials invertible in \\(k\\)-radicals",
+          "year": "2016",
+          "zbmath_url": "https://zbmath.org/6553470"
+        },
+        {
+          "authors": [
+            "Lenstra, H. W. jun.",
+            "Zieve, M."
+          ],
+          "dois": [],
+          "id": 953222,
+          "identifier": "0871.11087",
+          "title": "A family of exceptional polynomials in characteristic three",
+          "year": "1996",
+          "zbmath_url": "https://zbmath.org/953222"
+        },
+        {
+          "authors": [
+            "Fried, Michael D.",
+            "Guralnick, Robert",
+            "Saxl, Jan"
+          ],
+          "dois": [
+            "10.1007/bf02808112"
+          ],
+          "id": 446710,
+          "identifier": "0855.11063",
+          "title": "Schur covers and Carlitz's conjecture",
+          "year": "1993",
+          "zbmath_url": "https://zbmath.org/446710"
+        },
+        {
+          "authors": [
+            "zbMATH Open Web Interface contents unavailable due to conflicting licenses."
+          ],
+          "dois": [
+            "10.1080/17476930108815314"
+          ],
+          "id": 1615074,
+          "identifier": "1032.12001",
+          "title": "zbMATH Open Web Interface contents unavailable due to conflicting licenses.",
+          "year": "2001",
+          "zbmath_url": "https://zbmath.org/1615074"
+        },
+        {
+          "authors": [
+            "A'Campo, Norbert"
+          ],
+          "dois": [
+            "10.1016/s0040-9383(02)00099-x"
+          ],
+          "id": 1956003,
+          "identifier": "1042.32011",
+          "title": "Monodromy of real isolated singularities.",
+          "year": "2003",
+          "zbmath_url": "https://zbmath.org/1956003"
+        },
+        {
+          "authors": [
+            "Branner, Bodil",
+            "Hubbard, John H."
+          ],
+          "dois": [
+            "10.1007/bf02392761"
+          ],
+          "id": 665424,
+          "identifier": "0812.30008",
+          "title": "The iteration of cubic polynomials. II: Patterns and parapatterns",
+          "year": "1992",
+          "zbmath_url": "https://zbmath.org/665424"
+        },
+        {
+          "authors": [
+            "Fried, Michael D."
+          ],
+          "dois": [],
+          "id": 1305290,
+          "identifier": "1053.14509",
+          "title": "Variables separated polynomials, the genus 0 problem and moduli spaces",
+          "year": "1999",
+          "zbmath_url": "https://zbmath.org/1305290"
+        },
+        {
+          "authors": [
+            "\u00c1lvarez, A.",
+            "Bravo, J. L.",
+            "Christopher, C.",
+            "Marde\u0161i\u0107, P."
+          ],
+          "dois": [
+            "10.1134/s0016266321040018"
+          ],
+          "id": 7503288,
+          "identifier": "1500.34023",
+          "title": "Infinitesimal center problem on zero cycles and the composition conjecture",
+          "year": "2021",
+          "zbmath_url": "https://zbmath.org/7503288"
+        },
+        {
+          "authors": [
+            "Dorey, F.",
+            "Whaples, G."
+          ],
+          "dois": [
+            "10.1016/0021-8693(74)90023-4"
+          ],
+          "id": 3448683,
+          "identifier": "0286.12102",
+          "title": "Prime and composite polynomials",
+          "year": "1974",
+          "zbmath_url": "https://zbmath.org/3448683"
+        },
+        {
+          "authors": [
+            "Cohen, Stephen D."
+          ],
+          "dois": [],
+          "id": 1488850,
+          "identifier": "0958.12001",
+          "title": "Permutation group theory and permutation polynomials",
+          "year": "1999",
+          "zbmath_url": "https://zbmath.org/1488850"
+        },
+        {
+          "authors": [
+            "Christopher, Colin",
+            "Li, Chengzhi"
+          ],
+          "dois": [],
+          "id": 5162643,
+          "identifier": "1359.34001",
+          "title": "Limit cycles of differential equations",
+          "year": "2007",
+          "zbmath_url": "https://zbmath.org/5162643"
+        },
+        {
+          "authors": [
+            "Kreso, Dijana",
+            "Tichy, Robert F."
+          ],
+          "dois": [],
+          "id": 6686870,
+          "identifier": "1395.11054",
+          "title": "Functional composition of polynomials: indecomposability, Diophantine equations and Lacunary polynomials",
+          "year": "2015",
+          "zbmath_url": "https://zbmath.org/6686870"
+        },
+        {
+          "authors": [
+            "Khovanskii, Askold"
+          ],
+          "dois": [
+            "10.1007/978-3-642-38871-2"
+          ],
+          "id": 6195727,
+          "identifier": "1331.12001",
+          "title": "Topological Galois theory. Solvability and unsolvability of equations in finite terms. Translated from the Russian by Valentina Kirichenko, Lucy Kadets and Vladen Timorin. Appendices C and D written jointly with Yura Burda",
+          "year": "2014",
+          "zbmath_url": "https://zbmath.org/6195727"
+        },
+        {
+          "authors": [
+            "Deligne, Pierre",
+            "Flicker, Yuval Z."
+          ],
+          "dois": [
+            "10.4007/annals.2013.178.3.3"
+          ],
+          "id": 6220726,
+          "identifier": "1284.14026",
+          "title": "Counting local systems with principal unipotent local monodromy",
+          "year": "2013",
+          "zbmath_url": "https://zbmath.org/6220726"
+        },
+        {
+          "authors": [
+            "Briskin, Miriam",
+            "Roytvarf, Nina",
+            "Yomdin, Yosef"
+          ],
+          "dois": [
+            "10.4007/annals.2010.172.437"
+          ],
+          "id": 5779361,
+          "identifier": "1216.34025",
+          "title": "Center conditions at infinity for Abel differential equations",
+          "year": "2010",
+          "zbmath_url": "https://zbmath.org/5779361"
+        },
+        {
+          "authors": [
+            "Kowalski, E.",
+            "Soundararajan, K."
+          ],
+          "dois": [
+            "10.1007/978-3-031-05331-3_13"
+          ],
+          "id": 7672493,
+          "identifier": "1522.11083",
+          "title": "Exponential sums, twisted multiplicativity, and moments",
+          "year": "2022",
+          "zbmath_url": "https://zbmath.org/7672493"
+        },
+        {
+          "authors": [
+            "Branner, Bodil"
+          ],
+          "dois": [],
+          "id": 4002464,
+          "identifier": "0618.30026",
+          "title": "The parameter space for complex cubic polynomials",
+          "year": "1986",
+          "zbmath_url": "https://zbmath.org/4002464"
+        },
+        {
+          "authors": [
+            "M\u00fcller, Peter",
+            "V\u00f6lklein, Helmut"
+          ],
+          "dois": [
+            "10.1006/jnth.1996.0059"
+          ],
+          "id": 883830,
+          "identifier": "0861.11061",
+          "title": "On a question of Davenport",
+          "year": "1996",
+          "zbmath_url": "https://zbmath.org/883830"
+        },
+        {
+          "authors": [
+            "Blinov, M.",
+            "Roytvarf, N.",
+            "Yomdin, Y."
+          ],
+          "dois": [],
+          "id": 2048419,
+          "identifier": "1086.34070",
+          "title": "Center and moment conditions for Abel equation with rational coefficients",
+          "year": "2003",
+          "zbmath_url": "https://zbmath.org/2048419"
+        },
+        {
+          "authors": [
+            "M\u00fcller, Peter"
+          ],
+          "dois": [
+            "10.1090/s0002-9947-98-02123-0"
+          ],
+          "id": 1132244,
+          "identifier": "0894.11006",
+          "title": "Kronecker conjugacy of polynomials",
+          "year": "1998",
+          "zbmath_url": "https://zbmath.org/1132244"
+        },
+        {
+          "authors": [
+            "Joachim K\u00f6nig",
+            "Danny Neftin",
+            "Shai Rosenberg"
+          ],
+          "dois": [],
+          "id": 902411039,
+          "identifier": "arXiv:2401.17872",
+          "title": "Polynomial compositions with large monodromy groups and applications to arithmetic dynamics",
+          "year": "2024",
+          "zbmath_url": "https://zbmath.org/902411039"
+        },
+        {
+          "authors": [
+            "Ohtsuki, Tomotada"
+          ],
+          "dois": [],
+          "id": 1735009,
+          "identifier": "0991.57001",
+          "title": "Quantum invariants. A study of knots, 3-manifolds, and their sets",
+          "year": "2002",
+          "zbmath_url": "https://zbmath.org/1735009"
+        },
+        {
+          "authors": [
+            "M\u00fcller, Peter"
+          ],
+          "dois": [],
+          "id": 1595103,
+          "identifier": "0977.12003",
+          "title": "Arithmetically exceptional functions and elliptic curves",
+          "year": "1999",
+          "zbmath_url": "https://zbmath.org/1595103"
+        },
+        {
+          "authors": [
+            "Inaba, Kazumasa"
+          ],
+          "dois": [
+            "10.2969/jmsj/90169016"
+          ],
+          "id": 7940502,
+          "identifier": "1551.32016",
+          "title": "A generalized join theorem for real analytic singularities",
+          "year": "2024",
+          "zbmath_url": "https://zbmath.org/7940502"
+        },
+        {
+          "authors": [
+            "Han Peters"
+          ],
+          "dois": [],
+          "id": 900041850,
+          "identifier": "arXiv:0711.4835",
+          "title": "Time averages of polynomials",
+          "year": "2007",
+          "zbmath_url": "https://zbmath.org/900041850"
+        },
+        {
+          "authors": [],
+          "dois": [],
+          "id": 5995699,
+          "identifier": "1237.00031",
+          "title": "Progress in analysis and its applications. Proceedings of the 7th international ISAAC congress held at the Imperial College London, London, UK, July 13--18, 2009.",
+          "year": "2010",
+          "zbmath_url": "https://zbmath.org/5995699"
+        },
+        {
+          "authors": [
+            "Shen, Linhui"
+          ],
+          "dois": [
+            "10.1093/imrn/rnab094"
+          ],
+          "id": 7594742,
+          "identifier": "1525.13034",
+          "title": "Duals of semisimple Poisson-Lie groups and cluster theory of moduli spaces of G-local systems",
+          "year": "2022",
+          "zbmath_url": "https://zbmath.org/7594742"
+        },
+        {
+          "authors": [],
+          "dois": [
+            "10.1007/978-3-031-36375-7"
+          ],
+          "id": 7764588,
+          "identifier": "1531.35008",
+          "title": "Analysis, applications, and computations. Proceedings of the 13th ISAAC congress, Ghent, Belgium, August 2--6, 2021",
+          "year": "2023",
+          "zbmath_url": "https://zbmath.org/7764588"
+        },
+        {
+          "authors": [
+            "Yazawa, Hikaru"
+          ],
+          "dois": [
+            "10.3836/tjm/1202136694"
+          ],
+          "id": 5302217,
+          "identifier": "1145.37027",
+          "title": "Monodromy on the central hyperbolic component of polynomials with just two distinct critical points",
+          "year": "2007",
+          "zbmath_url": "https://zbmath.org/5302217"
+        }
+      ],
+      "reported": 29,
+      "retrieved": 29
+    },
+    {
+      "finding": "success",
+      "query": "\"polynomial moment problem\"",
+      "records": [
+        {
+          "authors": [
+            "Pakovich, F.",
+            "Muzychuk, M."
+          ],
+          "dois": [
+            "10.1112/plms/pdp010"
+          ],
+          "id": 5625727,
+          "identifier": "1177.30046",
+          "title": "Solution of the polynomial moment problem",
+          "year": "2009",
+          "zbmath_url": "https://zbmath.org/5625727"
+        },
+        {
+          "authors": [
+            "Krall, A. M."
+          ],
+          "dois": [
+            "10.1007/bf01917526"
+          ],
+          "id": 3670834,
+          "identifier": "0431.33004",
+          "title": "The Bessel polynomial moment problem",
+          "year": "1981",
+          "zbmath_url": "https://zbmath.org/3670834"
+        },
+        {
+          "authors": [
+            "Pakovich, Fedor",
+            "Pech, Christian",
+            "Zvonkin, Alexander K."
+          ],
+          "dois": [],
+          "id": 5885289,
+          "identifier": "1223.30010",
+          "title": "Laurent polynomial moment problem: a case study",
+          "year": "2010",
+          "zbmath_url": "https://zbmath.org/5885289"
+        },
+        {
+          "authors": [
+            "Pakovich, F."
+          ],
+          "dois": [
+            "10.4310/mrl.2003.v10.n3.a9"
+          ],
+          "id": 2064167,
+          "identifier": "1043.30021",
+          "title": "On the polynomial moment problem",
+          "year": "2003",
+          "zbmath_url": "https://zbmath.org/2064167"
+        },
+        {
+          "authors": [
+            "Pakovich, F."
+          ],
+          "dois": [
+            "10.1016/j.bulsci.2005.06.001"
+          ],
+          "id": 2244532,
+          "identifier": "1089.30039",
+          "title": "On polynomials orthogonal to all powers of a given polynomial on a segment",
+          "year": "2005",
+          "zbmath_url": "https://zbmath.org/2244532"
+        },
+        {
+          "authors": [
+            "Pakovich, F."
+          ],
+          "dois": [
+            "10.1112/s0010437x12000620"
+          ],
+          "id": 6165763,
+          "identifier": "1273.30024",
+          "title": "Generalized `second Ritt theorem' and explicit solution of the polynomial moment problem",
+          "year": "2013",
+          "zbmath_url": "https://zbmath.org/6165763"
+        },
+        {
+          "authors": [
+            "Pakovich, F."
+          ],
+          "dois": [
+            "10.1007/bf02771537"
+          ],
+          "id": 2108123,
+          "identifier": "1058.30007",
+          "title": "On polynomials orthogonal to all powers of a Chebyshev polynomial on a segment",
+          "year": "2004",
+          "zbmath_url": "https://zbmath.org/2108123"
+        },
+        {
+          "authors": [
+            "Pakovich, F."
+          ],
+          "dois": [],
+          "id": 6273503,
+          "identifier": "1297.30065",
+          "title": "On rational functions orthogonal to all powers of a given rational function on a curve",
+          "year": "2013",
+          "zbmath_url": "https://zbmath.org/6273503"
+        },
+        {
+          "authors": [
+            "Zikkos, E."
+          ],
+          "dois": [
+            "10.1007/s10476-018-0311-0"
+          ],
+          "id": 7011194,
+          "identifier": "1424.30012",
+          "title": "The closed span of some exponential system in weighted Banach spaces on the real line and a moment problem",
+          "year": "2018",
+          "zbmath_url": "https://zbmath.org/7011194"
+        },
+        {
+          "authors": [
+            "\u00c1lvarez S\u00e1nchez, Amelia",
+            "Bravo Trinidad, Jos\u00e9 Luis",
+            "Marde\u0161i\u0107, Pavao"
+          ],
+          "dois": [
+            "10.1112/plms/pdt012"
+          ],
+          "id": 6245051,
+          "identifier": "1279.30045",
+          "title": "Vanishing abelian integrals on zero-dimensional cycles",
+          "year": "2013",
+          "zbmath_url": "https://zbmath.org/6245051"
+        },
+        {
+          "authors": [
+            "Yuto Miyatake"
+          ],
+          "dois": [],
+          "id": 903089402,
+          "identifier": "arXiv:2606.30122",
+          "title": "A polynomial moment approach to a rank condition for continuous-stage Runge--Kutta methods",
+          "year": "2026",
+          "zbmath_url": "https://zbmath.org/903089402"
+        },
+        {
+          "authors": [],
+          "dois": [
+            "10.1090/conm/532"
+          ],
+          "id": 5834699,
+          "identifier": "1205.00087",
+          "title": "Dynamical numbers. Interplay between dynamical systems and number theory. A special program, May 1--July 31, 2009. International conference, MPI, Bonn, Germany, July 20--24, 2009. Proceedings",
+          "year": "2010",
+          "zbmath_url": "https://zbmath.org/5834699"
+        }
+      ],
+      "reported": 12,
+      "retrieved": 12
+    },
+    {
+      "finding": "success",
+      "query": "\"linear relations\" roots polynomial",
+      "records": [
+        {
+          "authors": [
+            "Yoshiyuki Kitaoka"
+          ],
+          "dois": [],
+          "id": 900361941,
+          "identifier": "arXiv:1810.06791",
+          "title": "Linear relations among roots of a polynomial",
+          "year": "2018",
+          "zbmath_url": "https://zbmath.org/900361941"
+        },
+        {
+          "authors": [
+            "Kitaoka, Yoshiyuki"
+          ],
+          "dois": [
+            "10.1515/udt-2017-0017"
+          ],
+          "id": 6847002,
+          "identifier": "1448.11177",
+          "title": "Notes on the distribution of roots modulo a prime of a polynomial",
+          "year": "2017",
+          "zbmath_url": "https://zbmath.org/6847002"
+        },
+        {
+          "authors": [
+            "Yoshiyuki Kitaoka"
+          ],
+          "dois": [],
+          "id": 900318005,
+          "identifier": "arXiv:1706.03300",
+          "title": "Behaviour of the least root modulo a prime of a polynomial",
+          "year": "2017",
+          "zbmath_url": "https://zbmath.org/900318005"
+        },
+        {
+          "authors": [
+            "Lenstra, H. W. jun."
+          ],
+          "dois": [],
+          "id": 3637982,
+          "identifier": "0411.12003",
+          "title": "Vanishing sums of roots of unity",
+          "year": "1979",
+          "zbmath_url": "https://zbmath.org/3637982"
+        },
+        {
+          "authors": [
+            "Girstmair, Kurt"
+          ],
+          "dois": [
+            "10.4064/aa-89-1-53-96"
+          ],
+          "id": 1333794,
+          "identifier": "0924.12002",
+          "title": "Linear relations between roots of polynomials",
+          "year": "1999",
+          "zbmath_url": "https://zbmath.org/1333794"
+        },
+        {
+          "authors": [
+            "Kowalski, Emmanuel",
+            "Untrau, Th\u00e9o"
+          ],
+          "dois": [
+            "10.4064/aa230308-11-5"
+          ],
+          "id": 7771580,
+          "identifier": "1530.11096",
+          "title": "Ultra-short sums of trace functions",
+          "year": "2023",
+          "zbmath_url": "https://zbmath.org/7771580"
+        },
+        {
+          "authors": [
+            "Baseilhac, Pascal",
+            "Koizumi, Kozo"
+          ],
+          "dois": [
+            "10.1088/1742-5468/2007/09/p09006"
+          ],
+          "id": 7120527,
+          "identifier": "1456.82029",
+          "title": "Exact spectrum of the XXZ open spin chain from the \\(q\\)-Onsager algebra representation theory",
+          "year": "2007",
+          "zbmath_url": "https://zbmath.org/7120527"
+        },
+        {
+          "authors": [
+            "Dubickas, Arturas",
+            "Jankauskas, Jonas"
+          ],
+          "dois": [],
+          "id": 7136111,
+          "identifier": "1425.11169",
+          "title": "Simple linear relations between conjugate algebraic numbers of low degree",
+          "year": "2015",
+          "zbmath_url": "https://zbmath.org/7136111"
+        },
+        {
+          "authors": [
+            "Pfeifle, Julian"
+          ],
+          "dois": [
+            "10.1016/j.jcta.2009.10.009"
+          ],
+          "id": 5696956,
+          "identifier": "1190.05006",
+          "title": "Gale duality bounds for roots of polynomials with nonnegative coefficients",
+          "year": "2010",
+          "zbmath_url": "https://zbmath.org/5696956"
+        },
+        {
+          "authors": [
+            "Nahay, John Michael"
+          ],
+          "dois": [
+            "10.1016/s0022-0396(02)00074-8"
+          ],
+          "id": 1957266,
+          "identifier": "1030.12006",
+          "title": "Linear relations among algebraic solutions of differential equations",
+          "year": "2003",
+          "zbmath_url": "https://zbmath.org/1957266"
+        },
+        {
+          "authors": [
+            "Combot, Thierry"
+          ],
+          "dois": [
+            "10.1090/mcom/4081"
+          ],
+          "id": 8135334,
+          "identifier": null,
+          "title": "Computing linear relations between polynomial roots",
+          "year": "2026",
+          "zbmath_url": "https://zbmath.org/8135334"
+        },
+        {
+          "authors": [
+            "Grigor'eva, I. A."
+          ],
+          "dois": [],
+          "id": 3215379,
+          "identifier": "0133.01902",
+          "title": "On the form of extremal non-negative polynomials with coefficients subject fo several linear relations",
+          "year": "1965",
+          "zbmath_url": "https://zbmath.org/3215379"
+        },
+        {
+          "authors": [
+            "Virbalas, Paulius"
+          ],
+          "dois": [
+            "10.4134/jkms.j240002"
+          ],
+          "id": 8019971,
+          "identifier": "1562.11175",
+          "title": "Linear relations between three conjugate algebraic numbers of low degree",
+          "year": "2025",
+          "zbmath_url": "https://zbmath.org/8019971"
+        },
+        {
+          "authors": [
+            "Rymarenko, B. A."
+          ],
+          "dois": [],
+          "id": 3116017,
+          "identifier": "0068.27503",
+          "title": "\u00dcber eine Anwendung der Methode von S. N. Bernshte\u012dn in der Theorie der monotonen Polynome",
+          "year": "1955",
+          "zbmath_url": "https://zbmath.org/3116017"
+        },
+        {
+          "authors": [
+            "Grigor'eva, I. A."
+          ],
+          "dois": [],
+          "id": 3215378,
+          "identifier": "0133.01901",
+          "title": "\u00dcber die Anwendung der Methode von Cebysev-Bernstein auf eine Klasse von Extremalfunktionen, welche gewissen bez\u00fcglich der Koeffizienten linearen Beziehungen gen\u00fcgen",
+          "year": "1964",
+          "zbmath_url": "https://zbmath.org/3215378"
+        },
+        {
+          "authors": [
+            "Virbalas, Paulius"
+          ],
+          "dois": [
+            "10.3336/gm.60.2.04"
+          ],
+          "id": 8150102,
+          "identifier": null,
+          "title": "Linear relations between three algebraic conjugates of degree twice a prime",
+          "year": "2025",
+          "zbmath_url": "https://zbmath.org/8150102"
+        },
+        {
+          "authors": [
+            "Lalande, Franck"
+          ],
+          "dois": [],
+          "id": 2208434,
+          "identifier": "1078.12003",
+          "title": "Linear relations between the roots of a polynomial and Schur rings",
+          "year": "2003",
+          "zbmath_url": "https://zbmath.org/2208434"
+        },
+        {
+          "authors": [
+            "Anderson, David",
+            "Fulton, William"
+          ],
+          "dois": [
+            "10.1017/9781009349994"
+          ],
+          "id": 7742101,
+          "identifier": "1553.14001",
+          "title": "Equivariant cohomology in algebraic geometry",
+          "year": "2024",
+          "zbmath_url": "https://zbmath.org/7742101"
+        },
+        {
+          "authors": [
+            "Harada, Ryotaro"
+          ],
+          "dois": [
+            "10.1515/forum-2023-0226"
+          ],
+          "id": 7984272,
+          "identifier": "1576.11136",
+          "title": "Colored multizeta values in positive characteristic",
+          "year": "2025",
+          "zbmath_url": "https://zbmath.org/7984272"
+        }
+      ],
+      "reported": 19,
+      "retrieved": 19
+    }
+  ]
+}

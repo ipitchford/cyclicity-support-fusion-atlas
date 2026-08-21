@@ -1,0 +1,15 @@
+{
+  "files": {
+    "ALL_DEGREE_STRUCTURAL_REPAIR.md": "a3e2f9e325fb6d617b2ecd0a38c868390ccd669af6756b2f8d87190169e584de",
+    "ALL_DEGREE_STRUCTURAL_REVIEW.md": "ca7e3941485b6ee3b88b751904c984a88dfed7d8091b0ced1f887f1aa83881fa",
+    "formal/lean/CyclicityUniform.lean": "8ca2b9930ff7584aad87b64808b4ac53cacddfdc2e100343cdba606e466922cb",
+    "formal/lean/UNIFORM_README.md": "7629b28fbeb6c5472fa730b67110fd7b7aa020195b7a1a70ca8c93a646904307",
+    "formal/uniform_verification_protocol.json": "93a6dfa7a4e6185c6e6af5e9ef73c24f00cb96e9ff3f96f3a8465b3e7af133e3",
+    "tools/run_uniform_formalization.py": "9718bf6474779812290239136bfb5a93879083f8672d836cfacd865a95d832fc"
+  },
+  "hash_algorithm": "sha256",
+  "lock_sha256": "ca745e4cb3e7d0acc6666ba9f41529701fd8bded8449b0ea2056bfcae8bfcaa3",
+  "schema": "cyclicity-uniform-structural-lock-v1",
+  "seal_boundary": "Post-implementation source-identity lock. It is not prospective preregistration, external review, or proof of the unformalized interfaces.",
+  "status": "sealed"
+}

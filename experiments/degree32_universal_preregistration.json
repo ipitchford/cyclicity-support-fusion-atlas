@@ -1,0 +1,58 @@
+{
+  "schema": "degree32-universal-low-rank-preregistration-v1",
+  "registered_date": "2026-08-21",
+  "research_question": "For every complex polynomial P of degree 32, are the power, Dickson and quadratic-over-power rows exactly the cases with q(P,dx) at most 3?",
+  "theorem_target": {
+    "statement": "For every P in C[x] of degree 32, q(P,dx)<=3 if and only if P is affine-equivalent to x^32, D_32(x,a) with a nonzero, or x^32+A*x^16 with A nonzero.",
+    "normalisation": "monic and centred in the source, with an additive target constant suppressed",
+    "normalised_supports": {
+      "power": [1],
+      "dickson": [1, 31],
+      "quadratic_over_power": [1, 17]
+    },
+    "rank_three_prediction": "No degree-32 polynomial has exact fixed-seed cyclic rank 3."
+  },
+  "coverage": {
+    "degree": 32,
+    "support_rule": "every subset S of {1,...,31} with 1 in S and |S|<=3",
+    "case_count_formula": "1+(32-2)+binomial(32-2,2)",
+    "expected_case_count": 466,
+    "expected_outcome_counts": {
+      "vacuous_full_family": 3,
+      "exact_power_only": 406,
+      "exact_union": 57,
+      "anomalies": 0,
+      "no_certificate": 0
+    }
+  },
+  "method": {
+    "coordinate_model": "support-constrained inverse series F(y)=1+sum u_i*y^i and the triangular coefficient map from P(tF(1/t))=t^32",
+    "initial_condition_depth": 128,
+    "stability_depth": 192,
+    "depth_rule": "Groebner basis through 4d; reduce all additional confinement equations through 6d",
+    "base_field": "Q",
+    "groebner_order": "lex",
+    "certificate_types": [
+      "full allowed coordinate space matched by a saturating family",
+      "nilpotence of every non-power inverse coordinate modulo the Groebner basis",
+      "radical containment in the union of predicted rank-two components"
+    ],
+    "family_containment_control": "three deterministic points per predicted component over the fixed 61-bit prime",
+    "primary_execution": "ordinary CPython",
+    "verification_execution": "python -O must regenerate a byte-identical mathematical receipt"
+  },
+  "adjudication": {
+    "confirmed": "all 466 cases close with the preregistered outcome counts and no anomaly or missing certificate",
+    "falsified": "an exact case produces a component outside the three predicted families or a dimension larger than predicted",
+    "partial": "all cases have no anomaly but one or more radical-containment certificates are not established",
+    "inconclusive": "the exact computation fails, exhausts resources, or does not complete both primary and optimized verification"
+  },
+  "stopping_rule": "Run the sealed ordinary computation once. If it completes, run the preregistered optimized replay. Do not modify depths, predicted families, certificate bounds or adjudication after inspecting results; any repair is a successor protocol.",
+  "claim_boundary": [
+    "The quantified statement covers every complex polynomial of degree 32, but only classifies the threshold q(P,dx)<=3.",
+    "For a polynomial outside the three families, the conclusion is q(P,dx)>=4; its exact higher rank is not classified.",
+    "The result is a finite computer-assisted theorem candidate over Q-defined universal confinement ideals, not a proof-assistant object.",
+    "It does not prove the all-degree coefficient atlas.",
+    "Within-programme ordinary and optimized replay is not external independent reproduction."
+  ]
+}

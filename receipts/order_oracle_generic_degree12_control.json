@@ -1,0 +1,34 @@
+{
+  "ambient_rank": 11,
+  "claim_boundary": "This is an exact rank control, not a frozen symbolic order-eleven operator and not an independent external reproduction.",
+  "degree": 12,
+  "generic_rank": 11,
+  "inference": "An exact specialised rank of eleven is bounded above by the generic rank, while the ambient twisted de Rham rank is eleven.",
+  "inverse_support": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "phase": "x**12 + x**10 + x**3",
+  "receipt_sha256": "167324cffc765f44428ad1cc6c32f7f55fee902bd9f7a14d4e2f59ef9067b8d2",
+  "schema": "exponential-period-order-oracle-generic-control-v1",
+  "specialisations": [
+    {
+      "exact_specialised_rank": 11,
+      "s": "3/7"
+    },
+    {
+      "exact_specialised_rank": 11,
+      "s": "-5/2"
+    }
+  ],
+  "status": "pass"
+}

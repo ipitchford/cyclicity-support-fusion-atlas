@@ -1,11 +1,11 @@
 {
-  "title": "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods",
+  "title": "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods: All-Degree Low-Rank Completion",
   "upload_type": "publication",
   "publication_type": "preprint",
   "creators": [{"name": "Anonymous"}],
-  "description": "Unrefereed theorem candidate. Universal inverse-support and Fourier-fusion calculus, with a finite exact-arithmetic low-rank atlas through degree twenty. The all-degree atlas remains conjectural.",
-  "version": "0.5.0-candidate",
-  "publication_date": "2026-08-20",
+  "description": "Public unrefereed theorem candidate, relative to named primitive-polynomial-monodromy and finite-projective-group classification inputs. This additive successor proves an all-degree classification of complex polynomial phases with fixed seed dx and cyclic rank at most three, together with all proper rank-preserving outer extensions. It preserves and corrects the earlier candidate: a false uniform Kummer-kernel assertion is replaced by a coefficient-stratified theorem and exceptional-stratum descent. Lean and separate CAS implementations check scoped consequences; no external reproduction, complete formalisation, peer review, or priority certification is claimed.",
+  "version": "0.6.0-candidate",
+  "publication_date": "2026-08-21",
   "license": "cc-zero",
   "access_right": "open",
   "keywords": [
@@ -14,8 +14,9 @@
     "cyclic rank",
     "polynomial decomposition",
     "Ritt theory",
-    "Fourier fusion",
-    "computer-assisted classification"
+    "Dickson polynomials",
+    "Kummer theory",
+    "computer-assisted verification"
   ],
   "related_identifiers": [
     {
@@ -29,12 +30,17 @@
       "scheme": "url"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.21853682",
+      "identifier": "10.5281/zenodo.22036030",
+      "relation": "isNewVersionOf",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.21853682",
       "relation": "isSupplementTo",
       "scheme": "doi"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.21864884",
+      "identifier": "10.5281/zenodo.21864884",
       "relation": "isSupplementTo",
       "scheme": "doi"
     }

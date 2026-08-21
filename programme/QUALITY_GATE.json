@@ -1,0 +1,85 @@
+{
+  "schema_version": "research-quality-gate-1.0",
+  "assessment_id": "cyclicity-applications-programme-2026-08-21",
+  "as_of": "2026-08-21",
+  "attribution": "anonymous",
+  "assessors": ["research-agent"],
+  "assessment_boundary": "Assess whether the benchmark, decomposition report, replay challenge and prospective degree-32 experiment are sufficiently rigorous to execute and circulate as an unpublished research extension.",
+  "decision_supported": "go or hold for the remaining application programme",
+  "claim": {
+    "text": "Build and verify four application artefacts for the parent inverse-support theorem, ending with a preregistered finite degree-32 quartic-lift experiment.",
+    "scope": "rational polynomial phases, fixed seed dx, actual supplied decomposition witnesses, finite m=8 elimination",
+    "output_type": "software, benchmark, verification challenge and finite mathematical experiment",
+    "field": ["computer algebra", "polynomial decomposition", "exponential periods"],
+    "identifiers": ["parent-doi:10.5281/zenodo.22036030"]
+  },
+  "novelty_handoff": {
+    "outcome": "BOUNDED_UNCERTAINTY",
+    "search_date": "2026-08-21",
+    "corpus_boundary": "parent references plus bounded arXiv and HAL primary-source searches",
+    "closest_prior_art": [
+      "arXiv:1108.4508",
+      "arXiv:1301.5038",
+      "arXiv:1301.4313"
+    ],
+    "unresolved_priority_questions": [
+      "whether an equivalent inverse-support order certificate exists under another special-function or D-module name",
+      "whether comparable decomposition-aware fusion tooling exists"
+    ]
+  },
+  "prior": {
+    "originality": {"score": 2, "confidence": "medium", "justification": "The broad order-aware telescoping idea is prior art; the exact inverse-support benchmark bridge was not located in the bounded search."},
+    "significance": {"score": 3, "confidence": "medium", "justification": "The artefacts expose a sharp degree-12 order collapse, make fusion computable on actual chains, and prospectively test the first uncovered atlas case."},
+    "rigour": {"score": 3, "confidence": "high", "justification": "Exact arithmetic, negative controls, separate replay, frozen protocols and explicit finite-versus-uniform boundaries are feasible before execution."},
+    "expected_action": "go with controls"
+  },
+  "outcome": {
+    "originality": {"score": 2, "confidence": "medium", "justification": "Broad order-aware telescoping is prior art; the exact inverse-support benchmark bridge was not located in the bounded search, which does not establish priority."},
+    "significance": {"score": 3, "confidence": "medium", "justification": "The completed corpus exposes exact degree-12 order collapses, makes fusion computable on verified chains, and adds a prospective degree-32 data point with reusable CAS-facing artefacts."},
+    "rigour": {"score": 3, "confidence": "high", "justification": "Exact arithmetic, negative controls, a no-SymPy replay path, ordinary/optimized parity, manifest binding and a prospectively sealed finite experiment pass; external independent reproduction remains absent."},
+    "summary_score": 65.52,
+    "summary_formula": "100 * ((O/4)*(S/4)*(R/4))^(1/3)",
+    "decision": "candidate"
+  },
+  "assurance": {
+    "status": "internally checked",
+    "checks": [
+      "parent and order-oracle gates passed",
+      "EPOB-1 scored 10/10 orders and supports and 9/9 operators",
+      "four decomposition cases and seven exact chains replayed",
+      "twelve Fraction-only cases replayed without SymPy import",
+      "ordinary and optimized deterministic artefacts matched",
+      "prospective degree-32 seal and result receipt verified",
+      "four mutation classes rejected"
+    ],
+    "independence": "within-programme only",
+    "limits": ["no external specialist or unaffiliated reproduction"]
+  },
+  "reception": {
+    "status": "immature",
+    "as_of": "2026-08-21",
+    "openalex": {"work_id": null, "fwci": null, "citation_normalized_percentile": null, "cited_by_count": null, "coverage_notes": "not applicable to unpublished extension"},
+    "opencitations": {"incoming_citations": null, "coverage_notes": "not applicable to unpublished extension"},
+    "reuse_and_impact": [],
+    "negative_post_publication_signals": []
+  },
+  "evidence": [
+    {"id": "parent", "path": "MANUSCRIPT.md"},
+    {"id": "oracle", "path": "ORDER_ORACLE.md"},
+    {"id": "novelty", "path": "programme/NOVELTY_GATE.md"},
+    {"id": "benchmark", "path": "receipts/epob1_reference_run.json"},
+    {"id": "fusion", "path": "receipts/decomposition_fusion_receipt.json"},
+    {"id": "replay", "path": "receipts/fraction_replay_challenge_receipt.json"},
+    {"id": "degree32", "path": "receipts/degree32_quartic_lift_result.json"},
+    {"id": "integrated_gate", "path": "run_application_programme_checks.py"}
+  ],
+  "red_flags": ["finite degree-32 evidence must not be promoted into an all-degree theorem"],
+  "missing_evidence": ["third-party CAS benchmark", "external independent replay", "specialist review"],
+  "reviewer_disagreement": [],
+  "reassessment": {"next_date": "2027-02-21", "reason": "six-month maturity checkpoint, or earlier on external replay, specialist review, substantive objection or successor experiment"},
+  "sources": [
+    "https://arxiv.org/abs/1108.4508",
+    "https://arxiv.org/abs/1301.5038",
+    "https://arxiv.org/abs/1301.4313"
+  ]
+}

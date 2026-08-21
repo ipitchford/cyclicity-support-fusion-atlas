@@ -1,0 +1,47 @@
+{
+  "schema": "cyclicity-kummer-normalizer-protocol-v2",
+  "date": "2026-08-21",
+  "status": "post-implementation identity protocol",
+  "exact_claims": {
+    "lean_theorems": [
+      "transposition_characteristic_identity",
+      "kummer_reflection_characteristic_identity",
+      "transposition_coefficients_force_neg_one",
+      "three_cycle_coefficients_impossible",
+      "nontrivial_line_permutation_obstructed"
+    ],
+    "cas_checks": [
+      "transposition_characteristic_identity",
+      "kummer_reflection_characteristic_identity",
+      "transposition_elimination",
+      "three_cycle_obstruction",
+      "degenerate_cubic_discriminant",
+      "discriminant_quotient_degree",
+      "exceptional_cubic_factorization",
+      "exceptional_pair_relation",
+      "exceptional_even_square_factorization",
+      "dickson_degree_six_target_translation",
+      "affine_power_cubic_identity",
+      "affine_power_fourier_determinant_nonzero",
+      "affine_power_sign_solution_count",
+      "s4_automorphisms",
+      "octahedral_realisation",
+      "ordinary_centralizer",
+      "sign_twisted_intertwiners",
+      "a4_automorphisms",
+      "tetrahedral_normalizer"
+    ]
+  },
+  "negative_controls": [
+    "Reject removal or reordering of a Lean theorem.",
+    "Reject a rehashed all-degree theorem claim.",
+    "Reject a rehashed external-independence claim.",
+    "Reject an S4 automorphism count other than 24 or any non-inner automorphism.",
+    "Reject a non-scalar ordinary centralizer or nonzero sign-twisted intertwiner.",
+    "Reject removal or mutation of the exceptional even-exponent Kummer relation.",
+    "Reject promotion of a uniform full Kummer-kernel claim.",
+    "Reject an A4 automorphism count other than 24 or a tetrahedral normalizer that does not preserve the coordinate axes.",
+    "Reject Lean sources containing sorry, admit, or an axiom declaration."
+  ],
+  "claim_boundary": "The successor proves a coefficient-stratified all-m transport theorem in writing: it withdraws the false uniform full-kernel claim, detects the exceptional even-exponent relations, and reroutes that stratum by decomposition descent. Lean checks five coefficient-algebra statements, and a separate SymPy/Python implementation checks nineteen symbolic and finite-group consequences. Kummer theory, divisor valuations, the block-stabiliser lemma, decomposition descent, polynomial monodromy, Ritt theory, the complete all-degree classification, novelty, external independent reproduction, peer review, and publication are not formally verified or claimed."
+}

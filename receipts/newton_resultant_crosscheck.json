@@ -1,0 +1,193 @@
+{
+  "claim_boundary": "Separate within-programme SymPy derivation; bounded control, not an all-m proof or external reproduction.",
+  "m_range": [
+    2,
+    12
+  ],
+  "method": "direct resultants Res_x(q_e(x), y-x^m); imports no Newton checker code",
+  "positive_resultants": {
+    "cubic": "a**2*y + 2*a*y**2 - e**2 + y**3",
+    "quartic": "c**3*y + 3*c**2*y**2 + 3*c*y**3 + e**3 + y**4"
+  },
+  "receipt_sha256": "fa5ef2d69790b1d77bd23dd3d326cf60bd8f1f131866ce141ccd364adda8c163",
+  "records": [
+    {
+      "basis_digest": "df4641b4b52111ec62c5611dde30f09c0527b692557f0effc742a5ad05567d70",
+      "coefficient_digest": "062fc02b9fa5dcc9b77fc603b5fb52ac52e77c15a1ca2a91b128cbf37fa05408",
+      "condition_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "empty_after_nondegenerate_saturation": false,
+      "m": 2,
+      "type": "cubic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "67725ab39343a49c658a2db770cd378e6391d786eeb3cb0a352c3655d20a3036",
+      "condition_digest": "3481092a8ffc8adab08acf1a5c5725551bff8af3242b5039f39fa1fa8607eb61",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 3,
+      "type": "cubic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "4fadc806d40a73012e583324d9b029891284677560d5fec14eb02f175b8706ae",
+      "condition_digest": "3fbc59cf1153ff5bc7bbd06ced2860d705e6d055da5586582f988ee810612082",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 4,
+      "type": "cubic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "bbf7e4bb39188cb83e2e1b0f46adeb4e7957bb0a834741475b26f79925737f09",
+      "condition_digest": "00684b073c64fa682242a63f9b2bf7b13015e4f4712b595d4ff71edf2d38fe79",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 5,
+      "type": "cubic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "b9bb63e7fac6c0b4a7065e699815f2c450344acb89a88a652cb2744e70ac4312",
+      "condition_digest": "dafb9eb93ac512e784379ff00df336708f048f6c9f95f9cd8554646c1335107f",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 6,
+      "type": "cubic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "2d961a108f42e91a57fcb0c337e691aab8bb6e8af7feece42a1c83de763ce98f",
+      "condition_digest": "1e14cf6d43ae9f9d0c0ac34373785e6b85b601e974c0d1b81611a333ac4de301",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 7,
+      "type": "cubic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "5176b46fe9a3b890bcecefcb8e49221856c4cd0ba711bb19b4fa1b3c6b8ba73e",
+      "condition_digest": "068b974ae49e8a3cd641dfe7dc86e7647708612e5e62a71bcdee39b30ac883bc",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 8,
+      "type": "cubic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "122043cef42455dab0770c014cee809fc65fcee21effb95fea879d00b439aedc",
+      "condition_digest": "ba76892a097ae5a90fbc03c0fe8ca3660e92876a8a43ce80d7efa2fef0fb74c2",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 9,
+      "type": "cubic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "b7689df5835ac39f03b3e3f5a8702011018759046f4254e77cd2caf0a7119d8c",
+      "condition_digest": "18b031aa2ac4a18502f18fcb3c186ac60cb83188c9e4c02cb7ea470970d12538",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 10,
+      "type": "cubic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "64c84686c729537cef4e467373d15ec9d8ea2ca8a9acef2fc8c4a7aca6f7122c",
+      "condition_digest": "99647e338442d5c97091891f5f1d22d76c7fe1950d0bb85d1eae363e02a81757",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 11,
+      "type": "cubic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "d2cc91fd8ec5777356a4702f1137982a40a9009b8951245eafdae37a085bc043",
+      "condition_digest": "0c96236e450ebfb06224cdd90ad1ac247a68bf3a90bf38142d67e7dc42b5fc67",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 12,
+      "type": "cubic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "d20041dcf465abd11bd554086e9d7124f602f70a03a8f02d778970807f1dfa0b",
+      "condition_digest": "880f2479db7313bff715360a88c6d434df8bc2f35ffc46eb13a91c8d9a1b798f",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 2,
+      "type": "quartic"
+    },
+    {
+      "basis_digest": "c758a51a03b2e41d3f481cb13a561a57e2d7a3c3f1a870943d02ff8a36cdbeee",
+      "coefficient_digest": "0eb86b085d61fd45c92cf7656bcee1abbad726036daa0abf47b3cc94953a5e68",
+      "condition_digest": "06686b307c41dd35b7fc0a872f98a5cd472c8bbf877be4c606557e686ee16339",
+      "empty_after_nondegenerate_saturation": false,
+      "m": 3,
+      "type": "quartic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "1766fefa9c4e4ab4d207d32087b945f108e798f84ffefa4c0d8eebdd908402d2",
+      "condition_digest": "a7ef8fbf298253cc68c339f948f9c290800d2fc89b10d49f75b2531f3c462cd0",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 4,
+      "type": "quartic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "98e4ecf98d38160f5238314078b3cd4f68cc70ed02d7f4a4f925a036cc85addc",
+      "condition_digest": "191bfb4e1fe2a06c98685513c99927f531441355ff6b733919a1ea67c456e864",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 5,
+      "type": "quartic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "81525e1395ee6c573e5b5f0cddd9fe27cd89220c2af383a35650883531056354",
+      "condition_digest": "08f781d9dbdc0f689de1e5649c7f6af9e908187d5c44fefd6fc745c6b543286a",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 6,
+      "type": "quartic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "88a762f903f324bfe93d24589704aacfe9b4053ab491e77f1b5c6e5915247a7b",
+      "condition_digest": "5e23e2b1c534e7747c90153acab9a53e63357ea1d54e4dcbbb6db4f303d8f4b8",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 7,
+      "type": "quartic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "e0e283a28fc7af657b6da9f90c8d72b4dd10b3f73c5148cd97fcc29217417a74",
+      "condition_digest": "9fb22ea8236b1cb39975dfeb94ebf3157bf9a01daeabc366c79a07f7fdbd6bb3",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 8,
+      "type": "quartic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "2262f750428db9bbd62d52d125d33c30a6293a57e232dfd5de7569688d3881fa",
+      "condition_digest": "502673d6c47d272e97fe3cd10f29d07dc06326e938ac8d075c32676caa3a2b52",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 9,
+      "type": "quartic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "75acbe5c66080d9d93f261027bd054fcb84c782e979306cadac871c1fc74579d",
+      "condition_digest": "d875a10b2a63c6292967c8b4fa579852bed6691c5a16b3dabd37c5b3165f7b21",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 10,
+      "type": "quartic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "608f4ed71413926487b178130e2c035259c390486f1aa7aee09870cb5d9f5598",
+      "condition_digest": "2ef0ecb12b63ea34a8d25d55aeb305d40c9125043a11960e05d2e28510bcea5b",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 11,
+      "type": "quartic"
+    },
+    {
+      "basis_digest": "d96363b310b0db1bf9a66221363c5e1db946342a9455000c8e571dded86a5a80",
+      "coefficient_digest": "13c8e9d06fd7811b1da3791449c830632ddeb89cefb22e320a95f70e5096a132",
+      "condition_digest": "0bace4f86fa86b2d66a4199608618b2c9f44ad412b893a2dc56b0527d4760aa8",
+      "empty_after_nondegenerate_saturation": true,
+      "m": 12,
+      "type": "quartic"
+    }
+  ],
+  "schema": "newton-resultant-crosscheck-v1",
+  "status": "pass"
+}

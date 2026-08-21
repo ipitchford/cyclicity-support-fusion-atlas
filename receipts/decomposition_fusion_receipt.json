@@ -1,0 +1,64 @@
+{
+  "case_count": 4,
+  "cases": [
+    {
+      "degree": 12,
+      "global_rank": 3,
+      "global_support": [
+        1,
+        7,
+        10
+      ],
+      "id": "exceptional_collision_degree_12",
+      "report_file": "exceptional_collision_degree_12.json",
+      "report_sha256": "deb337f826242d2aa923dab58d7d88a8164ba540c023716b8e8aaab6c8dee92f",
+      "status": "pass",
+      "validated_chain_count": 2
+    },
+    {
+      "degree": 15,
+      "global_rank": 2,
+      "global_support": [
+        1,
+        14
+      ],
+      "id": "dickson_degree_15",
+      "report_file": "dickson_degree_15.json",
+      "report_sha256": "7099c259a6109f23b886f902e1ecb2f80df5fd63253f4b09e325402a22297fed",
+      "status": "pass",
+      "validated_chain_count": 2
+    },
+    {
+      "degree": 12,
+      "global_rank": 3,
+      "global_support": [
+        1,
+        5,
+        9
+      ],
+      "id": "aligned_square_degree_12",
+      "report_file": "aligned_square_degree_12.json",
+      "report_sha256": "c586e58f104f0a14c96ceb44f40c25f80758478c318cac8eb439921a14440c99",
+      "status": "pass",
+      "validated_chain_count": 2
+    },
+    {
+      "degree": 6,
+      "global_rank": 4,
+      "global_support": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "id": "rank_creation_degree_6",
+      "report_file": "rank_creation_degree_6.json",
+      "report_sha256": "9cf53105faf322456b82b1c88d977980a3cb7e4dcc077b6a4146f63b8df111c2",
+      "status": "pass",
+      "validated_chain_count": 1
+    }
+  ],
+  "claim_boundary": "Every reported chain is validated by exact composition. Supplied plus one SymPy-discovered chain are not asserted to exhaust the complete decomposition lattice.",
+  "schema": "decomposition-aware-fusion-benchmark-receipt-v1",
+  "status": "pass"
+}

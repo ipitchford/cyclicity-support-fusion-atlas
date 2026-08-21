@@ -1,14 +1,14 @@
 {
   "schema": "evidence-press-mathematics-claims-v2",
-  "title": "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods",
-  "version": "0.5.0-candidate",
-  "status": "unrefereed-theorem-candidate",
+  "title": "Inverse-Root Support and Fourier Fusion for Polynomial Exponential Periods: All-Degree Low-Rank Completion",
+  "version": "0.6.0-candidate",
+  "status": "unrefereed-theorem-candidate-relative-to-named-imports",
   "claims": [
     {
       "id": "T1",
       "statement": "For every complex polynomial P of degree at least two, q(P,dx)=|Sigma(P)|.",
       "scope": "all complex polynomial phases of degree at least two",
-      "locator": "MANUSCRIPT.md, Theorem 5.2",
+      "locator": "MANUSCRIPT.md, Theorem 5.2; inherited in ALL_DEGREE_GLOBAL_COMPLETION.md, Theorem 2.1",
       "basis": ["formal-moment isomorphism", "active Kummer channels", "falling-factorial Vandermonde"],
       "gate": ["tests/test_fusion_support.py", "cleanroom/fraction_audit.py", "verification/battery1.py", "verification/battery2.py"],
       "status": "proved-in-unrefereed-candidate",
@@ -18,16 +18,16 @@
       "id": "T2",
       "statement": "|Sigma(P)| equals the dimension of the reduced constant inverse-root span.",
       "scope": "all complex polynomial phases of degree at least two",
-      "locator": "MANUSCRIPT.md, Theorem 6.1",
+      "locator": "MANUSCRIPT.md, Theorem 6.1; ALL_DEGREE_GLOBAL_COMPLETION.md, Theorem 2.1",
       "basis": ["discrete Fourier transform of inverse branches", "disjoint Laurent support"],
-      "gate": ["tests/test_fusion_support.py", "verification/battery1.py"],
+      "gate": ["tests/test_fusion_support.py", "verification/battery1.py", "run_global_completion_checks.py"],
       "status": "proved-in-unrefereed-candidate",
       "external_assurance": false
     },
     {
       "id": "T3",
       "statement": "The fixed sectorial rapid-decay period matrix has the Fourier-Gamma determinant asymptotic and is invertible on the sector.",
-      "scope": "monic centred polynomial phases on the sectors specified in Section 7",
+      "scope": "monic centred polynomial phases on the sectors specified in MANUSCRIPT.md Section 7",
       "locator": "MANUSCRIPT.md, Theorem 7.3 and Corollary 7.4",
       "basis": ["uniform rapid decay", "dominated convergence", "Vandermonde determinant", "first-order determinant equation"],
       "gate": ["cleanroom/period_matrix_spotcheck.py"],
@@ -77,13 +77,24 @@
     },
     {
       "id": "C1",
-      "statement": "The families in Theorem 13.1 exhaust q(P,dx)<=3 in every degree.",
-      "scope": "all degrees",
-      "locator": "MANUSCRIPT.md, Conjecture 13.2",
-      "basis": ["finite theorem through degree twenty", "quartic lift elimination through modulus seven"],
-      "status": "conjecture",
-      "open_obligation": "non-circular quartic/cubic twisted-factor descent or an alternative monodromy proof",
-      "first_uncovered_case": "quartic lift modulus 8, total degree 32"
+      "statement": "Up to affine equivalence and lower-rank intersections, every complex polynomial P with q(P,dx)<=3 belongs to the power, Dickson, quadratic-over-power, cubic-over-power, indecomposable-quartic, or degree-twelve quartic-collision families listed in Theorem 11.1.",
+      "scope": "all complex polynomial degrees at least two, relative to the named primitive-polynomial-monodromy and finite-projective-group classification inputs",
+      "locator": "ALL_DEGREE_GLOBAL_COMPLETION.md, Theorem 11.1",
+      "basis": ["inherited root-span interface", "invariant-integral finite-pole/infinity descent", "source-exact primitive-factor audit", "full-block stabiliser", "coefficient-stratified Kummer transport", "direct all-degree Dickson invariant-field proof", "quartic kernel classification"],
+      "gate": ["run_global_completion_checks.py", "GLOBAL_COMPLETION_MANIFEST.sha256", "receipts/global_completion_receipt.json", "programme/GLOBAL_COMPLETION_QUALITY_GATE.md"],
+      "status": "proved-in-unrefereed-candidate-relative-to-named-imports",
+      "trust_boundary": ["correctness and applicability of imported classification theorems", "written function-field and monodromy arguments not completely formalised", "source-to-encoding bridge", "producer-side internal review"],
+      "external_assurance": false
+    },
+    {
+      "id": "E1",
+      "statement": "The proper rank-preserving outer extensions are exactly powers by powers, aligned Dickson extensions in one dihedral tower, the aligned square of an odd-centred cubic-over-power phase, and the cubic collision of the exceptional quartic.",
+      "scope": "all proper polynomial outer extensions of the rank-at-most-three families in C1, over the complex numbers and relative to the same named imports",
+      "locator": "ALL_DEGREE_GLOBAL_COMPLETION.md, Sections 7-11 and Theorem 11.1",
+      "basis": ["full-block stabiliser", "direct rational-function Dickson invariant field", "coefficient-stratified Kummer line transport", "composition-kernel theorems", "non-repetition audit"],
+      "gate": ["run_global_completion_checks.py", "DICKSON_EXTENSION_COMPLETION.md", "KUMMER_NORMALIZER_MANIFEST.sha256", "receipts/global_completion_receipt.json"],
+      "status": "proved-in-unrefereed-candidate-relative-to-named-imports",
+      "external_assurance": false
     },
     {
       "id": "A1",

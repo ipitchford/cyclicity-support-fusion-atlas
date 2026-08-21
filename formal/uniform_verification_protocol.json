@@ -1,0 +1,65 @@
+{
+  "schema": "cyclicity-uniform-structural-protocol-v1",
+  "date": "2026-08-21",
+  "status": "post-implementation identity protocol; target statements were fixed by the preceding proof audit",
+  "assessment_boundary": "Verify the algebraic scaling interface and the genuinely uniform residue-coefficient argument, preserving monodromy topology, finite-pole descent, parent root-span, and extension classification as explicit external interfaces.",
+  "exact_claims": {
+    "scaling_theorems": [
+      "projective_swap_equal",
+      "lifted_relation_power_projective",
+      "projective_s3_constant",
+      "projective_s4_constant",
+      "scaling_powers_equal_s3",
+      "scaling_powers_equal_s4",
+      "common_rescale_of_equal_powers"
+    ],
+    "coefficient_theorems": [
+      "cubic_coeff_zero",
+      "cubic_coeff_two",
+      "cubic_coeff_four",
+      "quartic_coeff_zero",
+      "quartic_coeff_two",
+      "quartic_coeff_three",
+      "quartic_coeff_five",
+      "quarticInvCoeff_a_zero",
+      "quartic_coeff_six_at_a_zero",
+      "quartic_coeff_nine_at_a_zero"
+    ],
+    "uniform_theorems": [
+      "cubic_uniform_residual_witness",
+      "quartic_uniform_residual_witness_a_ne_zero",
+      "quartic_uniform_residual_witness_a_zero",
+      "cubic_uniform_coefficient_nonzero",
+      "quartic_uniform_coefficient_nonzero_a_ne_zero",
+      "quartic_uniform_coefficient_nonzero_a_zero",
+      "cubic_uniform_boundary",
+      "quartic_uniform_boundary"
+    ]
+  },
+  "expected_boundaries": {
+    "cubic_after_first_power_sum": [2, 4],
+    "quartic_after_first_power_sum": [2, 3, 5, 6, 9],
+    "quartic_conditions": {
+      "6": "a=0",
+      "9": "a=0"
+    },
+    "after_predecessor_E2_elimination": [
+      "cubic m=2",
+      "quartic m=3,a=0"
+    ]
+  },
+  "methods": {
+    "formal_kernel": "Lean 4.32.1 with Mathlib v4.32.1",
+    "coefficient_model": "Explicit finite negative-binomial sums over QQ",
+    "uniformity": "Constructive witnesses from m mod 3 and m mod 4; no upper cutoff",
+    "orchestration": "Python standard library only"
+  },
+  "negative_controls": [
+    "Reject a rehashed receipt that removes a scaling theorem.",
+    "Reject a rehashed receipt that changes the theorem count.",
+    "Reject a rehashed receipt that claims the complete atlas is formally verified.",
+    "Reject source or proof-document hash substitution.",
+    "Reject any Lean source containing sorry, admit, or an axiom declaration."
+  ],
+  "claim_boundary": "Lean kernel verification covers the projective scaling algebra, common rescaling, exact selected coefficient sums, modular witnesses for arbitrary natural exponents, coefficient nonvanishing, and the uniform cubic/quartic boundary theorems. The written proof supplies their complex polynomial-monodromy and formal-series interpretation. Analytic continuation, finite-pole descent, the parent root-span theorem, the remaining primitive audit, and rank-preserving extensions are not formalized here; this is internal assurance, not external independent reproduction or peer review."
+}

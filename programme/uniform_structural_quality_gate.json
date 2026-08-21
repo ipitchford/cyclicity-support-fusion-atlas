@@ -1,0 +1,61 @@
+{
+  "schema_version": "research-quality-gate-1.0",
+  "assessment_id": "cyclicity-uniform-structural-2026-08-21",
+  "as_of": "2026-08-21",
+  "attribution": "anonymous",
+  "assessors": ["internal-QA"],
+  "assessment_boundary": "Assess the monodromy/scaling and uniform coefficient repair, not the complete atlas.",
+  "decision_supported": "Integration as additive candidate assurance.",
+  "claim": {
+    "text": "Full local S3/S4 action removes root-dependent scaling, and exact modular coefficient witnesses prove the cubic/quartic Newton obstruction for every natural exponent.",
+    "scope": "First rank-increasing cubic and quartic factors.",
+    "output_type": "mathematical proof and formal-proof certificate",
+    "field": ["polynomial monodromy", "algebra", "formal mathematics"],
+    "identifiers": ["cyclicity-uniform-structural-v1"]
+  },
+  "novelty_handoff": {
+    "outcome": "BOUNDED UNCERTAINTY",
+    "search_date": "2026-08-21",
+    "corpus_boundary": "Existing parent and applications novelty boundary.",
+    "closest_prior_art": ["Classical polynomial monodromy and Ritt decomposition sources in the parent bibliography."],
+    "unresolved_priority_questions": ["Formalisation-specific prior art was not refreshed."]
+  },
+  "prior": {
+    "originality": {"score": 2, "confidence": "medium", "justification": "Retrospective prior within a bounded novelty position."},
+    "significance": {"score": 3, "confidence": "high", "justification": "Targets the remaining finite-exponent conditionality."},
+    "rigour": {"score": 3, "confidence": "medium", "justification": "Exact written and kernel-checking routes were feasible."},
+    "expected_action": "go with controls"
+  },
+  "outcome": {
+    "originality": {"score": 2, "confidence": "medium", "justification": "Distinctive structural artefact without refreshed priority clearance."},
+    "significance": {"score": 3, "confidence": "high", "justification": "Removes bounded-m conditionality from the local descent."},
+    "rigour": {"score": 3, "confidence": "high for stated boundary", "justification": "Complete derivation, 25 Lean theorems, sealed receipt, semantic verifier, and seven mutations."},
+    "summary_score": 65.5,
+    "summary_formula": "100 * ((O/4)*(S/4)*(R/4))^(1/3)",
+    "decision": "go with controls"
+  },
+  "assurance": {
+    "status": "formally verified",
+    "checks": ["25 Lean theorems", "source lock", "semantic receipt verifier", "seven adversarial mutations", "predecessor Singular identities"],
+    "independence": "Internal engine and proof-kernel assurance; not external reproduction.",
+    "limits": ["Topological monodromy and finite-pole descent are not encoded.", "Complete atlas depends on inherited interfaces."]
+  },
+  "reception": {
+    "status": "immature",
+    "as_of": "2026-08-21",
+    "openalex": {"work_id": null, "fwci": null, "citation_normalized_percentile": null, "cited_by_count": null, "coverage_notes": "Not applicable to a new internal artefact."},
+    "opencitations": {"incoming_citations": null, "coverage_notes": "Not applicable."},
+    "reuse_and_impact": [],
+    "negative_post_publication_signals": []
+  },
+  "evidence": [
+    {"claim": "written structural proof", "path": "ALL_DEGREE_STRUCTURAL_REPAIR.md", "status": "pass with notes"},
+    {"claim": "kernel-verified structural core", "path": "formal/lean/CyclicityUniform.lean", "status": "pass"},
+    {"claim": "uniform receipt", "path": "receipts/uniform_structural_formalization_receipt.json", "status": "pass"}
+  ],
+  "red_flags": ["Post-implementation seal.", "No external statement-correspondence review."],
+  "missing_evidence": ["Formal finite-pole descent", "Formal parent root-span theorem", "External specialist audit"],
+  "reviewer_disagreement": [],
+  "reassessment": {"next_date": null, "reason": "After remaining interfaces receive comparable audit or formalisation."},
+  "sources": ["ALL_DEGREE_STRUCTURAL_REPAIR.md", "ALL_DEGREE_STRUCTURAL_REVIEW.md", "programme/NOVELTY_GATE.md"]
+}

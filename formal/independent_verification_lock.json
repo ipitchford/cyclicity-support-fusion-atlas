@@ -1,0 +1,15 @@
+{
+  "files": {
+    "cleanroom/singular_newton_crosscheck.sing": "0dfde11c333eb9c5b134df25324d4e42f5c3281d545c82a78e25d8877bee4e5e",
+    "formal/independent_verification_protocol.json": "ecb3e275ab310e18a3fa83d90ae9bacbf6401101d358f1a6d92ca5995a564fb4",
+    "formal/lean/CyclicityNewton.lean": "7ef478d1c1d3b309d2338067ffb1fd85402e50691fdad6edaa63e1894e3096dc",
+    "formal/lean/lakefile.toml": "a4c7e7dc28152ca2119b41f22e9da6b5145cb9777702323d1768352e4da00998",
+    "formal/lean/lean-toolchain": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "tools/run_independent_formalization.py": "8e41af62a06d9f0ac3ac1b41837384015e55e927f45b6fc96be65e15445b27bd"
+  },
+  "hash_algorithm": "sha256",
+  "lock_sha256": "aaeea44daab158c278037b331d3c0afda9ce63d988793386c48cf05ea784e144",
+  "schema": "cyclicity-independent-formalization-lock-v1",
+  "seal_boundary": "Post-implementation source-identity lock, not a prospective preregistration and not evidence of external independence.",
+  "status": "sealed"
+}

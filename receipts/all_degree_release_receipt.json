@@ -27,11 +27,11 @@
     "original_research_text_and_data": "CC0-1.0",
     "third_party_material": "existing terms or NOASSERTION"
   },
-  "receipt_sha256": "9363e96c1d69b1f81467e3f7c226067602b39c770b113552bbfea6eb0acc066a",
+  "receipt_sha256": "1aa9f3349ac0f3dbea46dd56447797809be3f745f997172fec4db915d4067224",
   "schema": "cyclicity-all-degree-release-receipt-v1",
   "status": "pass-for-public-unrefereed-candidate-release",
   "verification": {
-    "global_manifest_sha256": "e844075ddc875e7f13c2949d44e1c51ab04afa7e1d7f3ea71244c9cf00676708",
+    "global_manifest_sha256": "b092f56e83960db0a8eda8274f07673f0dbae9ad7c44a3f7186163dc71ac8915",
     "global_mutation_count_per_mode": 13,
     "global_receipt_file_sha256": "ef26a53b8dd91afe82b32b6e91f3c1dfcbc024d01db4142f40b309ea070cb4c3",
     "global_receipt_schema": "cyclicity-global-completion-receipt-v2",

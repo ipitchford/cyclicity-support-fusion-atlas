@@ -21,6 +21,9 @@ jobs:
           cache: pip
       - name: Install pinned dependency
         run: python -m pip install --requirement requirements.txt
-      - name: Run complete normal and optimized replay
-        run: python run_core_checks.py
-
+      - name: Verify all-degree semantic receipts and negative controls
+        run: python run_global_completion_checks.py --skip-engine-recompute
+      - name: Verify complete v0.6 payload manifest and reader PDF
+        run: |
+          python tools/build_all_degree_release.py verify
+          python tools/pdf_tex_preflight.py All-Degree-Low-Rank-Coefficient-Atlas.pdf

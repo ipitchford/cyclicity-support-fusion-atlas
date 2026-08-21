@@ -27,6 +27,7 @@ from integrity import parse_manifest, sha256_path  # noqa: E402
 PARENT_MANIFEST_SHA256 = "5fa7af3d4602e6257319a556809066ff1bda262255011b4720d304da7657fde0"
 PARENT_METADATA_OVERRIDES = {
     ".gitignore",
+    ".github/workflows/replay.yml",
     ".zenodo.json",
     "AI_INDEX.md",
     "ASSURANCE.md",
